@@ -1,0 +1,120 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Features</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nDevice Introduction\nDevice Features");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Device Features</h1>
+<h2>Overall Features:</h2>
+<h4></h4>
+<p>48 TTL level digital I/O lines.</p>
+<p>Emulates mode 0 of 8255 PPI</p>
+<p>Buffered circuits provide higher driving capability</p>
+<p>Interrupt handling</p>
+<p>Interrupt output pin for simultaneously triggering external devices with the 
+interrupt</p>
+<p>High density SCSI 68-pin connector</p>
+<p>Output status readback</p>
+<p>Two 16-bit timers can be cascaded to one 32-bit timer, and can generate watchdog 
+timer interrupts</p>
+<p>One 16-bit event counter can generate event interrupts</p>
+<p>Keeps port I/O settings and digital output states after hot system reset</p>
+<p>Supports dry contact and wet contact</p>
+<h2>Applications</h2>
+<h4></h4>
+<p>Industrial AC/DC I/O devices monitoring and control</p>
+<p>Relay and switch monitoring and control</p>
+<p>Parallel data transfer</p>
+<p>Sensing the signals of TTL, DTL, CMOS logic</p>
+<p>Driving indicator LEDs</p>
+<h2>Interrupt Function:</h2>
+<h4></h4>
+<p>Two lines in each I/O port (C0 and C4) and two of the three counter outputs (Timer 
+1 and Counter 2) are connected to the interrupt circuitry. The &quot;Interrupt Control 
+Register&quot; of the PCI-1751 controls how the combination of the 6 signals generates 
+an interrupt. Two interrupt request signals can be generated at the same time, and 
+then the software can service these two request signals by ISR. The dual interrupt 
+sources provide the card with more capability and flexibility.</p>
+<p></p>
+<p><img border="0" src="InterruptSource.jpg" width="448" height="269"></p>
+<p></p>
+<b></b>
+<h2>Timer and Counter:</h2>
+<blockquote>
+	<p>The PCI-1751 includes one 8254 compatible programmable timer/counter chip 
+	which provides three 16-bit counters. Each has 6 operation modes. Counter0 and 
+	Counter1 can be used separately as Timer0 and Timer1 or can be cascaded 
+to create one 32-bit timer. Both Timer 1 and Counter 2 can generate interrupts to 
+the computer. Please refer to hardware manual for more information on the operation modes 
+of the counter chip.</p>
+</blockquote>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

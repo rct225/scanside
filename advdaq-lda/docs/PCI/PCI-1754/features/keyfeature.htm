@@ -1,0 +1,128 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Features</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1754 Device Driver User Manual\nDevice Introduction\nDevice Features");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>Device Features</h1>
+	
+	<h2>Overall Features:</h2>
+	<p>64 isolated digital input channels</p>
+	<p>High-voltage isolation for input channels (2,500 VDC )</p>
+	<p>Wide input range (10 ~ 50 VDC)</p>
+	<p>High ESD protection (2,000 VDC )</p>
+	<p>High over-voltage protection (70 VDC )</p>
+	<p>Board ID</p>
+	<p>Interrupt handling capability</p>
+	<p>Provides convenient wiring terminal module with LED indicators for DIN-rail 
+	mounting</p>
+	<p>High-density 100-pin SCSI connector</p>
+	<blockquote>
+	</blockquote>
+	<h2>Robust Protection</h2>
+	<p>The PCI-1754 features a robust isolation protection for applications in 
+	industrial, lab and machinery automation. The PCI-1754 can durably withstand 
+	a voltage up to 2,500 VDC, preventing your host system from any incidental 
+	harms. The PCI-1754, if connected to an external input source with 
+	surge-protection, can offer<b></b>up to a maximum of 2,000 VDC ESD 
+	(Electrostatic Discharge) protection for input channels. Even with an input 
+	voltage rising up to 70 VDC, the input channels of PCI-1754 can still manage 
+	to work properly albeit only for a short period of time.</p>
+	<blockquote>
+	</blockquote>
+	<h2>Wide Input/Output Range</h2>
+	<p>The PCI-1754 has a wide range of input voltage from 10 to 50 VDC, and it 
+	is suitable for most industrial applications with 12 VDC, 24 VDC and 48 VDC 
+	input voltage. </p>
+	<h2>Board ID Setting</h2>
+	<p>The PCI-1754 has a built-in DIP switch that helps define each card’s ID 
+	when multiple cards have been installed on the same PC chassis. The board ID 
+	setting function is very useful when users build their system with multiple 
+	PCI-1754 cards. With correct Board ID settings, you can easily identify and 
+	access each card during hardware configuration and software programming.</p>
+	<h2>Interrupt Function</h2>
+	<p>The isolated digital input channels (IDI00, IDI16, IDI32 and IDI48) are 
+	connected to the interrupt circuitry. Users can disable/enable interrupt 
+	function, select trigger type or latch the port data by setting the 
+	Interrupt Control Register of the PCI-1754. When the interrupt request 
+	signals occur, then the software will service these interrupt requests by 
+	ISR. The multiple interrupt sources provide the card with more capability 
+	and flexibility.</p>
+	<h2>Latch Port Data Function</h2>
+	<p>The function enables you to latch the last data of each associated 
+	digital input channels when the interrupt occurs and you can free the latch 
+	function by clearing interrupt. We have organized every 16 bits into one 
+	group. When the Latch Port Data Function is enabled for a specific group, 
+	the values of all channel ports in this group will be latched.</p>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Properties</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval: 21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nDevice Properties");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<h1><span lang=EN-US>Device Properties</span></h1>
+
+<p><span lang=EN-US>Device properties are stored in the system and read by the
+driver when it loads, and then the device is programmed according to these
+loaded values. The properties are protected during read and write access times,
+and some of them are pre-defined by the configuration dialog box. Different
+device's functions are influenced by different properties. These properties are
+represented by an ID code for an application that calls Advantech API
+functions. An application can use a default value set by the configuration
+dialog box, or call Advantech API functions: <u>
+<a
+href="../../../function/Device/drv_devicegetproperty.htm" style="color: blue; text-decoration: underline; text-underline: single">DRV_DeviceGetProperty
+</a></u>and <u>
+<a href="../../../function/Device/drv_devicesetproperty.htm" style="color: blue; text-decoration: underline; text-underline: single">DRV_DeviceSetProperty
+</a></u>, to modify individual properties in running time.</span></p>
+
+<p><span lang=EN-US>USB-4711/A supports the following properties:</span></p>
+
+<div style='margin-left:24.0pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;background:#999999;border:solid #999999 1.0pt;
+ mso-border-top-alt:.75pt;mso-border-left-alt:.25pt;mso-border-bottom-alt:.25pt;
+ mso-border-right-alt:.75pt;mso-border-color-alt:#999999;mso-border-style-alt:
+ solid;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' id="table1">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Property</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Description</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_BoardID.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_BoardID</a></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the board ID of the device.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_FirmWareVersion.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_FirmWareVersion</a></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the device firmware version string of the USB-4711/A.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_AiFifoSize.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_AiFifoSize</a></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the size of fifo on board.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_AiPacerRate.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_AiPacerRate</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>sets or gets the current pacer rate of the device's AI operation.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_AiChanConfig.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_AiChanConfig</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>sets or gets the single-ended or differential of the channel
+  configuration.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_AoRangeList.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_AoRangeList</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the AO range spec list of current device.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_AoChanRange.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_AoChanRange</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>sets or gets the current AO range setting of one channel.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DiChannelCount.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_DiChannelCount</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the&nbsp;digital input channel count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DiPortCount.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_DiPortCount</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital input port count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DoChannelCount.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_DoChannelCount</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital output channel count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DoPortCount.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_DoPortCount</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital output port count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_CntrChannelCapability.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_CntrChannelCapability</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the counter capability.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_CntrSupportedCountEdge.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_CntrSupportedCountEdge</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the count edge.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_CntrChannelCount.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_CntrChannelCount</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the counter channel count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_CntrResolution.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_CntrResolution</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the counter resolution.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_CntrResetValue.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_CntrResetValue</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>set or gets the counter reset value.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_CntrInternalClockFreq.htm" style="color: blue; text-decoration: underline; text-underline: single">CFG_CntrInternalClockFreq</a></span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></u></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the internal clock frequency device used for pulse out.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

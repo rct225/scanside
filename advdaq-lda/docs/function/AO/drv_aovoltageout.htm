@@ -1,0 +1,159 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_AOVoltageOut </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nSoftware Transferring\nFunction Description\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1720 Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1723 Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1724 Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1727U Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nAnalog Output\nDRV_AOVoltageOut");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_AOVoltageOut </h1>
+	<pre class="code">INT32S DRV_AOVoltageOut(
+   PTR_T <i>DeviceHandle</i>,
+   PT_AOVoltageOut <i>*lpAOVoltageOut </i>);</pre>
+	<h2><font face="Verdana">Purpose</font></h2>
+	<p><font face="Verdana"><span lang="EN-US">On the device 
+	indicated by the </span><i>DeviceHandle</i><span lang="EN-US">, it c</span>hanges the output voltage status of an AO (Analog Output) channel by setting a 
+	float voltage value.</font></p>
+	<h2><font face="Verdana">Parameters</font></h2>
+	<div>
+<p style="margin-top: 4px; margin-bottom: 4px"><font face="Verdana">This function 
+is implemented by first 
+calling the <a href="drv_aoscale.htm">DRV_AOScale</a> and then calling
+the
+<a href="drv_aobinaryout.htm">DRV_AOBinaryOut</a>. </font></p>
+<p style="margin-top: 4px; margin-bottom: 4px">Some<font face="Verdana">
+parameters, such as target channel (<i>chan</i>) and output voltage value (<i>outputValue</i>), 
+are stored in the 
+<a href="../../structure/AO/PT_AOVoltageOut.htm">PT_AOVoltageOut</a>, structure 
+pointed by the <i> 
+	lpAOVoltageOut</i>.</font></p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered" border="1" id="table5">
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Name</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Direction</b></font></td>
+			<td width="61"><font face="Verdana" style="font-size: 9pt"><b>Range</b></font></td>
+			<td width="674"><font face="Verdana" style="font-size: 9pt"><b>Description</b></font></td>
+		</tr>
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>DeviceHandle</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt">input</font></td>
+			<td width="61"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td width="674">The p<font face="Verdana" style="font-size: 9pt">ointer retrieved from 
+			the 
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a>  			which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td><font face="Verdana"><b>lpAOVoltageOut</b></font></td>
+			<td><font style="font-size: 9pt">i</font><font face="Verdana" style="font-size: 9pt">nput / output</font></td>
+			<td width="61"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td width="674"><span style="FONT-FAMILY: Verdana">The pointer indicates 
+			the user-prepared structure </span>
+			<font face="Verdana"> <a href="../../structure/AO/PT_AOVoltageOut.htm">PT_AOVoltageOut</a></font><span style="FONT-FAMILY: Verdana"> that stores</span><font face="Verdana"> target channel (INT16U
+			<i>chan</i>) and output voltage value (FP32 <i>OutputValue</i>).</font></td>
+		</tr>
+	</table>
+</div>
+	</div>
+	<h2><font face="Verdana">Return</font></h2> 
+<table border="0" width="100%" cellpadding="0" id="table3" height="64" cellspacing="10" style="margin-left: 0">
+	<tr>
+		<td width="202"><font face="Verdana" style="font-size: 9pt"><b>&nbsp;&nbsp; 1. 
+		0</b></font></td>
+		<td><span style="font-size: 9pt">S</span><font face="Verdana" style="font-size: 9pt">uccessful. </font></td>
+	</tr>
+	<tr>
+		<td width="202"><font style="font-size: 9pt"><b>&nbsp;&nbsp; 2</b></font><font face="Verdana" style="font-size: 9pt"><b>. 
+		Other value</b></font></td>
+		<td><span style="font-size: 9pt">Please reference
+		<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a></span></td>
+	</tr>
+</table>
+	<p></p>
+	<p></p>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

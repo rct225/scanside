@@ -1,0 +1,130 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FAIDmaScanStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIDmaScanStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FAIDmaScanStart </h1>
+	<h1>&nbsp;</h1>
+	<p>status = DRV_FAIDmaScanStart (DriverHandle, lpFAIDmaScanStart)</p>
+	<h2>Purpose</h2>
+	<p>Initiates an asynchronous, multiple-channel data acquisition operation 
+	with DMA and stores its input in an array and the gain codes for the scan 
+	channels. </p>
+	<h2>Parameters</h2>
+	<div class="tablediv">
+		<table class="Bordered" cellSpacing="0" id="table1">
+			<tr>
+				<td><b>Name</b></td>
+				<td><b>Direction</b></td>
+				<td><b>Type</b></td>
+				<td><b>Range</b></td>
+				<td><b>Description</b></td>
+			</tr>
+			<tr>
+				<td><b>DriverHandle</b></td>
+				<td>Input</td>
+				<td>long </td>
+				<td>default</td>
+				<td>assigned by	<a href="../Device/DRV_DEVICEOPEN.htm">	DRV_DeviceOpen</a></td>
+			</tr>
+			<tr>
+				<td><b>lpFAIDmaScanStart</b></td>
+				<td>Input / Output</td>
+				<td>long pointer to	<a href="../../structure/FAI/PT_FAIDmaScanStart.htm">PT_FAIDmaScanStart</a></td>
+				<td>default</td>
+				<td>the storage address for TrigSrc, SampleRate, NumChans, 
+				StartChan, GainList, buffer, count.</td>
+			</tr>
+		</table>
+	</div>
+	<h2>Return</h2>
+	<p><b>1. SUCCESS</b> if successful.</p>
+	<p><b>2. InvalidDriverHandle</b> if DriverHandle is NULL.</p>
+	<p><b>3. InvalidWindowsHandle </b>if buffer is NULL or GainList is NULL. </p>
+	<p><b>4. BoardIDNotSupported </b>if function isn't supported in driver. </p>
+	<p><b>5. InvalidGain</b> if gain code is incorrect. </p>
+	<p><b>6. InvalidChannel </b>if chan is out of range. </p>
+	<p><b>7. InvalidCountNumber </b>under these conditions: count is zero, count 
+	is not even, counter is less than 2048. (When you do analog input with DMA 
+	transfer, conversion number must be bigger than 2048. (The size of data must 
+	be bigger than PAGE_SIZE(4K).) </p>
+	<p><b>8. IllegalSpeed </b>if SampleRate is out of range. </p>
+	<p><b>9. InvalidEventCount </b>if EventCount is zero. </p>
+	<p><b>10. ChanConflict </b>if interrupt channel is in conflict. </p>
+	<p><b>11. OpenEventFailed </b>if fails to open event name. </p>
+	<p><b>12. KeInsufficientResources </b>if resource is in conflict with 
+	another driver. </p>
+	<p><b>13. KeConInterruptFailure </b>if fails to connects interrupt.</div>
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

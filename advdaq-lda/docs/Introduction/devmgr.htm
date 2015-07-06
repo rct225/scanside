@@ -1,0 +1,137 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>About Advantech Device Manager (Installation and Configuration Program)</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Advantech Device Driver Overview\nConfigure Devices with Advantech DAQ Device Manager Utilities");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Configure Devices with Advantech DAQ Device Manager Utilities</h1>
+<p>There are some utilities available with Advantech DAQ Device Linux Driver 
+package. </p>
+<h2>1. advdevice_list</h2>
+<p>  &nbsp;</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; List the Advantech devices plugged in the 
+system and show some information of those devices.&nbsp; </p>
+<h3>  &nbsp;&nbsp;&nbsp; -Usage:</h3>
+<p class="P1">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+advdevice_list</p>
+<h3>  &nbsp;&nbsp;&nbsp; - Example:</h3>
+<pre class="code">
+            #advdevice_list
+            Advantech : advdevice_list version 0.0.01
+            
+            The 0th Advantech Device: 
+            	+--Device Type Name is usb4761
+            	+--BoardID is 0x5
+            	+--The Device has not been binded with device file 
+            	+--Please bind this device with device file using advdevice_bind utility!</pre>
+<p>&nbsp;</p>
+<h2>2. advdevice_bind</h2>
+<p class="P1">&nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp; Associate a device with a device node or CANCEL the 
+relationship between a USB device and a device file . </p>
+<h3><br>
+-Usage:</h3>
+<p><br>
+&nbsp;&nbsp;&nbsp; advdevice_bind [OPTIONS]&nbsp; &lt;device type&gt; &lt;board id&gt; 
+&lt;device file&gt;</p>
+<h3>- Example:</h3>
+<p>1. Associate a device(usb4761) with a device node (/dev/advdaq0)</p>
+<pre class="code">#advdevice_bind usb4761 4 /dev/advdaq0</pre>
+<p>2. Cancel the relationship between a USB device and a device node </p>
+<pre class="code">#advdevice_bind -r usb4761 4 /dev/advdaq0</pre>
+<pre class="syntax">*NOTE: If you remove a device from system, you need to associate the device with a device node using &quot;advdevice_bind&quot; again.</pre>
+
+
+
+<h2>  3. advdevice_locate</h2>
+<p>  &nbsp;&nbsp;&nbsp;
+</p>
+<p>  &nbsp;&nbsp;&nbsp; This utility is developed for identify Advantech USB 
+device. The LED status of the USB device will blink when the device is located 
+using this utility.</p>
+<h3>  -Usage&nbsp;&nbsp;&nbsp;</h3>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; advdevice_locate&nbsp; 
+&lt;device file&gt;</p>
+<h3>  -Example</h3>
+<pre class="code">#advdevice_locate /dev/advdaq0</pre>
+<h2>  4. advdevice_setboardid</h2>
+<p>  &nbsp;&nbsp;&nbsp;
+</p>
+<p>  &nbsp;&nbsp;&nbsp; This utility is developed for changing board ID of USB 
+device. </p>
+<h3>  -Usage&nbsp;&nbsp;&nbsp;</h3>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; advdevice_setboardid&nbsp; 
+&lt;device file&gt; &lt;new board id&gt;</p>
+<h3>  -Example</h3>
+<pre class="code">#advdevice_setboardid /dev/advdaq0 0x5</pre>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Driver Programming Examples</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Advantech DAQ Device Linux Driver Programming Examples");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1></h1>
+	<h1>Advantech DAQ Device Linux Driver Programming Examples</h1>
+	<p></p>
+	<h1></h1>
+	<p><b>Please install the example package provided by Advantech first. </b> </p>
+	<p>About Advantech DAQ Device Linux Driver Example:</p>
+	<p>The example source code is located in the <i>installation path\adsapi\examples</i> directory.</p>
+	<p>The example folder names adopted Prefix and Postfix to indicate the 
+	different function groups. </p>
+	<div class="tablediv">
+		<table cellspacing="0" class="Bordered">
+			<tr>
+				<th>
+				<p><b>Prefix</b></p>
+				</th>
+				<th>
+				Description</th>
+			</tr>
+			<tr>
+				<td>AD </td>
+				<td>Analog input function. (Analog/Digital )</td>
+			</tr>
+			<tr>
+				<td>DA </td>
+				<td>Analog output function. (Digital /Analog )</td>
+			</tr>
+			<tr>
+				<td>DI </td>
+				<td>Digital input function</td>
+			</tr>
+			<tr>
+				<td>DO</td>
+				<td>Digital output function</td>
+			</tr> 
+			<tr>
+				<td>SOFT</td>
+				<td>Software trigger</td>
+			</tr> 
+		</table></div>
+		
+		</div>
+	<div class="tablediv">
+		<table cellspacing="0" class="Bordered">
+			<tr>
+				<th>
+				<p><b>Postfix</b></p>
+				</th>
+				<th>
+				Description</th>
+			</tr>
+			<tr>
+				<td>INT</td>
+				<td>Interrupt function</td>
+			</tr>
+			<tr>
+				<td>DMA</td>
+				<td>Direct Memory Access</td>
+			</tr>
+			<tr>
+				<td>DMA_BM </td>
+				<td>Bus master DMA</td>
+			</tr>
+			<tr>
+				<td>WD</td>
+				<td>Watch dog function</td>
+			</tr>
+			<tr>
+				<td>EXP</td>
+				<td>expansion board</td>
+			</tr>
+		</table>
+	</div>
+
+<div>
+	<h1></h1>
+	
+
+</div>
+<p>&nbsp;</p>
+<p>Following is the list of example programs we offer, which can be used 
+for the reference of software development.</p>
+<p>Here &quot;Console&quot; (Standard C) is supported language in Linux.&nbsp; </p>
+<div class="tablediv">
+<table cellspacing="0" class="Bordered" id="table1">
+ <tr>
+  <th><b> Example Name </b></th>
+  <th><b> Description</b></th>
+  <th><b> Console </b></th>
+  <th>GUI</th>
+ </tr>
+ <td><span style="text-decoration: none">AD_DMA</span></td>
+  <td> Demonstrates AD DMA function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+
+
+ <tr>
+  <td><span style="text-decoration: none">AD_DMA_BM</span></a></td>
+  <td> Demonstrates AD bus master DMA function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+
+ <tr>
+  <td>AD_INT</a></td>
+  <td> Demonstrates single channel data   acquisition use interrupt function. (allow user to enable FIFO) </td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>AD_SOFT</a></td>
+  <td> Demonstrates single channel   data acquisition use software trigger function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>MAD_INT</a></td>
+  <td> Demonstrates multi-channel   data acquisition use interrupt function. (allow user to enable FIFO) </td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>MAD_SOFT</a></td>
+  <td> Demonstrates multi-channel data   acquisition use software trigger function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td><span style="text-decoration: none">
+	DA_DMA_BM</span></a></td>
+  <td> Demonstrates analog output (voltage) use bus master DMA function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>DA_SOFT</a></td>
+  <td> Demonstrates analog output   (voltage) use software trigger function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+	<tr>
+  <td><span style="text-decoration: none">DA_SYNC</span></a></td>
+  <td> Demonstrates sync/async analog output (current/voltage).</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+	<tr>
+  <td>DI_SOFT</a></td>
+  <td> Demonstrates digital input   function.</td>
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+	<tr>
+  <td><span style="text-decoration: none">DI_INT</span></a></td>
+  <td> Demonstrates digital input with interrupt event function.</td>
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td><span style="text-decoration: none">DI_PATTN</span></a></td>
+  <td> Demonstrates digital input with pattern match, status change, counter 
+	match, counter overflow function.</td>
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+	<tr>
+  <td>DO_SOFT</a></td>
+  <td> Demonstrates digital output   function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td><span style="text-decoration: none">DO_SOFT_WD</font></td>
+  <td> Demonstrates digital output with watchdog function. </td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+  <tr>
+  <td>PORT_RW</a></td>
+  <td> Demonstrates port I/O    read/write   function.</td>
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td></td>
+  </tr>
+	<tr>
+  <td><span style="text-decoration: none">COUNTER</span></a></td>
+  <td> Demonstrates counter   function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+	<tr>
+  <td>FREQ_IN</a></td>
+  <td> Demonstrates frequency   measurement function.</td>
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>FREQ_OUT</span></a></td>
+  <td> Demonstrates frequency out function.</td>
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+ </tr> 
+ <tr>
+  <td>
+	<span style="text-decoration: none">PULSE</span></a></td>
+  <td> Demonstrates pulse output   function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+  </tr>
+	<tr>
+  <td>
+	<span style="text-decoration: none">P</span></a><span style="text-decoration: none">WM_IN</span></a></td>
+  <td> Demonstrates pulse output   function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+  </tr>
+ <tr>
+  <td>
+	<span style="text-decoration: none">PWM_OUT</span></a></td>
+  <td> Demonstrates pulse output   function.</td>
+
+<td><img border="0" src="BD21301_.gif" width="13" height="13"></td>
+<td>&nbsp;</td>
+  </tr>
+	<tr>
+  <td>
+	<span style="text-decoration: none">THERMO</span></a></td>
+  <td> Demonstrates    thermocouple measurement function.   </td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>
+	<span style="text-decoration: none">TMR_CNT_SET</span></a></td>
+  <td> Demonstrates runtime change timer divisor.   </td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+ </tr>
+  
+</table>
+</div>
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

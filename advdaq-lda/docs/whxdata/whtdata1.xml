@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Function Support Tables" url="function/supportingtables/functableoverview.htm" >
+  <book name="For PCI Series" >
+    <item name="For PCI-171x Series" url="function/supportingtables/forPCI-171x.htm" />
+    <item name="For PCI-172x Series" url="function/supportingtables/forPCI-172x.htm" />
+    <item name="For PCI-173x Series" url="function/supportingtables/forPCI-173x.htm" />
+    <item name="For PCI-174x Series" url="function/supportingtables/forPCI-174x.htm" />
+    <item name="For PCI-175x Series" url="function/supportingtables/forPCI-175x.htm" />
+    <item name="For PCI-176x Series" url="function/supportingtables/forPCI-176x.htm" />
+    <item name="For PCI-178x Series" url="function/supportingtables/forPCI-178x.htm" />
+  </book>
+  <book name="For USB Series" >
+    <item name="For USB Series" url="function/supportingtables/forUSB.htm" />
+  </book>
+  <book name="For PCM Series" >
+    <item name="For PCM Series" url="function/supportingtables/forPCM.htm" />
+  </book>
+  <book name="For MIC Series" >
+    <item name="For MIC Series" url="function/supportingtables/forMIC.htm" />
+  </book>
+</book>
+<book name="Using the Functions" url="function/funcdescription.htm" >
+<chunk name="Using the Functions" url="function/funcdescription.htm" ref="whtdata5.xml" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Code List" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

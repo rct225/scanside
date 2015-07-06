@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="CFG_DoChannelCount" >
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1718/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1756/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1716/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCM/PCM-3753I/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1721/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4711/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="MIC/MIC-3751/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4718/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4761/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1712/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4750/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1758U/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4716/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1760/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4702/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCM/PCM-3730I/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1757UP/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4704/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1753/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1736/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1742U/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCM/PCM-3724/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1761/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1735U/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1737U/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1763/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1741U/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1739U/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCM/PCM-3718/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1762/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCM/PCM-3725/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1751/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCM/PCM-3761I/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1723/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1752/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1727U/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1750/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1734/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1733/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1730/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1784/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCM/PCM-3730/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="USB/USB-4751/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1710/property/CFG_DoChannelCount.htm" />
+  <topic name="CFG_DoChannelCount" url="PCI/PCI-1711/property/CFG_DoChannelCount.htm" />
+</key>
+<key name="CFG_DoEnableChannelFreeze" >
+  <topic name="CFG_DoEnableChannelFreeze" url="PCI/PCI-1752/property/CFG_DoEnableChannelFreeze.htm" />
+  <topic name="CFG_DoEnableChannelFreeze" url="PCI/PCI-1756/property/CFG_DoEnableChannelFreeze.htm" />
+</key>
+<key name="CFG_DoPortCount" >
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1762/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4711/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCM/PCM-3730I/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1737U/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1761/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1734/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCM/PCM-3761I/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4716/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1727U/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4704/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4751/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCM/PCM-3753I/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1710/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1730/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1784/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1757UP/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1733/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1750/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1760/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCM/PCM-3718/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1751/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4761/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1736/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="MIC/MIC-3751/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1756/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1741U/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1723/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1739U/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4702/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1763/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4750/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1758U/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1742U/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1716/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1735U/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1711/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1753/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCM/PCM-3725/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1721/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1718/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4718/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="USB/USB-4750/property/CFG_CntrResolution.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1712/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCI/PCI-1752/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCM/PCM-3724/property/CFG_DoPortCount.htm" />
+  <topic name="CFG_DoPortCount" url="PCM/PCM-3730/property/CFG_DoPortCount.htm" />
+</key>
+<key name="CFG_DOPresetValue" >
+  <topic name="CFG_DOPresetValue" url="PCI/PCI-1758U/property/CFG_DOPresetValue.htm" />
+  <topic name="CFG_DoPresetValue" url="USB/USB-4751/property/CFG_DoPresetValue.htm" />
+  <topic name="CFG_DoPresetValue" url="USB/USB-4761/property/CFG_DoPresetValue.htm" />
+  <topic name="CFG_DoPresetValue" url="USB/USB-4750/property/CFG_DoPresetValue.htm" />
+</key>
+<key name="CFG_DOWatchdogValue" >
+  <topic name="CFG_DOWatchdogValue" url="PCI/PCI-1758U/property/CFG_DOWatchdogValue.htm" />
+</key>
+<key name="CFG_EEPROM_RWBYTE" >
+  <topic name="CFG_EEPROM_RWBYTE" url="USB/USB-4718/property/CFG_EEPROM_RWBYTE.htm" />
+</key>
+<key name="CFG_FirmWareVersion" >
+  <topic name="CFG_FirmWareVersion" url="USB/USB-4750/property/CFG_FirmWareVersion.htm" />
+  <topic name="CFG_FirmWareVersion" url="USB/USB-4718/property/CFG_FirmWareVersion.htm" />
+  <topic name="CFG_FirmWareVersion" url="USB/USB-4761/property/CFG_FirmWareVersion.htm" />
+  <topic name="CFG_FirmWareVersion" url="USB/USB-4716/property/CFG_FirmWareVersion.htm" />
+  <topic name="CFG_FirmWareVersion" url="USB/USB-4711/property/CFG_FirmWareVersion.htm" />
+  <topic name="CFG_FirmWareVersion" url="USB/USB-4751/property/CFG_FirmWareVersion.htm" />
+</key>
+
+</indexdata>

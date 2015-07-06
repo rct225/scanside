@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ -f "$LINUXDIR/include/asm/rt_irq.h" ]; then
+	CONFIG_RTL_V1="y"
+fi
+if [ "$CONFIG_RTLINUX" = "y" ]; then
+	CONFIG_RTL=y
+fi
+if [ "$CONFIG_RTL" != "" -o "$CONFIG_RTL_V1" = "y" ]; then
+	echo You appear to be running an RTL-patched kernel
+
+	default=${RTLDIR:=/usr/src/rtl}
+	echo -n "Enter location of RTL source tree [$default]: "
+	read RTLDIR
+	: ${RTLDIR:=$default}
+	echo RTLDIR=$RTLDIR >>.sourcedirs
+#	(cd include;rm -f rtlinux;ln -s $RTLDIR/include rtlinux)
+fi

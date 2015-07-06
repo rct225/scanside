@@ -1,0 +1,209 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FAIDmaExStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nDMA Transferring\nFunction Description\nDRV_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nHigh-Speed Functions\nAI Functions\nDRV_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nHigh-Speed Functions\nAI Functions\nDRV_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIDmaExStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FAIDmaExStart</b></h1>
+	<h1></h1>
+	<pre class="code">INT32S DRV_FAIDmaExStart (
+   PTR_T <i>DeviceHandle,
+   </i>PT_FAIDmaExStart<i> *lpFAIDmaExStart</i> );</pre>
+	<h2>Purpose </h2>
+	<p>On the device indicated by the <i>DeviceHandle</i>, initiates a 
+	single-channel FAI (Fast Analog Input) operation with bus-master DMA 
+	transfer, by 
+	way of specifying an AI channel and pre-initiating the sampling 
+	buffer for data storage. </p>
+	<p>This function is used to support the bus-master DMA on PCI series 
+	devices.<span lang="EN-US" style="color:blue">
+	</span></p>
+	<h2>Parameters</h2>
+	<p>Some parameters, such as&nbsp; 
+	triggering source (<i>TrigSrc</i>), triggering mode (<i>TrigMode</i>), clock 
+	source (<i>ClockSrc</i>), edge triggering mode (<i>TrigEdge</i>), triggering 
+	source type (<i>SRCType</i>), triggering voltage (<i>TrigVol</i>), cyclic 
+	mode (<i>CyclicMode</i>), sampling channel count (<i>NumChans</i>), start 
+	channel number (<i>StartChan</i>), delay count (<i>ulDelayCnt</i>), sampling 
+	count (<i>count</i>), total sampling rate (<i>SampleRate</i>), GainCode list 
+	pointer (<i>GainList</i>) and sampling buffer (<i>buffer0</i>), are saved in 
+	the <a href="../../structure/FAI/PT_FAIDmaExStart.htm">PT_FAIDmaExStart</a>, 
+	structure pointed by the<b> </b><i>lpFAIDmaExStart</i>.
+	&nbsp;</p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td width="127">
+			<p style="margin-left: 0pt"><b>Name</b></p>
+			</td>
+			<td width="60">
+			<p style="margin-left: 0pt"><b>Direction</b></p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt"><b>Range</b></p>
+			</td>
+			<td width="797">
+			<p style="margin-left: 0pt"><b>Description</b></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="127">
+			<p style="margin-left: 0pt"><b>DeviceHandle</b></p>
+			</td>
+			<td width="60">
+			<p style="margin-left: 0pt">input</p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">default</p>
+			</td>
+			<td width="797">
+			<p style="margin-left: 0pt">The p<font style="FONT-SIZE: 9pt" face="Verdana">ointer 
+			retrieved from the
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device</font>.</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="127">
+			<p style="margin-left: 0pt"><b>llpFAIDmaExStart</b></p>
+			</td>
+			<td width="60">
+			<p style="margin-left: 0pt">input / output</p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">default</p>
+			</td>
+			<td width="797">
+			<p style="margin-left: 0pt"><span style="FONT-FAMILY: Verdana">The pointer to 
+			indicate the user-prepared structure </span><a href="../../structure/FAI/PT_FAIDmaExStart.htm">PT_FAIDmaExStart</a><span style="FONT-FAMILY: Verdana"> 
+			that stores</span><font face="Verdana"> triggering 
+			source (INT16U</font> <i>TrigSrc</i><font face="Verdana">), 
+			triggering mode (</font>USHORT <i>
+			TrigMode</i><font face="Verdana">), 
+			clock source (INT16U</font> 
+					<i>ClockSrc</i><font face="Verdana">), 
+			edge triggering mode (INT16U</font> <i>
+			TrigEdge</i><font face="Verdana">), 
+			triggering source type (INT16U</font> 
+					<i>SRCType</i><font face="Verdana">), 
+			triggering voltage (FP32</font>&nbsp; <i>
+			TrigVol</i><font face="Verdana">), 
+			cyclic mode (INT16U</font> 
+					<i>CyclicMode</i><font face="Verdana">), 
+			sampling channel count (INT16U</font> <i>
+			NumChans</i><font face="Verdana">), 
+			start channel number (INT16U</font> 
+					<i>StartChan</i><font face="Verdana">), 
+			delay number (INT16U</font>&nbsp; <i>
+			ulDelayCnt</i><font face="Verdana">), 
+			sampling count (INT16U</font>&nbsp;
+					<i>count</i><font face="Verdana">), 
+			total sampling rate (INT32U</font>&nbsp;
+					<i>SampleRate</i><font face="Verdana">), 
+			GainCode list pointer (INT16U</font> *<i>GainList</i><font face="Verdana">) 
+			and sampling buffer (INT16U</font> 
+					<i>*buffer0</i><font face="Verdana">). 
+			Here, </font><i>CondList</i>, <i>LevelList</i>, <i>buffer1</i>, <i>Pt1</i>, <i>Pt2</i> 
+			and <i>Pt3 </i>
+			<font face="Verdana">are reserved. </font> </p>
+			</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return </h2>
+	<table border="1" width="100%" style="border-width: 0px" cellspacing="10" cellpadding="0">
+		<tr>
+			<td width="203" style="border-style: none; border-width: medium"><b><font style="font-size: 9pt">&nbsp;&nbsp; 
+			1. 0</font></b></td>
+			<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">
+			S</span><font style="font-size: 9pt">uccessful. </font></td>
+		</tr>
+		<tr>
+			<td width="203" style="border-style: none; border-width: medium" height="18">     <b><font style="font-size: 9pt">&nbsp;&nbsp; 
+			2. Other value</font></b></td>
+			<td style="border-style: none; border-width: medium" height="18"><font style="font-size: 9pt">
+			Please reference <a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a> </font></td>
+		</tr>
+		
+	</table>
+	
+	<p>&nbsp;</p>
+	</div>
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

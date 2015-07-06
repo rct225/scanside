@@ -1,0 +1,174 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_AIBinaryIn</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+div.Section1 { page:Section1; }
+span.SpellE {  }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nSoftware Transferring\nFunction Description\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIBinaryIn");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1><font face="Verdana" >DRV_AIBinaryIn</font></h1>
+	<p>
+	<pre class="code">INT32S DRV_AIBinaryIn (<i> </i>
+   PTR_T<i> DeviceHandle,</i>
+   PT_AIBinaryIn<i> * lpAIBinaryIn </i>);</pre>
+	<h2>Purpose</h2>
+	<p><font face="Verdana"><span lang="EN-US">
+	On the device indicated by the <i>DeviceHandle</i>, it r</span>eads back the 
+	binary raw data from an AI (Analog Input) channel. 
+	The 
+	<a href="drv_aiscale.htm">DRV_AIScale</a> can be used to convert the binary raw data 
+	into corresponding 
+	voltage.</font></p>
+	<h2>Parameters</h2> 
+	<div>
+<p>
+Some parameters,</font> such as target channel (<font face="Verdana"><i>chan</i></font>), 
+triggering mode (<i><font face="Verdana">TrigMode</font></i>) 
+and return raw data (<font face="Verdana"><i>reading</i></font>), 
+are <font face="Verdana">stored in the 
+<a href="../../structure/Ai/PT_AIBinaryIn.htm">PT_AIBinaryIn</a>, 
+structure pointed by the <i> lpAIBinaryIn</i>.</font></p>
+		</div>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered" id="table3" border="1">
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Name</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Direction</b></font></td>
+			<td width="52"><font face="Verdana" style="font-size: 9pt"><b>Range</b></font></td>
+			<td width="624"><font face="Verdana" style="font-size: 9pt"><b>Description</b></font></td>
+		</tr>
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>DeviceHandle</b></font></td>
+			<td><font style="font-size: 9pt">i</font><font face="Verdana" style="font-size: 9pt">nput</font></td>
+			<td width="52"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td width="624">The p<span style="font-family: Verdana"><font style="font-size: 9pt">ointer 
+			retrieved from the
+			<a style="color: blue; text-decoration: underline; text-underline: single" href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</font></span></td>
+		</tr>
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>lpAIBinaryIn</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt">input / output</font></td>
+			<td width="52"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td width="624"><font style="font-size: 9pt">
+			<span style="font-family: Verdana">The pointer to 
+			indicate the structure </span></font>
+			<font face="Verdana" style="font-size: 9pt">
+			<a href="../../structure/Ai/PT_AIBinaryIn.htm">PT_AIBinaryIn</a></font> 
+			that<font style="font-size: 9pt"><span style="font-family: Verdana"> stores</span></font><font face="Verdana" style="font-size: 9pt"> target channel (INT16U
+			<i>chan</i>), </font><font style="font-size: 9pt">triggering mode </font>
+			<font face="Verdana" style="font-size: 9pt"> (INT16U <i>TrigMode</i>) and return 
+			raw data (INT16U&nbsp;*<i>reading</i>).</font></td>
+		</tr>
+	</table>
+</div>
+	<h2><font face="Verdana" >Return</font></h2> 
+	<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table6">
+		<tr>
+			<span class="SpellE">
+						<td width="202">
+						<font face="Verdana" style="font-size: 9pt"><b>&nbsp;&nbsp; 1. 
+						0</b></font></td>
+						<td><span style="font-size: 9pt">S</span><font face="Verdana" style="font-size: 9pt">uccessful.</font></td>
+			</span> 
+		</tr>
+		<tr>
+			<span class="SpellE">
+						<td width="202">
+						<font face="Verdana" style="font-size: 9pt"><b>&nbsp;&nbsp; 2. 
+						Other value</b></font></td>
+						<td><font face="Verdana" style="font-size: 9pt">Please reference 
+						<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a></font></td>
+			</span> 
+		</tr>
+	</table>
+	
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

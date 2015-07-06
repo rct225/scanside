@@ -1,0 +1,135 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Software Transferring</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nSoftware Transferring");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1><b>Software </b>Transferring</h1>
+<h2><b>Single Channel One-Shot Output</b></h2>
+<p>The <a href="../../function/AO/drv_aovoltageout.htm"> DRV_AOVoltageOut</a> 
+  function is called for voltage output and the <a href="../../function/AO/drv_aocurrentout.htm">DRV_AOCurrentOut</a> 
+  function for current output. <br>
+  The calling flows of single channel analog output are as shown below.</p>
+<p><b> <img src="ao_flow.jpg"></b> </p>
+<p>&nbsp;</p>
+<p>[Figure-1] show the old method that how to make a voltage out, this method 
+only can be used to make a voltage out.</p>
+<p>&nbsp;</p>
+<p>[Figure-2] show the new method that how to make a current or voltage out, the 
+new method is recommend. You must set the output type(current or voltage) and 
+output range by 
+using the <a href="../../function/Device/drv_devicesetproperty.htm">
+DRV_DeviceSetProperty</a> function with the property <b>CFG_AoChanRange</b>, at runtime before
+the
+<a href="../../function/AO/drv_aovoltageout.htm">DRV_AOVoltageOut</a> or
+<a href="../../function/AO/drv_aocurrentout.htm">DRV_AOCurrentOut</a> function 
+is called.</p>
+<p>&nbsp;</p>
+<p>The <a href="../../function/AO/drv_aovoltageout.htm">DRV_AOVoltageOut</a> 
+function accepts a floating-point voltage value, scales it to a proper binary 
+number, and writes that number to an analog output channel to change the output 
+voltage.&nbsp; If you choose the old method that show in Figure-1, you must set the output range by using the 
+<a href="../../function/AO/drv_aoconfig.htm">DRV_AOConfig</a> function at runtime.</p>
+<p>&nbsp;</p>
+<p>The Device Driver also provides a binary data output function, the <a href="../../function/AO/drv_aobinaryout.htm">DRV_AOBinaryOut</a>. 
+  It accepts a binary value and writes it to an analog output channel. Use the <a href="../../function/AO/drv_aoscale.htm">DRV_AOScale</a> function to 
+  convert the desired analog output value into a binary value. Use 
+  the 
+  <a href="../../function/AO/drv_aobinaryout.htm">DRV_AOBinaryOut</a> function 
+  to output the value. </p>
+<p>Besides the <a href="../../function/AO/drv_aovoltageout.htm">DRV_AOVoltageOut</a> 
+  function, the <a href="../../function/AO/drv_aocurrentout.htm">DRV_AOCurrentOut</a> 
+  function may be used for current output.</p>
+<h2><b>Multiple Channel Synchronous Output</b></h2>
+<p>You can combine <a href="../../function/AO/drv_enablesyncao.htm">DRV_EnableSyncAO</a>, 
+  <a href="../../function/AO/drv_aovoltageout.htm">DRV_AOVotageOut</a>/<a href="../../function/AO/drv_aocurrentout.htm">DRV_AOCurrentOut</a> 
+  and <a href="../../function/AO/drv_writesyncao.htm">DRV_WriteSyncAO</a> to perform 
+  multiple channel synchronous analog output.</p>
+<p>The calling flow of multiple channel synchronous output is shown below.</p>
+<p>&nbsp;</p>
+<p><img src="ao_flow2.jpg" width="253" height="426"></p>
+<p>&nbsp;</p>
+<p>The <a href="../../function/AO/drv_enablesyncao.htm">DRV_EnableSyncAO </a>
+function enables the synchronized output operation. You can then call the 
+<a href="../../function/AO/drv_aovoltageout.htm">DRV_AOVoltageOut</a> 
+function repeatedly to set the voltage value for each output channel. Finally, 
+write the output values to all channels synchronously by using 
+the 
+<a href="../../function/AO/drv_writesyncao.htm">DRV_WriteSyncAO</a> function. 
+</p>
+<p>Besides the <a href="../../function/AO/drv_aovoltageout.htm">DRV_AOVoltageOut</a> 
+function, you can use 
+the 
+<a href="../../function/AO/drv_aocurrentout.htm">DRV_AOCurrentOut</a> function for 
+current output.</p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

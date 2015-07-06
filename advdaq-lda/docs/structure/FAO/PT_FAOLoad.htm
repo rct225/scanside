@@ -1,0 +1,133 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAOLoad</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nFast AOTransferring\nDMA Transferring\nData Structure\nPT_FAOLoad");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAO Functions\nPT_FAOLoad");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAO Functions\nPT_FAOLoad");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_FAOLoad
+</h1></h1>
+<pre class="code">typedef struct tagPT_FAOLoad
+{
+    INT16U ActiveBuf;
+    INT16U *DataBuffer;
+    INT16U start;
+    INT32U count;
+} PT_FAOLoad, * LPT_FAOLoad;
+</pre>
+<p><b> PT_FAOLoad</b> is used in function
+<a href="../../function/FAO/DRV_FAOLoad.htm">DRV_FAOLoad</a>.</p>
+ <h2>Member Description</h2> 
+<p></p>
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Range</b></td>
+    <td width="601"><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     ActiveBuf</b></td>
+    <td>     input</td>
+    <td>     0,1</td>
+    <td width="601">     Reserved.</td>
+  </tr>
+  <tr>
+    <td><b>     DataBuffer</b></td>
+    <td>     input</td>
+    <td>     default</td>
+    <td width="601">     Binary data array.</td>
+  </tr>
+  <tr>
+    <td><b>     start</b></td>
+    <td>     input</td>
+    <td>     0 or N/2 (N is the data count that allocates the 
+	user buffer when initiating FAO. For example, the <i>count</i> in <b> PT_FAODmaExStart </b>
+	indicates N.) </td>
+    <td width="601">     Starting point of the user buffer to be loaded in the data buffer.</td>
+  </tr>
+  <tr>
+    <td><b>     count</b></td>
+    <td>     output</td>
+    <td>     N/2 (N is the data count that allocates the user buffer when initiating FAO. For example, the <i>count</i> in <b> PT_FAODmaExStart </b>
+	indicates N.)
+	</td>
+    <td width="601">     It must be half of the output data count.</td>
+  </tr>
+</table>
+</div>
+<p></p>
+</div>
+<div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

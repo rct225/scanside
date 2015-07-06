@@ -1,0 +1,149 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_QCounterConfig </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_QCounterConfig </h1>
+	<h1></h1>
+	<pre class="code">INT32U DRV_QCounterConfig (<i>
+   PTR_T</i> <i>DeviceHandle, 
+   </i>PT_QCounterConfig <i>*lpQCounterConfig </i>);</pre>
+	<h2>Purpose</h2>
+	<p>
+	On the device indicated by the <i>DeviceHandle</i>, it configures the 
+	specified counter for an event-counting operation. Please call
+	<a href="DRV_QCounterStart.htm">DRV_QCounterStart</a> to start the 
+	event-counting. </p>
+	<h2>Parameters</h2>
+	<p>Some parameters, such as target counter channel (<i>counter</i>), 
+	latch triggering source (<i>LatchSrc</i>) and latch 
+	overflow status (<i>LatchOverflow</i>), are stored in the  
+    <a href="../../structure/counter/PT_QCounterConfig.htm">PT_QCounterConfig</a> 
+	structure pointed by the <i>lpQCounterConfig</i>.</p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td>input</td>
+			<td>default</td>
+			<td>The p<font face="Verdana" style="font-size: 9pt">ointer retrieved from
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td><b>lpQCounterConfig</b></td>
+			<td>input / output</td>
+			<td>default</td>
+			<td>The<font style="FONT-SIZE: 9pt"><span style="FONT-FAMILY: Verdana">
+			pointer to indicate the user-prepared structure </span></font><font style="font-size: 9pt">
+                <a href="../../structure/counter/PT_QCounterConfig.htm">PT_QCounterConfig</a></font><font style="FONT-SIZE: 9pt"><span style="FONT-FAMILY: Verdana"> 
+			that stores</span></font> counter number (INT16U <i>counter</i>), 
+			latch source (INT16U <i>LatchSrc</i>), overflow status (INT16U <i>LatchOverflow</i>),
+			reset mark (INT16U <i>ResetOnLatch</i>), and 
+			reset value (INT16U <i>ResetValue</i>).</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2> 
+	<p></p>
+</div>
+<div>
+<table>
+	<tr>
+		<td width="200"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. </font>
+		<span style="font-size: 9pt">0</span></b></td>
+		<td><span style="font-size: 9pt">Successful.</span></td>
+	</tr>
+	<tr>
+		<td width="200"><b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDeviceHandle</font></b></td>
+		<td><span style="font-size: 9pt">The <i>Devicehandle</i> is NULL.</span></td>
+	</tr>
+	<tr>
+		<td width="200"><b><font style="font-size: 9pt">&nbsp;&nbsp; 3. InvalidChannel</font></b></td>
+		<td><span style="font-size: 9pt">T</span><font style="font-size: 9pt">he target channel<i> </i>
+		is out of range.</font></td>
+	</tr>
+	<tr>
+		<td width="200"><b><font style="font-size: 9pt">&nbsp;&nbsp; 4. Other 
+		value</font></b></td>
+		<td><span class="SpellE"><span style="font-size: 9pt">Please reference
+		<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a> </span>
+		</span></td>
+	</tr>
+</table>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

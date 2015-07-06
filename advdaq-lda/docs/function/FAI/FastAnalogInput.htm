@@ -1,0 +1,415 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Fast Analog Input (FAI)Functions</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Fast Analog Input&nbsp; (FAI) Functions</h1>
+<p>Except the software transferring, all the other analog sampling methods, 
+including DMA, bus-master DMA, interrupt etc., are identified as FAI (Fast 
+Analog Input) 
+functions. The operation modeling and flow control in all kinds of FAI sampling 
+methods are similar.<p>For more detailed information about FAI flow, please refer to the
+<a href="../../flow/ai/Interrupttrig.htm">Interrupt transferring</a> and 
+<a href="../../flow/ai/dmatrig.htm">DMA transferring</a>:<h2>Initiate a sampling data buffer</h2><p>
+In FAI data operation, the size of buffer is not determined by the FIFO size. 
+However, before you engage sampling, you must set up your sampling count, i.e. 
+the size of&nbsp;sampling data buffer in our example should be the sample count that you want 
+multiplies with the size of one sample .
+Commonly we need to create a sampling data buffer first and pass the pointer to 
+the driver for later acquisition.&nbsp;The buffer is created by the user, commonly according to your sampling count, but used in the kernel mode by 
+the driver. In order to have enough space and make sure the data not to be lost, 
+the buffer size (sampling count) needs to be set properly.</font></p>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Please refer 
+	to the table below for setting buffer size:
+
+&nbsp;
+
+<div class=tablediv >
+<table cellspacing="0" class="Bordered" >
+	<tr>
+		<td  colSpan="2" rowSpan="2">Condition\Method</td>
+		<td colSpan="4" >
+		Buffer Size&#65288; Unit: the size of one sample&#65289; 
+		</td>
+	</tr>
+	<tr>
+		<td>Even </td>
+		<td>Multiple of the FIFO/2 Size </td>
+		<td>Multiple of the count of channels 
+		(recommended)</td>
+		<td>&gt;4K(recommended)</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Cards with and using FIFO</td>
+		<td>Interrupt</td>
+		<td>&#8730</td>
+		<td>&#8730;</td>
+		<td>&#8730;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>Bus-Master DMA</td>
+		<td>&#8730;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		
+		<td>&#8730;</td>
+		
+	</tr>
+	<tr>
+		<td>Cards without or not using FIFO</td>
+		<td>Interrupt</td>
+		<td>&#8730;</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+</table>
+</div>
+<p>For the cards use FIFO, if it is sampled by interrupt, the buffer 
+size should be an even number and a multiple of half the FIFO size, while it is 
+recommended to be a multiple of the channel count. If it is bus-master DMA, there 
+is no limit to the size of buffer, while 4k bytes is recommended.</p>
+<h2>Engage the data sampling</h2>
+<p>Interrupt mode data sampling will be started by the <a href="DRV_FAIIntStart.htm">
+DRV_FAIIntStart</a> function. The 
+<a href="DRV_FAIDmaExStart.htm">DRV_FAIDmaExStart</a> function is for 
+bus-master DMA. <br>
+Different sampling methods need different settings. The 
+corresponding structure for each method needs to be created first and uses its 
+pointer as a function parameter in order to pass all necessary settings, 
+including the previous initiated buffer, to the driver.<br>
+
+<br>
+Please note that DAS cards only support the functions the hardware 
+supports. For example,&nbsp; PCI1712 
+supports bus-master DAM sampling. Trying to call an unsupported function will get 
+an error code. Please refer to function support tables and the <i>Hardware 
+Manual</i> for more details.</p>
+<h2>Data transfer</h2>
+<p>Once the data sampling is engaged, users have to know the current sampling 
+status and transfer data from sampling buffer to user buffer in time 
+for later operation. Two methods are used to get the sampling status. One is to enable the 
+required events (by calling 
+<a href="../commonhighspeed/DRV_EnableEvent.htm">
+		DRV_EnableEvent</a></a>) and wait for the event notification (by calling <a href="../commonhighspeed/DRV_CheckEvent.htm">
+		DRV_CheckEvent</a>), then check the status (by calling <a href="DRV_FAICheck.htm">DRV_FAICheck</a>); 
+the other is to check the data transferring status repeatedly (by calling <a href="DRV_FAICheck.htm">DRV_FAICheck</a>). 
+When the event is signaled or the checked status indicates that either buffer is 
+full, call the data 
+transfer function (<a href="DRV_FAITransfer.htm">DRV_FAITransfer</a>) to fetch data from sampling data 
+buffer to user buffer. </p>
+<p>Following is a list of the Events supported in FAI:</p>
+</p>
+
+	<div class=tablediv>
+	<table  cellspacing="0" class="Bordered">	<tr>
+		<td>ADS_EVT_INTERRUPT</td>
+		<td>
+				Triggered when a certain number of interrupts occur. The 
+		number is specified when applications call
+				the
+		<a href="../commonhighspeed/DRV_EnableEvent.htm">
+		DRV_EnableEvent</a>.</td>
+	</tr>
+	<tr>
+		<td>ADS_EVT_BUFCHANGE<br>ADS_EVT_AI_HIBUFREADY<br>ADS_EVT_AI_LOBUFREADY</td>
+		<td>
+		Generally, in the high speed analog input operation, 
+		user's buffer is divided into two equal parts, the low buffer and the high 
+		buffer. Data from the device will fill them separately. This event will 
+		be signaled when either buffer is full. Applications can call the
+		<a href="DRV_FAICheck.htm">DRV_FAICheck</a> to 
+		check which buffer is full, and then call
+		the
+		<a href="DRV_FAITransfer.htm">DRV_FAITransfer</a> 
+		to take away the data in this buffer. If the data hasn't been taken away 
+		in time, the event <b>ADS_EVT_OVERRUN</b> will be signaled.</td>
+	</tr>
+	<tr>
+		<td>ADS_EVT_TERMINATED <br>ADS_EVT_AI_TERMINATED</td>
+		<td>
+		Triggered when a high speed analog input operation 
+		finishes, or when applications call the
+		<a href="DRV_FAITerminate.htm">
+		DRV_FAITerminate</a>.</td>
+	</tr>
+	<tr>
+		<td>ADS_EVT_OVERRUN<br>ADS_EVT_AI_OVERRUN</td>
+		<td>
+		Triggered when the data in the buffer has not been taken 
+		away in time after an <b>ADS_EVT_BUFCHANGE</b> occurs. If <b>
+		ADS_EVT_OVERRUN</b> occurs, the data would be overwritten by new ones.</td>
+	</tr>
+	<tr>
+		<td>ADS_EVT_TIME_OUT</td>
+		<td>
+		Triggered when no event has occurred during the wait 
+		interval in the <a href="../commonhighspeed/DRV_CheckEvent.htm">
+		DRV_CheckEvent</a>.</td>
+	</tr>
+</table>
+</div>
+<p>The figure below explains how the sampling buffer works and when the data is transferred<span lang="en-us">:</span></p>
+<p><span style="font-size: 9pt"><img border="0" src="Data_Buffer_normal.jpg" width="683" height="245"></span></p><p>The four graphs above show the sampling buffer working on a proper cycle:
+<br>
+<br>
+(1) The sampling data buffer is used as two equal size sections, the 1st half ( 
+low half ) and the 2nd half ( high half ). When the sampling starts, the driver 
+will 
+write data starting from the 1st half.<br>
+<br>
+(2) When the
+		<a href="../commonhighspeed/DRV_EnableEvent.htm">
+		DRV_EnableEvent</a> function is called, should the 1st half be full, the driver 
+will create a buffer change event 
+(ADS_EVT_BUFCHANGEGE, ADS_EVT_AI_HIBUFREADY, ADS_EVT_AI_LOBUFREADY) to notify the user's program. The user's program should transfer the data in time, otherwise the buffer 
+will overrun if the 2nd half is full.<br>
+<br>
+(3) At the same time, data <span lang="en-us">sampling</span> is keeping going on the 2nd half during the data 
+transfer.<br>
+<br>
+(4) When the
+		<a href="../commonhighspeed/DRV_EnableEvent.htm">
+		DRV_EnableEvent</a> function is called, should the 2nd half be full, a buffer change event 
+(ADS_EVT_BUFCHANGEGE, ADS_EVT_AI_HIBUFREADY) will be signaled. The data sampling will be completed for 
+non-cyclic mode, while for cyclic mode, data will log back to the 1st half 
+again (graph 1). </p>
+	<p>
+	As described above, if the data has not been transferred in time, the 
+	previously acquired data will be overwritten. See the figure below:</p>
+<p><span style="font-size: 9pt">
+<img border="0" src="Data_Buffer_over_flow.jpg" width="656" height="249"></span><br>
+</p>
+<p>After the sampling, 
+we need to copy the data from the sampling data 
+buffer to the transfer buffer</b> 
+for analyzing (by calling <a href="DRV_FAITransfer.htm">DRV_FAITransfer</a>, or 
+copy by yourself and calling <a href="DRV_ClearFlag.htm">DRV_ClearFlag</a> to 
+notify the driver your behave), so that the transfer buffer should also be 
+allocated. However, the size of the transfer buffer should be half of the 
+sampling buffer.<br>
+<br>
+</p>
+    <p><span style="font-size: 9pt"><img border="0" src="Transfer_Data.jpg" width="699" height="230"></span></p>
+<h2><br>
+Stop FAI functions<br>
+</h2>
+<p><a href="DRV_FAITerminate.htm">DRV_FAITerminate</a> is used to stop the data sampling.</p>
+<p>When the user calls the <a href="../commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> 
+function and enables the<i>
+</i> <span lang="zh-cn">Terminate 
+    </span>e<span lang="zh-cn">vent,  
+    </span>should <span lang="zh-cn">the
+<a href="DRV_FAITerminate.htm">DRV_FAITerminate</a> function</span> be called<span lang="zh-cn"> or the operation is 
+completed under non-cyclic mode, 
+    </span>the <span lang="zh-cn">driver will stop the operation and free 
+some resources and send
+    </span>the ADS_EVT_TERMINATED or ADS_EVT_AI_TERMINATED event to the user. Then the user can do 
+operation such as closing the device in 
+the event handling function.</p>
+<p><span lang="zh-cn">
+In </span>n<span lang="zh-cn">on</span>-<span lang="zh-cn">cyclic mode, when </span>
+the <span lang="zh-cn">
+operation complete</span>s<span lang="zh-cn">, </span>the <span lang="zh-cn">
+driver will stop automatically. </span>If the user does not call the
+<a href="../commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a><span lang="zh-cn">, 
+the event </span>ADS_EVT_TERMINATED or ADS_EVT_AI_TERMINATEDwill not be enabled.<span lang="zh-cn"> In cyclic mode</span>,<span lang="zh-cn">
+the operation will not be </span>stopped<span lang="zh-cn">
+until&nbsp;</span>the<span lang="zh-cn">
+user call</span>s<span lang="zh-cn">
+</span>the<span lang="zh-cn">
+<a href="DRV_FAITerminate.htm">DRV_FAITerminate</a>.</span></p>
+<p>Calling&nbsp;the <a href="../commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> 
+to enable the ADS_EVT_TERMINATED<span lang="zh-cn"> or
+</span>ADS_EVT_AI_TERMINATEDe<span lang="zh-cn">vent</span> is<span lang="zh-cn">
+recommend</span>ed<span lang="zh-cn">.</span></p>
+<p>For more detailed information about how to use the flow, please refer to
+<a href="../../flow/ai/Interrupttrig.htm"><span style="text-decoration: none">Interrupt 
+transferring</span></a> and 
+<a href="../../flow/ai/dmatrig.htm"><span style="text-decoration: none">DMA transferring</span></a>.<br>
+</p>
+
+<br>
+<b>FAI related Functions </b>
+	<div class=tablediv style="width: 1217px; height: 470px">
+	<table cellspacing="0" class="Bordered">
+       	   <tr>
+		<td>
+	   Function</td>
+	   <td>
+	   	Purpose</td>
+	   </tr>
+	     <tr>
+	   <td>
+	   <a href="../commonhighspeed/DRV_EnableEvent.htm">
+		DRV_EnableEvent
+	   </a>
+	   	</td>
+	   <td>
+	  On the device indicated by the <i>DeviceHandle</i>, it enables or disables a specified event by specifying the corresponding
+	<i>EventType</i>. This function supports all types of 
+	events for DMA and interrupt operation. After the event is enabled, the <span lang="zh-cn"> 
+    <a href="../commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a></span> can be called to 
+	check the type of signaled event.</td>
+	    </tr>    
+	   <tr>
+	   	 <td>
+	   <a href="../commonhighspeed/DRV_CheckEvent.htm">
+		DRV_CheckEvent</a></td>
+	   <td>
+	   On the device indicated by the <i>DeviceHandle</i>, it checks the 
+	specified event status and clears the event.
+			   </td>
+	   </tr>
+	   <tr>
+	   	 <td>
+		<a href="DRV_FAIIntStart.htm">DRV_FAIIntStart</a></td>
+	   <td>
+		On the device indicated by the <i>DeviceHandle</i>, it initiates a single-channel FAI (Fast Analog Input) operation with the 
+	interrupt transfer, by 
+	way of specifying an AI channel and pre-initiating the sampling buffer for 
+	data storage.For detailed information about FAI transfer, refer to
+	<a href="../../flow/ai/Interrupttrig.htm">Interrupt Transferring</a>.</td>
+	   </tr>
+	   	<tr>
+		<td>
+		<a href="DRV_FAIIntScanStart.htm">DRV_FAIIntScanStart</a></td>
+	   <td>
+		On the 
+	device indicated by the <i>
+	DeviceHandle</i>, it initiates multi-channel FAI (Fast Analog Input) 
+	operation (scanned channel by channel) with the interrupt transferring mode, by way of specifying the starting AI 
+	channel and channel number as well as pre-initiating sampling buffer for data 
+	storage.</td>
+	   </tr>
+	   
+		<tr>
+		<td>
+		
+	   <a href="DRV_FAIDmaExStart.htm">DRV_FAIDmaExStart</a></td>
+	   <td>
+	   On the device indicated by the <i>DeviceHandle</i>, initiates a 
+	single-channel FAI (Fast Analog Input) operation with bus-master DMA 
+	transfer, by 
+	way of specifying an AI channel and pre-initiating the sampling 
+	buffer for data storage. This function is used to support the bus-master DMA on PCI 
+		series devices; </td>
+		</tr>
+		<tr>
+	   <td>
+	   <a href="DRV_FAICheck.htm">DRV_FAICheck</a></td>
+	   <td>
+	   <span lang="en-us">O</span><span lang="EN-US">n the 
+	device indicated by the <i>DeviceHandle</i>, it retrieves the current status of 
+	FAI (Fast Analog Input) operations. The return status contains operation running status 
+	(running/stopped or complete/incomplete), buffer overrun status (overrun/not 
+	overrun) and sampling buffer status (not ready: 0, first half ready: 1, 
+	second half ready: 2). This function is 
+	usually used to know when and which part's data of the sampling buffer is 
+	ready to be sent to user’s buffer by </span>t<span lang="en-us">he </span><a href="DRV_FAITransfer.htm">
+	DRV_FAITransfer</a><span lang="EN-US">.</span></td>
+		</tr>
+		<tr>
+		<td>
+	   <a href="DRV_ClearFlag.htm">DRV_ClearFlag</a></td>
+	   <td>
+	   On the <span lang="EN-US"> FAI (Fast Analog Input)</span> 
+	device indicated by the <i>DeviceHandle</i>, it clears the event flag.<span lang="EN-US" style="color: blue">
+	</span></td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <a href="DRV_FAITerminate.htm">DRV_FAITerminate</a></td>
+	   <td>
+	   On the device 
+	indicated by the <i>DeviceHandle</i>, it<i> </i>stops the running FAI (Fast Analog Input) operation by safely resetting hardware, releasing 
+	resources and sending a terminate event to the user.</td>
+	   </tr>
+	   <tr>
+		<td>
+	   <a href="DRV_FAITransfer.htm">DRV_FAITransfer</a></td>
+	   <td>
+	   Transfers data from FAI (Fast Analog Input) sampling buffer to 
+	user's buffer. If the buffer is “<i>HalfReady</i>” (checked with function
+	<a href="DRV_FAICheck.htm">DRV_FAICheck</a>), 
+	then the data must be transferred (FAITransfer) in order to avoid being 
+	overwritten.<span lang="EN-US" style="color: blue">
+	</span>
+	   </td>
+	   </tr>
+	</table>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

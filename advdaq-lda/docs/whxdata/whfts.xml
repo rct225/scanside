@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<fts>
+<chunkinfo url="whfwdata0.xml" first=" " last="1760u"/>
+<chunkinfo url="whfwdata1.xml" first="1761" last="58"/>
+<chunkinfo url="whfwdata2.xml" first="59" last="ads_evt_di_interrupt17"/>
+<chunkinfo url="whfwdata3.xml" first="ads_evt_di_interrupt184" last="b"/>
+<chunkinfo url="whfwdata4.xml" first="b0" last="capacity"/>
+<chunkinfo url="whfwdata5.xml" first="card" last="cfg_slotnumb"/>
+<chunkinfo url="whfwdata6.xml" first="cfg_watchdogcount" last="contain"/>
+<chunkinfo url="whfwdata7.xml" first="content" last="describ"/>
+<chunkinfo url="whfwdata8.xml" first="description" last="divisor"/>
+<chunkinfo url="whfwdata9.xml" first="dll" last="drv_deviceopen"/>
+<chunkinfo url="whfwdata10.xml" first="drv_devicesetproperty" last="emulat"/>
+<chunkinfo url="whfwdata11.xml" first="enabl" last="format"/>
+<chunkinfo url="whfwdata12.xml" first="formula" last="harm"/>
+<chunkinfo url="whfwdata13.xml" first="hasn" last="int16u"/>
+<chunkinfo url="whfwdata14.xml" first="int32" last="led"/>
+<chunkinfo url="whfwdata15.xml" first="length" last="meet"/>
+<chunkinfo url="whfwdata16.xml" first="memb" last="odd"/>
+<chunkinfo url="whfwdata17.xml" first="of" last="pcb"/>
+<chunkinfo url="whfwdata18.xml" first="pci" last="pt_aivoltagein"/>
+<chunkinfo url="whfwdata19.xml" first="pt_aobinaryout" last="reach"/>
+<chunkinfo url="whfwdata20.xml" first="read" last="sd"/>
+<chunkinfo url="whfwdata21.xml" first="se" last="stoppeduntil"/>
+<chunkinfo url="whfwdata22.xml" first="stor" last="theus"/>
+<chunkinfo url="whfwdata23.xml" first="thirty" last="unles"/>
+<chunkinfo url="whfwdata24.xml" first="unplug" last="vr6"/>
+<chunkinfo url="whfwdata25.xml" first="vreferenc" last="zero"/>
+
+<tchunkinfo first="0" last="130" url="whftdata0.xml" />
+<tchunkinfo first="131" last="246" url="whftdata1.xml" />
+<tchunkinfo first="247" last="366" url="whftdata2.xml" />
+<tchunkinfo first="367" last="485" url="whftdata3.xml" />
+<tchunkinfo first="486" last="600" url="whftdata4.xml" />
+<tchunkinfo first="601" last="714" url="whftdata5.xml" />
+<tchunkinfo first="715" last="827" url="whftdata6.xml" />
+<tchunkinfo first="828" last="942" url="whftdata7.xml" />
+<tchunkinfo first="943" last="1061" url="whftdata8.xml" />
+<tchunkinfo first="1062" last="1176" url="whftdata9.xml" />
+<tchunkinfo first="1177" last="1218" url="whftdata10.xml" />
+
+</fts>

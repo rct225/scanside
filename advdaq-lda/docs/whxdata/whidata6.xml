@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="CFG_Interrupt" >
+  <topic name="CFG_Interrupt" url="PCI/PCI-1718/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1754/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1756/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1715/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCM/PCM-3724/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCM/PCM-3753I/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1763/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1721/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1723/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1716/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1720/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1753/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1735U/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1741U/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1747/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1758U/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1750/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1761/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCM/PCM-3730I/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1713/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1780/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1710/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCM/PCM-3718/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1712/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1736/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1737U/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCM/PCM-3730/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1762/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1724/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1727U/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1714/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1739U/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1711/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="MIC/MIC-3751/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCM/PCM-3761I/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1751/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1733/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1742U/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1760/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1784/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCM/PCM-3725/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1757UP/property/CFG_Interrupt.htm" />
+  <topic name="CFG_Interrupt" url="PCI/PCI-1730/property/CFG_Interrupt.htm" />
+</key>
+<key name="CFG_InterruptExt" >
+  <topic name="CFG_InterruptExt" url="PCM/PCM-3724/property/CFG_InterruptExt.htm" />
+</key>
+<key name="CFG_InterruptTriggerSource" >
+  <topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1753/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1757UP/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="USB/USB-4751/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1784/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1739U/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1750/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1737U/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="USB/USB-4750/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1751/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="PCM/PCM-3753I/property/CFG_InterruptTriggerSource.htm" />
+  <topic name="CFG_InterruptTriggerSource" url="MIC/MIC-3751/property/CFG_InterruptTriggerSource.htm" />
+</key>
+<key name="CFG_SlotNumber" >
+  <topic name="CFG_SlotNumber" url="PCM/PCM-3753I/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1733/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1757UP/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1714/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1727U/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1713/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1760/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="MIC/MIC-3751/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1751/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1721/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1720/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1754/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1730/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1763/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1741U/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1724/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1711/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1739U/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1784/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1753/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1756/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1723/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1762/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1747/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1758U/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1712/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1715/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1780/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1737U/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1736/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1710/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1734/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1752/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1761/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCM/PCM-3761I/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1750/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1742U/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1716/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1718/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCM/PCM-3730I/property/CFG_SlotNumber.htm" />
+  <topic name="CFG_SlotNumber" url="PCI/PCI-1735U/property/CFG_SlotNumber.htm" />
+</key>
+<key name="CFG_WatchdogCounter" >
+  <topic name="CFG_WatchdogCounter" url="PCI/PCI-1758U/property/CFG_WatchdogCounter.htm" />
+</key>
+<key name="Compiling" >
+  <topic name="Compiling" url="tutorial/SimpleExample/addfiles.htm" />
+</key>
+<key name="Configure Devices with Advantech DAQ Device Manager Utilities" >
+  <topic name="Configure Devices with Advantech DAQ Device Manager Utilities" url="Introduction/devmgr.htm" />
+</key>
+<key name="Counter Function Group" >
+  <topic name="Counter Function Group" url="flow/counter/counter.htm" />
+</key>
+<key name="Counter Functions" >
+  <topic name="Counter Functions" url="USB/USB-4702/Function/funcdesc.htm" />
+  <topic name="Counter Functions" url="USB/USB-4751/Function/funcdesc.htm" />
+  <topic name="Counter Functions" url="USB/USB-4711/Function/funcdesc.htm" />
+  <topic name="Counter Functions" url="USB/USB-4716/Function/funcdesc.htm" />
+  <topic name="Counter Functions" url="USB/USB-4704/Function/funcdesc.htm" />
+</key>
+<key name="Create a new Application" >
+  <topic name="Create a new Application" url="tutorial/SimpleExample/emptyproject.htm" />
+</key>
+
+</indexdata>

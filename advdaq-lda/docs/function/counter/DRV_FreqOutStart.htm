@@ -1,0 +1,177 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FreqOutStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nPulse Output Function\nFunction Description\nDRV_FreqOutStart");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_FreqOutStart");
+addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_FreqOutStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	
+	<h1><b>DRV_FreqOutStart</b></h1>
+	
+	<p>
+    <pre class="code">INT32S DRV_FreqOutStart (<i>
+   PTR_T DeviceHandle,
+   PT_FreqOutStart *lpFreqOutStart </i>); </pre>
+    </p>
+	
+	<h2>Purpose</h2>
+	
+	<p>On PCI-1780/MIC-3780/PCM-3780 indicated by the <i>DeviceHandle</i>, it 
+	starts the pre-configured frequency output operation on the specified 
+	channel. This operation can be stopped by 
+	the <a href="DRV_FreqOutReset.htm">DRV_FreqOutReset</a>.<br>
+	This function is used in PCI-1780/MIC-3780/PCM-3780 only.</p>
+	
+	<h2>Parameters</h2>
+	
+	<p>Some parameters, such as target counter channel (<i>counter</i>), 
+	frequency divider (<span lang="zh-cn"><i>usDivider</i></span>) 
+	and clock source (<span lang="zh-cn"><i>usFoutSrc</i></span>) 
+	for frequency output, are stored in the <span lang="zh-cn"><a href="../../structure/counter/PT_CounterFreqStart.htm">PT_FreqOutStart</a></span> 
+	structure pointed by the <span lang="zh-cn"><i> lpFreqOutStart</i></span>. 
+	</p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name </b>
+            </td>
+			<td><b>Direction </b>
+            </td>
+			<td><b>Range </b>
+            </td>
+			<td><b>Description </b>
+            </td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle </b>
+            </td>
+			<td>input
+            </td>
+			<td>default
+            </td>
+			<td>The p<font face="Verdana" style="font-size: 9pt">ointer retrieved from
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td><b>lpFreqOutStart </b>
+            </td>
+			<td>input
+            </td>
+			<td>default
+            </td>
+			<td>The<font style="font-size: 9pt"><span style="FONT-FAMILY: Verdana"> pointer to 
+			indicate the user-prepared structure </span> <a href="../../structure/counter/PT_FreqOutStart.htm">PT_FreqOutStart</a><span style="FONT-FAMILY: Verdana"> 
+			that stores target counter channel (INT16U</span>
+            <i>usChannel</i><span style="FONT-FAMILY: Verdana">), 
+			frequency divider (INT16U</span> <i>usDivider</i><span style="FONT-FAMILY: Verdana">) 
+			and clock source (INT16U</span>
+            <i>usFoutSrc</i><span style="FONT-FAMILY: Verdana">) 
+			for frequency output. </span></font></td>
+		</tr>
+	</table>
+</div>
+	<div>
+		
+		<h2>Return</h2>
+		
+<table>
+	<tr>
+		<td width="204"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. </font>
+		<span style="font-size: 9pt">0</span></b></td>
+		<td><span style="font-size: 9pt">Successful.</span></td>
+	</tr>
+	<tr>
+		<td width="204"><b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDeviceHandle</font></b></td>
+		<td><span style="font-size: 9pt">The <i>Devicehandle</i> is NULL.</span></td>
+	</tr>
+	<tr>
+		<td width="204"><b><font style="font-size: 9pt">&nbsp;&nbsp; 3. InvalidChannel</font></b></td>
+		<td><font style="font-size: 9pt">The target channel 
+		is out of range.</font></td>
+	</tr>
+
+	<tr>
+		<td width="204"><b><font style="font-size: 9pt">&nbsp;&nbsp; 4. InvalidInputParam</font></b></td>
+		<td><span style="font-size: 9pt">T</span><span style="FONT-SIZE: 9pt">he clock source is configured 
+		incorrectly.</span></td>
+	</tr>
+	<tr>
+		<td width="204"><b><font style="font-size: 9pt">&nbsp;&nbsp; 5. Other value </font></b></td>
+		<td><span class="SpellE"><span style="font-size: 9pt"> <font style="font-size: 9pt">Please reference 
+		<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a></font></span></span></td>
+	</tr>
+</table>
+	</div>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

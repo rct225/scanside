@@ -1,0 +1,45 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device functions</title>
+<link href="../../styles/style.css" rel="stylesheet" type="text/css">
+<meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body>
+<h1>Device Function Group</h1>
+<p>All I/O functions must be initiated with <a href="../../function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>, 
+which opens a device via Device file to return the driver handle of the 
+device. With the driver handle, user can use the device to perform I/O 
+operations by calling various functions. Call
+<a href="../../function/Device/DRV_DEVICECLOSE.htm">DRV_DeviceClose</a> to 
+finish the operation and free the resources allocated by <a href="../../function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>.</p>
+<p>The calling flow is shown as below:<br>
+&nbsp;<img border="0" src="image001.jpg"></p>
+<h2><b>Device file </b>(Type: string)</h2>
+<p>Device file specifies the device on which you want to perform the I/O 
+operations.</p>
+<p>For example, a device has association with a device file <i>&quot;/dev/advdaq0&quot;</i> 
+using <i>advdevice_bind </i>utility. You can assign the device file &quot;<i>/dev/advdaq0</i>&quot; to the function <a href="../../function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a> 
+directly. <br></p>
+<b> DRV_DeviceOpen and DRV_DeviceClose
+Functions </b>
+<p><a href="../../function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a> 
+initializes the device specified by device file. This function must be called 
+before any other methods that perform I/O operations.
+<a href="../../function/Device/DRV_DEVICECLOSE.htm">DRV_DeviceClose</a> 
+is the counterpart function of the <a href="../../function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a> function. 
+Its purpose is to close the device.</p>
+<h2><b>Driver Handle</b> <b>(Type: Long, Size: 4 bytes) </b> </h2>
+<p>Driver Handle is returned by <a href="../../function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>. 
+It points to the structure that keeps the settings of a device. The subsequent functions 
+require the use of Driver Handle, instead of device file, to represent the desired device.
+</p>
+<h2><b>Error code(Type: Unsigned Long, Size: 
+4 bytes) and DRV_GetErrorMessage</b></h2>
+<p>Each driver function returns an <a href="../../errorcodes/errorcodes.htm">Error Code</a> 
+that indicates whether or not the function was performed successfully. If the 
+function has failed to perform, it will return a code that is non-zero. 
+The error code may be passed to the <a href="../../function/others/DRV_GetErrorMessage.htm">DRV_GetErrorMessage</a> 
+function to retrieve its error message.</p>
+</html>

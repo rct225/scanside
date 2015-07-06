@@ -1,0 +1,166 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<title>Device Properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<style type="text/css">
+<!--
+td.whs1 { height:26px; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCM Series\nPCM-3761I Device Driver User Manual\nDevice Properties");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Device Properties</h1>
+
+<p>Device properties are stored in the system and read by the driver when 
+ it loads, and then the device is programmed according to these loaded 
+ values. The properties are protected during read and write access times, 
+ and some of them are pre-defined by the configuration dialog box. Different 
+ device's functions are influenced by different properties. These properties 
+ are represented by an ID code for an application that calls Advantech 
+ API functions. An application can use a default value set by the configuration 
+ dialog box, or call Advantech API functions: <a href="../../../function/Device/drv_devicegetproperty.htm">DRV_DeviceGetProperty</a> 
+ and <a href="../../../function/Device/drv_devicesetproperty.htm">DRV_DeviceSetProperty</a>, 
+ to modify individual properties in running time.</p>
+
+<p>&nbsp;</p>
+
+<p>PCM-3761I supports the following properties:</p>
+
+<div class=tablediv
+	style="width: 961px; height: 322px;">
+<table class=Bordered
+		id=table1
+		x-use-null-cells
+		style="border-spacing: 0px;"
+		cellspacing=0>
+
+<tr>
+<td><b style="font-weight: bold;">Property</b></td>
+<td><b style="font-weight: bold;">Description</b></td></tr>
+
+<tr>
+<td><a href="CFG_BoardID.htm">CFG_BoardID</a></td>
+<td>gets the board ID of the device.</td></tr>
+
+<tr>
+<td><a href="CFG_BusNumber.htm">CFG_BusNumber</a></td>
+<td>gets bus number of the currently installed PCM-3761I.</td></tr>
+
+<tr>
+<td><a href="CFG_SlotNumber.htm">CFG_SlotNumber</a></td>
+<td>gets the slot number of the currently installed PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><a href="CFG_Interrupt.htm">CFG_Interrupt</a></td>
+<td height="26" class="whs1">gets the IRQ of the currently installed PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><a href="CFG_BaseAddress.htm">CFG_BaseAddress</a></td>
+<td height="26" class="whs1">gets the base address of the currently installed PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><font style="color: #0000ff;"
+					color=#0000FF><a href="CFG_DiChannelCount.htm">CFG_DiChannelCount</a></font></td>
+<td height="26" class="whs1">gets the total count of DI channels the currently installed 
+ PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><font style="color: #0000ff;"
+					color=#0000FF><a href="CFG_DoChannelCount.htm">CFG_DoChannelCount</a></font></td>
+<td height="26" class="whs1">gets the total count of DO channels of the currently installed 
+ PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><font style="color: #0000ff;"
+					color=#0000FF><a href="CFG_DiPortCount.htm">CFG_DiPortCount</a></font></td>
+<td height="26" class="whs1">gets the total count of DI ports of the currently installed 
+ PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><font style="color: #0000ff;"
+					color=#0000FF><a href="CFG_DoPortCount.htm">CFG_DoPortCount</a></font></td>
+<td height="26" class="whs1">gets the total count of DO ports of the currently installed 
+ PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><a href="CFG_DiInterruptTriggerOnRisingEdge.htm">CFG_DiInterruptTriggerOnRisingEdge</a></td>
+<td height="26" class="whs1">gets or sets the DI channel which issue interrupt on rising 
+ trigger mode of the currently installed PCM-3761I.</td></tr>
+
+<tr>
+<td height="26" class="whs1"><a href="CFG_DiInterruptTriggerOnFallingEdge.htm">CFG_DiInterruptTriggerOnFallingEdge</a></td>
+<td height="26" class="whs1">gets or gets the DI channel which issue interrupt on falling 
+ edge trigger mode of the currently installed PCM-3761I.</td></tr>
+</table>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

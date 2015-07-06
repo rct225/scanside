@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<item name="About Function Description" url="function/functiondisc.htm" />
+<item name="About Data Structure" url="structure/datastructure.htm" />
+<book name="Device Function Group" url="flow/devicefunctions/devicefuntions.htm" >
+  <book name="Function Description" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+  </book>
+</book>
+<book name="Analog Input Function Group" url="flow/ai/aigroup.htm" >
+  <book name="Software Transferring" url="flow/ai/softwaretrig.htm" >
+    <book name="Function Description" >
+      <item name="DRV_AIConfig" url="function/Ai/drv_aiconfig.htm" />
+      <item name="DRV_AIVoltageIn" url="function/Ai/drv_aivoltagein.htm" />
+      <item name="DRV_AIBinaryIn" url="function/Ai/drv_aibinaryin.htm" />
+      <item name="DRV_AIScale" url="function/Ai/drv_aiscale.htm" />
+      <item name="DRV_MAIConfig" url="function/Ai/drv_maiconfig.htm" />
+      <item name="DRV_MAIVoltageIn" url="function/Ai/drv_maivoltagein.htm" />
+      <item name="DRV_MAIBinaryIn" url="function/Ai/drv_maibinaryin.htm" />
+    </book>
+    <book name="Data Structure" >
+      <item name="PT_AIConfig" url="structure/Ai/PT_AIConfig.htm" />
+      <item name="PT_AIVoltageIn" url="structure/Ai/PT_AIVoltageIn.htm" />
+      <item name="PT_AIBinaryIn" url="structure/Ai/PT_AIBinaryIn.htm" />
+      <item name="PT_AIScale" url="structure/Ai/PT_AIScale.htm" />
+      <item name="PT_MAIVoltageIn" url="structure/Ai/PT_MAIVoltageIn.htm" />
+      <item name="PT_MAIBinaryIn" url="structure/Ai/PT_MAIBinaryIn.htm" />
+      <item name="PT_MAIConfig" url="structure/Ai/PT_MAIConfig.htm" />
+    </book>
+  </book>
+  <book name="Fast AI Transferring" url="function/FAI/FastAnalogInput.htm" >
+    <book name="Interrupt Transferring" url="flow/ai/Interrupttrig.htm" >
+      <book name="Function Description" >
+        <item name="DRV_FAIIntStart" url="function/FAI/DRV_FAIIntStart.htm" />
+        <item name="DRV_FAIIntScanStart" url="function/FAI/DRV_FAIIntScanStart.htm" />
+        <item name="DRV_FAITerminate" url="function/FAI/DRV_FAITerminate.htm" />
+        <item name="DRV_FAITransfer" url="function/FAI/DRV_FAITransfer.htm" />
+        <item name="DRV_FAICheck" url="function/FAI/DRV_FAICheck.htm" />
+        <item name="DRV_ClearFlag" url="function/fdio/DRV_ClearFlag.htm" />
+        <item name="DRV_GetFIFOSize" url="function/commonhighspeed/DRV_GetFIFOSize.htm" />
+      </book>
+      <book name="Data Structure" >
+        <item name="PT_FAIIntStart" url="structure/FAI/PT_FAIIntStart.htm" />
+        <item name="PT_FAIIntScanStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+        <item name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+        <item name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+      </book>
+    </book>
+    <book name="DMA Transferring" url="flow/ai/dmatrig.htm" >
+      <book name="Function Description" >
+        <item name="DRV_FAIDmaExStart" url="function/FAI/DRV_FAIDmaExStart.htm" />
+        <item name="DRV_FAITerminate" url="function/FAI/DRV_FAITerminate.htm" />
+        <item name="DRV_FAITransfer" url="function/FAI/DRV_FAITransfer.htm" />
+        <item name="DRV_FAICheck" url="function/FAI/DRV_FAICheck.htm" />
+        <item name="DRV_ClearFlag" url="function/fdio/DRV_ClearFlag.htm" />
+        <item name="DRV_GetFIFOSize" url="function/commonhighspeed/DRV_GetFIFOSize.htm" />
+      </book>
+      <book name="Data Structure" >
+        <item name="PT_FAIDmaExStart" url="structure/FAI/PT_FAIDmaExStart.htm" />
+        <item name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+        <item name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+      </book>
+    </book>
+  </book>
+</book>
+<book name="Analog Output Function Group" url="flow/ao/aogroup.htm" >
+  <book name="Software Transferring" url="flow/ao/softwaretrig.htm" >
+    <book name="Function Description" >
+      <item name="DRV_AOConfig" url="function/AO/drv_aoconfig.htm" />
+      <item name="DRV_AOVoltageOut" url="function/AO/drv_aovoltageout.htm" />
+      <item name="DRV_AOCurrentOut" url="function/AO/drv_aocurrentout.htm" />
+      <item name="DRV_AOBinaryOut" url="function/AO/drv_aobinaryout.htm" />
+      <item name="DRV_AOScale" url="function/AO/drv_aoscale.htm" />
+    </book>
+    <book name="Data Structure" >
+      <item name="PT_AOConfig" url="structure/AO/PT_AOConfig.htm" />
+      <item name="PT_AOVoltageOut" url="structure/AO/PT_AOVoltageOut.htm" />
+      <item name="PT_AOCurrentOut" url="structure/AO/PT_AOCurrentOut.htm" />
+      <item name="PT_AOBinaryOut" url="structure/AO/PT_AOBinaryOut.htm" />
+      <item name="PT_AOScale" url="structure/AO/PT_AOScale.htm" />
+    </book>
+  </book>
+  <book name="Fast AOTransferring" url="function/FAO/FastAnalogOutput.htm" >
+    <book name="DMA Transferring" url="flow/ao/waveao.htm" >
+      <book name="Function Description" >
+        <item name="DRV_FAODmaExStart" url="function/FAO/DRV_FAODmaExStart.htm" />
+        <item name="DRV_FAOScale" url="function/FAO/DRV_FAOScale.htm" />
+        <item name="DRV_FAOLoad" url="function/FAO/DRV_FAOLoad.htm" />
+        <item name="DRV_FAOCheck" url="function/FAO/DRV_FAOCheck.htm" />
+        <item name="DRV_FAOTerminate" url="function/FAO/DRV_FAOTerminate.htm" />
+      </book>
+      <book name="Data Structure" >
+        <item name="PT_FAODmaExStart" url="structure/FAO/PT_FAODmaExStart.htm" />
+        <item name="PT_FAOScale" url="structure/FAO/PT_FAOScale.htm" />
+        <item name="PT_FAOLoad" url="structure/FAO/PT_FAOLoad.htm" />
+        <item name="PT_FAOCheck" url="structure/FAO/PT_FAOCheck.htm" />
+      </book>
+    </book>
+  </book>
+</book>
+<book name="Digital Input/Output Function Group" url="flow/dio/diogroup.htm" >
+  <book name="Digital Input Functions" url="flow/dio/di.htm" >
+    <book name="Software Transferrng" url="flow/dio/softwaretrig.htm" >
+      <book name="Function Description" >
+        <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+      </book>
+    </book>
+    <book name="Interrupt Transferring" url="flow/dio/interrupt.htm" >
+      <book name="Function Description" >
+        <item name="DRV_DioDisableEvent" url="function/DIO/DRV_DioDisableEvent.htm" />
+        <item name="DRV_DioGetLatestEventDiPortsState" url="function/DIO/DRV_DioGetLatestEventDiPortsState.htm" />
+        <item name="DRV_DioEnableEventAndSpecifyDiPorts" url="function/DIO/DRV_DioEnableEventAndSpecifyDiPorts.htm" />
+      </book>
+    </book>
+  </book>
+  <book name="Digital Output Functions" url="flow/dio/DO.htm" >
+    <book name="Software Transferring" url="flow/dio/dosoftwaretrig.htm" >
+      <book name="Function Description" >
+        <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+        <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+      </book>
+    </book>
+  </book>
+</book>
+<book name="Port Function Group" url="flow/port/portfunction.htm" >
+  <book name="Function Description" >
+    <item name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+    <item name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+    <item name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+    <item name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+    <item name="DRV_ReadPortDword" url="function/PORTIO/DRV_ReadPortDword.htm" />
+    <item name="DRV_WritePortDword" url="function/PORTIO/DRV_WritePortDword.htm" />
+  </book>
+  <book name="Data Structure" >
+    <item name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+    <item name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+    <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+    <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+    <item name="PT_ReadPortDword" url="structure/PORTIO/PT_ReadPortDword.htm" />
+    <item name="PT_WritePortDword" url="structure/PORTIO/PT_WritePortDword.htm" />
+  </book>
+</book>
+<book name="Counter Function Group" url="flow/counter/counter.htm" >
+  <book name="Event Counting Function" url="flow/counter/eventcounting.htm" >
+    <book name="Function Description" >
+      <item name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+      <item name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+      <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+    </book>
+    <book name="Data Structure" >
+      <item name="PT_CounterEventStart" url="structure/counter/PT_CounterEventStart.htm" />
+      <item name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+    </book>
+  </book>
+  <book name="Frequency Measurement Function" url="flow/counter/frequency.htm" >
+    <book name="Function Description" >
+      <item name="DRV_CounterFreqStart" url="function/counter/DRV_CounterFreqStart.htm" />
+      <item name="DRV_CounterFreqRead" url="function/counter/DRV_CounterFreqRead.htm" />
+      <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+    </book>
+    <book name="Data Structure" >
+      <item name="PT_CounterFreqStart" url="structure/counter/PT_CounterFreqStart.htm" />
+      <item name="PT_CounterFreqRead" url="structure/counter/PT_CounterFreqRead.htm" />
+    </book>
+  </book>
+  <book name="Pulse Output Function" url="flow/counter/pulse.htm" >
+    <book name="Function Description" >
+      <item name="DRV_CounterPulseStart" url="function/counter/DRV_CounterPulseStart.htm" />
+      <item name="DRV_CounterPWMSetting" url="function/counter/DRV_CounterPWMSetting.htm" />
+      <item name="DRV_FreqOutStart" url="function/counter/DRV_FreqOutStart.htm" />
+      <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+    </book>
+    <book name="Data Structure" >
+      <item name="PT_CounterPulseStart" url="structure/counter/PT_CounterPulseStart.htm" />
+      <item name="PT_CounterPWMSetting" url="structure/counter/PT_CounterPWMSetting.htm" />
+      <item name="PT_FreqOutStart" url="structure/counter/PT_FreqOutStart.htm" />
+    </book>
+  </book>
+</book>
+<book name="Temperature Measurement Function Group" url="flow/temperature/temperature.htm" >
+  <book name="Function Description" >
+    <item name="DRV_TCMuxRead" url="function/temperature/DRV_TCMuxRead.htm" />
+  </book>
+  <book name="Data Structure" >
+    <item name="PT_TCMuxRead" url="structure/temperature/PT_TCMuxRead.htm" />
+  </book>
+</book>
+<book name="Event Function Group" url="flow/event/eventfunction.htm" >
+  <book name="Function Description" url="flow/event/eventfunction.htm" >
+    <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+    <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+  </book>
+  <book name="Data Structure" >
+    <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+    <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+  </book>
+</book>
+<book name="Other Functions" >
+  <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+</book>
+
+</tocdata>

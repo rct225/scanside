@@ -1,0 +1,154 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_PWMStartRead</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_PWMStartRead");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_PWMStartRead");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_PWMStartRead</h1>
+
+    <pre class="code">INT32S DRV_PWMStartRead(<i>
+   </i>PTR_T <i>DeviceHandle, 
+   </i>PT_PWMStartRead <i>*lpPWMStartRead </i>);</pre>
+
+	<h2>Purpose</h2>
+	<p>On the device indicated by the <i>DeviceHandle</i>, it measures both the high and low 
+	period of the input pulse on the specified channel. The measurement will 
+	be triggered by the first low-to-high transition and will start from this high 
+	period.&nbsp;</p>
+	<h2>Parameters</h2>
+	<p>Some parameters, such 
+	as target channel (<i>usChan</i>), high pulse (<i>flHiperiod</i>) and low 
+	pulse (<i>flLowperiod</i>) of retrieved PWM, are stored in the 
+    <a href="../../structure/counter/PT_PWMStartRead.htm">PT_PWMStartRead</a> 
+	structure pointed by the
+	<i>lpPWMStartRead</i>. </p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td>input</td>
+			<td>default</td>
+			<td>The p<font face="Verdana" style="font-size: 9pt">ointer retrieved from
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td height="41"><b>lpPWMStartRead</b></td>
+			<td height="41">input / output</td>
+			<td height="41">default</td>
+			<td height="41">The<font style="font-size: 9pt"><span style="FONT-FAMILY: Verdana"> pointer to indicate 
+			the user-prepared structure </span>
+            <a href="../../structure/counter/PT_PWMStartRead.htm">PT_PWMStartRead</a><span style="FONT-FAMILY: Verdana"> 
+			that stores</span></font><font face="Verdana" style="font-size: 9pt">
+			</font><font style="font-size: 9pt">target channel (<i>usChan</i>),
+			</font>high pulse<font style="font-size: 9pt"> (<i>flHiperiod</i>) 
+			and </font>low pulse<font style="font-size: 9pt"> (<i>flLowperiod</i>) 
+			of retrieved PWM.</font></td>
+		</tr>
+	</table>
+</div>
+	<div>
+		<h2>Return</h2>
+<table>
+	<tr>
+		<td width="203"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. </font>
+		<span style="font-size: 9pt">0</span></b></td>
+		<td><span style="font-size: 9pt">Successful.</span></td>
+	</tr>
+	<tr>
+		<td width="203"><b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDeviceHandle</font></b></td>
+		<td><span style="font-size: 9pt">The <i>Devicehandle</i> is NULL.</span></td>
+	</tr>
+	
+	<tr>
+		<td width="203"><b><font style="font-size: 9pt">&nbsp;&nbsp; 3. InvalidChannel</font></b></td>
+		<td><span style="font-size: 9pt">The current counter (<i>counter</i> 
+		of <i>lpPWMStartRead</i>) is out of the range.</span></td>
+	</tr>
+	<tr>
+		<td width="203"><b><font style="font-size: 9pt">&nbsp;&nbsp; 4. Other value</font></b></td>
+		<td><span class="SpellE"><span style="font-size: 9pt">Please reference 
+		<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a> </span>
+		</span></td>
+	</tr>
+</table>
+		<p>&nbsp;<p>&nbsp;</div>
+	<p></p>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

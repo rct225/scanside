@@ -1,0 +1,147 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_QCounterConfig</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_QCounterConfig
+</h1></h1>
+<pre class="code">typedef struct tagPT_QCounterConfig
+{
+    INT16U counter;
+    INT16U LatchSrc;
+    INT16U LatchOverflow;
+    INT16U ResetOnLatch;
+    INT16U ResetValue;
+} PT_QCounterConfig, * LPT_QCounterConfig;
+</pre>
+<p><b> PT_QCounterConfig</b>  is used in function <a href="../../function/counter/DRV_QCounterConfig.htm">DRV_QCounterConfig</a>.&nbsp; </p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     counter</b></td>
+    <td>     input</td>
+    <td>     The channel number of the specified counter.<br>
+	From a minimum 
+	of 
+	zero for the 
+	first channel to the maximum channel number minus one. For example, the 
+	range is from 0 to <i>(N-1)</i> on a device with<i> N</i> AI channels.</td>
+  </tr>
+  <tr>
+    <td><b>     LatchSrc</b></td>
+    <td>     input</td>
+    <td>     Latch Counter source.<br>
+	It can be set 
+to:<br>
+	(1) SWLATCH: software latch. PCL833 uses the 24-bit 
+	counter. When the user reads data from the high byte of the counter, the value 
+	of the counter will be latched. However, when the user reads data from the 
+	middle byte and the low byte of the counter, the counter will not be latched. 
+	Therefore, in this mode, the user should read data from the high byte to the 
+	middle byte and the low byte of the counter. <br>
+	(2) INDEXINLATCH: latches the count on the INDEX inputs raising edge.<br>
+	(3) DI0LATCH: latches 
+	the count on the DI0 inputs raising edge.<br>
+	(4) DI1LATCH: latches 
+	the count on the DI1 inputs raising edge.<br>
+	(5) TIMERLATCH: latches the count on the raising edge pulse signal of the timer on the device.</td>
+  </tr>
+  <tr>
+    <td><b>     LatchOverflow</b></td>
+    <td>     input</td>
+    <td>     Latched when an overflow occurs(1),     otherwise(0).</td>
+  </tr>
+  <tr>
+    <td><b>     ResetOnLatch</b></td>
+    <td>     input</td>
+    <td>     Reset after counter is      latched(1),otherwise(0).</td>
+  </tr>
+  <tr>
+    <td><b>     ResetValue</b></td>
+    <td>     input</td>
+    <td>     Set reset value.<br>
+	(0) 000000 ,<br>
+	(1) 800000 .</td>
+  </tr>
+</table>
+</div>
+<p></p>
+<p></p>
+</div>
+<div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

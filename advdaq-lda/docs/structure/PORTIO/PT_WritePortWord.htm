@@ -1,0 +1,137 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_WritePortWord</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval: 21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nPort Function Group\nData Structure\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nData Structures\nPort Input/Output\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1720 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1723 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1724 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1727U Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1730 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1733 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1734 Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1736UP Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1737U Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1739U Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nPort I/O functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nPort Input/Output\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1752 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1753 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1754 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1756 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1757UP Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1758U Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addTocInfo("PCI Series\nPCI-1761 Device Driver User Manual\nData Structures\nPort I/O Functions\nPT_WritePortWord");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<div>
+
+<h1><span>PT_WritePortWord </span></h1>
+
+<pre class="code">typedef struct tagPT_WritePortWord
+{ 
+    INT16U port;        
+    INT16U WordData;
+} PT_WritePortWord, * LPT_WritePortWord; </pre><p><b>
+<span>PT_WritePortWord</span></b><span> is used in
+function <a href="../../function/PORTIO/DRV_WritePortWord.htm">DRV_WritePortWord</a>.</span></p><h2>
+<span>Member Description</span></h2><div style='margin-left:24.0pt'>
+	<div class="tablediv">
+		<table class="Bordered" cellSpacing="0" id="table1">
+ <tr>
+  <td width=132 valign=top>
+  <p><b><span>Name</span></b><span></span></p></td><td valign=top>
+  <p><b><span>Direction</span></b><span></span></p></td>
+	<td width=695 valign=top>
+  <p><b><span>Description</span></b><span></span></p></td></tr><tr>
+  <td width=132 valign=top>
+  <p><b><span>port</span></b><span></span></p></td><td valign=top>
+  <p><span>input</span></p></td><td width=695 valign=top>
+  <p><span>The I/O port address to write data to. It must be within the address
+  range allocated by the system. </span></p></td></tr><tr>
+  <td width=132 valign=top>
+  <p><b><span>WordData</span></b><span></span></p></td><td valign=top>
+  <p><span>inputt</span></p></td><td width=695 valign=top>
+  <p><span>The 16-bit output data to specified I/O port.</span></p></td></tr></table></div></div></div><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

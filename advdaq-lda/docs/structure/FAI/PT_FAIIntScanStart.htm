@@ -1,0 +1,204 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAIIntScanStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nInterrupt Transferring\nData Structure\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nData Structures\nHigh-speed\nPT_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAIIntScanStart");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntScanStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_FAIIntScanStart
+</h1></h1>
+<pre class="code">typedef struct tagPT_FAIIntScanStart
+{
+    INT16U TrigSrc;
+    INT32U SampleRate;
+    INT16U NumChans;
+    INT16U StartChan;
+    INT16U *GainList;
+    INT16U *buffer;
+    INT32U count;
+    INT16U cyclic;
+    INT16U IntrCount;
+} PT_FAIIntScanStart, * LPT_FAIIntScanStart;
+</pre>
+<p><b> PT_FAIIntScanStart</b>  is used in 
+function <a href="../../function/FAI/DRV_FAIIntScanStart.htm">DRV_FAIIntScanStart</a>.</p>
+<h2 style="margin-left: 0"><b>Member Description </b>
+</h2>
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Range</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     TrigSrc</b></td>
+    <td>     input</td>
+    <td>     0,1</td>
+    <td>     The triggering source: <br>
+		external (1),      internal (0)</td>
+  </tr>
+  <tr>
+    <td><b>     SampleRate</b></td>
+    <td>     input</td>
+    <td>     Depends on the pacer on      hardware.</td>
+    <td>     The total sampling rate on scanning channels (Hz).&nbsp; 
+	Since the sampling is performed channel by channel, the exact sampling rate 
+	of single channel can be calculated in the following formula:<p>
+	Sampling rate of single channel&nbsp; = <i>SampleRate</i> / 
+	<i>NumChans</i></td>
+  </tr>
+  <tr>
+    <td><b>     NumChans</b></td>
+    <td>     Input</td>
+    <td>     1-N (N is the maximum AI channel number)</td>
+    <td>     The sampling channel count.</td>
+  </tr>
+  <tr>
+    <td><b>     StartChan</b></td>
+    <td>     input</td>
+    <td>     0-(N-1) (N is the maximum AI channel number)</td>
+    <td>     The starting channel for scanning. The range is from 
+	the minimum zero (the first AI channel) to the maximum AI channel number 
+	minus one. For 
+	example, the range will be from 0 to <i>(N-1)</i> on a device with <i>N</i> 
+	written as the number of the AI channel. The last 
+	channel can be calculated with the following formula:<p>
+	number of the 
+	last channel 
+	= <i>StartChan</i> + <i>NumChans</i></td>
+  </tr>
+  <tr>
+    <td><b>     GainList</b></td>
+    <td>     input</td>
+    <td>     Depends on the hardware.</td>
+    <td>     The pointer which indicates the GainCode list that stores the GainCode. 
+	It is used to configure the target sampling channels in order from <i>StartChan</i> to the last 
+	sampling channel. The voltage input range is determined by the GainCode 
+	list. Please refer to the <i>Hardware Manual</i> for details. </td>
+  </tr>
+  <tr>
+    <td><b>     buffer</b></td>
+    <td>     output</td>
+    <td>     1-65536</td>
+    <td>     The sampling data buffer. Please refer to the 
+	<a href="../../function/FAI/FastAnalogInput.htm">
+	FastAnalogInput</a> to set a buffer with proper size. </td>
+  </tr>
+  <tr>
+    <td><b>     count</b></td>
+    <td>     input</td>
+    <td>     1-N(N is the sampling data count. )</td>
+    <td>     It must be above 
+	zero, 
+	an even number (because of memory alignment and performance), or a multiple 
+	of half the FIFO size if FIFO is used. 
+	</td>
+  </tr>
+  <tr>
+    <td><b>     cyclic</b></td>
+    <td>     input</td>
+    <td>     0,1</td>
+    <td>     The cyclic mode:<br>
+	0-Non-cyclic<br>
+			1-Cyclic</td>
+  </tr>
+  <tr>
+    <td><b>     IntrCount</b></td>
+    <td>     input</td>
+    <td>     Depends on the hardware.</td>
+    <td>     It sets the count of conversions that create an 
+	interrupt.<br>
+	If FIFO is not used, it should be set to 
+	1; <br>
+	if FIFO is used, it should be set to half the FIFO size (FIFO_SIZE).
+	</td>
+  </tr>
+</table>
+</div>
+</div>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

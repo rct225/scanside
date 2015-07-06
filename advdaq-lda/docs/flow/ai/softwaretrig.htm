@@ -1,0 +1,44 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Software Triggering</title>
+<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+<meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<h1>Software Transferring</h1>
+<p>These functions trigger the data conversion by software command. The driver 
+  provides two kinds of functions. One is for single channel reading, the other 
+  is for multiple channels reading. Both kinds of operations acquire the data only 
+  once. To sample multiple data periodically by these functions, a software timer 
+can be used to call the functions periodically. For a more efficient 
+  and faster continuous data acquisition, interrupt or DMA mode transferring may be used.</p>
+<h2><b>Single Channel Reading</b></h2>
+<p><img src="image002.jpg" >
+</p>
+<p><a href="../../function/Ai/drv_aiconfig.htm">DRV_AIConfig</a> configures 
+  the input range for the specified channel. If the input range needs to be 
+changed at runtime, use the <a href="../../function/Ai/drv_aiconfig.htm">DRV_AIConfig</a> 
+function again. The <a href="../../function/Ai/drv_aivoltagein.htm">DRV_AIVoltageIn</a> 
+  function reads the voltage of input channels. The Device Drivers also provide a binary data 
+  reading function, <a href="../../function/Ai/drv_aibinaryin.htm">DRV_AIBinaryIn</a>. 
+The 
+  <a href="../../function/Ai/drv_aiscale.htm">DRV_AIScale</a> function can be used to convert 
+the binary data into voltage. </p>
+<h2><b>Multiple Channel Scan</b></h2>
+<p>The functions for multiple channel sampling are similar to those for single 
+data reading, except the input channel is not limited to one.</p>
+<p><img src="image003.jpg" >
+</p>
+<p>The <a href="../../function/Ai/drv_maiconfig.htm">DRV_MAIConfig</a> function 
+configures the input ranges for the specified channels. The
+<a href="../../function/Ai/drv_maivoltagein.htm">D<span class="SpellE">RV_MAIVoltageIn</span></a> 
+function reads voltage data and keeps them in an array.
+<a href="../../function/Ai/drv_maibinaryin.htm">DRV_MAIBinaryIn</a> reads binary 
+data. The <a href="../../function/Ai/drv_aiscale.htm">DRV_AIScale</a> 
+function can be used to convert the binary data into voltage. </p>
+
+
+
+</html>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="CFG_BusNumber" >
+  <topic name="CFG_BusNumber" url="PCI/PCI-1727U/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1733/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1724/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1714/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1739U/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1742U/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1741U/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1737U/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1747/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1734/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1735U/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1736/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1730/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1760/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1758U/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1710/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1720/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCM/PCM-3730I/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1757UP/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1715/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1721/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1712/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1780/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1711/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1784/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="MIC/MIC-3751/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1763/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1761/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1716/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1762/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1718/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1752/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCM/PCM-3761I/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1753/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1723/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1750/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1751/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1713/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1754/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCI/PCI-1756/property/CFG_BusNumber.htm" />
+  <topic name="CFG_BusNumber" url="PCM/PCM-3753I/property/CFG_BusNumber.htm" />
+</key>
+<key name="CFG_CascadeMode" >
+  <topic name="CFG_CascadeMode" url="PCI/PCI-1750/property/CFG_CascadeMode.htm" />
+  <topic name="CFG_CascadeMode" url="MIC/MIC-3751/property/CFG_CascadeMode.htm" />
+  <topic name="CFG_CascadeMode" url="PCI/PCI-1751/property/CFG_CascadeMode.htm" />
+</key>
+<key name="CFG_CntrAvailableAPI" >
+  <topic name="CFG_CntrAvailableAPI" url="PCI/PCI-1780/property/CFG_CntrAvailableAPI.htm" />
+  <topic name="CFG_CntrAvailableAPI" url="PCI/PCI-1784/property/CFG_CntrAvailableAPI.htm" />
+</key>
+<key name="CFG_CntrChannelCapability" >
+  <topic name="CFG_CntrChannelCapability" url="USB/USB-4704/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1780/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="USB/USB-4750/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1784/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="USB/USB-4702/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="USB/USB-4716/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1742U/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1741U/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1716/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="USB/USB-4711/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="USB/USB-4751/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1710/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1712/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1711/property/CFG_CntrChannelCapability.htm" />
+  <topic name="CFG_CntrChannelCapability" url="PCI/PCI-1721/property/CFG_CntrChannelCapability.htm" />
+</key>
+<key name="CFG_CntrChannelCount" >
+  <topic name="CFG_CntrChannelCount" url="USB/USB-4711/property/CFG_CntrChannelCount.htm" />
+  <topic name="CFG_CntrChannelCount" url="USB/USB-4716/property/CFG_CntrChannelCount.htm" />
+  <topic name="CFG_CntrChannelCount" url="USB/USB-4750/property/CFG_CntrChannelCount.htm" />
+  <topic name="CFG_CntrChannelCount" url="USB/USB-4751/property/CFG_CntrChannelCount.htm" />
+  <topic name="CFG_CntrChannelCount" url="USB/USB-4702/property/CFG_CntrChannelCount.htm" />
+  <topic name="CFG_CntrChannelCount" url="USB/USB-4704/property/CFG_CntrChannelCount.htm" />
+  <topic name="CFG_CntrChannelCount" url="PCI/PCI-1784/property/CFG_CntrChannelCount.htm" />
+</key>
+<key name="CFG_CntrChannelEventID" >
+  <topic name="CFG_CntrChannelEventID" url="PCI/PCI-1780/property/CFG_CntrChannelEventID.htm" />
+</key>
+<key name="CFG_CntrClockFrequency" >
+  <topic name="CFG_CntrClockFrequency" url="PCI/PCI-1784/property/CFG_CntrClockFrequency.htm" />
+</key>
+<key name="CFG_CntrCompareData" >
+  <topic name="CFG_CntrCompareData" url="PCI/PCI-1784/property/CFG_CntrCompareData.htm" />
+</key>
+<key name="CFG_CntrCounterLockControl" >
+  <topic name="CFG_CntrCounterLockControl" url="PCI/PCI-1784/property/CFG_CntrCounterLockControl.htm" />
+</key>
+<key name="CFG_CntrDigitalFilter" >
+  <topic name="CFG_CntrDigitalFilter" url="PCI/PCI-1784/property/CFG_CntrDigitalFilter.htm" />
+</key>
+<key name="CFG_CntrIndexReset" >
+  <topic name="CFG_CntrIndexReset" url="PCI/PCI-1784/property/CFG_CntrIndexReset.htm" />
+</key>
+<key name="CFG_CntrIndicatorControl" >
+  <topic name="CFG_CntrIndicatorControl" url="PCI/PCI-1784/property/CFG_CntrIndicatorControl.htm" />
+</key>
+<key name="CFG_CntrInputModeControl" >
+  <topic name="CFG_CntrInputModeControl" url="PCI/PCI-1784/property/CFG_CntrInputModeControl.htm" />
+</key>
+<key name="CFG_CntrInternalClockFreq" >
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1721/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="USB/USB-4704/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="USB/USB-4702/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1735U/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="USB/USB-4751/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1712/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1741U/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="USB/USB-4716/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1711/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1718/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1710/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1742U/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="USB/USB-4711/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1784/property/CFG_CntrInternalClockFreq.htm" />
+  <topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1716/property/CFG_CntrInternalClockFreq.htm" />
+</key>
+<key name="CFG_CntrInternalClockFreqMode" >
+  <topic name="CFG_CntrInternalClockFreqMode" url="PCI/PCI-1735U/property/CFG_CntrInternalClockFreqMode.htm" />
+</key>
+<key name="CFG_CntrPWModulateValidRange" >
+  <topic name="CFG_CntrPWModulateValidRange" url="PCI/PCI-1780/property/CFG_CntrPWModulateValidRange.htm" />
+</key>
+<key name="CFG_CntrResetValue" >
+  <topic name="CFG_CntrResetValue" url="USB/USB-4750/property/CFG_CntrResetValue.htm" />
+  <topic name="CFG_CntrResetValue" url="USB/USB-4716/property/CFG_CntrResetValue.htm" />
+  <topic name="CFG_CntrResetValue" url="USB/USB-4751/property/CFG_CntrResetValue.htm" />
+  <topic name="CFG_CntrResetValue" url="PCI/PCI-1784/property/CFG_CntrResetValue.htm" />
+  <topic name="CFG_CntrResetValue" url="USB/USB-4711/property/CFG_CntrResetValue.htm" />
+</key>
+<key name="CFG_CntrResolution" >
+  <topic name="CFG_CntrResolution" url="USB/USB-4711/property/CFG_CntrResolution.htm" />
+  <topic name="CFG_CntrResolution" url="USB/USB-4750/property/CFG_CntrResolution.htm" />
+  <topic name="CFG_CntrResolution" url="USB/USB-4751/property/CFG_CntrResolution.htm" />
+  <topic name="CFG_CntrResolution" url="PCI/PCI-1784/property/CFG_CntrResolution.htm" />
+  <topic name="CFG_CntrResolution" url="USB/USB-4716/property/CFG_CntrResolution.htm" />
+</key>
+<key name="CFG_CntrSupportedCountEdge" >
+  <topic name="CFG_CntrSupportedCountEdge" url="USB/USB-4751/property/CFG_CntrSupportedCountEdge.htm" />
+  <topic name="CFG_CntrSupportedCountEdge" url="PCI/PCI-1780/property/CFG_CntrSupportedCountEdge.htm" />
+  <topic name="CFG_CntrSupportedCountEdge" url="USB/USB-4750/property/CFG_CntrSupportedCountEdge.htm" />
+  <topic name="CFG_CntrSupportedCountEdge" url="USB/USB-4716/property/CFG_CntrSupportedCountEdge.htm" />
+  <topic name="CFG_CntrSupportedCountEdge" url="USB/USB-4711/property/CFG_CntrSupportedCountEdge.htm" />
+</key>
+<key name="CFG_CntrSupportedGateMode" >
+  <topic name="CFG_CntrSupportedGateMode" url="USB/USB-4751/property/CFG_CntrSupportedGateMode.htm" />
+  <topic name="CFG_CntrSupportedGateMode" url="PCI/PCI-1780/property/CFG_CntrSupportedGateMode.htm" />
+</key>
+<key name="CFG_CntrSupportedIndicator" >
+  <topic name="CFG_CntrSupportedIndicator" url="PCI/PCI-1784/property/CFG_CntrSupportedIndicator.htm" />
+</key>
+<key name="CFG_CntrSupportedOutMode" >
+  <topic name="CFG_CntrSupportedOutMode" url="PCI/PCI-1780/property/CFG_CntrSupportedOutMode.htm" />
+</key>
+<key name="CFG_CounterCountValue" >
+  <topic name="CFG_CounterCountValue" url="PCI/PCI-1784/property/CFG_CounterCountValue.htm" />
+</key>
+<key name="CFG_CURRENT_4TO20MA_EXCEPTIONSETTING" >
+  <topic name="CFG_CURRENT_4TO20MA_EXCEPTIONSETTING" url="USB/USB-4718/property/CFG_CURRENT_4TO20MA_EXCEPTIONSETTING.htm" />
+</key>
+
+</indexdata>

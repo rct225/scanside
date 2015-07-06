@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="DRV_WatchdogFeed" >
+  <topic name="DRV_WatchdogFeed" url="function/watchdog/DRV_Watchdogfeed.htm" />
+</key>
+<key name="DRV_WatchdogStart" >
+  <topic name="DRV_WatchdogStart" url="function/watchdog/DRV_WatchdogStart.htm" />
+</key>
+<key name="DRV_WatchdogStop" >
+  <topic name="DRV_WatchdogStop" url="function/watchdog/DRV_WatchdogStop.htm" />
+</key>
+<key name="DRV_WritePortByte" >
+  <topic name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+</key>
+<key name="DRV_WritePortDword" >
+  <topic name="DRV_WritePortDword" url="function/PORTIO/DRV_WritePortDword.htm" />
+</key>
+<key name="DRV_WritePortWord" >
+  <topic name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+</key>
+<key name="DRV_WriteSyncAO" >
+  <topic name="DRV_WriteSyncAO" url="function/AO/drv_writesyncao.htm" />
+</key>
+<key name="Error Code List" >
+  <topic name="Error Code List" url="errorcodes/ERRORLIST.htm" />
+</key>
+<key name="Error Codes" >
+  <topic name="Error Codes" url="errorcodes/errorcodes.htm" />
+</key>
+<key name="Event Counting Function" >
+  <topic name="Event Counting Function" url="flow/counter/eventcounting.htm" />
+</key>
+<key name="Event Function Group" >
+  <topic name="Event Function Group" url="flow/event/eventfunction.htm" />
+</key>
+<key name="Event Type" >
+  <topic name="Event Type" url="PCI/PCI-1750/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1711/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCM/PCM-3730I/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1751/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1780/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1712/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1758U/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1742U/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1747/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1718/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4704/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1754/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1757UP/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4711/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1784/EventType/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1715/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCM/PCM-3753I/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1756/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1713/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCM/PCM-3718/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="MIC/MIC-3751/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4702/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1753/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCM/PCM-3761I/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1716/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCM/PCM-3724/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1761/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4718/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1737U/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1736/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCM/PCM-3725/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1730/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4751/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1733/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4750/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1762/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4761/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1763/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCM/PCM-3730/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="USB/USB-4716/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1741U/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1721/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1710/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1760/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1739U/Eventtype/Eventtype.htm" />
+  <topic name="Event Type" url="PCI/PCI-1714/Eventtype/Eventtype.htm" />
+</key>
+<key name="Example Description" >
+  <topic name="Example Description" url="examples/PCI1762.htm" />
+  <topic name="Example Description" url="examples/PCM3725.htm" />
+  <topic name="Example Description" url="examples/PCI1715.htm" />
+  <topic name="Example Description" url="examples/PCI1760.htm" />
+  <topic name="Example Description" url="examples/PCI1714.htm" />
+  <topic name="Example Description" url="examples/PCI1761.htm" />
+  <topic name="Example Description" url="examples/PCM3730.htm" />
+  <topic name="Example Description" url="examples/PCM3753I.htm" />
+  <topic name="Example Description" url="examples/PCM3730I.htm" />
+  <topic name="Example Description" url="examples/PCI1758U.htm" />
+  <topic name="Example Description" url="examples/PCI1757UP.htm" />
+  <topic name="Example Description" url="examples/PCI1723.htm" />
+  <topic name="Example Description" url="examples/PCI1739U.htm" />
+  <topic name="Example Description" url="examples/PCI1737U.htm" />
+  <topic name="Example Description" url="examples/PCI1721.htm" />
+  <topic name="Example Description" url="examples/PCI1741U.htm" />
+  <topic name="Example Description" url="examples/PCI1712.htm" />
+  <topic name="Example Description" url="examples/PCI1724.htm" />
+  <topic name="Example Description" url="examples/PCI1730.htm" />
+  <topic name="Example Description" url="examples/PCI1734.htm" />
+  <topic name="Example Description" url="examples/PCI1733.htm" />
+  <topic name="Example Description" url="examples/PCI1727U.htm" />
+  <topic name="Example Description" url="examples/PCI1736.htm" />
+  <topic name="Example Description" url="examples/PCI1735U.htm" />
+  <topic name="Example Description" url="examples/PCM3761I.htm" />
+  <topic name="Example Description" url="examples/PCI1718.htm" />
+  <topic name="Example Description" url="examples/PCI1753.htm" />
+  <topic name="Example Description" url="examples/PCI1716.htm" />
+  <topic name="Example Description" url="examples/PCI1756.htm" />
+  <topic name="Example Description" url="examples/PCI1754.htm" />
+  <topic name="Example Description" url="examples/PCI1752.htm" />
+  <topic name="Example Description" url="examples/PCI1720.htm" />
+  <topic name="Example Description" url="examples/PCI1710.htm" />
+  <topic name="Example Description" url="examples/PCI1742U.htm" />
+  <topic name="Example Description" url="examples/PCI1751.htm" />
+  <topic name="Example Description" url="examples/PCI1750.htm" />
+  <topic name="Example Description" url="examples/PCI1747.htm" />
+  <topic name="Example Description" url="examples/PCM3724.htm" />
+  <topic name="Example Description" url="examples/USB4751.htm" />
+  <topic name="Example Description" url="examples/USB4750.htm" />
+  <topic name="Example Description" url="examples/PCI1711.htm" />
+  <topic name="Example Description" url="examples/USB4702.htm" />
+  <topic name="Example Description" url="examples/USB4718.htm" />
+  <topic name="Example Description" url="examples/PCM3718.htm" />
+  <topic name="Example Description" url="examples/USB4711.htm" />
+  <topic name="Example Description" url="examples/PCI1780.htm" />
+  <topic name="Example Description" url="examples/PCI1784.htm" />
+  <topic name="Example Description" url="examples/USB4716.htm" />
+  <topic name="Example Description" url="examples/USB4761.htm" />
+  <topic name="Example Description" url="examples/PCI1763.HTM" />
+  <topic name="Example Description" url="examples/USB4704.htm" />
+  <topic name="Example Description" url="examples/PCI1713.htm" />
+</key>
+<key name="Example Support List" >
+  <topic name="Example Support List" url="examples/index.htm" />
+</key>
+<key name="Fast AI Transferring" >
+  <topic name="Fast AI Transferring" url="function/FAI/FastAnalogInput.htm" />
+</key>
+<key name="Fast AOTransferring" >
+  <topic name="Fast AOTransferring" url="function/FAO/FastAnalogOutput.htm" />
+</key>
+<key name="For MIC Series" >
+  <topic name="For MIC Series" url="function/supportingtables/forMIC.htm" />
+</key>
+<key name="For PCI-171x Series" >
+  <topic name="For PCI-171x Series" url="function/supportingtables/forPCI-171x.htm" />
+</key>
+<key name="For PCI-172x Series" >
+  <topic name="For PCI-172x Series" url="function/supportingtables/forPCI-172x.htm" />
+</key>
+<key name="For PCI-173x Series" >
+  <topic name="For PCI-173x Series" url="function/supportingtables/forPCI-173x.htm" />
+</key>
+<key name="For PCI-174x Series" >
+  <topic name="For PCI-174x Series" url="function/supportingtables/forPCI-174x.htm" />
+</key>
+<key name="For PCI-175x Series" >
+  <topic name="For PCI-175x Series" url="function/supportingtables/forPCI-175x.htm" />
+</key>
+<key name="For PCI-176x Series" >
+  <topic name="For PCI-176x Series" url="function/supportingtables/forPCI-176x.htm" />
+</key>
+<key name="For PCI-178x Series" >
+  <topic name="For PCI-178x Series" url="function/supportingtables/forPCI-178x.htm" />
+</key>
+<key name="For PCM Series" >
+  <topic name="For PCM Series" url="function/supportingtables/forPCM.htm" />
+</key>
+<key name="For USB Series" >
+  <topic name="For USB Series" url="function/supportingtables/forUSB.htm" />
+</key>
+<key name="Frequency Measurement Function" >
+  <topic name="Frequency Measurement Function" url="flow/counter/frequency.htm" />
+</key>
+
+</indexdata>

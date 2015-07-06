@@ -1,0 +1,170 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_MAIBinaryIn </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+div.Section1 { page:Section1; }
+span.SpellE {  }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nSoftware Transferring\nFunction Description\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_MAIBinaryIn");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1><font face="Verdana">DRV_MAIBinaryIn </font> </h1>
+	<p>
+	<pre class="code">INT32S DRV_MAIBinaryIn (
+   PTR_T<i> DeviceHandle,</i>
+   PT_MAIBinaryIn<i> * lpMAIBinaryIn </i>);</pre>
+	<h2><font face="Verdana">Purpose</font></h2>
+	<p><font face="Verdana"><span lang="EN-US">On the device indicated by the <i>DeviceHandle</i>, 
+	it r</span>eads back the current value from specific AI (Analog Input) 
+	channels and returns a list of unconverted raw data. 
+	The
+	<a href="drv_aiscale.htm">DRV_AIScale</a><i>
+	</i>can be used to convert the binary raw data into its corresponding voltage 
+	or any other desired analog value.</font></p>
+	<h2><font face="Verdana">Parameters</font></h2>
+	<p>Some parameters, such as </font>
+	configuring channels (<font face="Verdana"><i>StartChan </i>
+	and</font>
+		<font face="Verdana"><i>NumChan</i></font>), triggering mode (<i><font face="Verdana">TrigMode</font></i>) 
+	and return raw data (<i>ReadingArray</i>), 
+	are <font face="Verdana">stored in the 
+	<a href="../../structure/Ai/PT_MAIBinaryIn.htm">PT_MAIBinaryIn</a> 
+	structure pointed by the<i> lpMAIBinaryIn</i>.</font></p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered" border="1" id="table2">
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Name</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Direction</b></font></td>
+			<td width="96"><font face="Verdana" style="font-size: 9pt"><b>Range</b></font></td>
+			<td width="638"><font face="Verdana" style="font-size: 9pt"><b>Description</b></font></td>
+		</tr>
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>DeviceHandle</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt">input</font></td>
+			<td width="96"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td width="638">The p<font face="Verdana" style="font-size: 9pt">ointer retrieved from 
+			the 
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a>  			which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>lpMAIBinaryIn</b></font></td>
+			<td><font style="font-size: 9pt">i</font><font face="Verdana" style="font-size: 9pt">nput / output</font></td>
+			<td width="96"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td width="638">The<font style="font-size: 9pt"><span style="font-family: Verdana"> pointer 
+				to indicate the structure </span></font>
+			<font face="Verdana" style="font-size: 9pt"> 
+			<a href="../../structure/Ai/PT_MAIBinaryIn.htm">PT_MAIBinaryIn</a></font><font style="font-size: 9pt"><span style="font-family: Verdana"> that stores</span></font><font face="Verdana" style="font-size: 9pt">
+			</font><font style="font-size: 9pt">configuring</font><font face="Verdana" style="font-size: 9pt"> 
+			channels (INT16U <i>NumChan</i> and INT16U
+			<i>StartChan</i>), triggering mode (INT16U <i>TrigMode</i>) and 
+			return raw data (INT16U *<i>ReadingArray</i>).</font></td>
+		</tr>
+	</table>
+</div>
+	<h2><font face="Verdana">Return</font></h2>
+				<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table3">
+					<tr>
+						<td width="204">
+						<font face="Verdana" style="font-size: 9pt"><b>&nbsp;&nbsp; 1. 0</b></font></td>
+						<td><span style="font-size: 9pt">S</span><font face="Verdana" style="font-size: 9pt">uccessful.</font></td>
+					</tr>
+					<tr>
+						<td width="204">
+						<font face="Verdana" style="font-size: 9pt"><b>&nbsp;&nbsp; 2. other value</b></font></td>
+						<td><font face="Verdana" style="font-size: 9pt">Please reference 
+						<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a></font></td>
+					</tr>
+					
+				</table>
+	<div>
+	&nbsp;</div>
+</div>
+
+	<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

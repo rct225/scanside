@@ -1,0 +1,201 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FreqOutReset</title>
+<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+<meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval:21.0pt">
+<div class=Section1>
+
+<div>
+
+<h1><span lang="EN-US">DRV_CounterReset </span></h1>
+
+<pre class="code">INT32S DRV_CounterReset (  
+  PTR_T DeviceHandle, 
+  INT32U counter );</pre>
+
+<h2><span lang=EN-US>Purpose</span></h2>
+
+<p><span lang=EN-US>On the device indicated by the <i>DevcieHandle</i>, it
+resets a specific counter<i> </i>or timer to stop the current operation. The
+function works for all types of counter/timer functions, including <a
+href="DRV_CounterEventStart.htm">DRV_CounterEventStart</a>, <a
+href="DRV_CounterFreqStart.htm">DRV_CounterFreqStart</a>, <a
+href="DRV_QCounterStart.htm">DRV_QCounterStart</a>, <a
+href="DRV_CounterPulseStart.htm">DRV_CounterPulseStart</a>, <a
+href="DRV_CounterPWMEnable.htm">DRV_CounterPWMEnable</a> and <a
+href="DRV_TimerCountSetting.htm">DRV_TimerCounterSetting</a>, except the
+special function <a href="DRV_FreqOutStart.htm">DRV_FreqOutStart</a> of
+PCI-1780/MIC3780/PCM3780.</span></p>
+
+<h2><span lang=EN-US>Parameters</span></h2>
+
+<div style='margin-left:24.0pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;background:#999999;border:solid #999999 1.0pt;
+ mso-border-top-alt:.5pt;mso-border-left-alt:.25pt;mso-border-bottom-alt:.25pt;
+ mso-border-right-alt:.5pt;mso-border-color-alt:#999999;mso-border-style-alt:
+ solid' id=table4>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Name </span></b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Direction </span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Range </span></b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Description </span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>DeviceHandle </span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>input </span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>default </span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>The pointer retrieved from <a href="../Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>
+  which specifies the target device.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>counter </span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>input&nbsp; </span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>default </span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>The user-specified counter to be stopped.<br>
+  From a minimum of zero for the first channel to the maximum channel number
+  minus one. For example, the range is from 0 to <i>(N-1)</i> on a device with <i>N</i>
+  counter channels.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h2><span lang=EN-US>Return</span></h2>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=202 style='width:151.5pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>&nbsp;&nbsp; 1. 0</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>Successful.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=202 style='width:151.5pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>&nbsp;&nbsp; 2. InvalidDeviceHandle</span></b><span lang=EN-US
+  style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The
+  <i>Devicehandle</i> is NULL.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=202 style='width:151.5pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>&nbsp;&nbsp; 3. InvalidChannel</span></b><span lang=EN-US
+  style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The
+  target channel is out of range.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

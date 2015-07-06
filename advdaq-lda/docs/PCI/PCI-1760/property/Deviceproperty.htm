@@ -1,0 +1,222 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Properties</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nDevice Properties");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Device Properties</h1>
+<p>Device properties are stored in the system and read by the driver when it loads, 
+  and then the device is programmed according to these loaded values. The properties 
+  are protected during read and write access times, and some of them are pre-defined 
+  by the configuration dialog box. Different device's functions are influenced 
+  by different properties. These properties are represented by an ID code for 
+  an application that calls Advantech API functions. An application can use a 
+  default value set by the configuration dialog box, or call Advantech API functions: 
+  <a href="../../../function/Device/drv_devicegetproperty.htm">DRV_DeviceGetProperty</a> 
+  and <a href="../../../function/Device/drv_devicesetproperty.htm">DRV_DeviceSetProperty</a> , 
+  to modify individual properties in running time.</p>
+<p></p>
+<p></p>
+<p>PCI-1760 supports the following properties:</p>
+<p class="P1"></p> 
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td><b>Property</b></td>
+      <td><b>Description</b></td>
+    </tr>
+ 
+    <tr> 
+      <td><a href="CFG_BoardID.htm">CFG_BoardID</a></td>
+      <td>gets the board ID of the device.</td>
+    </tr>    
+     <tr>
+      <td height="26"><a href="CFG_BaseAddress.htm">CFG_BaseAddress</a></td>
+      <td height="26">gets the base address of the currently installed PCI-1760</td>
+    </tr>
+	<tr>
+      <td height="26"><a href="CFG_Interrupt.htm">
+		CFG_Interrupt</a></td>
+      <td height="26">gets the IRQ of the currently installed PCI-1760.</td>
+    </tr>
+	<tr>
+      <td><a href="CFG_BusNumber.htm">CFG_BusNumber</a></td>
+      <td>gets bus number of the currently installed PCI-1760.</td>
+    </tr>
+	<tr>
+      <td><a href="CFG_SlotNumber.htm">CFG_SlotNumber</a></td>
+      <td>gets the slot number of the currently installed PCI-1760.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana; text-decoration:underline">
+		<a href="CFG_DiChannelCount.htm">CFG_DiChannelCount</a></span></font></td>
+      <td>gets the<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana">&nbsp;digital 
+		input channel count</span>.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana; text-decoration:underline">
+		<a href="CFG_DiPortCount.htm">CFG_DiPortCount</a></span></font></td>
+      <td>gets the
+		<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana">
+		digital input port count</span>e.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana; text-decoration:underline">
+		<a href="CFG_DoChannelCount.htm">CFG_DoChannelCount</a></span></font></td>
+      <td>gets the
+		<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana">
+		digital output channel count</span>.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana; text-decoration:underline">
+		<a href="CFG_DoPortCount.htm">CFG_DoPortCount</a></span></font></td>
+      <td>gets the
+		<span lang="EN-US" style="font-size: 9.0pt; font-family: Verdana">
+		digital output port count</span>.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiPatternMatchEnabledChannel.htm">CFG_DiPatternMatchEnabledChannel</font></td>
+      <td>gets or sets DI channel which issue interrupt when DI pattern match 
+		with preset value.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiPatternMatchValue.htm">CFG_DiPatternMatchValue</font></td>
+      <td>gets or sets DI pattern match value.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiFilterEnable.htm">CFG_DiFilterEnable</font></td>
+      <td>gets or sets all of the DI filter enabled status.</td>
+    </tr>
+    <tr>
+      <td><a href="CFG_DiFilterHiValue.htm">CFG_DiFilterHiValue</td>
+      <td>gets or sets an effective period that the signal must last for, 
+		otherwise the signal will be filtered out as noise.</td>
+    </tr>
+    <tr>
+      <td><a href="CFG_DiFilterLowValue.htm">CFG_DiFilterLowValue</td>
+      <td>gets or sets an effective period that the signal must last for, 
+		otherwise the signal will be filtered out as noise.</td>
+    </tr>
+    <tr>
+      <td><a href="CFG_DiStatusChangeOnRisingEdge.htm">CFG_DiStatusChangeOnRisingEdge</td>
+      <td>gets or sets Di channels that issue interrupt on rising edge with 
+		status changing.</td>
+    </tr>
+    <tr>
+      <td><a href="CFG_DiStatusChangeOnFallingEdge.htm">CFG_DiStatusChangeOnFallingEdge</td>
+      <td>gets or sets Di channels that issue interrupt on falling edge with 
+		status changing.</td>
+    </tr>
+    <tr>
+      <td height="24"><a href="CFG_DiCounterEnable.htm">CFG_DiCounterEnable</td>
+      <td height="24">gets or sets DI counter function’s status.</td>
+    </tr>
+    <tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiCounterMatchEnable.htm">CFG_DiCounterMatchEnable</font></td>
+      <td>gets or sets the DI counter match function’s status.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiCounterTrigEdge.htm">CFG_DiCounterTrigEdge</font></td>
+      <td>gets or sets the time when the DI counter issue interrupt, on falling 
+		trigger edge or on rising edge.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiCounterPreset.htm">CFG_DiCounterPreset</font></td>
+      <td>gets or sets DI counter preset value.</td>
+    </tr>
+
+      <td><font color="#0000FF">
+		<a href="CFG_DiCounterValue.htm">CFG_DiCounterValue</font></td>
+      <td>gets or sets DI Counter’s matching value. When the counter’s value 
+		equal this value, the device will issue a interrupte.</td>
+    </tr>
+	<tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiCounterOverflow.htm">CFG_DiCounterOverflow</font></td>
+      <td>gets or sets DI counter overflow interrupt function’s status.</td>
+    </tr>
+    	<tr>
+      <td><font color="#0000FF">
+		<a href="CFG_DiCounterDirection.htm">CFG_DiCounterDirection</font></td>
+      <td>gets or sets the Counter up/down counting setting.</td>
+    </tr>
+    </table>
+</div>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

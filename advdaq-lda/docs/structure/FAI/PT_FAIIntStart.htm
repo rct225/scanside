@@ -1,0 +1,192 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAIIntStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+div.Section1 { page:Section1; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nInterrupt Transferring\nData Structure\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nData Structures\nHigh-speed\nPT_FAIIntStart");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAIIntStart");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAIIntStart");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAIIntStart");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIIntStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_FAIIntStart
+</h1></h1>
+<pre class="code">
+typedef struct tagPT_FAIIntStart
+{
+    INT16U TrigSrc;
+    INT32U SampleRate;
+    INT16U chan;
+    INT16U gain;
+    INT16U *buffer;
+    INT32U count;
+    INT16U cyclic;
+    INT16U IntrCount;
+} PT_FAIIntStart, * LPT_FAIIntStart;
+</pre>
+<p><b> PT_FAIIntStart</b> is used in 
+function
+<a href="../../function/FAI/DRV_FAIIntStart.htm">DRV_FAIIntStart</a>.</p>
+ <h2><span style="font-size: 9pt">Member Description</span></h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered" id="table1">
+  <tr>
+    <td><b>     <font style="font-size: 9pt">Name</font></b></td>
+    <td><b>     <font style="font-size: 9pt">Direction</font></b></td>
+    <td><b>     <font style="font-size: 9pt">Range</font></b></td>
+    <td><b>     <font style="font-size: 9pt">Description</font></b></td>
+  </tr>
+  <tr>
+    <td><b>     <font style="font-size: 9pt">TrigSrc</font></b></td>
+    <td>     <font style="font-size: 9pt">input</font></td>
+    <td>     <font style="font-size: 9pt">0&#65292;1</font></td>
+    <td>     <font style="font-size: 9pt">The triggering source:<br>
+		external (1),      internal (0)</font>&nbsp; </td>
+  </tr>
+  <tr>
+    <td><b>     <font style="font-size: 9pt">SampleRate</font></b></td>
+    <td>     <font style="font-size: 9pt">input</font></td>
+    <td>     <font style="font-size: 9pt">Depends on the pacer on      hardware.</font></td>
+    <td>     <font style="font-size: 9pt">The total sampling rate on scanning channels (Hz).&nbsp;</font></td>
+  </tr>
+  <tr>
+    <td><b><font style="font-size: 9pt">chan</font></b></td>
+    <td>     <font style="font-size: 9pt">input</font></td>
+    <td>     <font style="font-size: 9pt">0-(N-1) (N is the maximum AI channel number)</font></td>
+    <td>     <font style="font-size: 9pt">The sampling channel number. The<span lang="zh-cn"> range is from </span> 
+	the minimum zero 
+	(the first AI channel) to the maximum AI channel number minus one.
+	<span lang="zh-cn"> For example, the range </span>will be from 0 to <i>(N-1)</i> on a 
+	device with <i>N</i> written as the number of the AI channel. </font></td>
+  </tr>
+  <tr>
+    <td><b><font style="font-size: 9pt">gain</font></b></td>
+    <td>     <font style="font-size: 9pt">input</font></td>
+    <td>     <font style="font-size: 9pt">Depends on the input range on      hardware.</font></td>
+    <td>     <font style="font-size: 9pt">The corresponding GainCode for voltage input range. Please refer to 
+	the <i>Hardware Manual</i> for details. </font> </td>
+  </tr>
+  <tr>
+    <td><b>     <font style="font-size: 9pt">buffer</font></b></td>
+    <td>     <font style="font-size: 9pt">output</font></td>
+    <td>     <font style="font-size: 9pt">1 ~ 65535</font></td>
+    <td>     <font style="font-size: 9pt">The sampling data buffer. Please refer to the 
+	<a href="../../function/FAI/FastAnalogInput.htm">
+	FastAnalogInput</a> to set a buffer with proper size. </font> </td>
+  </tr>
+  <tr>
+    <td><b>     <font style="font-size: 9pt">count</font></b></td>
+    <td>     <font style="font-size: 9pt">input</font></td>
+    <td>     <font style="font-size: 9pt">1-</font>N(N is the sampling data 
+	count. )</td>
+    <td>     <font style="font-size: 9pt">It must be above zero, 
+	an even number (because of memory alignment and performance), or a multiple 
+	of half the FIFO size if FIFO is used. </font>
+	</td>
+  </tr>
+  <tr>
+    <td><b>     <font style="font-size: 9pt">cyclic</font></b></td>
+    <td>     <font style="font-size: 9pt">input</font></td>
+    <td>     <font style="font-size: 9pt">0,1</font></td>
+    <td>     <font style="font-size: 9pt">The cyclic mode:</font><br>
+	0 - Non-cyclic<br>
+			1 - Cyclic</td>
+  </tr>
+  <tr>
+    <td><b>     <font style="font-size: 9pt">IntrCount</font></b></td>
+    <td>     <font style="font-size: 9pt">input</font></td>
+    <td>     <font style="font-size: 9pt">Depends on hardware.</font></td>
+    <td>     <font style="font-size: 9pt">It sets the count of conversions that create an 
+	interrupt.<br>
+	</font>If FIFO is not used, it should be set to 
+	1; <br>
+	if FIFO is used, it should be set to half the FIFO size. 
+	</td>
+  </tr>
+</table>
+</div>
+</div>
+<p>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

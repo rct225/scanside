@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="A: Gain Code" >
+  <topic name="A: Gain Code" url="appendix/gaincodes.htm" />
+</key>
+<key name="About Data Structure" >
+  <topic name="About Data Structure" url="structure/datastructure.htm" />
+</key>
+<key name="About Function Description" >
+  <topic name="About Function Description" url="function/functiondisc.htm" />
+</key>
+<key name="About This Manual" >
+  <topic name="About This Manual" url="before/aboutmanual.htm" />
+</key>
+<key name="Advantech DAQ Device Linux Driver Programming Examples" >
+  <topic name="Advantech DAQ Device Linux Driver Programming Examples" url="examples/programmingexamples.htm" />
+</key>
+<key name="Advantech Device Driver Overview" >
+  <topic name="Advantech Device Driver Overview" url="Introduction/aboutdriver.htm" />
+</key>
+<key name="Analog Input" >
+  <topic name="Analog Input" url="USB/USB-4711/Function/funcdesc.htm" />
+  <topic name="Analog Input" url="USB/USB-4704/Function/funcdesc.htm" />
+  <topic name="Analog Input" url="USB/USB-4716/Function/funcdesc.htm" />
+  <topic name="Analog Input" url="USB/USB-4702/Function/funcdesc.htm" />
+  <topic name="Analog Input" url="USB/USB-4718/Function/funcdesc.htm" />
+  <topic name="Analog Input" url="PCI/PCI-1714/Function/funcdesc.htm" />
+</key>
+<key name="Analog Input Function Group" >
+  <topic name="Analog Input Function Group" url="flow/ai/aigroup.htm" />
+</key>
+<key name="Analog Output" >
+  <topic name="Analog Output" url="USB/USB-4702/Function/funcdesc.htm" />
+  <topic name="Analog Output" url="USB/USB-4711/Function/funcdesc.htm" />
+  <topic name="Analog Output" url="USB/USB-4716/Function/funcdesc.htm" />
+  <topic name="Analog Output" url="USB/USB-4704/Function/funcdesc.htm" />
+</key>
+<key name="Analog Output Function Group" >
+  <topic name="Analog Output Function Group" url="flow/ao/aogroup.htm" />
+</key>
+<key name="AORANGESET" >
+  <topic name="AORANGESET" url="structure/AO/AORANGESET.htm" />
+</key>
+<key name="AOSET" >
+  <topic name="AOSET" url="structure/AO/AOSET.htm" />
+</key>
+<key name="CFG_AiChanConfig" >
+  <topic name="CFG_AiChanConfig" url="USB/USB-4711/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="PCI/PCI-1742U/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AIChanConfig" url="PCI/PCI-1712/property/CFG_AIChanConfig.htm" />
+  <topic name="CFG_AIChanConfig" url="PCI/PCI-1716/property/CFG_AIChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="PCI/PCI-1713/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="USB/USB-4716/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="PCI/PCI-1710/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="USB/USB-4704/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AIChanConfig" url="PCI/PCI-1747/property/CFG_AIChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="PCM/PCM-3718/property/CFG_AIChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="USB/USB-4702/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="PCI/PCI-1718/property/CFG_AIChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="PCI/PCI-1715/property/CFG_AiChanConfig.htm" />
+  <topic name="CFG_AiChanConfig" url="PCI/PCI-1741U/property/CFG_AiChanConfig.htm" />
+</key>
+<key name="CFG_AiCyclicMode" >
+  <topic name="CFG_AiCyclicMode" url="PCM/PCM-3718/property/CFG_AICyclicMode.htm" />
+</key>
+<key name="CFG_AiFifoSize" >
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1710/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1741U/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1711/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1742U/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="USB/USB-4716/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1747/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1714/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1715/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="PCI/PCI-1713/property/CFG_AiFifoSize.htm" />
+  <topic name="CFG_AiFifoSize" url="USB/USB-4711/property/CFG_AiFifoSize.htm" />
+</key>
+<key name="CFG_AiPacerRate" >
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1713/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1714/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1710/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1718/property/CFG_AIPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCM/PCM-3718/property/CFG_AIPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="USB/USB-4711/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AIPacerRate" url="PCI/PCI-1747/property/CFG_AIPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="USB/USB-4704/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1741U/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AIPacerRate" url="PCI/PCI-1716/property/CFG_AIPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1711/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="USB/USB-4702/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="USB/USB-4716/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AIPacerRate" url="PCI/PCI-1712/property/CFG_AIPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1742U/property/CFG_AiPacerRate.htm" />
+  <topic name="CFG_AiPacerRate" url="PCI/PCI-1715/property/CFG_AiPacerRate.htm" />
+</key>
+<key name="CFG_AiTimerClock" >
+  <topic name="CFG_AiTimerClock" url="PCI/PCI-1718/property/CFG_AiTimerClock.htm" />
+</key>
+<key name="CFG_AoChanRange" >
+  <topic name="CFG_AoChanRange" url="USB/USB-4704/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="USB/USB-4711/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1712/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1711/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1723/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1720/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="USB/USB-4702/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1721/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1742U/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1724/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="USB/USB-4716/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1710/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1716/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1727U/property/CFG_AoChanRange.htm" />
+  <topic name="CFG_AoChanRange" url="PCI/PCI-1741U/property/CFG_AoChanRange.htm" />
+</key>
+<key name="CFG_AOPacerRate" >
+  <topic name="CFG_AOPacerRate" url="PCI/PCI-1712/property/CFG_AOPacerRate.htm" />
+  <topic name="CFG_AoPacerRate" url="PCI/PCI-1721/property/CFG_AoPacerRate.htm" />
+</key>
+<key name="CFG_AoRangeList" >
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1721/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1741U/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1727U/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1716/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1723/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1724/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1742U/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="USB/USB-4711/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="USB/USB-4716/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="USB/USB-4702/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1710/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1720/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="USB/USB-4704/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1711/property/CFG_AoRangeList.htm" />
+  <topic name="CFG_AoRangeList" url="PCI/PCI-1712/property/CFG_AoRangeList.htm" />
+</key>
+
+</indexdata>

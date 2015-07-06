@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Welcome to Advantech DAQ Device Linux Driver" url="before/Welcome.htm" >
+  <item name="About This Manual" url="before/aboutmanual.htm" />
+  <item name="Organization of This Manual" url="before/organization.htm" />
+</book>
+<book name="Advantech Device Driver Overview" url="Introduction/aboutdriver.htm" >
+  <item name="Steps on Programming with Advantech DAQ Device Linux Driver" url="Introduction/guide.htm" />
+  <item name="Installing Advantech DAQ Device Linux Driver" url="Introduction/install.htm" />
+  <item name="Configure Devices with Advantech DAQ Device Manager Utilities" url="Introduction/devmgr.htm" />
+</book>
+<book name="Getting Started with Advantech DAQ Device Linux Driver" url="tutorial/programming.htm" >
+  <book name="A simple Example" >
+    <item name="Create a new Application" url="tutorial/SimpleExample/emptyproject.htm" />
+    <item name="Compiling" url="tutorial/SimpleExample/addfiles.htm" />
+    <item name="Running" url="tutorial/SimpleExample/writingcodes.htm" />
+  </book>
+</book>
+<book name="Advantech DAQ Device Linux Driver Programming Examples" url="examples/programmingexamples.htm" >
+  <book name="Example Support List" url="examples/index.htm" >
+    <book name="PCI Series" >
+      <item name="PCI-1710/U Series" url="examples/PCI1710.htm" />
+      <item name="PCI-1711/L/U/UL" url="examples/PCI1711.htm" />
+      <item name="PCI-1712/L" url="examples/PCI1712.htm" />
+      <item name="PCI-1713/U" url="examples/PCI1713.htm" />
+      <item name="PCI-1714" url="examples/PCI1714.htm" />
+      <item name="PCI-1715U" url="examples/PCI1715.htm" />
+      <item name="PCI-1716/L" url="examples/PCI1716.htm" />
+      <item name="PCI-1718HD/GU" url="examples/PCI1718.htm" />
+      <item name="PCI-1720" url="examples/PCI1720.htm" />
+      <item name="PCI-1721" url="examples/PCI1721.htm" />
+      <item name="PCI-1723" url="examples/PCI1723.htm" />
+      <item name="PCI-1724" url="examples/PCI1724.htm" />
+      <item name="PCI-1727U" url="examples/PCI1727U.htm" />
+      <item name="PCI-1730" url="examples/PCI1730.htm" />
+      <item name="PCI-1733" url="examples/PCI1733.htm" />
+      <item name="PCI-1734" url="examples/PCI1734.htm" />
+      <item name="PCI-1735U" url="examples/PCI1735U.htm" />
+      <item name="PCI-1736UP" url="examples/PCI1736.htm" />
+      <item name="PCI-1737U" url="examples/PCI1737U.htm" />
+      <item name="PCI-1739U" url="examples/PCI1739U.htm" />
+      <item name="PCI-1741U" url="examples/PCI1741U.htm" />
+      <item name="PCI-1742U" url="examples/PCI1742U.htm" />
+      <item name="PCI-1747" url="examples/PCI1747.htm" />
+      <item name="PCI-1750" url="examples/PCI1750.htm" />
+      <item name="PCI-1751" url="examples/PCI1751.htm" />
+      <item name="PCI-1752" url="examples/PCI1752.htm" />
+      <item name="PCI-1753" url="examples/PCI1753.htm" />
+      <item name="PCI-1754" url="examples/PCI1754.htm" />
+      <item name="PCI-1756" url="examples/PCI1756.htm" />
+      <item name="PCI-1757UP" url="examples/PCI1757UP.htm" />
+      <item name="PCI-1758" url="examples/PCI1758U.htm" />
+      <item name="PCI-1760" url="examples/PCI1760.htm" />
+      <item name="PCI-1761" url="examples/PCI1761.htm" />
+      <item name="PCI-1762" url="examples/PCI1762.htm" />
+      <item name="PCI-1763UP" url="examples/PCI1763.HTM" />
+      <item name="PCI-1780" url="examples/PCI1780.htm" />
+      <item name="PCI-1784/U" url="examples/PCI1784.htm" />
+    </book>
+    <book name="USB Series" >
+      <item name="USB-4711/A" url="examples/USB4711.htm" />
+      <item name="UAB-4702" url="examples/USB4702.htm" />
+      <item name="UAB-4704" url="examples/USB4704.htm" />
+      <item name="UAB-4716" url="examples/USB4716.htm" />
+      <item name="USB-4718" url="examples/USB4718.htm" />
+      <item name="USB-4750" url="examples/USB4750.htm" />
+      <item name="USB-4751" url="examples/USB4751.htm" />
+      <item name="USB-4761" url="examples/USB4761.htm" />
+    </book>
+    <book name="PCM Series" >
+      <item name="PCM-3718" url="examples/PCM3718.htm" />
+      <item name="PCM-3724" url="examples/PCM3724.htm" />
+      <item name="PCM-3725" url="examples/PCM3725.htm" />
+      <item name="PCM-3730" url="examples/PCM3730.htm" />
+      <item name="PCM-3730I" url="examples/PCM3730I.htm" />
+      <item name="PCM-3753I" url="examples/PCM3753I.htm" />
+      <item name="PCM-3761I" url="examples/PCM3761I.htm" />
+    </book>
+    <book name="MIC Series" >
+      <item name="MIC-3751" url="examples/MIC3751.htm" />
+    </book>
+  </book>
+</book>
+<book name="Function Reference" url="function/funcoverview.htm" >
+<chunk name="Function Reference" url="function/funcoverview.htm" ref="whtdata1.xml" />
+</book>
+<book name="Appendix" >
+  <item name="A: Gain Code" url="appendix/gaincodes.htm" />
+</book>
+<book name="PCI Series" >
+<chunk name="PCI Series" ref="whtdata2.xml" />
+</book>
+<book name="USB Series" >
+<chunk name="USB Series" ref="whtdata3.xml" />
+</book>
+<book name="MIC Series" >
+  <book name="MIC-3751 Device Driver User Manual" url="MIC/MIC-3751/cover.htm" >
+    <book name="Device Introduction" >
+      <item name="Device Features" url="MIC/MIC-3751/features/keyfeature.htm" />
+    </book>
+    <book name="Demo and Test Examples" >
+      <item name="Example Description" url="examples/PCI1751.htm" />
+    </book>
+    <book name="Function Description" url="MIC/MIC-3751/Function/funcdesc.htm" >
+      <book name="Device Functions" >
+        <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+        <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+        <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+        <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+      </book>
+      <book name="Port I/O Functions" >
+        <item name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+        <item name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+        <item name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+        <item name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+      </book>
+      <book name="Digital Input/Output" >
+        <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+        <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+        <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+      </book>
+      <book name="Counter Functions" >
+        <item name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+        <item name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+        <item name="DRV_CounterFreqStart" url="function/counter/DRV_CounterFreqStart.htm" />
+        <item name="DRV_CounterFreqRead" url="function/counter/DRV_CounterFreqRead.htm" />
+        <item name="DRV_CounterPulseStart" url="function/counter/DRV_CounterPulseStart.htm" />
+        <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+        <item name="DRV_TimerCountSetting" url="function/counter/DRV_TimerCountSetting.htm" />
+      </book>
+      <book name="High-speed Functions" >
+        <book name="Common Functions" >
+          <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+          <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+        </book>
+      </book>
+      <book name="Other Functions" >
+        <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+      </book>
+    </book>
+    <book name="Data Structures" url="MIC/MIC-3751/structure/datastructure.htm" >
+      <book name="Port I/O Functions" >
+        <item name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+        <item name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+        <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+        <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+      </book>
+      <book name="Counter Functions" >
+        <item name="PT_CounterEventStart" url="structure/counter/PT_CounterEventStart.htm" />
+        <item name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+        <item name="PT_CounterFreqStart" url="structure/counter/PT_CounterFreqStart.htm" />
+        <item name="PT_CounterFreqRead" url="structure/counter/PT_CounterFreqRead.htm" />
+        <item name="PT_CounterPulseStart" url="structure/counter/PT_CounterPulseStart.htm" />
+        <item name="PT_TimerCountSetting" url="structure/counter/PT_TimerCountSetting.htm" />
+      </book>
+      <book name="High-speed Functions" >
+        <book name="Common Functions" >
+          <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+          <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+        </book>
+      </book>
+    </book>
+    <book name="Device Event" >
+      <item name="Event Type" url="MIC/MIC-3751/Eventtype/Eventtype.htm" />
+    </book>
+    <book name="Device Properties" url="MIC/MIC-3751/property/Deviceproperty.htm" >
+      <item name="CFG_BoardID" url="MIC/MIC-3751/property/CFG_BoardID.htm" />
+      <item name="CFG_BaseAddress" url="MIC/MIC-3751/property/CFG_BaseAddress.htm" />
+      <item name="CFG_Interrupt" url="MIC/MIC-3751/property/CFG_Interrupt.htm" />
+      <item name="CFG_BusNumber" url="MIC/MIC-3751/property/CFG_BusNumber.htm" />
+      <item name="CFG_SlotNumber" url="MIC/MIC-3751/property/CFG_SlotNumber.htm" />
+      <item name="CFG_CascadeMode" url="MIC/MIC-3751/property/CFG_CascadeMode.htm" />
+      <item name="CFG_DioChannelDirection" url="MIC/MIC-3751/property/CFG_DioChannelDirection.htm" />
+      <item name="CFG_DoPortCount" url="MIC/MIC-3751/property/CFG_DoPortCount.htm" />
+      <item name="CFG_DiPortCount" url="MIC/MIC-3751/property/CFG_DiPortCount.htm" />
+      <item name="CFG_DiChannelCount" url="MIC/MIC-3751/property/CFG_DiChannelCount.htm" />
+      <item name="CFG_DoChannelCount" url="MIC/MIC-3751/property/CFG_DoChannelCount.htm" />
+      <item name="CFG_InterruptTriggerSource" url="MIC/MIC-3751/property/CFG_InterruptTriggerSource.htm" />
+      <item name="CFG_DiInterruptTriggerOnFallingEdge" url="MIC/MIC-3751/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+      <item name="CFG_DiInterruptTriggerOnRisingEdge" url="MIC/MIC-3751/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+    </book>
+    <book name="Error Codes" url="errorcodes/errorcodes.htm" >
+      <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+    </book>
+  </book>
+</book>
+<book name="PCM Series" >
+<chunk name="PCM Series" ref="whtdata4.xml" />
+</book>
+
+</tocdata>

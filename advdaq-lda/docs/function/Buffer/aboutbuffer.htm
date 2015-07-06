@@ -1,0 +1,110 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>About Buffer</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>About Buffer</h1><p>Generally, in the high speed&nbsp; operation, user 
+	buffer is divided into two equal parts<span style="font-family: &#23435;&#20307;">(1<sup>st
+	</sup></span>half and 2<sup>nd</sup> half). The data from the device will 
+	fill them separately. <b>Buffer change</b> event will be triggered when either buffer 
+	is full.</p><img border="0" src="Data_Buffer_normal.jpg" width="683" height="245">
+<p>
+(1).When the sampling started, driver writes data start from the 1st half.
+
+</p>
+<p>(2). Driver throw a <b>buffer change</b> event to notify user's program on 1st half full. User's program should transfer the data in time, or might cause buffer overrun if the 2nd half full.
+
+</p>
+<p>(3). At the same time, data log is keeping going on the 2nd half during the data transfer.
+
+</p>
+<p>(4). When 2nd half full, driver throw a <b>buffer change</b> and data log back to the 1st half again. User's program start transfer data from the 2nd half. Back to graph 
+(1) for next status.
+
+</p>
+<p>In high-speed functions to transfer large amount of data, a larger buffer is 
+required. Usually, we prefer to create a buffer with the size slightly more than 
+we need to keep the fetching data in safe. If the data is not taken away in time 
+after a <b>buffer change</b> event, an <b>overrun</b> event will be signaled, and the data would 
+be overwritten by new ones.</p>
+<p>
+<span style="font-size: 10.5pt; font-family: Times New Roman">&nbsp;</span><img border="0" src="Data_Buffer_over_flow.jpg" width="656" height="244"><span style="font-size: 10.5pt; font-family: Times New Roman"> 
+	.</span></p>
+<p>After sampling ,we need copy the data from sampling data buffer to the transfer buffer for analyzing ,so that the transfer buffer should also be allocated. However, the size of the transfer buffer should be no less than 2*sampling count bytes when the data type is raw data, or no less than 4*sampling count bytes when the data type is float data. </p>
+<p><img border="0" src="Transfer_Data.jpg" width="693" height="244">
+
+<h2>See also</h2>
+<p><a href="../../flow/ai/Interrupttrig.htm">FAI Interrupt Triggering</a><p>
+<a href="../../flow/ai/dmatrig.htm">FAI DMA Triggering</a><p>
+<a href="../../flow/ao/waveao.htm">FAO DMA Triggering</a><p>
+<a href="../../flow/dio/dma.htm">FDI DMA Triggering</a><p>
+<a href="../../flow/dio/DOdma.htm">FDO DMA Triggering</a>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

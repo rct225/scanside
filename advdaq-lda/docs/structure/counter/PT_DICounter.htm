@@ -1,0 +1,183 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_DICounter</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_DICounter
+</h1></h1>
+<pre class="code">typedef struct tagPT_DICounter
+{ 
+    USHORT usEventType;
+    USHORT usEventEnable;
+    USHORT usCount;
+    USHORT usEnable;
+    USHORT usTrigEdge;
+    USHORT *usPreset;
+    USHORT usMatchEnable;
+    USHORT *usValue;
+    USHORT usOverflow;
+    USHORT usDirection;
+} PT_DICounter, * LPT_DICounter;
+</pre>
+<p></p>
+<p><b> PT_DICounter</b>  is no used now. </p>
+<p>Each digital input channel of PCI-1760 is connected to a 16-bit UP event counter 
+with a maximum frequency of 500 Hz. Each counter is enabled or disabled by 
+software.</p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     usEventType</b></td>
+    <td>     input</td>
+    <td>     The type of  event during hardware interrupt.<br>
+&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>     usEventEnable</b></td>
+    <td>     input</td>
+    <td>     The event enable/disable bit. After the event function
+    is enabled, the 
+	device driver will fire an event when  hardware interrupt occurs.</td>
+  </tr>
+  <tr>
+    <td><b>     usCount</b></td>
+    <td>     input</td>
+    <td>     Reserved.</td>
+  </tr>
+  <tr>
+    <td><b>     usEnable</b></td>
+    <td>     input</td>
+    <td>     The counter enable/disable bit for     counter0~counter7. For example, if bit0=1, counter0 is enabled.</td>
+  </tr>
+  <tr>
+    <td><b>     usTrigEdge</b></td>
+    <td>     input</td>
+    <td>     The trigger edge for counter. <br>
+	0:rising edge <br>
+	1:falling edge</td>
+  </tr>
+  <tr>
+    <td height="39"><b>     usPreset</b></td>
+    <td height="39">     input</td>
+    <td height="39">     The preset start-up value of a counter when one of the 
+	counters needs to be started from a non-zero number. The preset value
+    can be set &nbsp;to a number between 0 and 65535 
+    by the user.</td>
+  </tr>
+  <tr>
+    <td><b>     usMatchEnable</b></td>
+    <td>     input</td>
+    <td>     The match function enable/disable bit for      counter0~counter7. <br>
+	An 
+	interrupt signal will be generated if the counter value reaches a pre-set 
+	counter match value (see the <i>usValue</i> below). The counter will continue to count until an 
+	overflow occurs, then it will go back to its reset value zero and continue 
+	the counting process.<br>
+	<font style="FONT-SIZE: 9pt">It is an 8-bit binary value, each bit 
+	corresponds to a counting channel. 1 means to enable the counter match, 0 
+	means disable. </font>For example, 0x13 (00010011) means the counter match 
+	is enabled on channel 0&#12289;1&#12289;4. </td>
+  </tr>
+  <tr>
+    <td><b>     usValue</b></td>
+    <td>     input</td>
+    <td>     The counter match value. When the match function is enabled and the 
+	count value matches the specified value, a COUNTERMATCH event will be signaled.</td>
+  </tr>
+  <tr>
+    <td><b>     usOverflow</b></td>
+    <td>     input</td>
+    <td>     The overflow enable/disable bit for      counter0 to counter7. An 
+	overflow will occur when the counter reaches its maximum value, 65535.<br>
+	<font style="FONT-SIZE: 9pt">It is an 8-bit binary value, each bit 
+	corresponds to a counting channel. 1 means to enable the overflow, 0 means 
+	disable. </font>For 
+	example, 0x13 (00010011) means to enable the overflow on channel 0&#12289;1&#12289;4.</td>
+  </tr>
+  <tr>
+    <td><b>     usDirection</b></td>
+    <td>     input</td>
+    <td>     Reserved.</td>
+  </tr>
+</table>
+</div>
+<p></p>
+<p></p>
+</div>
+<div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

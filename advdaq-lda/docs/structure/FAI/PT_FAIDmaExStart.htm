@@ -1,0 +1,303 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAIDmaExStart	</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nDMA Transferring\nData Structure\nPT_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAIDmaExStart");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIDmaExStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>PT_FAIDmaExStart</h1>	
+  <pre class="code">typedef struct tagPT_FAIDmaExStart
+{
+    INT16U TrigSrc; 
+    INT16U TrigMode;
+    INT16U ClockSrc; 
+    INT16U TrigEdge; 
+    INT16U SRCType;
+    FP32  TrigVol; 
+    INT16U CyclicMode;
+    INT16U NumChans; 
+    INT16U StartChan; 
+    INT32U  ulDelayCnt; 
+    INT32U  count; 
+    INT32U  SampleRate;
+    INT16U *GainList; 
+    INT16U *CondList;
+    INT16U *buffer0; 
+    INT16U *buffer1;
+    INT16U *Pt1; 
+    INT16U *Pt2; 
+    INT16U *Pt3; 
+} PT_FAIDmaExStart, *LPT_FAIDmaExStart;
+</pre>
+	<p><b>PT_FAIDmaExStart</b> is used in<b> </b>function <a href="../../function/FAI/DRV_FAIDmaExStart.htm">DRV_FAIDmaExStart</a>.</p>
+	<h2><span style="font-size: 9pt">Member Description</span></h2> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>TrigSrc</b></td>
+			<td>input</td>
+			<td>0, 1</td>
+			<td>The triggering source:<br>
+			0-internal <br>
+			1-external</td>
+		</tr>
+		<tr>
+			<td><b>TrigMode</b></td>
+			<td>input</td>
+			<td>0, 1, 2, 3</td>
+			<td>The triggering mode:<br>
+			0-Pacer (initiates DMA sampling immediately)<br>
+			1-Post (initiates DMA sampling when external signal occurs)<br>
+			2-Delay (delays user specified number of samples and initiates the 
+			sampling when external signal occurs)<br>
+			3-About (initiates the DMA sampling, and continues to sample 
+			user-specified number of samplings when external signal occurs, then 
+			stops.)<p style="margin-left: 0">Mode <i>Pacer</i> must be set to 
+			internal triggering source.<p style="margin-left: 0">
+			Modes <i>Post</i>, <i>Delay</i> and <i>About</i> must be set to external 
+			triggering source. </td>
+		</tr>
+		<tr>
+			<td><b>ClockSrc</b></td>
+			<td>input</td>
+			<td>0, 1, 2</td>
+			<td>The clock source:<br>
+			0-Internal<br>
+			1-External clock 0<br>
+			2-External clock 1</td>
+		</tr>
+		<tr>
+			<td><b>TrigEdge</b></td>
+			<td>input</td>
+			<td>0, 1</td>
+			<td>The trigger edge (It only takes effect 
+			under modes Post, Delay and About 
+			Trigger):<br>
+			0-Rising edge<br>
+			1-Falling edge</td>
+		</tr>
+		<tr>
+			<td><b>SRCType</b></td>
+			<td>input</td>
+			<td>0, 1, 2, 3, 4</td>
+			<td>The triggering source type:<br>
+			0-Digtal<br>
+			1-Analog input of Channel 0<br>
+			2-Analog input of Channel 1<br>
+			3-Analog input of Channel 2<br>
+			4-Analog input of Channel 3</td>
+		</tr>
+		<tr>
+			<td><b>TrigVol</b></td>
+			<td>input</td>
+			<td>Depends on the hardware.</td>
+			<td>The trigger voltage. The DMA sampling 
+			begins when the voltage of the channel exceeds the specified value 
+			(only used in analog 
+			trigger).</td>
+		</tr>
+		<tr>
+			<td><b>CyclicMode</b></td>
+			<td>input</td>
+			<td>0, 1</td>
+			<td>The cyclic mode:<br>
+			0-Non-cyclic<br>
+			1-Cyclic</td>
+		</tr>
+		<tr>
+			<td><b>NumChans</b></td>
+			<td>input</td>
+			<td>1-N (N is the maximum AI channel 
+			number)</td>
+			<td>The sampling channel count. </td>
+		</tr>
+		<tr>
+			<td><b>StartChan</b></td>
+			<td>input</td>
+			<td>0-(N-1) (N is the maximum AI channel 
+			number)</td>
+			<td>The starting channel for scanning. The range is from 
+			the minimum zero (the first AI channel) to the maximum AI channel 
+			number minus one. For 
+	example, the range will be from 0 to <i>(N-1) </i>on a device with <i>N</i> 
+			written as the number of the AI channel. The last 
+	channel can be calculated with the following formula:<p>
+	number of the 
+	last channel 
+	= <i>StartChan</i> + <i>NumChans</i><p>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><b>ulDelayCnt</b></td>
+			<td>input</td>
+			<td>2-65535</td>
+			<td>The delay<i> </i>count (only used in Delay-trigger and About-trigger).</td>
+		</tr>
+		<tr>
+			<td><b>count</b></td>
+			<td>input</td>
+			<td>Depend on the hardware.</td>
+			<td>     The sampling data count. It must be above zero, an even 
+			number (because of memory alignment and performance). 
+	</td>
+		</tr>
+		<tr>
+			<td><b>SampleRate</b></td>
+			<td>input</td>
+			<td>Depends on the pacer and divider on the hardware.</td>
+			<td>     Total sampling rate on scanning channels (Hz). Since the sampling is performed channel by channel, the exact sampling rate 
+	of single channel can be calculated in the following formula:<p>
+	Sampling rate of single channel&nbsp; = <i>SampleRate</i> / 
+	<i>NumChans</i></td>
+		</tr>
+		<tr>
+			<td><b>GainList</b></td>
+			<td>input</td>
+			<td>Depends on hardware.</td>
+			<td>The pointer which indicates the array that stores the GainCode. 
+	It is used to configure the target sampling channels from <i>StartChan</i> to the last 
+	sampling channel in order. The voltage input range is determined by the GainCode 
+	list. Please refer to the <i>Hardware Manual</i> for details. </td>
+		</tr>
+		<tr>
+			<td><b>CondList</b></td>
+			<td>input</td>
+			<td>default</td>
+			<td>Reserved.</td>
+		</tr>
+		<tr>
+			<td><b>buffer0</b></td>
+			<td>output</td>
+			<td>depend on hardware.</td>
+			<td>The sampling data buffer. It should 
+			be set to a multiple of the sampling channel count (<i>NumChans</i>); 
+			otherwise, in cyclic mode, the first sampling data will not 
+			correspond to the starting channel. Please refer to the 
+	<a href="../../function/FAI/FastAnalogInput.htm">
+	FastAnalogInput</a> to set a buffer with proper size. </td>
+		</tr>
+		<tr>
+			<td><b>buffer1</b></td>
+			<td>output</td>
+			<td>default</td>
+			<td>Reserved.</td>
+		</tr>
+		<tr>
+			<td><b>Pt1</b></td>
+			<td>&nbsp;</td>
+			<td>default</td>
+			<td>Reserved.</td>
+		</tr>
+		<tr>
+			<td><b>Pt2</b></td>
+			<td>&nbsp;</td>
+			<td>default</td>
+			<td>Reserved.</td>
+		</tr>
+		<tr>
+			<td><b>Pt3</b></td>
+			<td>&nbsp;</td>
+			<td>default</td>
+			<td>Reserved.</td>
+		</tr>
+	</table>
+</div>
+	<p></p>
+	<p></p>
+	<h2><span style="font-size: 9pt">Note</span></h2>
+	<p><b>ulDelayCnt </b>is used to set the data count in Delay-Trigger 
+	and About-Trigger mode.</p>
+	<p><b>In Delay-Trigger acquisition mode</b></p>
+	<p><b>ulDelayCnt</b> = M</p>
+	<p>
+	<img border="0" src="Image/PT_FAIDmaExStart1.gif" ></p>	
+<p><b>In About-Trigger acquisition mode</b></p>
+	<p><b>ulDelayCnt</b> =M</p>
+	<p>
+	<img border="0" src="Image/PT_FAIDmaExStart2.gif" ></p>	
+</div>
+
+<p>Please refer to the <i>Hardware Manual</i> for individual<b> </b>
+card<b> Member Range.</b></p>
+
+<div>
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

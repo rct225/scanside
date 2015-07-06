@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="USB-4711/A Device Driver User Manual" url="USB/USB-4711/cover.htm" >
+  <book name="Device Introduction" url="USB/USB-4711/features/keyfeature.htm" >
+    <item name="Device Features" url="USB/USB-4711/features/keyfeature.htm" />
+  </book>
+  <book name="Demo and Test Examples" >
+    <item name="Example Description" url="examples/USB4711.htm" />
+  </book>
+  <book name="Function Description" url="USB/USB-4711/Function/funcdesc.htm" >
+    <book name="Device functions" url="USB/USB-4711/Function/funcdesc.htm" >
+      <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+      <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+      <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+      <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    </book>
+    <book name="Analog Input" url="USB/USB-4711/Function/funcdesc.htm" >
+      <item name="DRV_AIConfig" url="function/Ai/drv_aiconfig.htm" />
+      <item name="DRV_AIBinaryIn" url="function/Ai/drv_aibinaryin.htm" />
+      <item name="DRV_AIScale" url="function/Ai/drv_aiscale.htm" />
+      <item name="DRV_AIVoltageIn" url="function/Ai/drv_aivoltagein.htm" />
+      <item name="DRV_MAIBinaryIn" url="function/Ai/drv_maibinaryin.htm" />
+      <item name="DRV_MAIConfig" url="function/Ai/drv_maiconfig.htm" />
+      <item name="DRV_MAIVoltageIn" url="function/Ai/drv_maivoltagein.htm" />
+    </book>
+    <book name="Analog Output" url="USB/USB-4711/Function/funcdesc.htm" >
+      <item name="DRV_AOBinaryOut" url="function/AO/drv_aobinaryout.htm" />
+      <item name="DRV_AOConfig" url="function/AO/drv_aoconfig.htm" />
+      <item name="DRV_AOScale" url="function/AO/drv_aoscale.htm" />
+      <item name="DRV_AOVoltageOut" url="function/AO/drv_aovoltageout.htm" />
+    </book>
+    <book name="Digital Input/Output" url="USB/USB-4711/Function/funcdesc.htm" >
+      <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+      <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+      <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+    </book>
+    <book name="Counter Functions" url="USB/USB-4711/Function/funcdesc.htm" >
+      <item name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+      <item name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+      <item name="DRV_CounterFreqStart" url="function/counter/DRV_CounterFreqStart.htm" />
+      <item name="DRV_CounterFreqRead" url="function/counter/DRV_CounterFreqRead.htm" />
+      <item name="DRV_CounterPulseStart" url="function/counter/DRV_CounterPulseStart.htm" />
+      <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+    </book>
+    <book name="High-speed Functions" url="USB/USB-4711/Function/funcdesc.htm" >
+      <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+      <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+      <item name="DRV_FAIIntStart" url="function/FAI/DRV_FAIIntStart.htm" />
+      <item name="DRV_FAIIntScanStart" url="function/FAI/DRV_FAIIntScanStart.htm" />
+      <item name="DRV_FAITransfer" url="function/FAI/DRV_FAITransfer.htm" />
+      <item name="DRV_FAICheck" url="function/FAI/DRV_FAICheck.htm" />
+      <item name="DRV_ClearFlag" url="function/FAI/DRV_ClearFlag.htm" />
+      <item name="DRV_FAITerminate" url="function/FAI/DRV_FAITerminate.htm" />
+    </book>
+    <book name="Other Functions" url="USB/USB-4711/Function/funcdesc.htm" >
+      <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+    </book>
+  </book>
+  <book name="Data Structures" url="USB/USB-4711/structure/datastructure.htm" >
+    <book name="Analog Input" >
+      <item name="PT_AIBinaryIn" url="structure/Ai/PT_AIBinaryIn.htm" />
+      <item name="PT_AIConfig" url="structure/Ai/PT_AIConfig.htm" />
+      <item name="PT_AIScale" url="structure/Ai/PT_AIScale.htm" />
+      <item name="PT_AIVoltageIn" url="structure/Ai/PT_AIVoltageIn.htm" />
+      <item name="PT_MAIBinaryIn" url="structure/Ai/PT_MAIBinaryIn.htm" />
+      <item name="PT_MAIConfig" url="structure/Ai/PT_MAIConfig.htm" />
+      <item name="PT_MAIVoltageIn" url="structure/Ai/PT_MAIVoltageIn.htm" />
+    </book>
+    <book name="Analog Output" >
+      <item name="PT_AOBinaryOut" url="structure/AO/PT_AOBinaryOut.htm" />
+      <item name="PT_AOConfig" url="structure/AO/PT_AOConfig.htm" />
+      <item name="PT_AOScale" url="structure/AO/PT_AOScale.htm" />
+      <item name="PT_AOVoltageOut" url="structure/AO/PT_AOVoltageOut.htm" />
+    </book>
+    <book name="Counter" >
+      <item name="PT_CounterEventStart" url="structure/counter/PT_CounterEventStart.htm" />
+      <item name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+      <item name="PT_CounterFreqStart" url="structure/counter/PT_CounterFreqStart.htm" />
+      <item name="PT_CounterFreqRead" url="structure/counter/PT_CounterFreqRead.htm" />
+      <item name="PT_CounterPulseStart" url="structure/counter/PT_CounterPulseStart.htm" />
+    </book>
+    <book name="High-speed" >
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+      <item name="PT_FAIIntStart" url="structure/FAI/PT_FAIIntStart.htm" />
+      <item name="PT_FAIIntScanStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+      <item name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+      <item name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+    </book>
+  </book>
+  <book name="Device Event" url="USB/USB-4711/Eventtype/Eventtype.htm" >
+    <item name="Event Type" url="USB/USB-4711/Eventtype/Eventtype.htm" />
+  </book>
+  <book name="Device Properties" url="USB/USB-4711/property/Deviceproperty.htm" >
+    <item name="CFG_BoardID" url="USB/USB-4711/property/CFG_BoardID.htm" />
+    <item name="CFG_FirmWareVersion" url="USB/USB-4711/property/CFG_FirmWareVersion.htm" />
+    <item name="CFG_AiFifoSize" url="USB/USB-4711/property/CFG_AiFifoSize.htm" />
+    <item name="CFG_AiPacerRate" url="USB/USB-4711/property/CFG_AiPacerRate.htm" />
+    <item name="CFG_AiChanConfig" url="USB/USB-4711/property/CFG_AiChanConfig.htm" />
+    <item name="CFG_AoRangeList" url="USB/USB-4711/property/CFG_AoRangeList.htm" />
+    <item name="CFG_AoChanRange" url="USB/USB-4711/property/CFG_AoChanRange.htm" />
+    <item name="CFG_DiChannelCount" url="USB/USB-4711/property/CFG_DiChannelCount.htm" />
+    <item name="CFG_DiPortCount" url="USB/USB-4711/property/CFG_DiPortCount.htm" />
+    <item name="CFG_DoChannelCount" url="USB/USB-4711/property/CFG_DoChannelCount.htm" />
+    <item name="CFG_DoPortCount" url="USB/USB-4711/property/CFG_DoPortCount.htm" />
+    <item name="CFG_CntrChannelCapability" url="USB/USB-4711/property/CFG_CntrChannelCapability.htm" />
+    <item name="CFG_CntrSupportedCountEdge" url="USB/USB-4711/property/CFG_CntrSupportedCountEdge.htm" />
+    <item name="CFG_CntrChannelCount" url="USB/USB-4711/property/CFG_CntrChannelCount.htm" />
+    <item name="CFG_CntrResolution" url="USB/USB-4711/property/CFG_CntrResolution.htm" />
+    <item name="CFG_CntrResetValue" url="USB/USB-4711/property/CFG_CntrResetValue.htm" />
+    <item name="CFG_CntrInternalClockFreq" url="USB/USB-4711/property/CFG_CntrInternalClockFreq.htm" />
+  </book>
+  <book name="Error Codes" url="errorcodes/errorcodes.htm" >
+    <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+  </book>
+</book>
+<book name="USB-4702 Device Driver User Manual" url="USB/USB-4702/cover.htm" >
+<chunk name="USB-4702 Device Driver User Manual" url="USB/USB-4702/cover.htm" ref="whtdata42.xml" />
+</book>
+<book name="USB-4704 Device Driver User Manual" url="USB/USB-4704/cover.htm" >
+<chunk name="USB-4704 Device Driver User Manual" url="USB/USB-4704/cover.htm" ref="whtdata43.xml" />
+</book>
+<book name="USB-4716 Device Driver User Manual" url="USB/USB-4716/cover.htm" >
+<chunk name="USB-4716 Device Driver User Manual" url="USB/USB-4716/cover.htm" ref="whtdata44.xml" />
+</book>
+<book name="USB-4718 Device Driver User Manual" url="USB/USB-4718/cover.htm" >
+<chunk name="USB-4718 Device Driver User Manual" url="USB/USB-4718/cover.htm" ref="whtdata45.xml" />
+</book>
+<book name="USB-4750 Device Driver User Manual" url="USB/USB-4750/cover.htm" >
+<chunk name="USB-4750 Device Driver User Manual" url="USB/USB-4750/cover.htm" ref="whtdata46.xml" />
+</book>
+<book name="USB-4751 Device Driver User Manual" url="USB/USB-4751/cover.htm" >
+<chunk name="USB-4751 Device Driver User Manual" url="USB/USB-4751/cover.htm" ref="whtdata47.xml" />
+</book>
+<book name="USB-4761 Device Driver User Manual" url="USB/USB-4761/cover.htm" >
+  <book name="Device Introduction" url="USB/USB-4761/features/keyfeature.htm" >
+    <item name="Device Features" url="USB/USB-4761/features/keyfeature.htm" />
+  </book>
+  <book name="Demo and Test Examples" >
+    <item name="Example Description" url="examples/USB4761.htm" />
+  </book>
+  <book name="Function Description" url="USB/USB-4761/Function/funcdesc.htm" >
+    <book name="Device functions" >
+      <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+      <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+      <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+      <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+    </book>
+    <book name="Digital Input/Output" >
+      <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+      <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+      <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+      <item name="DRV_DioEnableEventAndSpecifyDiPorts" url="function/DIO/DRV_DioEnableEventAndSpecifyDiPorts.htm" />
+      <item name="DRV_DioDisableEvent" url="function/DIO/DRV_DioDisableEvent.htm" />
+      <item name="DRV_DioGetLatestEventDiPortsState" url="function/DIO/DRV_DioGetLatestEventDiPortsState.htm" />
+    </book>
+    <book name="Other Functions" >
+      <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+      <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+      <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+    </book>
+  </book>
+  <book name="Data Structures" url="USB/USB-4761/structure/DataStructure.htm" >
+    <book name="Other Functions" >
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+    </book>
+  </book>
+  <book name="Device Event" >
+    <item name="Event Type" url="USB/USB-4761/Eventtype/Eventtype.htm" />
+  </book>
+  <book name="Device Properties" url="USB/USB-4761/property/Deviceproperty.htm" >
+    <item name="CFG_BoardID" url="USB/USB-4761/property/CFG_BoardID.htm" />
+    <item name="CFG_FirmWareVersion" url="USB/USB-4761/property/CFG_FirmWareVersion.htm" />
+    <item name="CFG_DoPortCount" url="USB/USB-4761/property/CFG_DoPortCount.htm" />
+    <item name="CFG_DoChannelCount" url="USB/USB-4761/property/CFG_DoChannelCount.htm" />
+    <item name="CFG_DiPortCount" url="USB/USB-4761/property/CFG_DiPortCount.htm" />
+    <item name="CFG_DiChannelCount" url="USB/USB-4761/property/CFG_DiChannelCount.htm" />
+    <item name="CFG_DoPresetValue" url="USB/USB-4761/property/CFG_DoPresetValue.htm" />
+    <item name="CFG_DiInterruptTriggerOnRisingEdge" url="USB/USB-4761/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+    <item name="CFG_DiInterruptTriggerOnFallingEdge" url="USB/USB-4761/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  </book>
+  <book name="Error Codes" url="errorcodes/errorcodes.htm" >
+    <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+  </book>
+</book>
+
+</tocdata>

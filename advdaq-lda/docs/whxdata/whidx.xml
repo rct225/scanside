@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<index>
+<chunkinfo url="whidata0.xml" first="A: Gain Code" last="CFG_AoRangeList" num="20" />
+<chunkinfo url="whidata1.xml" first="CFG_BaseAddress" last="CFG_BURNTEST" num="3" />
+<chunkinfo url="whidata2.xml" first="CFG_BusNumber" last="CFG_CURRENT_4TO20MA_EXCEPTIONSETTING" num="24" />
+<chunkinfo url="whidata3.xml" first="CFG_DiChannelCount" last="CFG_DiInterruptTriggerOnFallingEdge" num="15" />
+<chunkinfo url="whidata4.xml" first="CFG_DiInterruptTriggerOnRisingEdge" last="CFG_DiStatusChangeOnRisingEdge" num="9" />
+<chunkinfo url="whidata5.xml" first="CFG_DoChannelCount" last="CFG_FirmWareVersion" num="7" />
+<chunkinfo url="whidata6.xml" first="CFG_Interrupt" last="Create a new Application" num="10" />
+<chunkinfo url="whidata7.xml" first="Data Structures" last="Device Introduction" num="8" />
+<chunkinfo url="whidata8.xml" first="Device Properties" last="DRV_TimerCountSetting" num="71" />
+<chunkinfo url="whidata9.xml" first="DRV_WatchdogFeed" last="Frequency Measurement Function" num="27" />
+<chunkinfo url="whidata10.xml" first="Function Description" last="PCI-1780" num="83" />
+<chunkinfo url="whidata11.xml" first="PCI-1780 Device Driver User Manual" last="Welcome to Advantech DAQ Device Linux Driver" num="86" />
+
+</index>

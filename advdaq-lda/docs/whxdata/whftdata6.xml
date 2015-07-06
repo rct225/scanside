@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<ftstdata>
+<topic name="Data Structure" url="PCI/PCI-1756/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1757UP/cover.htm" />
+<topic name="EventType" url="PCI/PCI-1757UP/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1757UP/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1757UP/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1757UP/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1757UP/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1757UP/property/CFG_BusNumber.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1757UP/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1757UP/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1757UP/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_DioChannelDirection" url="PCI/PCI-1757UP/property/CFG_DioChannelDirection.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1757UP/property/CFG_DiPortCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1757UP/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1757UP/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1757UP/property/CFG_Interrupt.htm" />
+<topic name="CFG_InterruptTriggerSource" url="PCI/PCI-1757UP/property/CFG_InterruptTriggerSource.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1757UP/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1757UP/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1757UP/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1758U/cover.htm" />
+<topic name="Event Type" url="PCI/PCI-1758U/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1758U/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1758U/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1758U/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1758U/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1758U/property/CFG_BusNumber.htm" />
+<topic name="CFG_DiChannelCount" url="PCI/PCI-1758U/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiFilterEnable" url="PCI/PCI-1758U/property/CFG_DIFilterEnable.htm" />
+<topic name="CFG_SwitchID" url="PCI/PCI-1758U/property/CFG_DiFilterIntervalCounter.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1758U/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1758U/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_DiPortCount" url="PCI/PCI-1758U/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="PCI/PCI-1758U/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="PCI/PCI-1758U/property/CFG_DoPortCount.htm" />
+<topic name="CFG_DOPresetValue" url="PCI/PCI-1758U/property/CFG_DOPresetValue.htm" />
+<topic name="CFG_DOWatchdogValue" url="PCI/PCI-1758U/property/CFG_DOWatchdogValue.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1758U/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1758U/property/CFG_SlotNumber.htm" />
+<topic name="CFG_WatchdogCounter" url="PCI/PCI-1758U/property/CFG_WatchdogCounter.htm" />
+<topic name="Device Properties" url="PCI/PCI-1758U/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1758U/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1760/cover.htm" />
+<topic name="EventType" url="PCI/PCI-1760/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1760/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1760/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1760/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1760/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1760/property/CFG_BusNumber.htm" />
+<topic name="CFG_DiChannelCount" url="PCI/PCI-1760/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiCounterDirection" url="PCI/PCI-1760/property/CFG_DiCounterDirection.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1760/property/CFG_DiCounterEnable.htm" />
+<topic name="CFG_DiCounterMatchEnable" url="PCI/PCI-1760/property/CFG_DiCounterMatchEnable.htm" />
+<topic name="CFG_DiCounterOverflow" url="PCI/PCI-1760/property/CFG_DiCounterOverflow.htm" />
+<topic name="CFG_DiCounterPreset" url="PCI/PCI-1760/property/CFG_DiCounterPreset.htm" />
+<topic name="CFG_DiCounterTrigEdge" url="PCI/PCI-1760/property/CFG_DiCounterTrigEdge.htm" />
+<topic name="CFG_DiCounterValue" url="PCI/PCI-1760/property/CFG_DiCounterValue.htm" />
+<topic name="CFG_DiFilterEnable" url="PCI/PCI-1760/property/CFG_DiFilterEnable.htm" />
+<topic name="CFG_DiFilterHiValue" url="PCI/PCI-1760/property/CFG_DiFilterHiValue.htm" />
+<topic name="CFG_DiFilterLowValue" url="PCI/PCI-1760/property/CFG_DiFilterLowValue.htm" />
+<topic name="CFG_DiPatternMatchEnabledChannel" url="PCI/PCI-1760/property/CFG_DiPatternMatchEnabledChannel.htm" />
+<topic name="CFG_DiPatternMatchValue" url="PCI/PCI-1760/property/CFG_DiPatternMatchValue.htm" />
+<topic name="CFG_DiPortCount" url="PCI/PCI-1760/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DiStatusChangeOnFallingEdge" url="PCI/PCI-1760/property/CFG_DiStatusChangeOnFallingEdge.htm" />
+<topic name="CFG_DiStatusChangeOnRisingEdge" url="PCI/PCI-1760/property/CFG_DiStatusChangeOnRisingEdge.htm" />
+<topic name="CFG_DoChannelCount" url="PCI/PCI-1760/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="PCI/PCI-1760/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1760/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1760/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1760/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1760/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1761/cover.htm" />
+<topic name="EventType" url="PCI/PCI-1761/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1761/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1761/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1761/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1761/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1761/property/CFG_BusNumber.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1761/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1761/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1761/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1761/property/CFG_DiPortCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1761/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1761/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1761/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1761/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1761/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1761/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1762/cover.htm" />
+<topic name="EventType" url="PCI/PCI-1762/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1762/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1762/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1762/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1762/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1762/property/CFG_BusNumber.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1762/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1762/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1762/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1762/property/CFG_DiPortCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1762/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1762/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1762/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1762/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1762/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1762/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1763/cover.htm" />
+<topic name="EventType" url="PCI/PCI-1763/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1763/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1763/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1763/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1763/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1763/property/CFG_BusNumber.htm" />
+<topic name="CFG_AIChanConfig" url="PCI/PCI-1763/property/CFG_DiChannelCount.htm" />
+
+</ftstdata>  

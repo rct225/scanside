@@ -1,0 +1,135 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>About Advantech Device Manager (Installation and Configuration Program)</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Advantech Device Driver Overview\nInstalling Advantech DAQ Device Linux Driver");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Installing Advantech DAQ Device Linux Driver</h1>
+<p>This Advantech DAQ Device Linux Driver Package is developed for Linux kernel 
+version 2.6.x (for PCI, USB and PCM). The driver supports 
+four platforms: Red Hat Enterprise Linux 4, Fedora Core 6, and Debian 4.0.</p>
+<p>&#12288;</p>
+<p>Read this document carefully, as it explains how to install the device 
+driver, how to develop with this toolkit and what to do if anything goes wrong.</p>
+<h2>INSTALLING :</h2>
+<p>&nbsp;</p>
+<p><b>Note: If the driver was installed before, please remove it from the system 
+firstly.</b></p>
+<p>For Red Hat Enterprise Linux 4 and Fedora Core 6, please type the following commands:</p>
+<pre class="code">#rpm -e advdaq</pre>
+<p>For Debian 4.0, please type the following commands:</p>
+<pre class="code">#dpkg -r advdaq</pre>
+<p></p>
+<h3>&nbsp;</h3>
+<h3>1. Get the driver package according your platform. Type the following commands:</h3>
+<p>For Red Hat Enterprise 4 and Fedora Core 6:</p></p>
+<p><pre class="code">#rpm -ivh advdaq-&lt;version&gt;.&lt;platform&gt;.i386.rpm</pre></p>
+<p><p>For Debian 4.0:</p>
+<pre class="code">#dpkg -i advdaq_&lt;version&gt;_i386.deb</pre>
+<h3>2. To install the driver modules and make device files, please type:</h3>
+</p>
+<p></p>
+<p><pre class="code">#insmod /usr/src/Advantech/DAQ-&lt;version&gt;/modules/advdrv_core.ko<br>#insmod /usr/src/Advantech/DAQ-&lt;version&gt;/modules/which_device_driver_you_want_to_insmod.ko<br>&nbsp;</pre>
+</p>
+
+<p>To create some device files, please check the /proc/device to get major 
+device number, and then please type</p>
+<p><pre class="code">#mknod /dev/advdaq0 c major 0 <br>......<br>#mknod /dev/advdaq254 c major 254</pre>
+</p>
+<p><h3>3. Bind device with device file, please type</h3></p>
+<pre class="code">#advdevice_bind &lt;device_name&gt; &lt;board_id&gt; &lt;device_file&gt;</pre>
+<pre class="code">the following parameters is used for ISA or PCM installation. see online help for more information about useage</pre>
+<pre class="code">--iobase &lt;io base&gt;  device's iobase
+--irq &lt;irq num&gt;  device's irq num</pre>
+<pre class="code">An example for ISA Device pcm3718 installation:</pre>
+<pre class="code">#advdevice_bind --iobase 0x300 --irq 9 pcm3718 0 /dev/advdaq1</pre>
+<pre class="code">&nbsp;</pre></p>
+<pre class="syntax"> NOTE: This package also provides a shell <br>       (/usr/src/Advantech/DAQ-&lt;version&gt;/adv_load_template) to <br>       finish those work in one step, The user can modify this shell for own purpose and run it to load driver./pre>
+<p align="left"><b>SPECIAL DRIVER MODULE SUPPORT TABLE </b></p><p>
+<table border="1" width="76%" id="table1" cellspacing="0" class="Bordered"><tr>
+		<th><b><span style="font-size: 9pt">KERNEL MODULES</span></b></th><th rowspan="2" width="51%" style="vertical-align: middle"><b><span style="font-size: 9pt">SUPPORT DEVICE</span></b></th></tr><tr>
+		<th width="25%"><b><span style="font-size: 9pt">For</span></b><span style="font-size: 9pt"> </span><b><span style="font-size: 9pt">kernel version 2.6.x</span></b></th></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">advdrv_core.ko</span></td><td width="51%"><span style="font-size: 9pt">common module</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">usb4711.ko</span></td><td width="51%"><span style="font-size: 9pt">USB-4711/A</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">usb4716.ko</span></td><td width="51%"><span style="font-size: 9pt">USB-4716</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">usb4718.ko</span></td><td width="51%"><span style="font-size: 9pt">USB-4718</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">usb4750.ko</span></td><td width="51%"><span style="font-size: 9pt">USB-4750</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">usb4751.ko</span></td><td width="51%"><span style="font-size: 9pt">USB-4751</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">usb4761.ko</span></td><td width="51%"><span style="font-size: 9pt">USB-4761</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1710.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1710/L/HG/HGL/U/UL/UHG, PCI-1711/L/U/UL, PCI-1713/U</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1712.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1712/L</td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1714.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1714/UL</td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1715.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1715U/MIC3751</td></tr><tr>
+		<td width="25%">pci1716.ko</td><td width="51%">PCI-1716/L</td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">pci1718.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1718HD/GU</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1720.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1720U, PCI-1723, PCI-1724U, PCI-1727U</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1721.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1721</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">pci1730.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1730, PCI-1733, PCI-1734, PCI-1736UP</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">pci1735.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1735U</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">pci1737.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1737U, PCI-1739U</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1741U.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1741U</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1742.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1742U</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1747.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1747U</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">pci1750.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1750</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">pci1751.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1751</span></td></tr><tr>
+		<td width="25%"><span style="font-size: 9pt">pci1752.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1752, PCI-1754, PCI-1756</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1753.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1753</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1757up.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1757UP</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1758U.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1758UDI/UDO/UDIO</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1760.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1760</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1761.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1761, PCI-1762, PCI-1763UP</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1780.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1780</span></td></tr><tr><td width="25%"><span style="font-size: 9pt">pci1784.ko</span></td><td width="51%"><span style="font-size: 9pt">PCI-1784/U</span></td></tr><tr><td width="25%">pcm3718.ko</td><td width="51%">PCM-3718H</td></tr><tr><td width="25%">pcm3724.ko</td><td width="51%">PCM-3724</td></tr><tr><td width="25%">pcm3725.ko</td><td width="51%">PCM-3725</td></tr><tr><td width="25%">pcm3730.ko</td><td width="51%">PCM-3730</td></tr><tr><td width="25%">pcm3730i.ko</td><td width="51%">PCM-3730I</td></tr><tr><td width="25%">pcm3753i.ko</td><td width="51%">PCM-3753I</td></tr><tr><td width="25%">pcm3761i.ko</td><td width="51%">PCM-3761I</td></tr></table><h3>4. The device driver is now installed.</h3></p><p></p>
+<p>If you are new to this driver, it is suggested that you refer to the examples..</p><h2>DEVELOP WITH THIS TOOLKIT</h2></p><p> Refer to Advantech DAQ Device Linux Driver User Manual, and you will get some information on the use of 
+toolkit.</p><p><h2>WHEN ANYTHING GOES WRONGG</h2></p><p>-Call Advantech Customer Service Hotline and ask for technical support.</p><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

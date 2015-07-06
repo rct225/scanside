@@ -1,0 +1,210 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>DRV_WatchdogStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval: 21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1758U Device Driver User Manual\nFunction Description\nWatchdog functions\nDRV_WatchdogStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<h1><span lang=EN-US>DRV_WatchdogStart</span></h1>
+
+<pre style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+16.0pt;background:#F0F0F0; tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; font-size:12.0pt; font-family:&#23435;&#20307;'><span lang=EN-US style='font-size:9.0pt;font-family:
+"Courier New";color:#000066'>INT32S <span style='background-position-x:0in;
+background-position-y:0in'>DRV_</span>WatchdogStart(PTR_T <i>DeviceHandle</i>);</span></pre>
+
+<h2><span lang=EN-US>Purpose</span></h2>
+
+<p><span lang=EN-US>Initiates the watchdog.</span></p>
+
+<h2><span lang=EN-US>Parameters</span></h2>
+
+<div style='margin-left:24.0pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;background:#999999;border:solid #999999 1.0pt;
+ mso-border-top-alt:.5pt;mso-border-left-alt:.25pt;mso-border-bottom-alt:.25pt;
+ mso-border-right-alt:.5pt;mso-border-color-alt:#999999;mso-border-style-alt:
+ solid;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' id="table3">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Name</span></b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Direction</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Range</span></b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Description</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:17.25pt'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>DeviceHandle</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>input</span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>default</span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>The pointer retrieved from the 
+	<a href="../Device/DRV_DEVICEOPEN.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	DRV_DeviceOpen</a>
+  which specifies the target device.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h2><span lang=EN-US>Return</span></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=10 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:7.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'
+ id=table4>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=207 style='width:155.35pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>&nbsp;&nbsp; 1. 0</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td width=788 style='width:591.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>
+	Successful.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=207 style='width:155.35pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>&nbsp;&nbsp; 2. InvalidDeviceHandle</span></b><span lang=EN-US
+  style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td width=788 style='width:591.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>
+	The
+  <i>DeviceHandle</i> is NULL.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

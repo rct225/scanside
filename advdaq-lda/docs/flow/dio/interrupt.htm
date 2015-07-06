@@ -1,0 +1,105 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Digital Input Functions</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nDigital Input/Output Function Group\nDigital Input Functions\nInterrupt Transferring");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Interrupt Transferring</span></h1>
+<p>The digital input functions with interrupt transferring make it possible to monitor 
+the status of the digital input line. When the state changes from low to high 
+or/and from high to low, the driver will be alerted through a hardware 
+interrupt. It is not necessary to periodically check the digital input line.</p>
+<p><img  src="13.jpg" > 
+</p>
+<p>The <a href="../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> 
+function enables and starts digital input with interrupt transferring. The 
+<a href="../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a>&nbsp;function 
+gets the interrupt event type when the state changes. It also 
+makes it possible to set a time-out interval. Please refer to the event functions for 
+details.</p>
+<h2><b>Pattern Matched/Status 
+Change/Counter/Filter</b></h2>
+<p>The digital input functions with pattern match/status change/counter/filter 
+allow you to monitor the status of the digital input lines. When one of the 
+conditions is matched, it will acknowledge the driver through a hardware 
+interrupt. It is not necessary to periodically poll the digital input line.</p>
+<p><img  src="image014.jpg" >
+</p>
+<p>The <a href="../../function/DIO/DRV_DioEnableEventAndSpecifyDiPorts.htm">DRV_DioEnableEventAndSpecifyDiPorts</a> 
+function enables and starts the monitoring of the pattern match/status 
+change/filter/counter 
+  operation. The <a href="../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a> 
+  function may be used to check the background status. The interrupt event type 
+will be returned when one of the conditions is matched. 
+  Use the <a href="../../function/DIO/DRV_DioGetLatestEventDiPortsState.htm">DRV_DioGetLatestEventDiPortsState</a> 
+  function to retrieve the value of the input lines. Finally, use the 
+<a href="../../function/DIO/DRV_DioDisableEvent.htm">DRV_DioDisableEvent</a> function to disable and stop the operation.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

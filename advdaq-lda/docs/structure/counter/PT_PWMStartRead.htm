@@ -1,0 +1,123 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_PWMStartRead</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nCounter Functions\nPT_PWMStartRead");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nData Structures\nCounter Functions\nPT_PWMStartRead");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>PT_PWMStartRead</h1>
+	<h1></h1>
+<pre class="code">typedef struct tagPT_PWMStartRead
+{
+    INT16U usChan; 
+    FP32 *flHiperiod; 
+    FP32 *flLowperiod; 
+}PT_PWMStartRead, * LPT_PWMStartRead; 
+</pre>
+	<p><b>PT_PWMStartRead</b> is used in function 
+    <a href="../../function/counter/DRV_PWMStartRead.htm">DRV_PWMStartRead</a>. </p>
+	<h2>Member Description</h2> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>usChan</b></td>
+			<td>input</td>
+			<td>The selected channel number.<br>
+			From a minimum of zero for the first channel 
+	to the maximum number minus one. For example, the range is from 0 to <i>(N-1)</i> on a 
+	device with <i>N</i> counter channels.&nbsp; </td>
+		</tr>
+		<tr>
+			<td><b>flHiperiod</b></td>
+			<td>output</td>
+			<td>The high period of PWM in seconds. For PCI-1780, its unit is 
+			microseconds.</td>
+		</tr>
+		<tr>
+			<td><b>flLowperiod</b></td>
+			<td>output</td>
+			<td>The low period of PWM in seconds. For PCI-1780, its 
+			unit is microseconds.</td>
+		</tr>
+	</table>
+</div>
+</div>
+<p></p>
+
+<div>
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

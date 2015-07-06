@@ -1,0 +1,157 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>AORANGESET </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+div.Section1 { page:Section1; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1720 Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1723 Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1724 Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1727U Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nAnalog Output\nAORANGESET");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>AORANGESET </h1>
+	<h1></h1>
+<pre class="code">typedef struct tagAORANGESET
+{
+    INT16U <i>usGainCount</i>;
+    INT16U <i>usAOSource</i>;
+    INT16U <i>usAOType</i>;
+    INT16U <i>usChan</i>;
+    FP32 <i>fAOMax</i>;
+    FP32 <i>fAOMin</i>;
+} AORANGESET, * LPAORANGESET;
+</pre>
+	<h2>Member Description</h2> 
+	<p></p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td width="297"><b>Range</b></td>
+			<td width="433"><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>usGainCount</b></td>
+			<td>input</td>
+			<td width="297">Depends on the hardware.</td>
+			<td width="433">Number of Gains.</td>
+		</tr>
+		<tr>
+			<td><b>usAOSource</b></td>
+			<td>input</td>
+			<td width="297">0, 1</td>
+			<td width="433">Reference source:<br>
+			0-internal;<br>
+			1-external.</td>
+		</tr>
+		<tr>
+			<td><b>usAOType</b></td>
+			<td>input</td>
+			<td width="297">
+			0, 1</td>
+			<td width="433">Type of Analog Output:<br>
+			0-Voltage;<br>
+			1-Current.</td>
+		</tr>
+		<tr>
+			<td><b>usChan</b></td>
+			<td>input</td>
+			<td width="297">Depends on the hardware.</td>
+			<td width="433">The target channel.</td>
+		</tr>
+		<tr>
+			<td><b>fAOMax</b></td>
+			<td>input</td>
+			<td width="297">Depends on the hardware.</td>
+			<td width="433">The maximum output voltage.</td>
+		</tr>
+		<tr>
+			<td><b>fAOMin</b></td>
+			<td>input</td>
+			<td width="297">Depends on the hardware.</td>
+			<td width="433">The minimum output voltage.</td>
+		</tr>
+	</table>
+</div>
+</div>
+
+<div>
+	
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

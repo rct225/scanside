@@ -1,0 +1,149 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FreqOutStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nPulse Output Function\nData Structure\nPT_FreqOutStart");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nData Structures\nCounter Functions\nPT_FreqOutStart");
+addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nData Structures\nCounter Functions\nPT_FreqOutStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	
+	<h1><b>PT_FreqOutStart</b></h1>
+    <pre class="code">typedef struct tagPT_FreqOutStart 
+{
+    INT16U usChannel;
+    INT16U usDivider;
+    INT16U usFoutSrc; 
+} PT_FreqOutStart, *LPT_FreqOutStart; 
+</pre>
+	<p><b>PT_FreqOutStart</b> is used in function
+    <a href="../../function/counter/DRV_FreqOutStart.htm">DRV_FreqOutStart</a>. </p> 
+	 
+	<h2>Member Description</h2>
+	
+	</p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>usChannel </b>
+            </td>
+			<td>input
+            </td>
+			<td>Depends on the hardware.</td>
+			<td>The specified channel number.<br>
+			From 
+	a minimum of zero for the 
+	first channel to the maximum channel number minus one. For example, the 
+	range is from 0 to <i>(N-1)</i> on a device with <i>N</i> counter channels.</td>
+		</tr>
+		<tr>
+			<td><b>usDivider </b>
+            </td>
+			<td>input
+            </td>
+			<td>Depends on the hardware.</td>
+			<td>The frequency output divider value (refer to hardware manuals).</td>
+		</tr>
+		<tr>
+			<td><b>usFoutSrc </b>
+            </td>
+			<td>input
+            </td>
+			<td>1. PA_FOUT_SRC_ EXTER_CLK<br>
+			2. PA_FOUT_SRC_ CLK_N<br>
+			3. PA_FOUT_SRC_ FOUT_M1<br>
+			4. PA_FOUT_SRC_ CLK_10MHZ<br>
+			5. PA_FOUT_SRC_ CLK_1MHZ<br>
+			6. PA_FOUT_SRC_ CLK_100KHZ<br>
+			7. PA_FOUT_SRC_ CLK_10KHZ<br>
+			8. PA_FOUT_SRC_ CLK_1KHZ</td>
+			<td>The clock source for frequency output: (N 
+            is equal to the <i>usChannel</i>)<br>
+			1. external clock from pin EXT_CLK<br>
+			2. clock from pin CLK N <br>
+			3. clock from pin FOUT N-1 <br>
+			4. Internal 10MHz clock <br>
+			5. Internal 1 MHz clock <br>
+			6. Internal 100 Hz clock <br>
+			7. Internal 10KHz clock <br>
+			8. Internal 1KHz clock</td>
+		</tr>
+	</table>
+</div>
+</div>
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

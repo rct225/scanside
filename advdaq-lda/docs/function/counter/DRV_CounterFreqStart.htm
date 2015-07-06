@@ -1,0 +1,168 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_CounterFreqStart </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nFrequency Measurement Function\nFunction Description\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterFreqStart");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addTocInfo("MIC Series\nMIC-3751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterFreqStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_CounterFreqStart</h1>
+	<div>
+		<pre class="code">INT32S DRV_CounterFreqStart (<i>
+   </i>PTR_T <i>DeviceHandle&#65292;
+   </i>PT_CounterFreqStart <i>*lpCounterFreqStart </i>); </pre>
+	</div>
+	
+	<h2>Purpose</h2>
+	<p>
+		On the device indicated by the <i>DeviceHandle</i>, it configures the 
+		specified counter for a frequency measurement and starts the operation.</p>
+	<h2>Parameters </h2>
+	<p><font face="Verdana"> Some parameters, such as 
+		target counter channel (</font><i>counter</i><font face="Verdana">), 
+		gate period (</font><i>GatePeriod</i><font face="Verdana">) and gate 
+		mode (</font><i>GateMode</i><font face="Verdana">), are stored in the<i>
+		</i></font> 
+    <a href="../../structure/counter/PT_CounterFreqStart.htm">PT_CounterFreqStart</a><font face="Verdana"> 
+	structure pointed by the </font>
+	<i>lpCounterFreqStart</i>. </p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><font style="font-size: 9pt"><b>Direction</b></font></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td><font style="font-size: 9pt">input</font></td>
+			<td>default</td>
+			<td>The p<font face="Verdana" style="font-size: 9pt">ointer retrieved from
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td><b>lpCounterFreqStart</b></td>
+			<td><font style="font-size: 9pt">input / output</font></td>
+			<td>default</td>
+			<td>The<font style="FONT-SIZE: 9pt"><span style="FONT-FAMILY: Verdana">
+			pointer to indicate the user-prepared structure </span></font>
+			<font style="font-size: 9pt"> <a href="../../structure/counter/PT_CounterFreqStart.htm">PT_CounterFreqStart</a></font><font style="FONT-SIZE: 9pt"><span style="FONT-FAMILY: Verdana"> 
+			that stores </span></font>
+			<font face="Verdana" style="font-size: 9pt">target counter channel (</font>INT16U<font style="font-size: 9pt"> <i>counter</i></font><font face="Verdana" style="font-size: 9pt">), 
+			gate period (</font>INT16U<font style="font-size: 9pt">
+            <i>GatePeriod</i></font><font face="Verdana" style="font-size: 9pt">) 
+			and gate mode (</font>INT16U<font style="font-size: 9pt"> <i>GateMode</i></font><font face="Verdana" style="font-size: 9pt">).</font></td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2> 
+<table>
+	<tr>
+		<td width="199"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. </font>
+		<span style="font-size: 9pt">0</span></b></td>
+		<td><span style="font-size: 9pt">Successful.</span></td>
+	</tr>
+	<tr>
+		<td width="199"><b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDeviceHandle</font></b></td>
+		<td><span style="font-size: 9pt">The <i>Devicehandle</i> is NULL.</span></td>
+	</tr>
+	<tr>
+		<td width="199"><b><font style="font-size: 9pt">&nbsp;&nbsp; 3. InvalidChannel</font></b></td>
+		<td><font style="font-size: 9pt">The target channel<i> </i>
+		is out of range.</font></td>
+	</tr>
+	<tr>
+		<td width="199"><b><font style="font-size: 9pt">&nbsp;&nbsp; 4. Other 
+		value</font></b></td>
+		<td><span class="SpellE"><span style="font-size: 9pt">Please reference
+		<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a>. </span>
+		</span></td>
+	</tr>
+</table>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

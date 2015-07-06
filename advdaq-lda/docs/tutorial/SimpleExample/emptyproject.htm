@@ -1,0 +1,111 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Create a new application</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Getting Started with Advantech DAQ Device Linux Driver\nA simple Example\nCreate a new Application");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Create a new Application</h1>
+<h2>-File</h2>
+<pre class="syntax">examples/simple.c</pre>
+<p>The simple example is a simple &quot;DO&quot; example. It will show you how to develop an application with the device using this driver.</p>
+<h2>-Complete Source code of the application</h2>
+<pre class="code">/* include the header file */
+#include &lt;advdevice.h&gt;
+#include &lt;advdaq.h&gt;
+int main()
+{
+PTR_T fd;
+INT32S ret;
+
+INT32U port_start = 0;
+INT32U port_count = 1;
+INT8U  buffer;
+
+ret = DRV_DeviceOpen(&quot;/dev/advdaq0&quot;, &amp;fd); //open the device, get the 
+if (ret)
+{
+	return -1;
+}
+
+
+ret = DRV_DioWriteDOPorts(fd, port_start, port_count, &buffer); //DO operation
+if (ret)
+{
+
+}
+
+DRV_DeviceClose(&fd); //close the device
+
+return 0;
+}</pre>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

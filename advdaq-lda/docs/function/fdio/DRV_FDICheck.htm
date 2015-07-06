@@ -1,0 +1,165 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FDICheck</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FDICheck</h1>
+	<h1></h1>
+	<p>
+	<pre class="code">INT32S DRV_FDICheck( 
+   PTR_T <i>DeviceHandle</i>, 
+   INT32U * <i>pdwStatus</i>,
+   INT32U * <i>pdwRetrieved</i>);</pre>
+	<h2>Purpose</h2>
+	<p class="MsoNormal">On the device indicated by the <i>DeviceHandle</i>, it 
+	retrieves the current status of the FDI (Fast Digital Input) function. </p>
+	<p class="MsoNormal">This function is used to check when the 
+	data in the higher or lower part of the sampling buffer is full, 
+	in order to avoid buffer overrun.</p>
+	<p class="body" style="line-height: normal; background: white">
+	This function 
+	is used in PCI-1755. </p>
+	<h2>Parameters</h2>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name 			</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td>input</td>
+			<td>default</td>
+			<td> 			The pointer 
+			retrieved from the
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</td>
+		</tr>
+		<tr>
+			<td><b>pdwStatus</b></td>
+			<td>output</td>
+			<td>default</td>
+			<td> 			The current conversion status:<br>
+			bit0: running(1)/stopped(0), only reflects whether the operation is 
+			running. It does not indicate whether the operation is normal or 
+			abnormal. <br>
+			bit4: not overrun(0)/overrun(1), indicates whether the data has not 
+			been transferred in time. If this occurs, the data may have been 
+			lost. <br>
+			bit9,8: not ready(00)/first half ready(10)/second 
+			half ready(11), indicates that the buffer data needs to be 
+			transferred immediately. <br>
+			other bits: reserved.<br>
+			The 
+	<a href="DRV_ClearFlag.htm">DRV_ClearFlag</a> can be 
+	used to clear the underrun status. </td>
+		</tr>
+		<tr>
+			<td><b>pdwRetrieved </b></td>
+			<td> 			output</td>
+			<td> 			default</td>
+			<td> 			The input data count in the buffer.<br>
+			Indicates the input data count in current buffer. Since the FDI channels of PCI-1755
+	can be set to 8, 16 or 32 bits, the data size of 
+	each depends on FDI channel configuration and the scale may be <i>byte</i>, 
+	<i>word</i> or <i>double 
+	word</i>. <br>
+			If the mode is set to cyclic when calling the
+	<a href="DRV_FDIStart.htm">DRV_FDIStart</a>, this value will be cleared to 
+			NULL after each circulation. When the two halves of the buffer are 
+			full, this value will be the input data count (<i>dwCount</i>) 
+			configured by calling
+	<a href="DRV_FDIStart.htm">DRV_FDIStart</a>.</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2>
+<table border="0" width="100%" cellspacing="7" cellpadding="0" id="table5" height="77">
+	<tr>
+		<td><b><span style="font-size: 9pt">&nbsp;&nbsp; 1. SUCCESS</span></b></td>
+		<td><span style="font-size: 9pt">Successful.</span></td>
+	</tr>
+	<tr>
+		<td><b><span style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDriverHandle</span></b></td>
+		<td><span style="font-size: 9pt">The <i>DeviceHandle</i> is NULL</span><span style="font-size: 9pt" lang="en-us">. 
+		</span></td>
+	</tr>
+	<tr>
+		<td><b><span style="font-size: 9pt">&nbsp;&nbsp; 3. Other value </span></b></td>
+		<td><span style="font-size: 9pt">
+		<a href="../../errorcodes/ERRORLIST.htm">Please reference ErrorCodes </a> </span></td>
+	</tr>
+</table>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

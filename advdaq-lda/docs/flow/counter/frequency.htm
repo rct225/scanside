@@ -1,0 +1,103 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Frequency Measurement</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nFrequency Measurement Function");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1><b>Frequency Measurement Function</b></h1>
+<p>Two methods are used for the frequency measurement.</p>
+<p>1. Measure the input pulse frequency of specified counter: </p>
+<p><img src="image021.jpg"> 
+</p>
+<p>The <a href="../../function/counter/DRV_CounterFreqStart.htm">DRV_CounterFreqStart
+</a>
+function 
+starts the frequency measurement. When it is running,  the <a href="../../function/counter/DRV_CounterFreqRead.htm">DRV_CounterFreqRead</a> function 
+can be used to repeatedly measure the frequency. Call
+<a href="../../function/counter/DRV_CounterReset.htm">DRV_CounterReset</a> function to stop the frequency measurement operation.</p>
+<p>2. Measure both the high and low period of the input pulse:</p>
+<p><img border="0" src="pwmread.jpg" width="153" height="209"></p>
+<p>The <a href="../../function/counter/DRV_PWMStartRead.htm">DRV_PWMStartRead
+</a>
+function 
+starts the pulse width measurement.&nbsp; Call
+<a href="../../function/counter/DRV_CounterReset.htm">DRV_CounterReset</a> function to stop the 
+pulse width measurement operation.</p>
+<p><b>Notes</b>: 
+</p>
+<p>a. There 
+are two kinds of chips that are used in DA&amp;C cards: Intel 8254 and AMD Am9513A. </p>
+<p>b. AMD Am9513A chip uses gate mode control to attain a highly accurate 
+frequency measurement. Frequency=number of samples/gate period</p>
+<p>c. For the Intel 8254 chip, software gate mode is used.</p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

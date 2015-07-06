@@ -1,0 +1,423 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Properties</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval: 21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCM Series\nPCM-3753I Device Driver User Manual\nDevice Properties");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<h1><span lang=EN-US>Device Properties</span></h1>
+
+<p><span lang=EN-US>Device properties are stored in the system and read by the
+driver when it loads, and then the device is programmed according to these
+loaded values. The properties are protected during read and write access times,
+and some of them are pre-defined by the configuration dialog box. Different
+device's functions are influenced by different properties. These properties are
+represented by an ID code for an application that calls Advantech API
+functions. An application can use a default value set by the configuration
+dialog box, or call Advantech API functions: <a href="../../../function/Device/drv_devicegetproperty.htm">DRV_DeviceGetProperty</a>
+and <a href="../../../function/Device/drv_devicesetproperty.htm">DRV_DeviceSetProperty</a>,
+to modify individual properties in running time.</span></p>
+
+<p><span lang=EN-US>&nbsp;</span></p>
+
+<p><span lang=EN-US>PCM-3753I supports the following properties:</span></p>
+
+<p class=p1><span lang=EN-US>&nbsp;</span></p>
+
+<div style='margin-left:24.0pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;background:#999999;border:solid #999999 1.0pt;
+ mso-border-top-alt:.5pt;mso-border-left-alt:.25pt;mso-border-bottom-alt:.25pt;
+ mso-border-right-alt:.5pt;mso-border-color-alt:#999999;mso-border-style-alt:
+ solid' id="table1">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Property</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Description</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_BoardID.htm">CFG_BoardID</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the board ID of the device.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:19.5pt'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_BaseAddress.htm">CFG_BaseAddress</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the base address of the currently installed PCM-3753I</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:19.5pt'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_Interrupt.htm">CFG_Interrupt</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the IRQ of the currently installed PCM-3753I</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_BusNumber.htm">CFG_BusNumber</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets bus number of the currently installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_SlotNumber.htm">CFG_SlotNumber</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the slot number of the currently installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DiChannelCount.htm">CFG_DiChannelCount</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital input channel count of the currently installed
+  PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DoChannelCount.htm">CFG_DoChannelCount</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital output channel count of the currently installed
+  PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DiPortCount.htm">CFG_DiPortCount</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital input port count of the currently installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DoPortCount.htm">CFG_DoPortCount</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital output port count of the currently installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DioChannelDirection.htm">CFG_DioChannelDirection</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets/sets the DIO ports' direction of the installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_InterruptTriggerSource.htm">CFG_InterruptTriggerSource</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets/sets&nbsp; the interrupt trigger source each group of&nbsp; the
+  installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DiInterruptTriggerOnRisingEdge.htm">CFG_DiInterruptTriggerOnRisingEdge</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets/sets the DI interrupt trigger mode (on falling edge or rising
+  edge) of the currently installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DiInterruptTriggerOnFallingEdge.htm">CFG_DiInterruptTriggerOnFallingEdge</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets/sets the DI interrupt trigger mode (on falling edge or rising
+  edge) of the currently installed PCM-3753I.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DiStatusChangeEnableChannel.htm">CFG_DiStatusChangeEnableChannel</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets/sets which DI channel can trigger interrupt when it's status
+  change.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DiPatternMatchEnabledChannel.htm">CFG_DiPatternMatchEnabledChannel</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets/sets which DI channel can trigger interrupt when it value match
+  the preset value.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'><a href="CFG_DiPatternMatchValue.htm">CFG_DiPatternMatchValue</a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets/sets the preset value of the pattern match channel.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

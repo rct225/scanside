@@ -1,0 +1,124 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_AIGetConfig </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIGetConfig");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_AIGetConfig </h1>
+	
+	<p><p>status = DRV_AIGetConfig( DriverHandle,lpAIGetConfig )</p>
+	<h2>Purpose</h2> 
+	<p>Retrieve the device configuration from <i>DriverHandle</i> specified 
+	device. The device configuration includes <i>BoardID</i>, <i>AIMode</i> 
+	...etc, but not include the AI channels' input voltage ranges (<i>GainCode</i>). </p>
+	<h2>Parameters</h2>
+	<p>The address and size of retrieve buffer 
+		are all stored in the <b>lpAIGetConfig </b>pointed structure (<a href="../../structure/Ai/PT_AIGetConfig.htm">PT_AIGetConfig</a>).</p>
+	<p>
+		Here, the range of target channel (USHORT chan, in the <b>lpAIConfig </b>&nbsp;pointed structure) is from zero (the first AI channel) to its maximum AI 
+		channel number subtract one. For example, the range will be from 0 to 15 
+		on a card with 16 AI channels. </p>
+		<p>Please refer to the hardware manual of each card for the <i>GainCode</i> (USHORT TrigMode, in the <b>lpAIConfig</b> pointed 
+		structure) and its corresponding input voltage range.<p>&nbsp;</p> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Type</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DriverHandle</b></td>
+			<td>Input</td>
+			<td>long pointer</td>
+			<td>default</td>
+			<td><span style="font-size: 9.0pt; font-family: Verdana">Pointer 
+			retrieved from <a style="color: blue; text-decoration: underline; text-underline: single" href="driver.chm::/function/Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> that specifies the target device.</span></td>
+		</tr>
+		<tr>
+			<td><b>lpAIGetConfig</b></td>
+			<td>Input / Output</td>
+			<td>long pointer to <a href="../../structure/Ai/PT_AIGetConfig.htm">PT_AIGetConfig</a></td>
+			<td>default</td>
+			<td>Pointer that indicates the structure which stores the buffer 
+			address and size for retrieving the configuration data.</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2> 
+	<p><b>SUCCESS</b> if successful </p>
+	<p><b>InvalidDriverHandle</b> if DriverHandle is NULL </p>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

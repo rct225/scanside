@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="CFG_DiChannelCount" >
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1723/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1718/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1721/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1716/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1761/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCM/PCM-3725/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1760/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCM/PCM-3724/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1762/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1711/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCM/PCM-3730/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCM/PCM-3730I/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1756/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCM/PCM-3753I/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1758U/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1757UP/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1712/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4718/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4716/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4761/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1710/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4751/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4750/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4704/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1784/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCM/PCM-3718/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1763/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4702/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="USB/USB-4711/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="MIC/MIC-3751/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1753/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1750/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1736/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1735U/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1733/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCM/PCM-3761I/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1751/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1741U/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1737U/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1739U/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1742U/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1754/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1730/property/CFG_DiChannelCount.htm" />
+  <topic name="CFG_DiChannelCount" url="PCI/PCI-1727U/property/CFG_DiChannelCount.htm" />
+</key>
+<key name="CFG_DiCounterDirection" >
+  <topic name="CFG_DiCounterDirection" url="PCI/PCI-1760/property/CFG_DiCounterDirection.htm" />
+</key>
+<key name="CFG_DiCounterEnable" >
+  <topic name="CFG_DiCounterEnable" url="PCI/PCI-1760/property/CFG_DiCounterEnable.htm" />
+</key>
+<key name="CFG_DiCounterMatechEnable" >
+  <topic name="CFG_DiCounterMatechEnable" url="PCI/PCI-1760/property/CFG_DiCounterMatchEnable.htm" />
+</key>
+<key name="CFG_DiCounterOverflow" >
+  <topic name="CFG_DiCounterOverflow" url="PCI/PCI-1760/property/CFG_DiCounterOverflow.htm" />
+</key>
+<key name="CFG_DiCounterPreset" >
+  <topic name="CFG_DiCounterPreset" url="PCI/PCI-1760/property/CFG_DiCounterPreset.htm" />
+</key>
+<key name="CFG_DiCounterTrigEdge" >
+  <topic name="CFG_DiCounterTrigEdge" url="PCI/PCI-1760/property/CFG_DiCounterTrigEdge.htm" />
+</key>
+<key name="CFG_DiCounterValue" >
+  <topic name="CFG_DiCounterValue" url="PCI/PCI-1760/property/CFG_DiCounterValue.htm" />
+</key>
+<key name="CFG_DiEnableLatch" >
+  <topic name="CFG_DiEnableLatch" url="PCI/PCI-1754/property/CFG_DiEnableLatch.htm" />
+  <topic name="CFG_DiEnableLatch" url="PCI/PCI-1756/property/CFG_DiEnableLatch.htm" />
+</key>
+<key name="CFG_DiFilterEnable" >
+  <topic name="CFG_DiFilterEnable" url="PCI/PCI-1758U/property/CFG_DIFilterEnable.htm" />
+  <topic name="CFG_DiFilterEnable" url="PCI/PCI-1760/property/CFG_DiFilterEnable.htm" />
+</key>
+<key name="CFG_DiFilterHiValue" >
+  <topic name="CFG_DiFilterHiValue" url="PCI/PCI-1760/property/CFG_DiFilterHiValue.htm" />
+</key>
+<key name="CFG_DiFilterIntervalCounter" >
+  <topic name="CFG_DiFilterIntervalCounter" url="PCI/PCI-1758U/property/CFG_DiFilterIntervalCounter.htm" />
+</key>
+<key name="CFG_DiFilterLowValue" >
+  <topic name="CFG_DiFilterLowValue" url="PCI/PCI-1760/property/CFG_DiFilterLowValue.htm" />
+</key>
+<key name="CFG_DiInterruptSupportedChannel" >
+  <topic name="CFG_DiInterruptSupportedChannel" url="USB/USB-4751/property/CFG_DiInterruptSupportedChannel.htm" />
+  <topic name="CFG_DiInterruptSupportedChannel" url="USB/USB-4750/property/CFG_DiInterruptSupportedChannel.htm" />
+  <topic name="CFG_DiInterruptSupportedChannel" url="PCI/PCI-1784/property/CFG_DiInterruptSupportedChannel.htm" />
+</key>
+<key name="CFG_DiInterruptTriggerOnFallingEdge" >
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1737U/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="USB/USB-4751/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1736/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1730/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1733/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="USB/USB-4750/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="USB/USB-4761/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1757UP/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1753/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1758U/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCM/PCM-3753I/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1754/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1756/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCM/PCM-3730I/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1751/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1763/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1739U/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="MIC/MIC-3751/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1762/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCM/PCM-3761I/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1750/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+  <topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1761/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+</key>
+
+</indexdata>

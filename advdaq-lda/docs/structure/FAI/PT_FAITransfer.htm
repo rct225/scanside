@@ -1,0 +1,177 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAITransfer</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nInterrupt Transferring\nData Structure\nPT_FAITransfer");
+addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nDMA Transferring\nData Structure\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nHigh-Speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nData Structures\nHigh-speed\nPT_FAITransfer");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAITransfer");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAITransfer");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nData Structures\nHigh-speed Functions\nPT_FAITransfer");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAITransfer");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_FAITransfer
+</h1>
+<pre class="code">typedef struct tagPT_FAITransfer
+{
+    INT16U ActiveBuf,
+    VOID * DataBuffer;
+    INT16U DataType;
+    INT16U start;
+    INT32U count;
+    INT16U *overrun;
+} PT_FAITransfer, * LPT_FAITransfer;
+</pre>
+<p><b> PT_FAITransfer</b> is used in function
+<a href="../../function/FAI/DRV_FAITransfer.htm">DRV_FAITransfer</a>.</p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0" class="Bordered">
+ <tr>
+  <td><b>Name</b></td>
+  <td><b>Direction</b></td>
+  <td><b>Range</b></td>
+  <td width="564"><b>Description</b></td>
+ </tr>
+ <tr>
+  <td><b>ActiveBuf</b></td>
+  <td>input </td>
+  <td>0, 1 </td>
+  <td width="564"> Reserved, always set to 0 at present.</td>
+ </tr>
+ <tr>
+  <td><b>DataBuffer</b></td>
+  <td>output </td>
+  <td>Depends on   the hardware.</td>
+  <td width="564"> User's buffer. <p style="margin-left: 0">
+	The data transferred from the sampling buffer is stored in 
+	the user allocated buffer (<i>DataBuffer</i>). The buffer size should not be 
+	below 2*<i>count </i>&nbsp;(if<i> DataType</i> is Unsigned short) or below4*<i>count</i> 
+	(if<i> DataType</i> is Float). <i>count</i> is the sampling data count.</p>
+	<p style="margin-left: 0">Please refer to the
+	<a href="../../function/FAI/FastAnalogInput.htm">
+	FastAnalogInput</a> to set a buffer 
+	with proper size. </p> </td>
+ </tr>
+ <tr>
+  <td><b>DataType</b></td>
+  <td>input </td>
+  <td>0, 1 </td>
+  <td width="564"> The data type:<br>
+	0-Raw data (Unsigned short) <br>
+		1-Float data (float point data).</td>
+ </tr>
+ <tr>
+  <td><b>start</b></td>
+  <td>input </td>
+  <td> 0 or N/2 (N is the sampling data count that allocates the 
+	sampling buffer when initiating FAI. For example, the <i>count</i> in <b> PT_FAIDmaExStart </b>
+	indicates N.) </td>
+  <td width="564"> The starting point of the source buffer to be copied to the data buffer.</td>
+ </tr>
+ <tr>
+  <td><b>count</b></td>
+  <td>input </td>
+  <td> N/2 (N is the sampling data count that allocates the 
+	sampling buffer when initiating FAI. For example, the <i>count</i> in <b> PT_FAIDmaExStart </b>
+	indicates N.)
+	</td>
+  <td width="564">     &nbsp;It must be half of the sampling data count.</td>
+ </tr>
+ <tr>
+  <td><b>overrun</b></td>
+  <td>output </td>
+  <td>0, 1 </td>
+  <td width="564"> The overrun status. If the data in 1st/2nd half of 
+	the buffer has not been taken away in time, 
+	an overrun flag will be set and the data 
+  will be overwritten by new ones.<br>
+	0- No overrun occurs<br>
+	1- Overrun occurs</td>
+ </tr>
+</table>
+</div>
+</div>
+<div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" >
+  <item name="Device Features" url="PCI/PCI-1736/features/key_feature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/PCI1736.htm" />
+</book>
+<book name="Function Description" url="PCI/PCI-1736/Function/funcdesc.htm" >
+  <book name="Device Functions" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+  </book>
+  <book name="Port I/O Functions" >
+    <item name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+    <item name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+    <item name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+    <item name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+    <item name="DRV_WritePortDword" url="function/PORTIO/DRV_WritePortDword.htm" />
+    <item name="DRV_ReadPortDword" url="function/PORTIO/DRV_ReadPortDword.htm" />
+  </book>
+  <book name="Digital Input/Output" >
+    <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+    <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+    <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <book name="Common Functions" >
+      <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+      <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+    </book>
+  </book>
+  <book name="Other Functions" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="PCI/PCI-1736/Structure/DataStructure.htm" >
+  <book name="Port I/O Functions" >
+    <item name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+    <item name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+    <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+    <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+    <item name="PT_WritePortDword" url="structure/PORTIO/PT_WritePortDword.htm" />
+    <item name="PT_ReadPortDword" url="structure/PORTIO/PT_ReadPortDword.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <book name="Common Functions" >
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+    </book>
+  </book>
+</book>
+<book name="Device Event" >
+  <item name="Event Type" url="PCI/PCI-1736/Eventtype/Eventtype.htm" />
+</book>
+<book name="Device Properties" url="PCI/PCI-1736/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="PCI/PCI-1736/property/CFG_BoardID.htm" />
+  <item name="CFG_BaseAddress" url="PCI/PCI-1736/property/CFG_BaseAddress.htm" />
+  <item name="CFG_Interrupt" url="PCI/PCI-1736/property/CFG_Interrupt.htm" />
+  <item name="CFG_BusNumber" url="PCI/PCI-1736/property/CFG_BusNumber.htm" />
+  <item name="CFG_SlotNumber" url="PCI/PCI-1736/property/CFG_SlotNumber.htm" />
+  <item name="CFG_DoPortCount" url="PCI/PCI-1736/property/CFG_DoPortCount.htm" />
+  <item name="CFG_DoChannelCount" url="PCI/PCI-1736/property/CFG_DoChannelCount.htm" />
+  <item name="CFG_DiPortCount" url="PCI/PCI-1736/property/CFG_DiPortCount.htm" />
+  <item name="CFG_DiChannelCount" url="PCI/PCI-1736/property/CFG_DiChannelCount.htm" />
+  <item name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1736/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+  <item name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1736/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

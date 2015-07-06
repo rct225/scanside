@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" >
+  <item name="Device Features" url="PCI/PCI-1714/features/keyfeature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/PCI1714.htm" />
+</book>
+<book name="Function Description" url="PCI/PCI-1714/Function/funcdesc.htm" >
+  <book name="Device Functions" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+  </book>
+  <book name="Analog Input" url="PCI/PCI-1714/Function/funcdesc.htm" >
+    <item name="DRV_AIBinaryIn" url="function/Ai/drv_aibinaryin.htm" />
+    <item name="DRV_AIConfig" url="function/Ai/drv_aiconfig.htm" />
+    <item name="DRV_AIScale" url="function/Ai/drv_aiscale.htm" />
+    <item name="DRV_AIVoltageIn" url="function/Ai/drv_aivoltagein.htm" />
+    <item name="DRV_MAIBinaryIn" url="function/Ai/drv_maibinaryin.htm" />
+    <item name="DRV_MAIConfig" url="function/Ai/drv_maiconfig.htm" />
+    <item name="DRV_MAIVoltageIn" url="function/Ai/drv_maivoltagein.htm" />
+  </book>
+  <book name="Port I/O Functions" >
+    <item name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+    <item name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+    <item name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+    <item name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+  </book>
+  <book name="High-speed Functions" url="PCI/PCI-1714/Function/funcdesc.htm" >
+    <book name="Common Functions" >
+      <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+      <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+    </book>
+    <book name="AI Functions" >
+      <item name="DRV_FAIDmaExStart" url="function/FAI/DRV_FAIDmaExStart.htm" />
+      <item name="DRV_FAITransfer" url="function/FAI/DRV_FAITransfer.htm" />
+      <item name="DRV_FAICheck" url="function/FAI/DRV_FAICheck.htm" />
+      <item name="DRV_ClearFlag" url="function/FAI/DRV_ClearFlag.htm" />
+      <item name="DRV_FAITerminate" url="function/FAI/DRV_FAITerminate.htm" />
+    </book>
+  </book>
+  <book name="Other Functions" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="PCI/PCI-1714/structure/Datastructure.htm" >
+  <book name="Analog Input" >
+    <item name="PT_AIBinaryIn" url="structure/Ai/PT_AIBinaryIn.htm" />
+    <item name="PT_AIConfig" url="structure/Ai/PT_AIConfig.htm" />
+    <item name="PT_AIScale" url="structure/Ai/PT_AIScale.htm" />
+    <item name="PT_AIVoltageIn" url="structure/Ai/PT_AIVoltageIn.htm" />
+    <item name="PT_MAIBinaryIn" url="structure/Ai/PT_MAIBinaryIn.htm" />
+    <item name="PT_MAIConfig" url="structure/Ai/PT_MAIConfig.htm" />
+    <item name="PT_MAIVoltageIn" url="structure/Ai/PT_MAIVoltageIn.htm" />
+  </book>
+  <book name="Port I/O functions" >
+    <item name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+    <item name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+    <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+    <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <book name="Common Functions" >
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+    </book>
+    <book name="AI Functions" >
+      <book name="Common Functions" >
+        <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+        <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+      </book>
+      <item name="PT_FAIDmaExStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+      <item name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+      <item name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+    </book>
+    <item name="PT_FAIDmaExStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+    <item name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+    <item name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+  </book>
+</book>
+<book name="Device Event" >
+  <item name="Event Type" url="PCI/PCI-1714/Eventtype/Eventtype.htm" />
+</book>
+<book name="Device Properties" url="PCI/PCI-1714/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="PCI/PCI-1714/property/CFG_BoardID.htm" />
+  <item name="CFG_BaseAddress" url="PCI/PCI-1714/property/CFG_BaseAddress.htm" />
+  <item name="CFG_Interrupt" url="PCI/PCI-1714/property/CFG_Interrupt.htm" />
+  <item name="CFG_BusNumber" url="PCI/PCI-1714/property/CFG_BusNumber.htm" />
+  <item name="CFG_SlotNumber" url="PCI/PCI-1714/property/CFG_SlotNumber.htm" />
+  <item name="CFG_AiFifoSize" url="PCI/PCI-1714/property/CFG_AiFifoSize.htm" />
+  <item name="CFG_AiPacerRate" url="PCI/PCI-1714/property/CFG_AiPacerRate.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

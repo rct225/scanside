@@ -1,0 +1,96 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Counter with Interrupt Triggering</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1><b>Counter with Interrupt Transferring</b></h1>
+<p>The counter operation with interrupt transferring allows you to monitor the 
+status of the counter operation without polling. When the counter 
+reaches a specified count value, it will notify the driver through a 
+hardware interrupt. These functions are only supported in the PCI-1750/1751.</p>
+<p><img border="0" src="countertimer.jpg" width="218" height="488"> 
+</p>
+<p>The <a href="../../function/counter/DRV_TimerCountSetting.htm">
+DRV_TimerCountSetting</a> function configures the value of interrupt counts. 
+The <a href="../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> 
+(true) 
+function starts the counter operation. When it is running, use the
+<a href="../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a> 
+function to check its status. When it reaches the count, it will return a 
+hardware event.</p>
+<p>To stop the counter, call
+<a href="../../function/commonhighspeed/DRV_EnableEvent.htm"> 
+DRV_EnableEvent</a>(false) function again, and then reset the counter to to stop the operation 
+by calling <a href="../../function/counter/DRV_CounterReset.htm">
+DRV_CounterReset</a>.</p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

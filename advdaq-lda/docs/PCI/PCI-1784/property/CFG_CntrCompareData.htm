@@ -1,0 +1,108 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CFG_CompareData</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties\nCFG_CntrCompareData");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>CFG_CntrCompareData</h1>
+<p><b>CFG_CntrCompareData</b> gets or sets the counters' compare data of the device.<br>
+This data is used for comparing with the counter's count value. <br>
+In the property <a href="CFG_CntrIndicatorControl.htm">CFG_CntrIndicatorControl</a>, 
+four types of indicators are provided: OVERCOMPLEVEL, OVERCOMPPULSE, 
+UNDERCOMPLEVEL, UNDERCOMPPULSE. When the Indicator is set to OVERCOMPLEVEL/OVERCOMPPULSE, 
+when the counter's count value exceeds the compare data, the indicator will 
+indicate over compare state (level or pulse) ; When the Indicator is set to 
+UNDERCOMPLEVEL/OVERCOMPPULSE, when the counter's count value below the compare 
+data, the indicator will be on an under compare state (level or pulse).</p>
+<h2>Description</h2>
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td><b>Type</b></td>
+      <td>INT32U array</td>
+    </tr>
+    <tr> 
+      <td><b>Length</b></td>
+      <td>4 bytes for one counter channel</td>
+    </tr>
+    <tr> 
+      <td><b>Access type</b></td>
+      <td>Read/Write</td>
+    </tr>
+    <tr> 
+      <td><b>Value</b></td>
+      <td>Each element in the array represents one counter's compare data.</td>
+    </tr>
+  </table>
+</div> 
+<h2>See also</h2><h4></h4>
+<p> <a href="../../../function/Device/drv_devicegetproperty.htm"> DRV_DeviceGetProperty</a></p>
+<p> <a href="CFG_CntrIndicatorControl.htm">CFG_CntrIndicatorControl</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

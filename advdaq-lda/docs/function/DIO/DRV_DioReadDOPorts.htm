@@ -1,0 +1,209 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>DRV_DioReadDOPorts</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nDigital Input/Output Function Group\nDigital Output Functions\nSoftware Transferring\nFunction Description\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1723 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1727U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1730 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1734 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1736UP Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1737U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1739U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1752 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1753 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1756 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1757UP Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadPorts");
+addTocInfo("PCI Series\nPCI-1758U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1761 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1762 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1763 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioReadDOPorts");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>DRV_DioReadDOPorts</h1>
+<div>
+	<pre class="code">INT32S DRV_DioReadDOPorts (
+   PTR_T <i>DeviceHandle,</i><span lang="EN-US">
+   INT32U <i>dwPortStart</i>,
+   INT32U <i>dwPortCount</i>,
+   INT8U * <i>pBuffer</i> );</span></pre>
+	<h2>Purpose</h2>
+	<p>On the device indicated by the
+	<i>DeviceHandle</i>, it <span lang="en-us">specifies the DO port range and 
+	reads back the status of these ports. </span>
+</div>
+<h2>Parameters</h2>
+	<p class="MsoNormal"><span lang="en-us">Some parameters, such 
+	as starting port number (</span><span lang="EN-US" style="font-size: 9pt; "><i>dwPortStart</i></span><span lang="en-us">), 
+	port count (</span><span lang="EN-US" style="font-size: 9pt; "><i>dwPortCount</i></span><span lang="en-us">) 
+	and pointer to the user's buffer (</span><span lang="EN-US" style="font-size: 9pt; "><i>pBuffer</i></span><span lang="en-us">), 
+	are stored in the </span><a href="DRV_DioReadDOPorts.htm">DRV_DioReadDOPorts</a><span lang="en-us">. 
+	</span></p>
+	<p class="MsoNormal"><span lang="en-us">The user needs to provide 
+	a buffer that is large enough to store retrieved data. </span></p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered" id="table5">
+		<tr>
+					<td><span lang="en-us"><b>Name</b></span></td>
+					<td><span lang="en-us"><b>Direction</b></span></td>
+					<td><span lang="en-us"><b>Range</b></span></td>
+					<td><span lang="en-us"><b>Description</b></span></td>
+		</tr>
+		<tr>
+					<td><b>DeviceHandle</b></td>
+					<td>input</td>
+					<td>default</td>
+					<td>
+					<span lang="en-us">The p</span>ointer retrieved from<span lang="en-us"> 
+					the</span> <a href="../Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>  			
+					<span lang="en-us">which</span> specifies the target device.</td>
+		</tr>
+		<tr>
+					<td>
+					<span lang="EN-US" style="font-size: 9pt; font-weight:700">
+   					dwPortStart</span></td>
+					<td>input </td>
+					<td>default</td>
+					<td>
+					<span lang="en-us">The starting port number. </span></td>
+		</tr>
+		<tr>
+					<td>
+					<span lang="EN-US" style="font-size: 9pt; font-weight:700">
+   					dwPortCount</span></td>
+					<td>input</td>
+					<td>default</td>
+					<td>
+					<span lang="en-us">The port count.</span></td>
+		</tr>
+		<tr>
+					<td>
+					<span lang="EN-US" style="font-size: 9pt; ">
+   					<b>pBuffer</b> </span></td>
+					<td>output</td>
+					<td>default</td>
+					<td>
+					<span lang="en-us">The pointer to the user's buffer that saves 
+					DO data.</span></td>
+		</tr>
+	</table>
+</div>
+		<h2>Return</h2>
+<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table2">
+	<tr>
+		<td width="197" >     <b><span style="font-size: 9pt">&nbsp;&nbsp; 
+		1. 0</span></b></td>
+		<td width="759"><span style="font-size: 9pt" lang="en-us">Successful. </span></td>
+	</tr>
+	<tr>
+		<td width="197" >     <b><span style="font-size: 9pt" lang="en-us">&nbsp;&nbsp; 
+		2. </span><span style="font-size: 9pt">InvalidDeviceHandle</span></b></td>
+		<td width="759"><span style="font-size: 9pt" lang="en-us">T</span><span style="font-size: 9pt" lang="en-us">he 
+		</span><span style="font-size: 9pt"> <i>
+		DeviceHandle</i></span><span style="font-size: 9pt" lang="en-us"> is NULL.</span></td>
+	</tr>
+	<tr>
+		<td width="197" ><span lang="en-us"><b><span style="font-size: 9pt">&nbsp;&nbsp; 3.
+		</span></b></span><b><span style="font-size: 9pt">InvalidChannel</span></b></td>
+		<td width="759"><span style="font-size: 9pt" lang="en-us">The <i>port</i> is configured 
+		incorrectly.</span><span style="font-size: 9pt"> </span>
+		<span style="font-size: 9pt" lang="en-us">The starting port number (</span><span lang="EN-US" style="font-size: 9pt; "><i>dwPortStart</i></span><span style="font-size: 9pt" lang="en-us">) 
+		or the sum of the starting port number and the port count (</span><span lang="EN-US" style="font-size: 9pt; "><i>dwPortCount</i></span><span style="font-size: 9pt" lang="en-us">) 
+		should not exceed the total DO port number.&nbsp; </span></td>
+	</tr>
+	<tr>
+		<td width="197" >     <b><span style="font-size: 9pt" lang="en-us">&nbsp;&nbsp; 
+		4. </span><span style="font-size: 9pt">InvalidBuffer</span></b></td>
+		<td width="759"><span style="font-size: 9pt" lang="en-us">The </span>
+		<span style="font-size: 9pt" lang="en-us">user's buffer is configured 
+		incorrectly. It should not be NULL.&nbsp; </span></td>
+	</tr>
+</table>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

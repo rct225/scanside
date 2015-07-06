@@ -1,0 +1,208 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>EventType</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Events\nEvent Type");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Event Type</h1>
+<p>PCI-1784/U supports the following events:</p>
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td><b>Event Type</b></td>
+      <td><b>Description</b></td>
+    </tr>
+    <tr> 
+      <td>ADS_EVT_INTERRUPT</td>
+      <td>Signaled when a certain number of interrupts occur. The number is 
+		specified when applications call
+		<a href="../../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a>.</td>
+    </tr>
+    <tr> 
+      <td>ADS_EVT_OVERFLOW_CNT0</td>
+      <td>Signaled when counter 0 overflow occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_OVERFLOW_CNT1</td>
+    	<td>Signaled when counter 1 overflow occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_OVERFLOW_CNT2</td>
+    	<td>Signaled when counter 2 overflow occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_OVERFLOW_CNT3</td>
+    	<td>Signaled when counter 3 overflow occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_UNDERFLOW_CNT0</td>
+    	<td>Signaled when counter 0 underflow occurs.</td>
+    </tr>            
+    <tr> 
+      <td>ADS_EVT_UNDERFLOW_CNT1</td>
+      <td>Signaled when counter 1 underflow occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_UNDERFLOW_CNT2</td>
+    	<td>Signaled when counter 2 underflow occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_UNDERFLOW_CNT3</td>
+    	<td>Signaled when counter 3 underflow occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_INDEX_CNT0</td>
+    	<td>Signaled when counter 0 index input occurs.</td>
+    </tr>    
+    <tr>
+    	<td>ADS_EVT_INDEX_CNT1</td>
+    	<td>Signaled when counter 1 index input occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_INDEX_CNT2</td>
+    	<td>Signaled when counter 2 index input occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_INDEX_CNT3</td>
+    	<td>Signaled when counter 3 index input occurs.</td>
+    </tr>    
+    <tr>
+    	<td>ADS_EVT_INDEX_CNT3</td>
+    	<td>Signaled when counter 3 index input occurs.</td>
+    </tr>                    
+    <tr>
+    	<td>ADS_EVT_DI_INTERRUPT0</td>
+    	<td>Signaled when DI0 input occurs.</td>
+    </tr>                    
+    <tr>
+    	<td>ADS_EVT_DI_INTERRUPT1</td>
+    	<td>Signaled when DI1 input occurs.</td>
+    </tr>                    
+    <tr>
+    	<td>ADS_EVT_DI_INTERRUPT2</td>
+    	<td>Signaled when DI2 index input occurs.</td>
+    </tr>                    
+                  
+    <tr>
+      <td>ADS_EVT_DI_INTERRUPT3</td>
+      <td>Signaled when DI3 over compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_OVERCOMPARE_CNT0</td>
+    	<td>Signaled when counter 0 over compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_OVERCOMPARE_CNT1</td>
+    	<td>Signaled when counter 1 over compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_OVERCOMPARE_CNT2</td>
+    	<td>Signaled when counter 2 over compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_OVERCOMPARE_CNT3</td>
+    	<td>Signaled when counter 3 over compare occurs.</td>
+    </tr>            
+    <tr>
+    	<td>ADS_EVT_UNDERCOMPARE_CNT0</td>
+    	<td>Signaled when counter 0 under compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_UNDERCOMPARE_CNT1</td>
+    	<td>Signaled when counter 1 under compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_UNDERCOMPARE_CNT2</td>
+    	<td>Signaled when counter 2 under compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_UNDERCOMPARE_CNT3</td>
+    	<td>Signaled when counter 3 under compare occurs.</td>
+    </tr>
+    <tr>
+    	<td>ADS_EVT_INTERRUPT_TIMER4</td>
+    	<td>Signaled when counter 4 timer input occurs.</td>
+    </tr>              
+    <tr> 
+      <td>ADS_EVT_TIME_OUT</td>
+      <td>Signaled when time out events occur during the wait interval in
+		<a href="../../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a>.</td>
+    </tr>
+    <tr> 
+      <td>ADS_EVT_NO_EVENT</td>
+      <td>Signaled when no events occur during the wait interval in
+		<a href="../../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a>.</td>
+    </tr>
+
+  </table>
+</div> 
+<h2>See also</h2>
+<p> <a href="../../../structure/commonhighspeed/PT_EnableEvent.htm">PT_EnableEvent</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

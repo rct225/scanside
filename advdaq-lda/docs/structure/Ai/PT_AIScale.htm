@@ -1,0 +1,175 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_AIScale </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nSoftware Transferring\nData Structure\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nData Structures\nAnalog Input\nPT_AIScale");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>PT_AIScale </h1>
+	<h1></h1>
+<pre class="code">typedef struct tagPT_AIScale
+{
+&nbsp;    INT16U reading;
+&nbsp;    FP32 MaxVolt;
+     INT16U MaxCount;
+&nbsp;    INT16U offset;
+&nbsp;    FP32  *voltage;
+} PT_AIScale, * LPT_AIScale;
+</pre>
+	<p><b>PT_AIScale</b> is used in 
+	function <a href="../../function/Ai/drv_aiscale.htm">DRV_AIScale</a>.</p>
+	<h2>Member Description</h2> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b><font style="font-size: 9pt">Name</font></b></td>
+			<td><b><font style="font-size: 9pt">Direction</font></b></td>
+			<td><b><font style="font-size: 9pt">Range</font></b></td>
+			<td><b><font style="font-size: 9pt">Description</font></b></td>
+		</tr>
+		<tr>
+			<td><b>reading</b></td>
+			<td>input </td>
+			<td>Depends on the hardware </td>
+			<td>The input digital value that comes from
+			<a href="../../function/Ai/drv_aibinaryin.htm">DRV_AIBinaryIn</a> or 
+			<a href="../../function/Ai/drv_maibinaryin.htm">DRV_MAIBinaryIn</a><b><font style="font-size: 9pt">.</font></b></td>
+		</tr>
+		<tr>
+			<td><b>MaxVolt</b></td>
+			<td>input </td>
+			<td>Depends on the hardware </td>
+			<td>The range of input voltage or analog value. For example, 10.0 
+			for input voltage range from 0.0 to 10.0 volt and 5.0 for -5.0 to +5.0 volt.</td>
+		</tr>
+		<tr>
+			<td><b>MaxCount</b></td>
+			<td>input </td>
+			<td>Depends on the hardware </td>
+			<td>The range of output digital value. For example, 4095 for 12 bits 
+			A/D and 65535 for 16 bits A/D. </td>
+		</tr>
+		<tr>
+			<td><b>offset</b></td>
+			<td>input </td>
+			<td>Depends on the hardware </td>
+			<td>The offset of zero point. For example, the zero volt offset on 
+			input voltage range -5.0 to +5.0 volt is 2048. While the zero volt 
+			offset on input voltage range 0 to +5.0 volt is 0.</td>
+		</tr>
+		<tr>
+			<td><b>voltage</b></td>
+			<td>output </td>
+			<td>Depends on the input range.</td>
+			<td><font style="font-size: 9pt">The pointer to indicate user prepared space that stores the 
+			result of analog value.<br>
+			</font><font face="Verdana">The return analog value </font>
+	(<i>voltage</i>)<font face="Verdana"> comes 
+	from the following formula:<br>
+			</font>voltage = <font face="Verdana">
+			MaxVolt * </font>(reading - offset) / (<font face="Verdana">MaxCount</font> 
+			- offset)<br>
+			The sign (+ or -) of the return analog value (<i>voltage</i>) 
+	will be properly assigned after the operation.<br>
+			For example, for an AI channel of 12-bit A/D resolution with 
+	the input voltage range from -5.0 V to +5.0 V, the related parameters should 
+	be set as follows:<br>
+			MaxVolt is +5.0 (volt).<br>
+			MaxCount is 4095 (the highest resolution that 12-bit A/D 
+	can reach).<br>
+			The offset of zero point is 2048 (the zero volt point 
+	on 12-bit A/D).</td>
+		</tr>
+	</table>
+</div>
+	<p></p>
+	</div>
+
+<div>
+	
+	</div>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

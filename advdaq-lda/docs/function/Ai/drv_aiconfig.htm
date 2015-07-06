@@ -1,0 +1,166 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_AIConfig</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+span.SpellE {  }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nSoftware Transferring\nFunction Description\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nFunction Description\nAnalog Input\nDRV_AIConfig");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1><b><font face="Verdana" >DRV_AIConfig</font></b></h1>
+	<pre class="code">INT32S DRV_AIConfig (
+   PTR_T<i> DeviceHandle,</i>
+   PT_AIConfig<i> *lpAIConfig </i>);</pre>
+	<h2><font face="Verdana">Purpose</font></h2>
+	<p class="MsoNormal" style="margin-left: 20pt"><font face="Verdana"><span lang="EN-US">
+	On the device indicated by the <i>DeviceHandle</i>, it </span>configures an AI (Analog Input) 
+	channel’s input voltage range by setting the corresponding GainCode.&nbsp; </font>Please refer to the corresponding <i>Hardware Manual</i> for detailed information on input 
+	voltage range and the corresponding GainCode.</p>
+	<h2><font face="Verdana">Parameters</font></h2>
+	<p style="margin-left: 16px; margin-top: 4px; margin-bottom: 4px">
+	Some parameters, such as </font>
+	target channel<font face="Verdana"> (<i>DasChan</i>) and 
+	GainCode (</font><i>DasGain</i><font face="Verdana">), are stored in the
+	<a href="../../structure/Ai/PT_AIConfig.htm">
+	PT_AIConfig</a>,<i> 
+	</i>structure pointed by the<i> 
+	lpAIConfig</i>. </font></p>
+	<div>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered" border="1" id="table15">
+		<tr>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Name</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Direction</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Range</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt"><b>Description</b></font></td>
+		</tr>
+		<tr>
+			<td height="25"><font face="Verdana" style="font-size: 9pt"><b>DeviceHandle</b></font></td>
+			<td height="25"><font face="Verdana" style="font-size: 9pt">input</font></td>
+			<td height="25"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td height="25">The pointer retrieved from 
+			the 
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a>  			which specifies the target device.</td>
+		</tr>
+		<tr>
+			<td height="41"><font face="Verdana" style="font-size: 9pt"><b>lpAIConfig</b></font></td>
+			<td height="41"><font face="Verdana" style="font-size: 9pt">input</font></td>
+			<td height="41"><font face="Verdana" style="font-size: 9pt">default</font></td>
+			<td height="41">The<font style="font-size: 9pt"><span style="font-family: Verdana"> 
+			pointer to the structure </span></font>
+			<font face="Verdana" style="font-size: 9pt">
+			<a href="../../structure/Ai/PT_AIConfig.htm">PT_AIConfig</a></font><font style="font-size: 9pt"><span style="font-family: Verdana"> that stores</span></font><font face="Verdana" style="font-size: 9pt">
+				</font>the target 
+				channel (INT16U <i>DasChan</i>)<font face="Verdana" style="font-size: 9pt"> 
+				and the GainCode (INT16U
+				<i>DasGain</i>).</font></td>
+		</tr>
+	</table>
+</div>
+	</div>
+	<h2 style="margin-bottom: 5px"><font face="Verdana">Return</font></h2>
+	</div>
+
+<div>
+	<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table11" style="margin-left: 0; margin-top:0">
+		<tr>
+			<td width="202"><font face="Verdana" style="font-size: 9pt"><b>&nbsp;&nbsp; 1. 
+			0</b></font></td>
+			<td><span style="font-size: 9pt">S</span><font face="Verdana" style="font-size: 9pt">uccessful.</font></td>
+		</tr>
+		<tr>
+			<td width="202"><font face="Verdana" style="font-size: 9pt"><b>&nbsp;&nbsp; 2. 
+			other value</b></font></td>
+			<td><font face="Verdana" style="font-size: 9pt">Please reference 
+			<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a></font></td>
+		</tr>
+	</table>
+	
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

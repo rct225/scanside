@@ -1,0 +1,277 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Fast Analog Output (FAO) Functions</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nFast AOTransferring");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Fast Analog Output (FAO) Functions </h1>
+	<p>The FAO (Fast Analog Output) functions achieves 
+	continuous, high-speed analog output by way of DMA transferring. </p>
+	<p>Presently, PCI-1712 and PCI-1721 support the FAO. The operation 
+	flows are similar. For more detailed information about FAO, please refer to the
+	<a href="../../flow/ao/waveao.htm">DMA Transferring</a>. </p><h2>
+	Allocate buffer</h2>
+	<p>
+	In order to start the FAO, the user should initially allocate a buffer for the driver 
+and transfer the address to the driver for later operation. The buffer size is 
+related to the required data count (the data count for a single cyclic 
+	output, or the total data count for non-cyclic output). The buffer should be large enough to store the data of a 
+	single output. The buffer space for 
+	each data is 2 bytes, therefore the buffer size can be calculated in the 
+	formula below:<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	buffer size = output count* 2 (byte) 
+	<p>
+	The following figure indicates the transfer relationship between the user 
+	buffer, the driver buffer and the FIFO.<p align="center">
+	<img border="0" src="Analog_Output.jpg" width="390" height="241"></p><p>Please refer to the table below for setting the buffer size:<div class=tablediv>
+	<table cellspacing="0" class="Bordered" id="table7">
+
+			<tr>
+				<td rowspan="2" ><b>Condition\Method</b></td>
+				<td colspan="4"><b>Data Count (Unit: 
+				Sample)</b></td>
+			</tr>
+			<tr>
+				<td >Even</td>
+				<td>Multiple of the number of channels</td>
+				<td>Multiple of the FIFO Size</td>
+				<td>&gt;4K(recommended)</td>
+			</tr>
+			<tr>
+				<td>1712</td>
+				<td > &#8730;</td>
+				<td></td>
+				<td>&#8730;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>1721</td>
+				<td>&#8730;</td>
+				<td >&#8730;</td>
+				<td >&nbsp;</td>
+				<td >&#8730;</td>
+			</tr>
+			</table>
+	</div>
+	<h2>
+	1 Initialize Buffer </h2>
+	<p>
+	In order to initiate DMA, the user needs to allocate the buffer, and prepare 
+	the data for the driver buffer. After the transfer is finished, needs 
+	to release the resources. If the 
+	data is float voltage value, then the user has to call the <a href="DRV_FAOScale.htm"><span lang="zh-cn"> DRV_FAOScale</span></a> 
+	to convert the voltage value into binary data. The data will then be filled 
+	in the driver buffer for output by using the <a href="DRV_FAOLoad.htm">DRV_FAOLoad</a>. </p><span lang="zh-cn"> 
+	<h2>
+	2 </span>
+	Enable Event</h2>
+	<p>
+	If the event notification method is used, the user has to enable the event before 
+	the operation so as to avoid transfer 
+	interruption. The specified event can be enabled by calling the 
+    <a href="../commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> 
+	and can be checked by using the 
+    <a href="../commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a>. 
+	The following table lists the event types supported by  
+	PCI-1712 and PCI-1721.</p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+			<tr> 
+               <td><b>Event Type</b></td>
+                <td><b>Description</b></td>
+            </tr>
+			<tr>
+				<td>ADS_EVT_AO_HIBUFTRANSFERED<br>ADS_EVT_AO_LOBUFTRANSFERED</td>
+				<td> This event will be signaled when the data in either buffer 
+				has been transferred. The user can call the
+				<a href="DRV_FAOCheck.htm">
+    DRV_FAOCheck</a> to check which buffer's data has been 
+				transferred, and then fill different data into this buffer.</td>
+			</tr>
+			<tr>
+				<td >ADS_EVT_AO_TERMINATED</td>
+				<td>Triggered when a non-cyclic FAO operation finishes or the
+				<a href="DRV_FAOTerminate.htm">
+				DRV_FAOTerminate</a> is called.</td>
+			</tr>
+			<tr>
+				<td>ADS_EVT_AO_UNDERRUN</td>
+				<td> Triggered when the buffer is not filled with new data. This 
+				indicates the incontinuous transfer.</td>
+			</tr>
+			</table>
+			</div>
+	<p>The user can also call the <a href="DRV_FAOCheck.htm">
+    DRV_FAOCheck</a> to check the current status. The event mode is 
+	recommended in 
+	order to avoid the complex programming and incontinuous transfer. </p> 
+	<h2>
+	3 Transfer Data </h2>
+	<p>
+	The driver will divide the driver buffer into two equivalent parts for 
+	continuous transfer. In event mode, when a half has finished the transfer, 
+	the corresponding event will be signaled in order to fill the half with new 
+	data. If it is not in event mode, the user will have to call the <a href="DRV_FAOCheck.htm">
+    DRV_FAOCheck</a> to check the current status and fill new data. </p>
+	<p>
+	The following figure displays the status of the driver buffer in both modes. </p>
+	<p align="center">
+	<img border="0" src="Output_Underrun.jpg" width="506" height="244"></p>
+	<p>
+	The navy blue part indicates the space that stores the required binary data.</p>
+	<p>
+	(1) The buffer is used as two equal size parts: the first half and
+	
+	the second
+	half. The driver transfers data from the first half. </p>
+	<p>
+	(2) When the data in the first half is transferred, the user has to fill the 
+	half with new data by calling the <a href="DRV_FAOCheck.htm">DRV_FAOLoad</a>. 
+	At the same time, the buffer is transferring data from the second half.</p>
+	<p>
+	(3) When the data in the second half is transferred, in non-cyclic mode the 
+	DMA will be stopped, while in cyclic mode, the user has to fill the half 
+	with new data by calling the <a href="DRV_FAOCheck.htm">DRV_FAOLoad</a>. 
+	At the same time, the driver begins to transfer the data in the first half, 
+	so as to achieve continuous transfer. </p>
+	<p>
+	Please note that if the first or the second half is not filled with new 
+	data, in cyclic mode, an underrun event will occur to indicate that the 
+	transfer is incontinuous.</p>
+	<p>
+	Please note: In multi-channel mode, the device transfers data channel by 
+	channel.</p>
+	<h2>4 &nbsp;Stop 
+	operation</h2>
+	<p>
+    In non-cyclic mode, the function will stop automatically when all the 
+	required data has been transferred. While in cyclic mode, the  
+    <a href="DRV_FAOTerminate.htm"><u>DRV_FAOTerminate</u></a> function must be 
+	called to stop the FAO operation. 
+	<br>
+	The user can receive the <i>terminate</i> message in two ways: one is 
+	by the ADS_EVT_AO_TERMINATED event when it 
+	is enabled; the other is by continuously calling the <a href="DRV_FAOCheck.htm">
+    DRV_FAOCheck</a> 
+	until a stop flag is checked. The former is recommended.</p> 
+
+	<p></p>
+	<h2>FAO Related Functions
+	</h2>
+	<div class=tablediv >
+	<table cellspacing="0" class="Bordered">
+			<tr>
+				<td><b>Function</b></td>
+				<td><b>Purpose</b></td>
+			</tr>
+			<tr>
+				<td height="51"><a href="../commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a></td>
+	   		    <td height="51">  On the device indicated by the <i>DeviceHandle</i>, it enables or disables a specified event by specifying the corresponding
+	<i>EventType</i>. This function supports all types of 
+	events for DMA and interrupt operation. After the event is enabled, the <span lang="zh-cn"> 
+    <a href="../commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a></span> can be called to 
+	check the type of signaled event. </td>
+			</tr>
+			<tr>
+				<td><a href="../commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a></td>
+				<td>On the device indicated by the <i>DeviceHandle</i>, it checks the 
+	specified event status and clears the event. </td>
+			</tr>
+			<tr>
+				<td><a href="DRV_FAOLoad.htm">DRV_FAOLoad</a></td>
+				<td>Transfers the data from the user's buffer to the FAO (Fast 
+	Analog Output) 
+	output buffer without affecting the output process. When the FAO output 
+	buffer is empty or “<i>ready</i>” (checked with the <font face="Verdana">
+	<a href="DRV_FAOCheck.htm">DRV_FAOCheck</a></font>), then the data must 
+	be loaded (FAOLoad) in order to avoid buffer underrun. This function is 
+	used in PCI-1712/1721.</td>
+			</tr>
+			<tr>
+				<td><a href="DRV_FAOCheck.htm">DRV_FAOCheck</a></td>
+				<td>Retrieves the current status of FAO (Fast Analog Output) functions. The 
+contents of the return status including running status (running/stopped 
+or complete/incomplete), current output status, and buffer status. Please note that 
+this function can't be used to detect buffer underrun. This function is used in PCI-1712/1721.</td>
+			</tr>
+			<tr>
+				<td><a href="DRV_FAOTerminate.htm">DRV_FAOTerminate</a></td>
+				<td>On the device indicated by the <i>DeviceHandle</i>, it stop 
+				the running FAO (Fast Analog Output) operation by way of safely 
+				resetting the hardware, releasing resources and sending a 
+				terminate event to the user. This function is used in PCI-1712/1721.</td>
+			</tr>
+			</table>
+</div>
+
+
+	<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

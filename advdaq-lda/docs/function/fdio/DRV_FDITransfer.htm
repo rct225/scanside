@@ -1,0 +1,137 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FDITransfer </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDIO Functions\nDRV_FDITransfer");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FDITransfer </h1>
+	<pre class="code">INT32S DRV_FDITransfer(
+   PTR_T <i>DriverHandle</i>,
+   PT_FDITransfer <i>* lpFDITransfer</i>);</pre>
+	<h2>Purpose</h2>
+	<p>When a specified event (input pattern match, status change,  
+	counter match or counter overflow) is signaled, this function is used in event 
+	handling routine to retrieve the DI port status. </p>
+	<p>This function is used in PCI-1760.</p>
+	<h2>Parameters</h2>
+	<p>Some parameters, such as 
+	event type (<font face="Verdana"><i>usEventType</i></font>) and 
+	acquired input data (<font face="Verdana"><i>ulRetData</i></font>), are stored in the 
+	<font face="Verdana"><i> 
+	lpFDITransfer</i></font> 
+	pointed structure
+	<font face="Verdana"><a href="../../structure/fdio/PT_FDITransfer.htm">PT_FDITransfer</a></font>.</p> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DriverHandle</b></td>
+			<td> 			input</td>
+			<td> 			default</td>
+			<td> 			The p<font style="FONT-SIZE: 9pt" face="Verdana">ointer 
+			retrieved from the
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device</font>.</td>
+		</tr>
+		<tr>
+			<td><b>lpFDITransfer</b></td>
+			<td> 			input / output</td>
+			<td> 			default</td>
+			<td> 			The<span style="FONT-FAMILY: Verdana"> pointer to 
+			indicate structure </span> 			<font face="Verdana"> 			<a href="../../structure/fdio/PT_FDITransfer.htm">
+			<font style="font-size: 9pt">PT_FDITransfer</font></a></font><span style="FONT-FAMILY: Verdana"> 
+			that stores </span>event type<font face="Verdana" style="font-size: 9pt"> (INT16U
+			<i>usEventType</i>)</font> and acquired input data<font face="Verdana" style="font-size: 9pt"> 
+			(INT32U * <i>ulRetData</i></font><font style="font-size: 9pt">).</font></td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2>
+	<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table3">
+		<tr>
+			<td width="168"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. SUCCESS</font></b></td>
+			<td><span style="font-size: 9pt">S</span><font style="font-size: 9pt">uccessful. </font></td>
+		</tr>
+		<tr>
+			<td width="168">     <b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDriverHandle</font></b></td>
+			<td><font style="font-size: 9pt">The <i>DriverHandle</i> is NULL. </font></td>
+		</tr>
+	</table>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

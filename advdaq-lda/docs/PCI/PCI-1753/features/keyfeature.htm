@@ -1,0 +1,145 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Features</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval:21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1753 Device Driver User Manual\nDevice Introduction\nDevice Features");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<div>
+
+<h1><span lang=EN-US>Device Features</span></h1>
+
+<h2><span lang=EN-US>Overall Features:</span></h2>
+
+<p><span lang=EN-US>96/192 TTL digital I/O lines</span></p>
+
+<p><span lang=EN-US>Emulates mode 0 of 8255 PPI</span></p>
+
+<p><span lang=EN-US>Buffered circuits for higher driving capacity than 8255</span></p>
+
+<p><span lang=EN-US>Multiple-source interrupt handling</span></p>
+
+<p><span lang=EN-US>Output status read-back</span></p>
+
+<p><span lang=EN-US>“Pattern match” and “Change of state” interrupt functions
+for critical I/O monitoring</span></p>
+
+<p><span lang=EN-US>Keeps I/O setting and digital output values when hot system
+reset</span></p>
+
+<p><span lang=EN-US>Supports dry contact and wet contact</span></p>
+
+<p><span lang=EN-US>High-density 100-pin SCSI connector</span></p>
+
+<h2><span lang=EN-US>Applications:</span></h2>
+
+<p><span lang=EN-US>Industrial AC/DC I/O devices monitoring and controlling</span></p>
+
+<p><span lang=EN-US>Relay and switch monitoring and controlling</span></p>
+
+<p><span lang=EN-US>Parallel data transfer</span></p>
+
+<p><span lang=EN-US>TTL, DTL and CMOS logic signal sensing</span></p>
+
+<p><span lang=EN-US>Indicator LED driving</span></p>
+
+<h2><span lang=EN-US>Interrupt Function:</span></h2>
+
+<p><span lang=EN-US>Two lines of each I/O port C, plus ports A0 and B0, are
+connected to the interrupt circuitry. The “Interrupt Control Register” of the
+PCI-1753/1753E controls how the combination of these signals generates an
+interrupt. Six interrupt request signals can be generated at the same time, and
+then the software can service these six request signals by IRQ. The multiple
+interrupt sources provide the card with more capability and flexibility.</span></p>
+
+<p><span lang=EN-US><img width=594 height=606 id="_x0000_i1025"
+src=InterruptSource.jpg border=0></span></p>
+
+<h3><span lang=EN-US>DI change status Interrupt </span></h3>
+
+<p><span lang=EN-US>The PCI-1753/1753E also provides the change of state
+interrupt function for port B0. It monitors the status of the enabled channels
+of port B0. When one of the enabled channels changes its state, the PCI-1753
+delivers an interrupt signal to the system to handle this event.</span></p>
+
+<h3><span lang=EN-US>DI pattern match Interrupt </span></h3>
+
+<p><span lang=EN-US>The PCI-1753/1753E provides the pattern match interrupt
+function for port A0. It monitors the status of the enabled input channels.
+This event is generated while the predefined pattern value on Fast DI is
+present. When the actual state values match the pre-set state values, the
+PCI-1753/1753E will deliver an interrupt signal to the system.</span></p>
+
+</div>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

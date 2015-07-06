@@ -1,0 +1,156 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_TCMuxRead </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+div.Section1 { page:Section1; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nTemperature Measurement Function Group\nFunction Description\nDRV_TCMuxRead");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nFunction Description\nTemperature\nDRV_TcMuxRead");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_TCMuxRead </h1>
+	<h1></h1>
+	<pre class="code">INT32S DRV_TCMuxRead (<i>
+   PTR_T DeviceHandle&#65292;
+   PT_TCMuxRead *lpTCMuxRead </i>);</pre>
+	<h2>Purpose</h2> 
+	<p>Perform temperature measurement function with an expansion board on <i>
+	DeviceHandle</i> specified device. </p>
+	<h2>Parameters</h2>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered" id="table2">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Type</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td>input</td>
+			<td>pointer</td>
+			<td>default</td>
+			<td>Pointer retrieved from
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> that specifies the target device.</td>
+		</tr>
+		<tr>
+			<td><b>lpTCMuxRead</b></td>
+			<td>input / output</td>
+			<td>pointer to 
+			<a href="../../structure/temperature/PT_TCMuxRead.htm">PT_TCMuxRead</a></td>
+			<td>default</td>
+			<td>Pointer to the stucture
+			<a href="../../structure/temperature/PT_TCMuxRead.htm">PT_TCMuxRead</a> 
+			that stores DasChan, DasGain, ExpChan, TCType, TempScale  			and temp.</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2> 
+	<table border="1" width="100%" style="border-width: 0px">
+		<tr>
+			<td width="216" style="border-style: none; border-width: medium"><font style="font-size: 9pt">&nbsp;&nbsp; </font>     <b>
+			<font style="font-size: 9pt">1. SUCCESS</font></b></td>
+			<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">S</span><font style="font-size: 9pt">uccessful.</font></td>
+		</tr>
+		<tr>
+			<td width="216" style="border-style: none; border-width: medium">     <b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDeviceHandle</font></b></td>
+			<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">The</span><font style="font-size: 9pt"> <i>DeviceHandle</i> is NULL. </font></td>
+		</tr>
+		
+		<tr>
+			<td width="216" style="border-style: none; border-width: medium">     <b><font style="font-size: 9pt">&nbsp;&nbsp; 3. </font>
+			<span style="font-size: 9pt">InvalidChannel</span></b></td>
+			<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">DasChan is out of allowable range.</span></td>
+		</tr>
+		<tr>
+			<td width="216" style="border-style: none; border-width: medium"><font style="font-size: 9pt"><b>&nbsp;&nbsp; 4. </b></font><b>
+			<span style="font-size: 9pt">InvalidGain</span></b></td>
+			<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">The DAS card doesn't support the DasGain.</span></td>
+		</tr>
+		<tr>
+			<td width="216" style="border-style: none; border-width: medium"><font style="font-size: 9pt"><b>&nbsp;&nbsp; 6. </b></font><b>
+			<span style="font-size: 9pt">Other value</span></b><span style="font-size: 9pt">
+			</span></td>
+			<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">Please reference 
+			<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a></span></td>
+		</tr>
+	
+		
+	</table>
+	<h2>Notes</h2> 
+	<p>Using the PCLD-770, PCLD-779 or PCLD-789 for thermocouple measurement. Thermocouple  	linearization is provided automatically by the driver if a temperature measurement  	operation is chosen in the application program. The linearization is performed  	and the temperature acquired by the thermocouple/mux card is available for control  	strategy use or display in degrees Celsius. The conversion to units other than  	degrees C (Fahrenheit, Kelvin, etc.) can be accomplished by use of a calculation  	scaling factor. </p>
+</div>
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

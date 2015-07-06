@@ -1,0 +1,210 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Properties</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Device Properties</h1>
+<p>Device properties are stored in the system and read by the driver when it loads, 
+  and then the device is programmed according to these loaded values. The properties 
+  are protected during read and write access times, and some of them are pre-defined 
+  by the configuration dialog box. Different device's functions are influenced 
+  by different properties. These properties are represented by an ID code for 
+  an application that calls Advantech API functions. An application can use a 
+  default value set by the configuration dialog box, or call Advantech API functions: 
+ <a href="../../../function/Device/drv_devicegetproperty.htm"> DRV_DeviceGetProperty</a>
+  and  <a href="../../../function/Device/drv_devicesetproperty.htm"> DRV_DeviceSetProperty</a>, 
+  to modify individual properties in running time.</p>
+<p>&nbsp;</p>
+<p></p>
+<p>PCI-1784/U supports the following properties:</p>
+<p class="P1">&nbsp;</p> 
+<div class="tablediv" style="width: 1217px; height: 663px">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td><b>Property</b></td>
+      <td><b>Description</b></td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_BoardID.htm">CFG_BoardID</a></td>
+      <td>gets the board ID of the device.</td>
+    </tr>
+    <tr> 
+      <td height="26"><a href="CFG_BaseAddress.htm">CFG_BaseAddress</a></td>
+      <td height="26">gets the base address of the currently installed PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td height="26"><a href="CFG_Interrupt.htm">CFG_Interrupt</a></td>
+      <td height="26">gets the IRQ of the currently installed PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_BusNumber.htm">CFG_BusNumber</a></td>
+      <td>gets bus number of the currently installed PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_SlotNumber.htm">CFG_SlotNumber</a></td>
+      <td>gets the slot number of the currently installed PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_DiChannelCount.htm">CFG_DiChannelCount</a></td>
+      <td>gets the max available DI channel count of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td height="24"><a href="CFG_DoChannelCount.htm">CFG_DoChannelCount</a></td>
+      <td height="24">gets the max available DI channel count of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_DiPortCount.htm">CFG_DiPortCount</a></td>
+      <td>gets the DI port count of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_DoPortCount.htm">CFG_DoPortCount</a></td>
+      <td>gets the DO port count of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_DiInterruptSupportedChannel.htm">CFG_DiInterruptSupportedChannel</a></td>
+      <td>gets the DI interrupt supported 
+channel of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_DiInterruptTriggerOnRisingEdge.htm">CFG_DiInterruptTriggerOnRisingEdge</a></td>
+      <td>gets or sets DI channels which 
+issue interrupt on RISING Edge of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrChannelCapability.htm">CFG_CntrChannelCapability</a></td>
+      <td>gets the specified counters' channel 
+capabilities of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrInternalClockFreq.htm">CFG_CntrInternalClockFreq</a></td>
+      <td>gets the timer counter's clock 
+frequency of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrAvailableAPI.htm">CFG_CntrAvailableAPI</a></td>
+      <td>gets the  available function type of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrChannelCount.htm">CFG_CntrChannelCount</a></td>
+      <td>gets the counter channel count of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrResolution.htm">CFG_CntrResolution</a></td>
+      <td>gets the counters' resolution of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CounterCountValue.htm">CFG_CounterCountValue</a></td>
+      <td>gets or sets the counters' count of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrResetValue.htm">CFG_CntrResetValue</a></td>
+      <td>gets or sets the counters' reset value of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrCounterLockControl.htm">CFG_CntrCounterLockControl</a></td>
+      <td>gets or sets the counters' lock of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrSupportedIndicator.htm">CFG_CntrSupportedIndicator</a></td>
+      <td>gets the supported indicators of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrIndicatorControl.htm">CFG_CntrIndicatorControl</a></td>
+      <td>gets or sets the counters' indicator of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrClockFrequency.htm">CFG_CntrClockFrequency</a></td>
+      <td>gets or sets the current counters' clock 
+frequency of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrInputModeControl.htm">CFG_CntrInputModeControl</a></td>
+      <td>gets or sets the counters' input mode of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrCompareData.htm">CFG_CntrCompareData</a></td>
+      <td>gets or sets the counters' compare data of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrDigitalFilter.htm">CFG_CntrDigitalFilter</a></td>
+      <td>gets or sets the counters' digital filter enable state of PCI-1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_InterruptTriggerSource.htm">CFG_InterruptTriggerSource</td>
+      <td>gets or sets interrupt trigger source of PCI1784/U.</td>
+    </tr>
+    <tr> 
+      <td><a href="CFG_CntrIndexReset.htm">CFG_CntrIndexReset</a></td>
+      <td>gets or sets the counters' index reset enable state of PCI-1784/U.</td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

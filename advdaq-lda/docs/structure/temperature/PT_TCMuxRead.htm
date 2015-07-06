@@ -1,0 +1,120 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_TCMuxRead  </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nTemperature Measurement Function Group\nData Structure\nPT_TCMuxRead");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nData Structures\nTemperature\nPT_TcMuxRead");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_TCMuxRead  </h1>
+<pre class="code">typedef struct tagPT_TCMuxRead
+{
+    INT16U DasChan;
+    INT16U DasGain;
+    INT16U ExpChan;
+    INT16U TCType;
+    INT16U TempScale;
+    FP32 *temp;
+} PT_TCMuxRead, * LPT_TCMuxRead;
+</pre>
+<p><b> PT_TCMuxRead</b>  is used by 
+<a href="../../function/temperature/DRV_TCMuxRead.htm">DRV_TCMuxRead</a> function.</p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>Name</b></td><td><b>Direction</b></td><td><b>Type</b></td><td>     
+	<b>Range</b></b></td><td><b><b>Description</b></td></tr><tr>
+    <td><b>DasChan</b></td><td>     Input</td><td>     Unsigned short</td><td>     0~[n-1] (n depends on hardware)</td><td>     
+	The sampled channel on DASCard.</td></tr><tr>
+    <td><b>DasGain</b></td><td>     Input</td><td>     Unsigned short</td><td>     
+    depends on hardware</td><td>     
+	Gain code of the sampled channel on DASCard. The device may have various levels of 
+	gain, each gain code is corresponding to one range level.</td></tr><tr>
+    <td><b>ExpChan</b></td><td>     Input</td><td>     Unsigned short</td><td>     
+    depends on expansion board</td><td>     
+	The thermocouple channel on the expansion board.</td></tr><tr>
+    <td><b>TCType</b></td><td>     Input</td><td>     Unsigned short</td><td>     
+	0,1,2,3,4,5,6</td><td>     
+	Type of     thermocouple:<br>
+	J(0) , K(1), S(2) ,T(3), B(4), R(5), E(6). Refer to thermocouple 
+	data sheets.</td></tr><tr>
+    <td><b>TempScale</b></td><td>     Input</td><td>     Unsigned short</td><td>     0,1,2,3</td><td>     
+	Temperature unit:<br>
+	Celsius(0),Fahrenheit(1), Rankine(2), Kelvin(3).</td></tr><tr>
+    <td><b>temp</b></td><td>Output</td><td>long pointer to floating-point</td><td>
+    Depends on hardware</td><td>
+	Pointer to storage address of measured temperature.</td></tr></table></div><p></p>
+<p></p>
+</div>
+<div>
+
+</div>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

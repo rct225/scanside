@@ -1,0 +1,145 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAIDmaStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nData Structures\nHigh-speed Functions\nAI Functions\nPT_FAIDmaStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>PT_FAIDmaStart </h1>
+	<pre class="code">typedef struct tagPT_FAIDmaStart
+{
+    USHORT TrigSrc;
+    DWORD SampleRate;
+    USHORT chan;
+    USHORT gain;
+    USHORT *buffer;
+    ULONG count;
+} PT_FAIDmaStart, * LPT_FAIDmaStart;
+</pre>
+	<p><b>PT_FAIDmaStart</b> is used by <b>DRV_FAIDmaStart</b> function . </p>
+	<h2>Member Description</h2>
+	<div class="tablediv">
+		<table class="Bordered" cellSpacing="0" id="table1">
+			<tr>
+				<td><b>Name</b></td>
+				<td><b>Direction</b></td>
+				<td><b>Type</b></td>
+				<td><b>Range</b></td>
+				<td><b>Description</b></td>
+			</tr>
+			<tr>
+				<td><b>TrigSrc</b></td>
+				<td>Input</td>
+				<td>Unsigned short</td>
+				<td>0,1</td>
+				<td>triggering source: external (1), internal (0)</td>
+			</tr>
+			<tr>
+				<td><b>SampleRate</b></td>
+				<td>Input</td>
+				<td>floating point</td>
+				<td>depends on the pacer on hardware</td>
+				<td>sampling rate in second</td>
+			</tr>
+			<tr>
+				<td><b>chan</b></td>
+				<td>Input</td>
+				<td>Unsigned short</td>
+				<td>0-n (n depends on hardware)</td>
+				<td>the sampled channel</td>
+			</tr>
+			<tr>
+				<td><b>gain</b></td>
+				<td>Input</td>
+				<td>Unsigned short</td>
+				<td>depends on input range on hardware</td>
+				<td>gain code</td>
+			</tr>
+			<tr>
+				<td><b>buffer</b></td>
+				<td>Output</td>
+				<td>long pointer to Unsigned short array</td>
+				<td>depends on I/O register format on hardware</td>
+				<td>data buffer </td>
+			</tr>
+			<tr>
+				<td><b>count</b></td>
+				<td>Input</td>
+				<td>Unsigned long</td>
+				<td>1-65536</td>
+				<td>conversion count</td>
+			</tr>
+		</table>
+	</div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</div>
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

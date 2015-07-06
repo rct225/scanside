@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<ftstdata>
+<topic name="CFG_Interrupt" url="PCM/PCM-3730/property/CFG_Interrupt.htm" />
+<topic name="Device Properties" url="PCM/PCM-3730/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCM/PCM-3730/structure/datastructure.htm" />
+<topic name="cover" url="PCM/PCM-3730I/cover.htm" />
+<topic name="Event Type" url="PCM/PCM-3730I/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCM/PCM-3730I/features/keyfeature.htm" />
+<topic name="Function Description" url="PCM/PCM-3730I/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCM/PCM-3730I/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCM/PCM-3730I/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCM/PCM-3730I/property/CFG_BusNumber.htm" />
+<topic name="CFG_BoardID" url="PCM/PCM-3730I/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCM/PCM-3730I/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCM/PCM-3730I/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_BoardID" url="PCM/PCM-3730I/property/CFG_DiPortCount.htm" />
+<topic name="CFG_BoardID" url="PCM/PCM-3730I/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_BoardID" url="PCM/PCM-3730I/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCM/PCM-3730I/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCM/PCM-3730I/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCM/PCM-3730I/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCM/PCM-3730I/structure/datastructure.htm" />
+<topic name="cover" url="PCM/PCM-3753I/cover.htm" />
+<topic name="Event Type" url="PCM/PCM-3753I/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCM/PCM-3753I/features/keyfeature.htm" />
+<topic name="Function Description" url="PCM/PCM-3753I/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCM/PCM-3753I/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCM/PCM-3753I/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCM/PCM-3753I/property/CFG_BusNumber.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3753I/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCM/PCM-3753I/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCM/PCM-3753I/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_DioChannelDirection" url="PCM/PCM-3753I/property/CFG_DioChannelDirection.htm" />
+<topic name="CFG_DiInterruptMode" url="PCM/PCM-3753I/property/CFG_DiPatternMatchEnabledChannel.htm" />
+<topic name="CFG_DiPatternMatchValue" url="PCM/PCM-3753I/property/CFG_DiPatternMatchValue.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3753I/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DiInterruptMode" url="PCM/PCM-3753I/property/CFG_DiStatusChangeEnableChannel.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3753I/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3753I/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCM/PCM-3753I/property/CFG_Interrupt.htm" />
+<topic name="CFG_InterruptTriggerSource" url="PCM/PCM-3753I/property/CFG_InterruptTriggerSource.htm" />
+<topic name="CFG_SlotNumber" url="PCM/PCM-3753I/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCM/PCM-3753I/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCM/PCM-3753I/structure/datastructure.htm" />
+<topic name="cover" url="PCM/PCM-3761I/cover.htm" />
+<topic name="EventType" url="PCM/PCM-3761I/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCM/PCM-3761I/features/keyfeature.htm" />
+<topic name="Function Description" url="PCM/PCM-3761I/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCM/PCM-3761I/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCM/PCM-3761I/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCM/PCM-3761I/property/CFG_BusNumber.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3761I/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCM/PCM-3761I/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCM/PCM-3761I/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3761I/property/CFG_DiPortCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3761I/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_AIChanConfig" url="PCM/PCM-3761I/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCM/PCM-3761I/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCM/PCM-3761I/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCM/PCM-3761I/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCM/PCM-3761I/structure/datastructure.htm" />
+<topic name="PT_AIBinaryIn" url="structure/Ai/PT_AIBinaryIn.htm" />
+<topic name="PT_AIConfig" url="structure/Ai/PT_AIConfig.htm" />
+<topic name="PT_AIGetConfig" url="structure/Ai/PT_AIGetConfig.htm" />
+<topic name="PT_AIScale" url="structure/Ai/PT_AIScale.htm" />
+<topic name="PT_AIVoltageIn" url="structure/Ai/PT_AIVoltageIn.htm" />
+<topic name="PT_MAIBinaryIn" url="structure/Ai/PT_MAIBinaryIn.htm" />
+<topic name="PT_MAIConfig" url="structure/Ai/PT_MAIConfig.htm" />
+<topic name="PT_MAIVoltageIn" url="structure/Ai/PT_MAIVoltageIn.htm" />
+<topic name="AORANGESET" url="structure/AO/AORANGESET.htm" />
+<topic name="AOSET" url="structure/AO/AOSET.htm" />
+<topic name="PT_AOBinaryOut" url="structure/AO/PT_AOBinaryOut.htm" />
+<topic name="PT_AOConfig" url="structure/AO/PT_AOConfig.htm" />
+<topic name="PT_AOCurrentOut" url="structure/AO/PT_AOCurrentOut.htm" />
+<topic name="PT_AOScale" url="structure/AO/PT_AOScale.htm" />
+<topic name="PT_AOVoltageOut" url="structure/AO/PT_AOVoltageOut.htm" />
+<topic name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+<topic name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+<topic name="PT_CounterConfig" url="structure/counter/PT_CounterConfig.htm" />
+<topic name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+<topic name="PT_CounterEventStart" url="structure/counter/PT_CounterEventStart.htm" />
+<topic name="PT_CounterFreqRead" url="structure/counter/PT_CounterFreqRead.htm" />
+<topic name="PT_CounterFreqStart" url="structure/counter/PT_CounterFreqStart.htm" />
+<topic name="PT_CounterPulseStart" url="structure/counter/PT_CounterPulseStart.htm" />
+<topic name="PT_CounterPWMSetting" url="structure/counter/PT_CounterPWMSetting.htm" />
+<topic name="PT_DICounter" url="structure/counter/PT_DICounter.htm" />
+<topic name="PT_FreqOutStart" url="structure/counter/PT_FreqOutStart.htm" />
+<topic name="PT_PWMStartRead" url="structure/counter/PT_PWMStartRead.htm" />
+<topic name="PT_QCounterConfig" url="structure/counter/PT_QCounterConfig.htm" />
+<topic name="PT_QCounterConfigSys" url="structure/counter/PT_QCounterConfigSys.htm" />
+<topic name="PT_QCounterRead" url="structure/counter/PT_QCounterRead.htm" />
+<topic name="PT_QCounterStart" url="structure/counter/PT_QCounterStart.htm" />
+<topic name="PT_TimerCountSetting" url="structure/counter/PT_TimerCountSetting.htm" />
+<topic name="About Data Structure" url="structure/datastructure.htm" />
+<topic name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+<topic name="PT_FAIDmaExStart" url="structure/FAI/PT_FAIDmaExStart.htm" />
+<topic name="PT_FAIDmaExStart" url="structure/FAI/PT_FAIDmaScanStart.htm" />
+<topic name="PT_FAIDmaStart" url="structure/FAI/PT_FAIDmaStart.htm" />
+<topic name="PT_FAIIntScanStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+<topic name="PT_FAIIntStart" url="structure/FAI/PT_FAIIntStart.htm" />
+<topic name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+<topic name="PT_FAOCheck" url="structure/FAO/PT_FAOCheck.htm" />
+<topic name="PT_FAODmaExStart" url="structure/FAO/PT_FAODmaExStart.htm" />
+<topic name="PT_FAOLoad" url="structure/FAO/PT_FAOLoad.htm" />
+<topic name="PT_FAOScale" url="structure/FAO/PT_FAOScale.htm" />
+<topic name="PT_FDITransfer" url="structure/fdio/PT_FDITransfer.htm" />
+<topic name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+<topic name="PT_ReadPortDword" url="structure/PORTIO/PT_ReadPortDword.htm" />
+<topic name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+<topic name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+<topic name="PT_WritePortDword" url="structure/PORTIO/PT_WritePortDword.htm" />
+<topic name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+<topic name="PT_TCMuxRead" url="structure/temperature/PT_TCMuxRead.htm" />
+<topic name="PT_WatchdogStart" url="structure/watchdog/PT_WatchdogStart.htm" />
+<topic name="Getting Started with Advantech DAQ Device Linux Driver" url="tutorial/programming.htm" />
+<topic name="Adding Necessary Files" url="tutorial/SimpleExample/addfiles.htm" />
+<topic name="Create a new application" url="tutorial/SimpleExample/emptyproject.htm" />
+<topic name="Writing Codes" url="tutorial/SimpleExample/writingcodes.htm" />
+<topic name="cover" url="USB/USB-4702/cover.htm" />
+<topic name="Event Type" url="USB/USB-4702/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="USB/USB-4702/features/keyfeature.htm" />
+
+</ftstdata>  

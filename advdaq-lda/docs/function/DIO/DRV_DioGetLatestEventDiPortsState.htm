@@ -1,0 +1,353 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>DRV_DioGetLatestEventDiPortsState</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval: 21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nDigital Input/Output Function Group\nDigital Input Functions\nInterrupt Transferring\nFunction Description\nDRV_DioGetLatestEventDiPortsState");
+addTocInfo("PCI Series\nPCI-1754 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioGetLatestEventDiPortsState");
+addTocInfo("PCI Series\nPCI-1756 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioGetLatestEventDiPortsState");
+addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioGetLatestEventDiPortsState");
+addTocInfo("USB Series\nUSB-4750 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioGetLatestEventDiPortsState");
+addTocInfo("USB Series\nUSB-4761 Device Driver User Manual\nFunction Description\nDigital Input/Output\nDRV_DioGetLatestEventDiPortsState");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<h1><span lang=EN-US>DRV_DioGetLatestEventDiPortsState</span></h1>
+
+<div>
+<pre class="code">INT32S DRV_DioGetLatestEventDiPortsState(
+   PTR_T DeviceHandle,
+   INT32U dwEventID,
+   BYTE *pBuffer,
+   INT32U dwLength );</pre>
+
+<h2><span lang=EN-US>Purpose</span></h2>
+
+<p><span lang=EN-US>On the device indicated by the <i>DeviceHandle</i>, get the
+latest block data when specified DI event occurs. </span></p>
+
+</div>
+
+<h2><span lang=EN-US>Parameters</span></h2>
+
+<p class=MsoNormal style='margin-top:4.0pt;margin-right:0cm;margin-bottom:4.0pt;
+margin-left:16.0pt'><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The
+user needs to provide a buffer that is large enough to store retrieved data. </span></p>
+
+<div style='margin-left:24.0pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;background:#999999;border:solid #999999 1.0pt;
+ mso-border-top-alt:.75pt;mso-border-left-alt:.25pt;mso-border-bottom-alt:.25pt;
+ mso-border-right-alt:.75pt;mso-border-color-alt:#999999;mso-border-style-alt:
+ solid;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' id=table3>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=129 valign=top style='width:96.75pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Name</span></b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Direction</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td width=67 valign=top style='width:50.25pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Range</span></b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'></span></p>
+  </td>
+  <td width=597 valign=top style='width:447.75pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Description</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:17.25pt'>
+  <td width=129 valign=top style='width:96.75pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>DeviceHandle</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>input</span></p>
+  </td>
+  <td width=67 valign=top style='width:50.25pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>default</span></p>
+  </td>
+  <td width=626 valign=top style='width:469.5pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>The pointer retrieved from the 
+	<a href="../Device/DRV_DEVICEOPEN.htm" style="color: blue; text-decoration: underline; text-underline: single">DRV_DeviceOpen</a>
+  which specifies the target device.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=129 valign=top style='width:96.75pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>dwEventID</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>input </span></p>
+  </td>
+  <td width=67 valign=top style='width:50.25pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>default</span></p>
+  </td>
+  <td width=626 valign=top style='width:469.5pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>The DI event ID to enable. </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=129 valign=top style='width:96.75pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>pBuffer</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>output</span></p>
+  </td>
+  <td width=67 valign=top style='width:50.25pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>default</span></p>
+  </td>
+  <td width=626 valign=top style='width:469.5pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>The pointer to buffer receiving the DI data.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td width=129 valign=top style='width:96.75pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>dwLength </span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>input</span></p>
+  </td>
+  <td width=67 valign=top style='width:50.25pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>default</span></p>
+  </td>
+  <td width=626 valign=top style='width:469.5pt;border:solid #999999 1.0pt;
+  mso-border-top-alt:.25pt;mso-border-left-alt:.75pt;mso-border-bottom-alt:
+  .75pt;mso-border-right-alt:.25pt;mso-border-color-alt:#999999;mso-border-style-alt:
+  solid;background:white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>The length of buffer.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h2><span lang=EN-US>Return</span></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=10 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:7.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'
+ id=table4>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>1. 0</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>Successful.
+  </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>2. InvalidDeviceHandle</span></b><span lang=EN-US
+  style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The
+  <i>DeviceHandle</i> is NULL.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>3. InvalidInputParam</span></b><span lang=EN-US
+  style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The
+  point to the user's buffer(<i>pBuffer</i>) is NULL.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>4. InvalidEventType</span></b><span lang=EN-US
+  style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The
+  DI event ID(<i>dwEventID</i>) is not supported.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

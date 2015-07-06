@@ -1,0 +1,454 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Properties</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval: 21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1758U Device Driver User Manual\nDevice Properties");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<h1><span lang=EN-US>Device Properties</span></h1>
+
+<p><span lang=EN-US>Device properties are stored in the system and read by the
+driver when it loads, and then the device is programmed according to these
+loaded values. The properties are protected during read and write access times,
+and some of them are pre-defined by the configuration dialog box. Different
+device's functions are influenced by different properties. These properties are
+represented by an ID code for an application that calls Advantech API
+functions. An application can use a default value set by the configuration
+dialog box, or call Advantech API functions: 
+<a href="../../../function/Device/drv_devicegetproperty.htm" style="color: blue; text-decoration: underline; text-underline: single">DRV_DeviceGetProperty</a> and 
+<a href="../../../function/Device/drv_devicesetproperty.htm" style="color: blue; text-decoration: underline; text-underline: single">DRV_DeviceSetProperty</a> , to
+modify individual properties in running time.</span></p>
+
+<p><span lang=EN-US>PCI-1758U supports the following properties:</span></p>
+
+<div style='margin-left:24.0pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;background:#999999;border:solid #999999 1.0pt;
+ mso-border-top-alt:.5pt;mso-border-left-alt:.25pt;mso-border-bottom-alt:.25pt;
+ mso-border-right-alt:.5pt;mso-border-color-alt:#999999;mso-border-style-alt:
+ solid;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' id="table1">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Property</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Description</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_BoardID.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_BoardID</span></a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the board ID of the device.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:19.5pt'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_BaseAddress.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_BaseAddress</span></a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the base address of the currently installed PCI-1758U</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:19.5pt'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_Interrupt.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_Interrupt</span></a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt;height:19.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the IRQ of the currently installed PCI-1758U.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_BusNumber.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_BusNumber</span></a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets bus number of the currently installed PCI-1758U.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>
+	<a href="CFG_SlotNumber.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_SlotNumber</span></a></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the slot number of the currently installed PCI-1758U.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DiChannelCount.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_DiChannelCount</span></a></span></u><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the&nbsp;digital input channel count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DiPortCount.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_DiPortCount</span></a></span></u><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital input port counte.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DoChannelCount.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_DoChannelCount</span></a></span></u><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital output channel count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><u><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;color:blue'>
+	<a href="CFG_DoPortCount.htm" style="color: blue; text-decoration: underline; text-underline: single">
+	<span style='text-underline:none'>CFG_DoPortCount</span></a></span></u><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:2.5pt 3.75pt 2.5pt 3.75pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>gets the digital output port count.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;height:18.0pt'>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:18.0pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana; text-underline:single; color:blue; text-decoration:underline'>
+	<a href="CFG_DiInterruptTriggerOnRisingEdge.htm" style="color: blue; text-decoration: underline; text-underline: single; font-size:9.0pt; font-family:Verdana">
+	<span style='text-underline:single; color:blue; text-decoration:underline; font-size:9.0pt; font-family:Verdana'>
+	<u>CFG_DiInterruptTriggerOnRisingEdge</u></span></a></span></p>
+  </td>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:18.0pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana'>gets or sets DI
+  channel which<span style='font-size:9.0pt; font-family:Verdana'>  </span>issue interrupt on
+  rising edge</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11;height:21.25pt'>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:21.25pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana; text-underline:single; color:blue; text-decoration:underline'>
+	<a
+  href="CFG_DiInterruptTriggerOnFallingEdge.htm" style="color: blue; text-decoration: underline; text-underline: single; font-size:9.0pt; font-family:Verdana">
+	<span style='text-underline:single; color:blue; text-decoration:underline; font-size:9.0pt; font-family:Verdana'>
+	<u>CFG_DiInterruptTriggerOnFallingEdge</u></span></a></span></p>
+  </td>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:21.25pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana'>gets or sets DI
+  channel which<span style='font-size:9.0pt; font-family:Verdana'>  </span>issue interrupt on
+  falling edge</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;height:21.6pt'>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:21.6pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana; text-underline:single; color:blue; text-decoration:underline'>
+	<a href="CFG_DOPresetValue.htm" style="color: blue; text-decoration: underline; text-underline: single; font-size:9.0pt; font-family:Verdana">
+	<span style='text-underline:
+  single; color:blue; text-decoration:underline; font-size:9.0pt; font-family:Verdana'>
+	<u>CFG_DoPresetValue</u></span></a></span></p>
+  </td>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:21.6pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana'>gets or sets preset DO
+  value</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;height:20.6pt'>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:20.6pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana; text-underline:single; color:blue; text-decoration:underline'>
+	<a href="CFG_DOWatchdogValue.htm" style="color: blue; text-decoration: underline; text-underline: single; font-size:9.0pt; font-family:Verdana">
+	<span style='text-underline:
+  single; color:blue; text-decoration:underline; font-size:9.0pt; font-family:Verdana'>
+	<u>CFG_DoWatchdogValue</u></span></a></span></p>
+  </td>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:20.6pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana'>gets or sets watchdog
+  timeout DO value</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;height:21.7pt'>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:21.7pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana; text-underline:single; color:blue; text-decoration:underline'>
+	<a
+  href="CFG_WatchdogCounter.htm" style="color: blue; text-decoration: underline; text-underline: single; font-size:9.0pt; font-family:Verdana">
+	<span style='text-underline:
+  single; color:blue; text-decoration:underline; font-size:9.0pt; font-family:Verdana'>
+	<u>CFG_WatchdogCounter</u></span></a></span></p>
+  </td>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:21.7pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana'>gets or sets watchdog
+  timeout counter</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:20.7pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana; text-underline:single; color:blue; text-decoration:underline'>
+	<a href="CFG_DIFilterEnable.htm" style="color: blue; text-decoration: underline; text-underline: single; font-size:9.0pt; font-family:Verdana">
+	<span style='text-underline:
+  single; color:blue; text-decoration:underline; font-size:9.0pt; font-family:Verdana'>
+	<u>CFG_DiFilterEnable</u></span></a></span></p>
+  </td>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:20.7pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana'>gets or sets all of
+  the DI filter enabled status</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15;mso-yfti-lastrow:yes;height:20.7pt'>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:20.7pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<a href="CFG_DiFilterIntervalCounter.htm">CFG_DiFilterIntervalCounter</a></p>
+  </td>
+  <td style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;mso-border-left-alt:
+  .5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:.25pt;mso-border-color-alt:
+  #999999;mso-border-style-alt:solid;background:white;padding:2.5pt 3.75pt 2.5pt 3.75pt;
+  height:20.7pt' align="left">
+  <p class=MsoNormal style='margin-left:0cm; margin-right:0cm; margin-top:7.2pt; margin-bottom:3.6pt'>
+	<span style='font-size:9.0pt;font-family:Verdana'>gets or sets all of the 
+	DI interval counter value</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

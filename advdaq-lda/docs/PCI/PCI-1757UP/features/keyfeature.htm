@@ -1,0 +1,173 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Features</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1757UP Device Driver User Manual\nDevice Introduction\nDevice Features");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Device Features</h1>
+<p></p>
+<h2>Overall Features</h2>
+<ul>
+	<p>Low profile PCI card</p>
+	<p>Universal PCI card, adapt 3.3V and 5V PCI slot</p>
+	<p>24 TTL level digital I/O lines</p>
+	<p>Emulates mode0 of 8255 PPI</p>
+	<p>Board ID set by DIP switch</p>
+	<p>Buffered circuits provide higher driving capability</p>
+	<p>Output status read-back</p>
+	<p>I/O configure by software or on board DIP switch</p>
+	<p>Interrupt handling capability</p>
+	<p>Keeps port I/O setting and digital output states after hot reset</p>
+	<p>High density D-SUB 25-pin connector</p>
+</ul>
+<h2>8255 Mode 0</h2>
+<p>The PCI-1757UP emulates one 8255 programmable peripheral interface (PPI) chip 
+in mode 0, but with higher driving capability than a standard 8255 chip. The 8255 
+chip has 24 programmable I/O lines that are divided into three 8-bit ports. The 
+total 24 DI/O lines from the chip are divided into 3 ports, designated PA, PB and 
+PC. Each port can be programmed as an input or an output port. The I/O pins in port 
+A are designated PA0, PA1... PA7; the pins in port B are designated PB0, PB1... 
+PB7etc. These port names are used both in this manual. In software library port 
+names are defined as 0, 1 and 2 which are mapping PA, PB and PC, respectively.</p>
+<p></p>
+<div class="tablediv">
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>8255 chip</b></td>
+			<td><b>PA</b></td>
+			<td><b>PB</b></td>
+			<td><b>PC</b></td>
+		</tr>
+		<tr>
+			<td><b>Hardware Names</b></td>
+			<td>PA</td>
+			<td>PB</td>
+			<td>PC</td>
+		</tr>
+		<tr>
+			<td><b>Software Mapping Names</b></td>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+	</table>
+</div>
+<p>Table 1 Ports Naming Specification</p>
+<p>The basic functions of 8255 mode 0 include:</p>
+<p>Two 8-bit I/O ports - port A (PA) and port B (PB)</p>
+<p>Port C is divided into two nibble-wide (4-bit) I/O ports: PC upper and PC 
+	lower</p>
+<p>Any port can be used for either input or output.</p>
+<p>Output status can be read back.</p>
+<h2>Interrupt Function of the DIO signals</h2>
+<p>• Two I/O pins (PC0 and PC4) can be used to generate hardware interrupts. User 
+can program the interrupt control register (Base + 32) to select the interrupt sources.
+</p>
+<p>• Interrupt Source Control</p>
+<p>The &quot;mode bits&quot; in the interrupt control register determine the allowable sources 
+of signals generating an interrupt.Bit 0 and bit 1 determine the interrupt source, 
+as indicated in following figure. </p>
+<p><img border="0" src="devfeature.jpg" width="495" height="296"></p>
+<p>Table below shows the relationship between an interrupt source and the values 
+in the mode bits.</p>
+<p></p>
+<div class="tablediv">
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>M1</b></td>
+			<td><b>M0</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>0</b></td>
+			<td>0</td>
+			<td>Disable interrupt</td>
+		</tr>
+		<tr>
+			<td><b>0</b></td>
+			<td>1</td>
+			<td>Source=PC00</td>
+		</tr>
+		<tr>
+			<td><b>1</b></td>
+			<td>0</td>
+			<td>Source=PC00&amp;PC04</td>
+		</tr>
+		<tr>
+			<td><b>1</b></td>
+			<td>1</td>
+			<td>Disable interrupt</td>
+		</tr>
+	</table>
+</div>
+<p>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Interrupt Transferring</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nInterrupt Transferring");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Interrupt Transferring</h1>
+<p>There are two kinds of interrupt operations for analog input. </p>
+<p>One generates 
+  a hardware interrupt for each conversion. </p>
+<p>The other one keeps the conversion data in FIFO, then generates a hardware 
+interrupt for a half-full FIFO or full FIFO depending on the hardware. The 
+driver will catch these interrupts. Various events will occur to notify the user of the acquisition status.</p>
+<p>Similar to the software transferring, this type of transferring also provides two 
+  kinds of functions. One is for single channel reading, the other is for multiple- 
+channel reading.</p>
+<p>The following pictures show the typical function call flow for single channel 
+  reading.</p>
+<p>1. Event Notification (Recommended)</p>
+<p>The <a href="../../function/commonhighspeed/DRV_EnableEvent.htm">
+DRV_EnableEvent</a> function enables the notification event and then 
+starts the analog input operation by 
+<a href="../../function/FAI/DRV_FAIIntStart.htm">DRV_FAIIntStart</a>. The driver 
+will send a proper event to notify the status of the acquisition progress.
+<a href="../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a> 
+may then be used to check the signaled event and handle the data. The operation 
+may be stopped by the <a href="../../function/FAI/DRV_FAITerminate.htm">
+DRV_FAITerminate</a> function at any time.</p>
+<p><img src="image008.jpg">x2. No Event Notification</p>
+<p>The <a href="../../function/FAI/DRV_FAIIntStart.htm">DRV_FAIIntStart</a> function 
+  starts the analog input operation with interrupt transferring. The <a href="../../function/FAI/DRV_FAICheck.htm">DRV_FAICheck</a> 
+  function may be used to check the status of the operation. Meanwhile the <a href="../../function/FAI/DRV_FAITransfer.htm">DRV_FAITransfer</a> 
+  function may be used to retrieve data. The operation may be stopped by the <a href="../../function/FAI/DRV_FAITerminate.htm">DRV_FAITerminate</a> 
+  function when the conversion is completed or at any other time. In this type 
+  of conversion, no event notification of the acquisition 
+  status will be received. The only way to retrieve the status is to call the <a href="../../function/FAI/DRV_FAICheck.htm">DRV_FAICheck</a> 
+  to check the status of the acquisition progress. </p>
+<p><img src="image009.jpg"></p>
+<p>&nbsp;</p>
+
+<p>Besides single data reading, the driver also provides
+the
+<b><a href="../../function/FAI/DRV_FAIIntScanStart.htm">DRV_FAIIntScanStart</a></b>
+function for multiple channel reading. For this kind of operation, you should set 
+the buffer size (the Count parameter) to be a multiple of the number of 
+channels. Otherwise, for cyclic mode, the first data in the buffer 
+may not correspond to the starting channel.</p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" >
+  <item name="Device Features" url="PCI/PCI-1760/features/keyfeature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/PCI1760.htm" />
+</book>
+<book name="Function Description" url="PCI/PCI-1760/Function/funcdesc.htm" >
+  <book name="Device Functions" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+  </book>
+  <book name="Port I/O Functions" >
+    <item name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+    <item name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+    <item name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+    <item name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+    <item name="DRV_ReadPortDword" url="function/PORTIO/DRV_ReadPortDword.htm" />
+    <item name="DRV_WritePortDword" url="function/PORTIO/DRV_WritePortDword.htm" />
+  </book>
+  <book name="Digital Input/Output" >
+    <item name="DRV_DioReadDiPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+    <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+    <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+  </book>
+  <book name="Counter" >
+    <item name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+    <item name="DRV_DICounterReset" url="function/counter/DRV_DICounterReset.htm" />
+    <item name="DRV_CounterPWMEnable" url="function/counter/DRV_CounterPWMEnable.htm" />
+    <item name="DRV_CounterPWMSetting" url="function/counter/DRV_CounterPWMSetting.htm" />
+    <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <book name="Common Functions" >
+      <item name="DRV_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+      <item name="DRV_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+    </book>
+    <book name="DIO Functions" >
+      <item name="DRV_FDITransfer" url="function/fdio/DRV_FDITransfer.htm" />
+    </book>
+  </book>
+  <book name="Other Functions" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="PCI/PCI-1760/structure/datastructure.htm" >
+  <book name="Port I/O Functions" >
+    <item name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+    <item name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+    <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+    <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+    <item name="PT_ReadPortDword" url="structure/PORTIO/PT_ReadPortDword.htm" />
+    <item name="PT_WritePortDword" url="structure/PORTIO/PT_WritePortDword.htm" />
+  </book>
+  <book name="Counter Funtions" >
+    <item name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+    <item name="PT_CounterPWMSetting" url="structure/counter/PT_CounterPWMSetting.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <book name="Common Functions" >
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+    </book>
+    <book name="DIO Functions" >
+      <item name="PT_FDITransfer" url="structure/fdio/PT_FDITransfer.htm" />
+    </book>
+  </book>
+</book>
+<book name="Device Event" >
+  <item name="Event Type" url="PCI/PCI-1760/Eventtype/Eventtype.htm" />
+</book>
+<book name="Device Properties" url="PCI/PCI-1760/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="PCI/PCI-1760/property/CFG_BoardID.htm" />
+  <item name="CFG_BaseAddress" url="PCI/PCI-1760/property/CFG_BaseAddress.htm" />
+  <item name="CFG_Interrupt" url="PCI/PCI-1760/property/CFG_Interrupt.htm" />
+  <item name="CFG_BusNumber" url="PCI/PCI-1760/property/CFG_BusNumber.htm" />
+  <item name="CFG_SlotNumber" url="PCI/PCI-1760/property/CFG_SlotNumber.htm" />
+  <item name="CFG_DiChannelCount" url="PCI/PCI-1760/property/CFG_DiChannelCount.htm" />
+  <item name="CFG_DoChannelCount" url="PCI/PCI-1760/property/CFG_DoChannelCount.htm" />
+  <item name="CFG_DiPortCount" url="PCI/PCI-1760/property/CFG_DiPortCount.htm" />
+  <item name="CFG_DoPortCount" url="PCI/PCI-1760/property/CFG_DoPortCount.htm" />
+  <item name="CFG_DiPatternMatchEnabledChannel" url="PCI/PCI-1760/property/CFG_DiPatternMatchEnabledChannel.htm" />
+  <item name="CFG_DiPatternMatchValue" url="PCI/PCI-1760/property/CFG_DiPatternMatchValue.htm" />
+  <item name="CFG_DiFilterEnable" url="PCI/PCI-1760/property/CFG_DiFilterEnable.htm" />
+  <item name="CFG_DiFilterHiValue" url="PCI/PCI-1760/property/CFG_DiFilterHiValue.htm" />
+  <item name="CFG_DiFilterLowValue" url="PCI/PCI-1760/property/CFG_DiFilterLowValue.htm" />
+  <item name="CFG_DiStatusChangeOnRisingEdge" url="PCI/PCI-1760/property/CFG_DiStatusChangeOnRisingEdge.htm" />
+  <item name="CFG_DiStatusChangeOnFallingEdge" url="PCI/PCI-1760/property/CFG_DiStatusChangeOnFallingEdge.htm" />
+  <item name="CFG_DiCounterEnable" url="PCI/PCI-1760/property/CFG_DiCounterEnable.htm" />
+  <item name="CFG_DiCounterMatechEnable" url="PCI/PCI-1760/property/CFG_DiCounterMatchEnable.htm" />
+  <item name="CFG_DiCounterTrigEdge" url="PCI/PCI-1760/property/CFG_DiCounterTrigEdge.htm" />
+  <item name="CFG_DiCounterPreset" url="PCI/PCI-1760/property/CFG_DiCounterPreset.htm" />
+  <item name="CFG_DiCounterValue" url="PCI/PCI-1760/property/CFG_DiCounterValue.htm" />
+  <item name="CFG_DiCounterOverflow" url="PCI/PCI-1760/property/CFG_DiCounterOverflow.htm" />
+  <item name="CFG_DiCounterDirection" url="PCI/PCI-1760/property/CFG_DiCounterDirection.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

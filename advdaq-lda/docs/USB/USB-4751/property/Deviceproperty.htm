@@ -1,0 +1,213 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Properties</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nDevice Properties");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Device Properties</h1>
+<p>Device properties are stored in the system and read by the driver when it loads, 
+  and then the device is programmed according to these loaded values. The properties 
+  are protected during read and write access times, and some of them are pre-defined 
+  by the configuration dialog box. Different device's functions are influenced 
+  by different properties. These properties are represented by an ID code for 
+  an application that calls Advantech API functions. An application can use a 
+  default value set by the configuration dialog box, or call Advantech API functions: 
+  <a href="../../../function/Device/drv_devicegetproperty.htm">DRV_DeviceGetProperty</a> 
+  and <a href="../../../function/Device/drv_devicesetproperty.htm">DRV_DeviceSetProperty</a> , 
+  to modify individual properties in running time.</p>
+<p>&nbsp;</p>
+<p></p>
+<p>USB-4751 supports the following properties:</p>
+<p class="P1">&nbsp;</p> 
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td><b>Property</b></td>
+      <td><b>Description</b></td>
+    </tr>
+    
+    <tr> 
+      <td><a href="CFG_BoardID.htm">CFG_BoardID</a></td>
+      <td>gets the board ID of the device.</td>
+    </tr>    
+   
+    	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_FirmWareVersion.htm">CFG_FirmWareVersion</a></font></td>
+		<td>gets the device firmware version string of the USB-4751.</td>
+	</tr>
+		<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_DioChannelDirection.htm">CFG_DioChannelDirection</a></font></td>
+		<td>gets or sets DIO channel directions ( IN / OUT ).</td>
+	</tr>   
+    	</tr>
+		<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_DioPresetChanDir.htm">CFG_DioPresetChanDir</a></font></td>
+		<td>gets or sets DIO channel directions ( IN / OUT ) on Power-On.</td>
+	</tr>
+	<tr>
+	<td><font color="#0000ff">
+		<a href="CFG_DoPresetValue.htm">
+		CFG_DoPresetValue</a></font></td>
+		<td>gets or sets DO status on Power-On.</td>
+	</tr>
+	<tr>
+	<td><font color="#0000ff">
+		<a href="CFG_DiInterruptSupportedChannel.htm">
+		CFG_DiInterruptSupportedChannel</a></font></td>
+		<td>gets DI Interrupt supported channel.</td>
+	</tr>
+	<tr>
+	<td><font color="#0000ff">
+		<a href="CFG_DiInterruptTriggerOnRisingEdge.htm">
+		CFG_DiInterruptTriggerOnRisingEdge</a></font></td>
+		<td>gets or sets DI channels which issue interrupt on RISING Edge.</td>
+	</tr>
+	<tr>
+	<td><font color="#0000ff">
+		<a href="CFG_DiInterruptTriggerOnFallingEdge.htm">
+		CFG_DiInterruptTriggerOnFallingEdge</a></font></td>
+		<td>gets or sets DI channels which issue interrupt on FALLING Edge.</td>
+	</tr>	
+	<tr>
+	<td><font color="#0000ff">
+		<a href="CFG_InterruptTriggerSource.htm">
+		CFG_InterruptTriggerSource</a></font></td>
+		<td>gets or sets DI Interrupt Mode (0:Disable 1:No gate 2:PC4 Gate)</td>
+	</tr>	
+	 
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_DiChannelCount.htm">CFG_DiChannelCount</a></font></td>
+		<td>gets the total count of DI channels.</td>
+	</tr>
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_DoChannelCount.htm">CFG_DoChannelCount</a></font></td>
+		<td>gets the total count of DO channels.</td>
+	</tr>
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_DiPortCount.htm">CFG_DiPortCount</a></font></td>
+		<td>gets the total count of DI ports.</td>
+	</tr>
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_DoPortCount.htm">CFG_DoPortCount</a></font></td>
+		<td>gets the total count of DO ports.</td>
+	</tr>
+
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_CntrChannelCapability.htm">CFG_CntrChannelCapability</a></font></td>
+		<td>gets the functions which can be implemented by the counters: Event 
+		Counter; Frequency Measurement; Pulse Output;PWM Output;Frequency 
+		Output;</td>
+	</tr>
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_CntrResolution.htm">CFG_CntrResolution</a></font></td>
+		<td>Gets the counter resolution.</td>
+	</tr>
+
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_CntrResetValue.htm">CFG_CntrResetValue</a></font></td>
+		<td>gets the counter reset value.</td>
+	</tr>
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_CntrSupportedGateMode.htm">CFG_CntrSupportedGateMode</a></font></td>
+		<td>To retrieve the supported gate mode, usually used for event counting.</td>
+	</tr>
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_CntrInternalClockFreq.htm">CFG_CntrInternalClockFreq</a></font></td>
+		<td>gets the internal clock frequency</td>
+	</tr>
+
+	<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_CntrSupportedCountEdge.htm">CFG_CntrSupportedCountEdge</a></font></td>
+		<td>To check the count edge supported by the installed device. </td>
+	</tr>
+		<tr>
+		<td><font color="#0000ff">
+		<a href="CFG_CntrChannelCount.htm">
+		CFG_CntrChannelCount</a></font></td>
+		<td>gets the counter channel count</td>
+	</tr>
+		</table>
+</div>
+<table class="Bordered" cellSpacing="0" id="table1">
+</table>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

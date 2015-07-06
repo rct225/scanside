@@ -1,0 +1,105 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CFG_DiInterruptSupportedChannel</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties\nCFG_DiInterruptSupportedChannel");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>CFG_DiInterruptSupportedChannel</h1>
+<p><b>CFG_DiInterruptSupportedChannel</b> gets the DI channels which support 
+interrupt function.</p>
+<h2><b>Description</b></h2>
+<div class="tablediv" >
+<table cellspacing="0" class="Bordered">
+	<tr>
+		<td><b>Type</b></td>
+		<td>INT8U array</td>
+	</tr>
+	<tr>
+		<td><b>Length</b></td>
+		<td>1 byte for one port, 1 bit for one channel.</td>
+	</tr>
+	<tr>
+		<td><b>Access type</b></td>
+		<td>Read</td>
+	</tr>
+	<tr>
+		<td><b>Value</b></td>
+		<td>Each bit 
+		in the byte array represents one channel.<br>
+		If the bit returns &quot;1&quot;, means the corresponding channel supports DI 
+		Interrupt function, otherwise it doesn't support.<br>
+		For example, for a 2-port DI device, the size of the array is 2;&nbsp; 
+		when the returned array is [2,5], which means channel1 in port0, 
+		channel0 and channel2 in port1, support this function.</td>
+	</tr>
+</table>
+<h2>See also</h2>
+<p> <a href="../../../function/Device/drv_devicegetproperty.htm"> DRV_DeviceGetProperty</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

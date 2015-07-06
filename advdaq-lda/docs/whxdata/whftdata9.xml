@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<ftstdata>
+<topic name="Function Description" url="USB/USB-4702/Function/funcdesc.htm" />
+<topic name="CFG_AiChanConfig" url="USB/USB-4702/property/CFG_AiChanConfig.htm" />
+<topic name="CFG_AiPacerRate" url="USB/USB-4702/property/CFG_AiPacerRate.htm" />
+<topic name="CFG_AoChanRange" url="USB/USB-4702/property/CFG_AoChanRange.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4702/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4702/property/CFG_BoardID.htm" />
+<topic name="CFG_CntrChannelCapability" url="USB/USB-4702/property/CFG_CntrChannelCapability.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4702/property/CFG_CntrChannelCount.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4702/property/CFG_CntrInternalClockFreq.htm" />
+<topic name="CFG_DiChannelCount" url="USB/USB-4702/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiPortCount" url="USB/USB-4702/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="USB/USB-4702/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="USB/USB-4702/property/CFG_DoPortCount.htm" />
+<topic name="Device Properties" url="USB/USB-4702/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="USB/USB-4702/structure/DataStructure.htm" />
+<topic name="cover" url="USB/USB-4704/cover.htm" />
+<topic name="Event Type" url="USB/USB-4704/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="USB/USB-4704/features/keyfeature.htm" />
+<topic name="Function Description" url="USB/USB-4704/Function/funcdesc.htm" />
+<topic name="CFG_AiChanConfig" url="USB/USB-4704/property/CFG_AiChanConfig.htm" />
+<topic name="CFG_AiPacerRate" url="USB/USB-4704/property/CFG_AiPacerRate.htm" />
+<topic name="CFG_AoChanRange" url="USB/USB-4704/property/CFG_AoChanRange.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4704/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4704/property/CFG_BoardID.htm" />
+<topic name="CFG_CntrChannelCapability" url="USB/USB-4704/property/CFG_CntrChannelCapability.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4704/property/CFG_CntrChannelCount.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4704/property/CFG_CntrInternalClockFreq.htm" />
+<topic name="CFG_DiChannelCount" url="USB/USB-4704/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiPortCount" url="USB/USB-4704/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="USB/USB-4704/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="USB/USB-4704/property/CFG_DoPortCount.htm" />
+<topic name="Device Properties" url="USB/USB-4704/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="USB/USB-4704/structure/DataStructure.htm" />
+<topic name="cover" url="USB/USB-4711/cover.htm" />
+<topic name="Event Type" url="USB/USB-4711/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="USB/USB-4711/features/keyfeature.htm" />
+<topic name="Function Description" url="USB/USB-4711/Function/funcdesc.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4711/property/CFG_AiChanConfig.htm" />
+<topic name="CFG_AiFifoSize" url="USB/USB-4711/property/CFG_AiFifoSize.htm" />
+<topic name="CFG_AiPacerRate" url="USB/USB-4711/property/CFG_AiPacerRate.htm" />
+<topic name="CFG_AoChanRange" url="USB/USB-4711/property/CFG_AoChanRange.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4711/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4711/property/CFG_BoardID.htm" />
+<topic name="CFG_CntrChannelCapability" url="USB/USB-4711/property/CFG_CntrChannelCapability.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4711/property/CFG_CntrChannelCount.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4711/property/CFG_CntrInternalClockFreq.htm" />
+<topic name="CFG_CntrResetValue" url="USB/USB-4711/property/CFG_CntrResetValue.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4711/property/CFG_CntrResolution.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4711/property/CFG_CntrSupportedCountEdge.htm" />
+<topic name="CFG_DiChannelCount" url="USB/USB-4711/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiPortCount" url="USB/USB-4711/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="USB/USB-4711/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="USB/USB-4711/property/CFG_DoPortCount.htm" />
+<topic name="CFG_FirmWareVersion" url="USB/USB-4711/property/CFG_FirmWareVersion.htm" />
+<topic name="Device Properties" url="USB/USB-4711/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="USB/USB-4711/structure/datastructure.htm" />
+<topic name="cover" url="USB/USB-4716/cover.htm" />
+<topic name="Event Type" url="USB/USB-4716/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="USB/USB-4716/features/keyfeature.htm" />
+<topic name="Function Description" url="USB/USB-4716/Function/funcdesc.htm" />
+<topic name="CFG_AiChanConfig" url="USB/USB-4716/property/CFG_AiChanConfig.htm" />
+<topic name="CFG_AiFifoSize" url="USB/USB-4716/property/CFG_AiFifoSize.htm" />
+<topic name="CFG_AiPacerRate" url="USB/USB-4716/property/CFG_AiPacerRate.htm" />
+<topic name="CFG_AoChanRange" url="USB/USB-4716/property/CFG_AoChanRange.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4716/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4716/property/CFG_BoardID.htm" />
+<topic name="CFG_CntrChannelCapability" url="USB/USB-4716/property/CFG_CntrChannelCapability.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4716/property/CFG_CntrChannelCount.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4716/property/CFG_CntrInternalClockFreq.htm" />
+<topic name="CFG_CntrResetValue" url="USB/USB-4716/property/CFG_CntrResetValue.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4716/property/CFG_CntrResolution.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4716/property/CFG_CntrSupportedCountEdge.htm" />
+<topic name="CFG_DiChannelCount" url="USB/USB-4716/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiPortCount" url="USB/USB-4716/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="USB/USB-4716/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="USB/USB-4716/property/CFG_DoPortCount.htm" />
+<topic name="CFG_FirmWareVersion" url="USB/USB-4716/property/CFG_FirmWareVersion.htm" />
+<topic name="Device Properties" url="USB/USB-4716/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="USB/USB-4716/structure/DataStructure.htm" />
+<topic name="cover" url="USB/USB-4718/cover.htm" />
+<topic name="EventType" url="USB/USB-4718/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="USB/USB-4718/features/keyfeature.htm" />
+<topic name="Function Description" url="USB/USB-4718/Function/funcdesc.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4718/property/CFG_BoardID.htm" />
+<topic name="CFG_AIPacerRate" url="USB/USB-4718/property/CFG_BurnTest.htm" />
+<topic name="CFG_AIPacerRate" url="USB/USB-4718/property/CFG_CURRENT_4TO20MA_EXCEPTIONSETTING.htm" />
+<topic name="CFG_DiChannelCount" url="USB/USB-4718/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiPortCount" url="USB/USB-4718/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="USB/USB-4718/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="USB/USB-4718/property/CFG_DoPortCount.htm" />
+<topic name="CFG_AIPacerRate" url="USB/USB-4718/property/CFG_EEPROM_RWBYTE.htm" />
+<topic name="CFG_FirmWareVersion" url="USB/USB-4718/property/CFG_FirmWareVersion.htm" />
+<topic name="Device Properties" url="USB/USB-4718/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="USB/USB-4718/structure/DataStructure.htm" />
+<topic name="cover" url="USB/USB-4750/cover.htm" />
+<topic name="Event Type" url="USB/USB-4750/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="USB/USB-4750/features/keyfeature.htm" />
+<topic name="Function Description" url="USB/USB-4750/Function/funcdesc.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4750/property/CFG_BoardID.htm" />
+<topic name="CFG_CntrChannelCapability" url="USB/USB-4750/property/CFG_CntrChannelCapability.htm" />
+<topic name="CFG_CntrChannelCount" url="USB/USB-4750/property/CFG_CntrChannelCount.htm" />
+<topic name="CFG_CntrResetValue" url="USB/USB-4750/property/CFG_CntrResetValue.htm" />
+<topic name="CFG_BoardID" url="USB/USB-4750/property/CFG_CntrResolution.htm" />
+<topic name="DRV_CounterEventRead" url="USB/USB-4750/property/CFG_CntrSupportedCountEdge.htm" />
+<topic name="CFG_DiChannelCount" url="USB/USB-4750/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptSupportedChannel" url="USB/USB-4750/property/CFG_DiInterruptSupportedChannel.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="USB/USB-4750/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="USB/USB-4750/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_DiPortCount" url="USB/USB-4750/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="USB/USB-4750/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="USB/USB-4750/property/CFG_DoPortCount.htm" />
+<topic name="CFG_DoPresetValue" url="USB/USB-4750/property/CFG_DoPresetValue.htm" />
+<topic name="CFG_FirmWareVersion" url="USB/USB-4750/property/CFG_FirmWareVersion.htm" />
+<topic name="CFG_InterruptTriggerSource" url="USB/USB-4750/property/CFG_InterruptTriggerSource.htm" />
+<topic name="Device Properties" url="USB/USB-4750/property/Deviceproperty.htm" />
+
+</ftstdata>  

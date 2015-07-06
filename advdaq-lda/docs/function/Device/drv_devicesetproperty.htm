@@ -1,0 +1,194 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_DeviceSetProperty</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nDevice Function Group\nFunction Description\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1720 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1723 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1724 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1727U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1730 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1733 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1734 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1736UP Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1737U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1739U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1752 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1753 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1754 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1756 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1757UP Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1758U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addTocInfo("PCI Series\nPCI-1761 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceSetProperty");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_DeviceSetProperty</h1>
+	<h1></h1>
+    <pre class="code">INT32S DRV_DeviceSetProperty(<i>
+   </i>PTR_T <i>DeviceHandle,
+   </i>INT16U <i>nPropertyID,
+   </i>void * <i>pBuffer,
+   </i>INT32U <i>Length </i>);</pre>
+    </p>
+	<h2>Purpose</h2>
+	<p>On the <i>DeviceHandle </i>specified device, it sets the device's properties&nbsp; <span lang="EN-US">
+	by its pre-defined property ID</span>.</p>
+	<h2>Parameters<span lang="en-us"><font style="font-size: 9pt">&nbsp;&nbsp;&nbsp;</font></span></h2><p>
+	By specifying the property ID (<i>nPropertyID</i>) and defining the 
+			corresponding buffer (<i>pBuffer</i>) of property and the buffer 
+			length (<i>pLength</i>), the user can set the corresponding properties.
+	</p>
+			<p>The property ID contains pre-defined constants that indicate properties. 
+			Therefore, the user can acquire the corresponding device properties. Please 
+			refer to the following <i>Notes</i> for details.</p>
+	<p> The<i> pBuffer </i> points to a buffer that stores property 
+	information. The user sets the buffer size by using the <i>Length.</i> If 
+	the user does not know the accurate buffer size, please refer to the 
+	specified device user manual.</p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b><font style="font-size: 9pt">Name</font></b></td>
+			<td><b><font style="font-size: 9pt">Direction</font></b></td>
+			<td><b><font style="font-size: 9pt">Range</font></b></td>
+			<td><b><font style="font-size: 9pt">Description</font></b></td>
+		</tr>
+		<tr>
+			<td><b><font style="font-size: 9pt">DeviceHandle</font></b></td>
+				<td><font style="font-size: 9pt">input</font></td>
+			<td><font style="font-size: 9pt">default</font></td>
+			<td>The pointer retrieved from 
+			the 
+			<a href="DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>  			
+			which specifies the target device.</td>
+		</tr>
+		<tr>
+			<td><b><font style="font-size: 9pt">nPropertyID</font></b></td>
+				<td><font style="font-size: 9pt">input</font></td>
+			<td><font style="font-size: 9pt">default</font></td>
+			<td>The p<font style="font-size: 9pt">re-defined device property ID. Please refer to 
+			the <i>Notes</i> for details.</font></td>
+		</tr>
+		<tr>
+			<td><b><font style="font-size: 9pt">pBuffer</font></b></td>
+				<td><font style="font-size: 9pt">input</font></td>
+			<td><font style="font-size: 9pt">default</font></td>
+			<td>The p<font style="font-size: 9pt">ointer that specifies the device property buffer. It should be 
+			allocated by the user. If the user does not know the accurate buffer size, 
+			the <a href="drv_devicegetproperty.htm">DRV_DeviceGetProperty</a> 
+                must be called to acquire the specified property buffer size from a 
+			parameter (ULONG *<i> pLength</i>) of that function.&nbsp; </font> </td>
+		</tr>
+		<tr>
+			<td><b><font style="font-size: 9pt">Length</font></b></td>
+				<td><font style="font-size: 9pt">input</font></td>
+			<td><font style="font-size: 9pt">default</font></td>
+			<td>The u<font style="font-size: 9pt">ser-allocated buffer size. </font>
+			If the user does not know the accurate buffer size, please reference 
+			the special device user manual.</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2>
+<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table3">
+	<tr>
+		<td width="200"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. 0</font></b></td>
+		<td><span style="font-size: 9pt">S</span><font style="font-size: 9pt">uccessful. </font></td>
+	</tr>
+	<tr>
+		<td width="200"><b><font style="font-size: 9pt">&nbsp;&nbsp; 2. other value </font></b></td>
+		<td><font style="font-size: 9pt"> Please reference 
+		<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes </a> </font></td>
+	</tr>
+</table>
+
+	<h2>Notes</h2>
+	<p><b>1. </b>The user can find the definition of device property ID in <i>advproperty.h</i>. 
+	The buffer size differs for different property information. Please refer to 
+	individual device driver manuals.</p>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

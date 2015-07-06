@@ -1,0 +1,235 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>About Data Structure</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAbout Data Structure");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>About Data Structure</h1>
+	<p>Data structures describe the data related to a cluster object and are used as 
+	the building blocks of value lists. The data structures follow the following 
+	example:<br>
+	<b>Allocation of a Data Structure </b><br>
+	To allocate a data structure on the frame, define the structure variable as 
+	follows:</p>
+	
+  <pre class="code">
+struct MyStructType { int topScore;};
+void SomeFunc(void)
+{ // Frame allocation 
+MyStructType myStruct;
+// Use the struct 
+myStruct.topScore = 297; 
+// Reclaimed when exiting scope }
+</pre>
+	<p>The memory occupied by the structure is reclaimed when it exits the scope.
+	<br>
+	To allocate data structures on the heap:<br>
+	Use <i>new</i> to allocate data structures on the heap and delete to free them, as 
+	shown by the following example:</p>
+	
+  <pre class="code">
+// Heap allocation 
+MyStructType*
+myStruct = new MyStructType;
+// Use the structure through the pointer ... 
+myStruct-&gt;topScore= 297; 
+delete myStruct;
+</pre>
+	<div class="tablediv">
+		<table cellspacing="0" class="Bordered">
+			<tr>
+				<td><b>Analog input</b></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="Ai/PT_AIConfig.htm">PT_AIConfig</a></td>
+				<td><a href="Ai/PT_AIScale.htm">PT_AIScale</a></td>
+				<td><a href="Ai/PT_AIBinaryIn.htm">PT_AIBinaryIn</a></td>
+			</tr>
+			<tr>
+				<td><a href="Ai/PT_MAIVoltageIn.htm">PT_MAIVoltageIn</a></td>
+				<td><a href="Ai/PT_AIVoltageIn.htm">PT_AIVoltageIn</a></td>
+				<td><a href="Ai/PT_MAIBinaryIn.htm">PT_MAIBinaryIn</a></td>
+			</tr>
+			<tr>
+				<td><a href="Ai/PT_MAIConfig.htm">PT_MAIConfig</a></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b>Analog output</b></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="AO/PT_AOConfig.htm">PT_AOConfig</a></td>
+				<td><a href="AO/PT_AOBinaryOut.htm">PT_AOBinaryOut</a></td>
+				<td><a href="AO/PT_AOVoltageOut.htm">PT_AOVoltageOut</a></td>
+			</tr>
+			<tr>
+				<td><a href="AO/PT_AOScale.htm">PT_AOScale</a></td>
+				<td><a href="AO/PT_AOCurrentOut.htm">PT_AOCurrentOut</a></td>
+				<td><a href="AO/AORANGESET.htm">AORANGESET</a></td>
+			</tr>
+			<tr>
+				<td><b>High-speed functions</b></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="commonhighspeed/PT_EnableEvent.htm">PT_EnableEvent</a></td>
+				<td><a href="commonhighspeed/PT_CheckEvent.htm">PT_CheckEvent</a></td>
+				<td><a href="fdio/PT_FDITransfer.htm">PT_FDITransfer</a></td>
+			</tr>
+			<tr>
+				<td><a href="FAI/PT_FAICheck.htm">PT_FAICheck</a></td>
+				<td><a href="FAI/PT_FAIIntStart.htm">PT_FAIIntStart</a></td>
+				<td><a href="FAI/PT_FAIIntScanStart.htm">PT_FAIIntScanStart</a></td>
+			</tr>
+			<tr>
+				<td><a href="FAI/PT_FAITransfer.htm">PT_FAITransfer</a></td>
+				<td><a href="FAI/PT_FAIDmaExStart.htm">PT_FAIDmaExStart</a></td>
+				<td><a href="FAO/PT_FAODmaExStart.htm">PT_FAODmaExStart</a></td>
+			</tr>
+			<tr>
+				<td><a href="FAO/PT_FAOScale.htm">PT_FAOScale</a></td>
+				<td><a href="FAO/PT_FAOCheck.htm">PT_FAOCheck</a></td>
+				<td><a href="FAO/PT_FAOLoad.htm">PT_FAOLoad</a></td>
+			</tr>
+			<tr>
+				<td><b>Counter functions</b></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="counter/PT_CounterEventStart.htm">PT_CounterEventStart</a></td>
+				<td><a href="counter/PT_CounterEventRead.htm">PT_CounterEventRead</a></td>
+				<td><a href="counter/PT_CounterFreqStart.htm">PT_CounterFreqStart</a></td>
+			</tr>
+			<tr>
+				<td><a href="counter/PT_CounterFreqRead.htm">PT_CounterFreqRead</a></td>
+				<td><a href="counter/PT_CounterPulseStart.htm">PT_CounterPulseStart</a></td>
+				<td><a href="counter/PT_TimerCountSetting.htm">PT_TimerCountSetting</a></td>
+			</tr>
+			<tr>
+				<td><a href="counter/PT_CounterPWMSetting.htm">PT_CounterPWMSetting</a></td>
+				<td><a href="counter/PT_CounterConfig.htm">PT_CounterConfig</a></td>
+				<td><a href="counter/PT_FreqOutStart.htm">PT_FreqOutStart</a></td>
+			</tr>
+			<tr>
+				<td><a href="counter/PT_PWMStartRead.htm">PT_PWMStartRead</a></td>
+				<td><a href="counter/PT_DICounter.htm">PT_DICounter</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b>Port I/O functions</b></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="PORTIO/PT_ReadPortByte.htm">PT_ReadPortByte</a></td>
+				<td><a href="PORTIO/PT_WritePortByte.htm">PT_WritePortByte</a></td>
+				<td><a href="PORTIO/PT_ReadPortWord.htm">PT_ReadPortWord</a></td>
+			</tr>
+			<tr>
+				<td><a href="PORTIO/PT_WritePortWord.htm">PT_WritePortWord</a></td>
+				<td><a href="PORTIO/PT_ReadPortDword.htm">PT_ReadPortDword</a></td>
+				<td><a href="PORTIO/PT_WritePortDword.htm">PT_WritePortDword</a></td>
+			</tr>
+			<tr>
+				<td><b>Temperature</b></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="temperature/PT_TCMuxRead.htm">PT_TCMuxRead</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><b>Watchdog functions</b></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><a href="watchdog/PT_WatchdogStart.htm">PT_WatchdogStart</a></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div>
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

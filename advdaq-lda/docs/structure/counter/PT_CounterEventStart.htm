@@ -1,0 +1,142 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_CounterEventStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nEvent Counting Function\nData Structure\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nData Structures\nCounter\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nCounter\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nData Structures\nCounter\nPT_CounterEventStart");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nData Structures\nCounter\nPT_CounterEventStart");
+addTocInfo("USB Series\nUSB-4750 Device Driver User Manual\nData Structures\nCounter functiosn\nPT_CounterEventStart");
+addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addTocInfo("MIC Series\nMIC-3751 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterEventStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+
+<h1><b>PT_CounterEventStart </b>
+</h1></b>
+</h1>
+<pre class="code">typedef struct tagPT_CounterEventStart
+{
+    INT16U counter;
+    INT16U GateMode;
+} PT_CounterEventStart, * LPT_CounterEventStart;
+</pre>
+<p><b> PT_CounterEventStart</b>  is used in function
+<a href="../../function/counter/DRV_CounterEventStart.htm">DRV_CounterEventStart</a>.&nbsp; </p>
+ 
+ <h2>Member Description</h2> 
+ 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Range</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     counter</b></td>
+    <td>input</td>
+    <td>0-(N-1) (N depends on the hardware)</td>
+    <td>The channel number of the specified counter.<br>
+	From a minimum 
+	of zero for the first channel to the maximum channel number minus one. For example, the 
+	range is from 0 to <i>(N-1)</i> on a device with <i>N</i> counter channels.</td>
+  </tr>
+  <tr>
+    <td><b>     GateMode</b></td>
+    <td>input</td>
+    <td>0, 1, 2, 3, 4</td>
+    <td>Gate mode. 0 (no gate), 1 (high level triggering), 2 (low level 
+	triggering), 3 (raising edge triggering) and 4 (falling edge triggering).<span lang="en-us"><br>
+	Only used in </span>PCI1712/PCI1710 and is reserved for other devices.</td>
+  </tr>
+</table>
+</div>
+<p></p>
+<p></p>
+</div>
+<div>
+</td>
+  </tr>
+</table>
+</div>
+</div><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

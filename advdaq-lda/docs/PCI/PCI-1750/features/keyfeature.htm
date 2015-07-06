@@ -1,0 +1,136 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Device Features</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval:21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nDevice Introduction\nDevice Features");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<h1><span lang=EN-US>Device Features</span></h1>
+
+<h2><span lang=EN-US>Overall Features:</span></h2>
+
+<p><span lang=EN-US>16 isolated digital input and 16 isolated digital output
+channels.</span></p>
+
+<p><span lang=EN-US>High voltage isolation on all channels (2500 VDC)</span></p>
+
+<p><span lang=EN-US>High sink current on isolated output channels (200
+mA/Channel).</span></p>
+
+<p><span lang=EN-US>D-type 37-pin female connector.</span></p>
+
+<p><span lang=EN-US>Supports dry contact or 5 to 48 VD C isolated input.</span></p>
+
+<p><span lang=EN-US>Dual interrupt handling capability</span></p>
+
+<p><span lang=EN-US>Timer/Counter interrupt capability generates watchdog timer
+interrupts</span></p>
+
+<h2><span lang=EN-US>Applications:</span></h2>
+
+<p><span lang=EN-US>Digital I/O control.</span></p>
+
+<p><span lang=EN-US>Industrial ON/OFF control.</span></p>
+
+<p><span lang=EN-US>Industrial and lab automation.</span></p>
+
+<p><span lang=EN-US>Switch status sensing</span></p>
+
+<p><span lang=EN-US>BCD interfacing.</span></p>
+
+<h2><span lang=EN-US>Interrupt Function:</span></h2>
+
+<p><span lang=EN-US>Four input channels (IDI 0, IDI 4, IDI 8 and IDI 12) and
+the output of Timer 1 and Counter 2 are connected to the interrupt circuitry.
+The &quot;Interrupt Control Register&quot; of the PCI-1750 controls how the
+combination of the six signals generates an interrupt. Two interrupt request
+signals, designated &quot;interrupt group 0&quot; and &quot;interrupt group
+1&quot;, can be generated at the same time, and then the software can service
+these two request signals by ISR. IDI 0, IDI 4 and Timer 1 are connected to
+interrupt port 0, IDI 8, IDI 12 and Counter 2 are connected to interrupt port
+1. The dual interrupt sources provide the card with more capability and
+flexibility.</span></p>
+
+<p><span lang=EN-US><img width=527 height=315 id="_x0000_i1025"
+src=InterruptSource.jpg border=0></span></p>
+
+<h2><span lang=EN-US>Timer and Counter:</span></h2>
+
+<p><span lang=EN-US>The PCI-1750 includes one 8254 compatible programmable
+timer/counter chip which provides three 16-bit counters. Counter0 and Counter1
+are cascaded to be a 32-bit timer, with its input connected to a 10 MHz
+oscillator and its gate control pulled high (enabled). Counter2 of the 8254
+chip is a 16-bit high-speed (1 MHz) isolated event counter (it shares a pin
+with isolated IDI15).</span></p>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

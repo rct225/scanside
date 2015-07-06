@@ -1,0 +1,178 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_CounterPulseStart </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nPulse Output Function\nFunction Description\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addTocInfo("MIC Series\nMIC-3751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterPulseStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_CounterPulseStart </h1>
+	<h1></h1>
+	
+    <pre class="code">INT32S DRV_CounterPulseStart (
+   PTR_T <i>DeviceHandle, 
+   </i>PT_CounterPulseStart <i>*lpCounterPulseStart </i>);</pre>
+
+	<h2>Purpose</h2>
+	<p>On the device indicated by the <i>DeviceHandle</i>, it configures the 
+	specified counter for pulse output and start the operation.</p> 
+	<h2>Parameters</h2>
+	<p>Some parameters, such as target counter channel (<i>counter</i>), 
+	pulse period (<i>period</i>), <font style="font-size: 9pt"><span style="FONT-FAMILY: Verdana">
+	length of the upper cycle 
+			(</span><i>UpCycle</i><span style="FONT-FAMILY: Verdana">) 
+	of pulse output </span>
+	and gate mode (<i>GateMode</i>), are stored in the 
+	<a href="../../structure/counter/PT_CounterPulseStart.htm">PT_CounterPulseStart</a> 
+	structure pointed by the <i> lpCounterPulseStart</i>. </p>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td>input</td>
+			<td>default</td>
+			<td>The p<font face="Verdana" style="font-size: 9pt">ointer retrieved from
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td><b>lpCounterPulseStart</b></td>
+			<td>input / output</td>
+			<td>default</td>
+			<td><font style="font-size: 9pt">The<span style="FONT-FAMILY: Verdana"> pointer to 
+			indicate the user-prepared structure </span>
+            <a href="../../structure/counter/PT_CounterPulseStart.htm">PT_CounterPulseStart</a><span style="FONT-FAMILY: Verdana"> 
+			that stores  
+			target counter channel (INT16U</span><i> 
+            counter</i><span style="FONT-FAMILY: Verdana">), 
+			gate period (</span>FP32 <i>period</i><span style="FONT-FAMILY: Verdana">),&nbsp;length 
+			of the upper cycle 
+			(</span>FP32 <i>
+            UpCycle</i><span style="FONT-FAMILY: Verdana">) 
+			of pulse output and gate mode (INT16U </span><i>GateMode</i><span style="FONT-FAMILY: Verdana">).</span></td>
+		</tr>
+	</table>
+</div>
+	<div>
+		<h2>Return</h2>
+		</div>
+<table>
+	<tr>
+		<td width="201"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. </font>
+		<span style="font-size: 9pt">0</span></b></td>
+		<td><span style="font-size: 9pt">Successful.</span></td>
+	</tr>
+	<tr>
+		<td width="201"><b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDeviceHandle</font></b></td>
+		<td><span style="font-size: 9pt">The <i>Devicehandle</i> is NULL.</span></td>
+	</tr>
+	<tr>
+		<td width="201"><font style="font-size: 9pt"><b>&nbsp;&nbsp; 3. InvalidChannel</b></td>
+		<td><font style="font-size: 9pt">The target channel 
+		is out of range.</td>
+	</tr>
+	
+	<tr>
+		<td width="201"><b><font style="font-size: 9pt">&nbsp;&nbsp; 4. InvalidInputParam</font></b></td>
+		<td><font style="font-size: 9pt">The input parameter is incorrect. Please check the 
+		correctness of </font> <i><font style="font-size: 9pt">period.</font></i></td>
+	</tr>
+	<tr>
+		<td width="201"><font style="font-size: 9pt"><b>&nbsp;&nbsp; 5. Other value</b></td>
+		<td><span class="SpellE"><span style="font-size: 9pt">Please reference 
+		<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes </a> </span>
+		</span></td>
+	</tr>
+
+</table>
+	</font>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

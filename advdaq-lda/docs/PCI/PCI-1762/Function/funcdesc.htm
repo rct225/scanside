@@ -1,0 +1,120 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Function Description</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1762 Device Driver User Manual\nFunction Description");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Function Description </h1>	
+	<p>Every Advantech DLL function is of the following form:</p>	
+	<p>status = DRV_Xxx(parameter 1, parameter 2, ..., parameter n); </p>
+	<p>(at least one parameter is contained)</p>	
+	
+	<p>Each function returns a status (Success or Failure) as following:</p>
+	<div class="tablediv">
+		<table cellspacing="0" class="Bordered">
+			<tr>
+				<td><b>Status (Value)</b></td>
+				<td><b>Result</b></td>
+			</tr>
+			<tr>
+				<td><b>UNSUCCESS ( &gt; 0 )</b></td>
+				<td>Function failed due to error</td>
+			</tr>
+			<tr>
+				<td><b>SUCCESS ( = 0 )</b></td>
+				<td>Function completed successfully</td>
+			</tr>
+		</table>
+	</div>
+	<p>Status is a 4-byte integer and is defined in DRIVER.H file. </p>	
+	<p>For more information	about the error code, please refer to ErrorCode list.</p>
+	&nbsp;<h2>Functions supported by PCI-1762:</h2><h3>Device functions</h3> 
+	<p><a href="../../../function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a></p>
+	<p><a href="../../../function/Device/DRV_DEVICECLOSE.htm">DRV_DeviceClose</a></p>
+	<p><a href="../../../function/Device/drv_devicegetproperty.htm">DRV_DeviceGetProperty</a></p>
+	<p><a href="../../../function/Device/drv_devicesetproperty.htm">DRV_DeviceSetProperty</a></p>
+<h3>Port I/O functions</h3>
+<p><a href="../../../function/PORTIO/DRV_ReadPortByte.htm">DRV_ReadPortByte</a></p>
+<p><a href="../../../function/PORTIO/DRV_WritePortByte.htm">DRV_WritePortByte</a></p>
+<p><a href="../../../function/PORTIO/DRV_ReadPortWord.htm">DRV_ReadPortWord</a></p>
+<p><a href="../../../function/PORTIO/DRV_WritePortWord.htm">DRV_WritePortWord</a></p>
+<h3>Digital Input/Output</h3>
+<p><a href="../../../function/DIO/DRV_DioReadDOPorts.htm">
+DRV_DioReadDOPorts</a></p>
+<p><a href="../../../function/DIO/DRV_DioWriteDoPorts.htm">
+DRV_DioWriteDOPorts</a></p>
+<p><a href="../../../function/DIO/DRV_DioReadDiPorts.htm">
+DRV_DioReadDIPorts</a></p>
+<h3>High-speed Functions</h3>
+<p><a href="../../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a></p>
+<p><a href="../../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a></p>
+<h3>Other Functions</h3>
+<p><a href="../../../function/others/DRV_GetErrorMessage.htm">DRV_GetErrorMessage</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

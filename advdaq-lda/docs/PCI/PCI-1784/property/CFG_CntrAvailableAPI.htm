@@ -1,0 +1,129 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CFG_CntrAvailableAPI</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties\nCFG_CntrAvailableAPI");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	
+	<h1>CFG<b>_C</b>ntrAvailableAPI<b> </b>
+    </h1>
+
+
+	
+	<p><b>CFG_CntrAvailableAPI</b><b> </b>get the available counter APIs for the device. </p>
+	<h2>Description</h2>
+  <table cellspacing="0" class="Bordered" id="table6" width="100%">
+    <tr> 
+      <td><b>Type</b></td>
+      <td>
+		INT32U</td>
+    </tr>
+    <tr> 
+      <td><b>Length</b></td>
+      <td>4 bytes</td>
+    </tr>
+    <tr> 
+      <td><b>Access type</b></td>
+      <td>Read</td>
+    </tr>
+    <tr> 
+      <td><b>Value</b></td>
+      <td>Each bit in the value represents one API.<br>
+		If the bit returns &quot;1&quot;, means the corresponding API is available for the 
+		device, otherwise it is not available.<br>
+		For example, for a device returns &quot;3&quot;, which means the API of
+						<span>
+						<b>CounterConfig</b> and <b>DICounterReset </b></span>is<span><b>
+		</b></span>available for this device.<br>
+		Take the table below for reference.</td>
+    </tr>
+  </table>
+</div>
+
+<table class="Bordered" cellSpacing="0" id="table7">
+	<tr>
+		<td><b>Bit #</b></td>
+		<td><b>0</b></td>
+		<td><b>1</b></td>
+		<td><b>2</b></td>
+		<td><b>3~31</b></td>
+	</tr>
+	<tr>
+		<td><b>API</b></td>
+		<td>CNTR_API_CounterConfig:CounterConfig</td>
+		<td>CNTR_API_DICounterReset:
+						DICounterReset</td>
+		<td><span>
+		CNTR_API_QCounterAPI:<span>QCounterXXX</span></span></td>
+		<td>reserved</td>
+	</tr>
+</table>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

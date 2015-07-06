@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<ftstdata>
+<topic name="Device Properties" url="PCI/PCI-1720/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1720/structure/Datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1721/cover.htm" />
+<topic name="EventType" url="PCI/PCI-1721/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1721/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1721/Function/funcdesc.htm" />
+<topic name="CFG_AoChanRange" url="PCI/PCI-1721/property/CFG_AoChanRange.htm" />
+<topic name="CFG_AoPacerRate" url="PCI/PCI-1721/property/CFG_AoPacerRate.htm" />
+<topic name="CFG_AoRangeList" url="PCI/PCI-1721/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1721/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1721/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1721/property/CFG_BusNumber.htm" />
+<topic name="CFG_CntrChannelCapability" url="PCI/PCI-1721/property/CFG_CntrChannelCapability.htm" />
+<topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1721/property/CFG_CntrInternalClockFreq.htm" />
+<topic name="CFG_DiChannelCount" url="PCI/PCI-1721/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiPortCount" url="PCI/PCI-1721/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="PCI/PCI-1721/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="PCI/PCI-1721/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1721/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1721/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1721/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1721/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1723/cover.htm" />
+<topic name="Device Features" url="PCI/PCI-1723/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1723/Function/funcdesc.htm" />
+<topic name="CFG_AoChanRange" url="PCI/PCI-1723/property/CFG_AoChanRange.htm" />
+<topic name="CFG_AoRangeList" url="PCI/PCI-1723/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1723/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1723/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1723/property/CFG_BusNumber.htm" />
+<topic name="CFG_DiChannelCount" url="PCI/PCI-1723/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DioChannelDirection" url="PCI/PCI-1723/property/CFG_DioChannelDirection.htm" />
+<topic name="CFG_DiPortCount" url="PCI/PCI-1723/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="PCI/PCI-1723/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="PCI/PCI-1723/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1723/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1723/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1723/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1723/structure/Datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1724/cover.htm" />
+<topic name="Device Features" url="PCI/PCI-1724/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1724/Function/funcdesc.htm" />
+<topic name="CFG_AoChanRange" url="PCI/PCI-1724/property/CFG_AoChanRange.htm" />
+<topic name="CFG_AoRangeList" url="PCI/PCI-1724/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1724/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1724/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1724/property/CFG_BusNumber.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1724/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1724/property/CFG_SlotNumber.htm" />
+<topic name="Using the Functions" url="PCI/PCI-1724/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1724/structure/Datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1727U/cover.htm" />
+<topic name="Device Features" url="PCI/PCI-1727U/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1727U/Function/funcdesc.htm" />
+<topic name="CFG_AoChanRange" url="PCI/PCI-1727U/property/CFG_AoChanRange.htm" />
+<topic name="CFG_AoRangeList" url="PCI/PCI-1727U/property/CFG_AoRangeList.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1727U/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1727U/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1727U/property/CFG_BusNumber.htm" />
+<topic name="CFG_DiChannelCount" url="PCI/PCI-1727U/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiPortCount" url="PCI/PCI-1727U/property/CFG_DiPortCount.htm" />
+<topic name="CFG_DoChannelCount" url="PCI/PCI-1727U/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_DoPortCount" url="PCI/PCI-1727U/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1727U/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1727U/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1727U/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1727U/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1730/cover.htm" />
+<topic name="Event Type" url="PCI/PCI-1730/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1730/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1730/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1730/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1730/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1730/property/CFG_BusNumber.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1730/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1730/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1730/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1730/property/CFG_DiPortCount.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1730/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1730/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1730/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1730/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1730/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1730/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1733/cover.htm" />
+<topic name="EventType" url="PCI/PCI-1733/Eventtype/Eventtype.htm" />
+<topic name="Device Features" url="PCI/PCI-1733/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1733/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1733/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1733/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1733/property/CFG_BusNumber.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1733/property/CFG_DiChannelCount.htm" />
+<topic name="CFG_DiInterruptTriggerOnFallingEdge" url="PCI/PCI-1733/property/CFG_DiInterruptTriggerOnFallingEdge.htm" />
+<topic name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1733/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1733/property/CFG_DiPortCount.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1733/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1733/property/CFG_DoPortCount.htm" />
+<topic name="CFG_Interrupt" url="PCI/PCI-1733/property/CFG_Interrupt.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1733/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1733/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1733/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1734/cover.htm" />
+<topic name="Device Features" url="PCI/PCI-1734/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1734/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1734/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1734/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1734/property/CFG_BusNumber.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1734/property/CFG_DoChannelCount.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1734/property/CFG_DoPortCount.htm" />
+<topic name="CFG_SlotNumber" url="PCI/PCI-1734/property/CFG_SlotNumber.htm" />
+<topic name="Device Properties" url="PCI/PCI-1734/property/Deviceproperty.htm" />
+<topic name="Data Structure" url="PCI/PCI-1734/structure/datastructure.htm" />
+<topic name="cover" url="PCI/PCI-1735U/cover.htm" />
+<topic name="Device Features" url="PCI/PCI-1735U/features/keyfeature.htm" />
+<topic name="Function Description" url="PCI/PCI-1735U/Function/funcdesc.htm" />
+<topic name="CFG_BaseAddress" url="PCI/PCI-1735U/property/CFG_BaseAddress.htm" />
+<topic name="CFG_BoardID" url="PCI/PCI-1735U/property/CFG_BoardID.htm" />
+<topic name="CFG_BusNumber" url="PCI/PCI-1735U/property/CFG_BusNumber.htm" />
+<topic name="CFG_CntrInternalClockFreq" url="PCI/PCI-1735U/property/CFG_CntrInternalClockFreq.htm" />
+
+</ftstdata>  

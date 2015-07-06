@@ -1,0 +1,136 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CFG_CntrIndicatorControl</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties\nCFG_CntrIndicatorControl");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>CFG_CntrIndicatorControl</h1>
+<p><b>CFG_CntrIndicatorControl</b> gets or sets the counters' indicator of the device.</p>
+<p>Four types of indicators are provided. When the Indicator is set to 
+OVERCOMPLEVEL/OVERCOMPPULSE, when the counter's count value exceeds the compare 
+data (set in <a href="CFG_CntrCompareData.htm">CFG_CntrCompareData</a>) , the 
+indicator will indicate over compare state (level/pulse) ; When the Indicator is 
+set to UNDERCOMPLEVEL/UNDERCOMPPULSE, when the counter's count value below the 
+compare data, the indicator will be on an under compare state (level/pulse).</p>
+<h2><b>Description</b></h2>
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td><b>Type</b></td>
+      <td>INT32U array</td>
+    </tr>
+    <tr> 
+      <td><b>Length</b></td>
+      <td>4 bytes for one counter channel</td>
+    </tr>
+    <tr> 
+      <td><b>Access type</b></td>
+      <td>Read/Write</td>
+    </tr>
+    <tr> 
+      <td><b>Value</b></td>
+      <td>Each bit in the element of the array represents on 
+		indicator, if the bit is set to or returns &quot;1&quot;, means the corresponding 
+		indicator is supported by the channel, otherwise it is not.<br>
+		For example, for a 2-counter-channel device, when the set/returned array 
+		is [2,4], which means channel0 support overcomppulse indicator, channel1 
+		supports undercomplevel indicator.<br>
+		<br>
+		Take the table below for reference.</td>
+    </tr>
+    </table>
+
+<table class="Bordered" id="table1" cellSpacing="0">
+	<tr>
+		<td><b>Bit #</b></td>
+		<td><b>0</b></td>
+		<td><b>1</b></td>
+		<td><b>2</b></td>
+		<td><b>3</b></td>
+		<td>4~31</td>
+	</tr>
+	<tr>
+		<td><b>Indicator</b></td>
+		<td>OVERCOMPLEVEL: <br>
+				over compare level indicator</td>
+		<td>OVERCOMPPULSE:<br>
+				over compare pulse indicator</td>
+		<td>UNDERCOMPLEVEL:<br>
+		under compare level indicator</td>
+		<td>UNDERCOMPPULSE:<br>
+		under compare pulse indicator</td>
+		<td>Reserved</td>
+	</tr>
+</table>
+</div> 
+<h2>See also</h2><h4></h4>
+<p> <a href="../../../function/Device/drv_devicegetproperty.htm"> DRV_DeviceGetProperty</a><br>
+<a href="CFG_CntrCompareData.htm">CFG_CntrCompareData</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" >
+  <item name="Device Features" url="PCI/PCI-1780/features/keyfeature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/PCI1780.htm" />
+</book>
+<book name="Function Description" url="PCI/PCI-1780/Function/funcdesc.htm" >
+  <book name="Device Functions" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+  </book>
+  <book name="Port I/O Functions" >
+    <item name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+    <item name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+    <item name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+    <item name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+  </book>
+  <book name="Digital Input/Output" >
+    <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+    <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+    <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+  </book>
+  <book name="Counter Functions" >
+    <item name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+    <item name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+    <item name="DRV_CounterFreqStart" url="function/counter/DRV_CounterFreqStart.htm" />
+    <item name="DRV_CounterFreqRead" url="function/counter/DRV_CounterFreqRead.htm" />
+    <item name="DRV_CounterPulseStart" url="function/counter/DRV_CounterPulseStart.htm" />
+    <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+    <item name="DRV_CounterPWMSetting" url="function/counter/DRV_CounterPWMSetting.htm" />
+    <item name="DRV_CounterPWMEnable" url="function/counter/DRV_CounterPWMEnable.htm" />
+    <item name="DRV_CounterConfig" url="function/counter/DRV_CounterConfig.htm" />
+    <item name="DRV_FreqOutStart" url="function/counter/DRV_FreqOutStart.htm" />
+    <item name="DRV_FreqOutReset" url="function/counter/DRV_FreqOutReset.htm" />
+    <item name="DRV_PWMStartRead" url="function/counter/DRV_PWMStartRead.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <book name="Common Functions" >
+      <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+      <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+    </book>
+  </book>
+  <book name="Other Functions" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="PCI/PCI-1780/structure/datastructure.htm" >
+  <book name="Port I/O Functions" >
+    <item name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+    <item name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+    <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+    <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+  </book>
+  <book name="Counter Functions" >
+    <item name="PT_CounterEventStart" url="structure/counter/PT_CounterEventStart.htm" />
+    <item name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+    <item name="PT_CounterFreqStart" url="structure/counter/PT_CounterFreqStart.htm" />
+    <item name="PT_CounterFreqRead" url="structure/counter/PT_CounterFreqRead.htm" />
+    <item name="PT_CounterPulseStart" url="structure/counter/PT_CounterPulseStart.htm" />
+    <item name="PT_CounterPWMSetting" url="structure/counter/PT_CounterPWMSetting.htm" />
+    <item name="PT_CounterConfig" url="structure/counter/PT_CounterConfig.htm" />
+    <item name="PT_FreqOutStart" url="structure/counter/PT_FreqOutStart.htm" />
+    <item name="PT_PWMStartRead" url="structure/counter/PT_PWMStartRead.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <book name="Common Functions" >
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+    </book>
+  </book>
+</book>
+<book name="Device Event" >
+  <item name="Event Type" url="PCI/PCI-1780/Eventtype/Eventtype.htm" />
+</book>
+<book name="Device Properties" url="PCI/PCI-1780/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="PCI/PCI-1780/property/CFG_BoardID.htm" />
+  <item name="CFG_BaseAddress" url="PCI/PCI-1780/property/CFG_BaseAddress.htm" />
+  <item name="CFG_Interrupt" url="PCI/PCI-1780/property/CFG_Interrupt.htm" />
+  <item name="CFG_BusNumber" url="PCI/PCI-1780/property/CFG_BusNumber.htm" />
+  <item name="CFG_SlotNumber" url="PCI/PCI-1780/property/CFG_SlotNumber.htm" />
+  <item name="CFG_CntrSupportedOutMode" url="PCI/PCI-1780/property/CFG_CntrSupportedOutMode.htm" />
+  <item name="CFG_CntrSupportedGateMode" url="PCI/PCI-1780/property/CFG_CntrSupportedGateMode.htm" />
+  <item name="CFG_CntrSupportedCountEdge" url="PCI/PCI-1780/property/CFG_CntrSupportedCountEdge.htm" />
+  <item name="CFG_CntrChannelEventID" url="PCI/PCI-1780/property/CFG_CntrChannelEventID.htm" />
+  <item name="CFG_CntrPWModulateValidRange" url="PCI/PCI-1780/property/CFG_CntrPWModulateValidRange.htm" />
+  <item name="CFG_CntrChannelCapability" url="PCI/PCI-1780/property/CFG_CntrChannelCapability.htm" />
+  <item name="CFG_CntrAvailableAPI" url="PCI/PCI-1780/property/CFG_CntrAvailableAPI.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

@@ -1,0 +1,197 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FAIIntScanStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nInterrupt Transferring\nFunction Description\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nHigh-Speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nHigh-Speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAIIntScanStart");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAIIntScanStart");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAIIntScanStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FAIIntScanStart</b></h1>
+	<h1></h1>
+	<pre class="code">INT32S DRV_FAIIntScanStart ( 
+   PTR_T<i> DeviceHandle,
+   </i>PT_FAIIntScanStart <i>*lpFAIIntScanStart </i>);</pre>
+	<h2>Purpose </h2>
+	<p>On the 
+	device indicated by the <i>
+	DeviceHandle</i>, it initiates multi-channel FAI (Fast Analog Input) 
+	operation (scanned channel by channel) with the interrupt transferring mode, by way of specifying the starting AI 
+	channel and channel number as well as pre-initiating sampling buffer for data 
+	storage.</p>
+	<h2>Parameters</h2>
+	<p>Some parameters, <span style="font-family: Verdana">such as triggering source (</span><i>TrigSrc</i><span style="font-family: Verdana">), 
+	total sampling rate (</span><i>SampleRate</i><span style="font-family: Verdana">), 
+	sampling channel count (</span><i>NumChans</i><span style="font-family: Verdana">), 
+	start channel (</span><i>StartChan</i><span style="font-family: Verdana">), 
+	GainCode list pointer (</span><i>GainList</i><span style="font-family: Verdana">), 
+	sampling buffer (</span><i>buffer</i><span style="font-family: Verdana">), 
+	sampling count (</span><i>count</i><span style="font-family: Verdana">), 
+	cyclic mode (</span><i>cyclic</i><span style="font-family: Verdana">) and 
+	interrupt count (</span><i>IntrCount</i><span style="font-family: Verdana">), 
+	are stored in the </span><a href="../../structure/FAI/PT_FAIIntScanStart.htm">PT_FAIIntScanStart</a><span style="font-family: Verdana">, 
+	structure pointed by the </span><i>lpFAIIntScanStart</i>.<span style="font-family: Verdana"> </span></p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered" id="table6">
+		<tr>
+			<td>
+			<p style="margin-left: 0pt"><b>Name</b></p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt"><b>Direction</b></p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt"><b>Range</b></p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt"><b>Description</b></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="margin-left: 0pt"><b>DeviceHandle</b></p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">input</p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">default</p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">The p<font style="FONT-SIZE: 9pt" face="Verdana">ointer 
+			retrieved from the
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device</font>.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="margin-left: 0pt">
+			<span style="font-weight: 700">
+			lpFAIIntScanStart</span></p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">input / output</p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">default</p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">The<span style="FONT-FAMILY: Verdana"> pointer to 
+			indicate the user-prepared structure </span><a href="../../structure/FAI/PT_FAIIntScanStart.htm">
+			PT_FAIIntScanStart</a><span style="FONT-FAMILY: Verdana"> 
+			that stores triggering source (INT16U</span>
+						<i>TrigSrc</i><span style="FONT-FAMILY: Verdana">), 
+			total sampling rate (INT32U</span>
+						<i>SampleRate</i><span style="FONT-FAMILY: Verdana">), 
+			sampling channel count (</span>INT16U <i>NumChans</i><span style="FONT-FAMILY: Verdana">), 
+			start channel (</span>INT16U <i>StartChan</i><span style="FONT-FAMILY: Verdana">), 
+			GainCode list (INT16U</span> *<i> GainList</i><span style="FONT-FAMILY: Verdana">), 
+			sampling buffer (INT16U</span> 
+						*<i>buffer</i><span style="FONT-FAMILY: Verdana">), 
+			data count (INT16U</span>
+						<i>count</i><span style="FONT-FAMILY: Verdana">), 
+			cyclic mode (INT16U</span> <i>
+			cyclic</i><span style="FONT-FAMILY: Verdana">) 
+			and transfer count to create interrupt (INT16U</span>
+						<i>IntrCount</i><span style="FONT-FAMILY: Verdana">).</span></p>
+			</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return </h2>
+	<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table5">
+		<tr>
+			<td width="201"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. 0</font></b></td>
+			<td><span style="font-size: 9pt">S</span><font style="font-size: 9pt">uccessful. </font></td>
+		</tr>
+		<tr>
+			<td width="201">     <b><font style="font-size: 9pt">&nbsp;&nbsp; 2. other value</font></b></td>
+			<td><font style="font-size: 9pt">Please reference 
+			<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes </a> </font></td>
+		</tr>
+		
+	</table>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" >
+  <item name="Device Features" url="PCI/PCI-1784/features/keyfeature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/PCI1784.htm" />
+</book>
+<book name="Function Description" url="PCI/PCI-1784/Function/funcdesc.htm" >
+  <book name="Device Functions" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+  </book>
+  <book name="Digital Input/Output" >
+    <item name="DRV_DioReadDiPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+    <item name="DRV_DioWriteDoPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+    <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+    <item name="DRV_DioEnableEventAndSpecifyDiPorts" url="function/DIO/DRV_DioEnableEventAndSpecifyDiPorts.htm" />
+    <item name="DRV_DioGetLatestEventDiPortsState" url="function/DIO/DRV_DioGetLatestEventDiPortsState.htm" />
+    <item name="DRV_DioDisableEvent" url="function/DIO/DRV_DioDisableEvent.htm" />
+  </book>
+  <book name="Counter" >
+    <item name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+    <item name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+    <item name="DRV_CounterFreqStart" url="function/counter/DRV_CounterFreqStart.htm" />
+    <item name="DRV_CounterFreqRead" url="function/counter/DRV_CounterFreqRead.htm" />
+    <item name="DRV_CntrDisableEvent." url="function/counter/DRV_CntrDisableEvent.htm" />
+    <item name="DRV_CntrEnableEventAndSpecifyCounter" url="function/counter/DRV_CntrEnableEventAndSpecifyCounter.htm" />
+    <item name="DRV_CntrGetLastEventCounterValue" url="function/counter/DRV_CntrGetLastEventCounterValue.htm" />
+    <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+    <item name="DRV_TimerCountSetting" url="function/counter/DRV_TimerCountSetting.htm" />
+  </book>
+  <book name="High-Speed Functions" >
+    <book name="Common Functions" >
+      <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+      <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+    </book>
+  </book>
+  <book name="Other Functions" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="PCI/PCI-1784/structure/DataStructure.htm" >
+  <book name="Counter" >
+    <item name="PT_CounterEventStart" url="structure/counter/PT_CounterEventStart.htm" />
+    <item name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+    <item name="PT_CounterFreqStart" url="structure/counter/PT_CounterFreqStart.htm" />
+    <item name="PT_CounterFreqRead" url="structure/counter/PT_CounterFreqRead.htm" />
+    <item name="PT_TimerCountSetting" url="structure/counter/PT_TimerCountSetting.htm" />
+  </book>
+  <book name="High-Speed Functions" >
+    <book name="Common Functions" >
+      <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+      <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+    </book>
+  </book>
+  <book name="Port Input/Output" >
+    <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+    <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+    <item name="PT_ReadPortDword" url="structure/PORTIO/PT_ReadPortDword.htm" />
+    <item name="PT_WritePortDword" url="structure/PORTIO/PT_WritePortDword.htm" />
+  </book>
+</book>
+<book name="Device Events" >
+  <item name="Event Type" url="PCI/PCI-1784/EventType/Eventtype.htm" />
+</book>
+<book name="Device Properties" url="PCI/PCI-1784/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="PCI/PCI-1784/property/CFG_BoardID.htm" />
+  <item name="CFG_BaseAddress" url="PCI/PCI-1784/property/CFG_BaseAddress.htm" />
+  <item name="CFG_Interrupt" url="PCI/PCI-1784/property/CFG_Interrupt.htm" />
+  <item name="CFG_BusNumber" url="PCI/PCI-1784/property/CFG_BusNumber.htm" />
+  <item name="CFG_SlotNumber" url="PCI/PCI-1784/property/CFG_SlotNumber.htm" />
+  <item name="CFG_DiChannelCount" url="PCI/PCI-1784/property/CFG_DiChannelCount.htm" />
+  <item name="CFG_DoChannelCount" url="PCI/PCI-1784/property/CFG_DoChannelCount.htm" />
+  <item name="CFG_DiPortCount" url="PCI/PCI-1784/property/CFG_DiPortCount.htm" />
+  <item name="CFG_DoPortCount" url="PCI/PCI-1784/property/CFG_DoPortCount.htm" />
+  <item name="CFG_DiInterruptSupportedChannel" url="PCI/PCI-1784/property/CFG_DiInterruptSupportedChannel.htm" />
+  <item name="CFG_DiInterruptTriggerOnRisingEdge" url="PCI/PCI-1784/property/CFG_DiInterruptTriggerOnRisingEdge.htm" />
+  <item name="CFG_CntrChannelCapability" url="PCI/PCI-1784/property/CFG_CntrChannelCapability.htm" />
+  <item name="CFG_CntrInternalClockFreq" url="PCI/PCI-1784/property/CFG_CntrInternalClockFreq.htm" />
+  <item name="CFG_CntrAvailableAPI" url="PCI/PCI-1784/property/CFG_CntrAvailableAPI.htm" />
+  <item name="CFG_CntrChannelCount" url="PCI/PCI-1784/property/CFG_CntrChannelCount.htm" />
+  <item name="CFG_CntrResolution" url="PCI/PCI-1784/property/CFG_CntrResolution.htm" />
+  <item name="CFG_CounterCountValue" url="PCI/PCI-1784/property/CFG_CounterCountValue.htm" />
+  <item name="CFG_CntrResetValue" url="PCI/PCI-1784/property/CFG_CntrResetValue.htm" />
+  <item name="CFG_CntrCounterLockControl" url="PCI/PCI-1784/property/CFG_CntrCounterLockControl.htm" />
+  <item name="CFG_CntrSupportedIndicator" url="PCI/PCI-1784/property/CFG_CntrSupportedIndicator.htm" />
+  <item name="CFG_CntrIndicatorControl" url="PCI/PCI-1784/property/CFG_CntrIndicatorControl.htm" />
+  <item name="CFG_CntrClockFrequency" url="PCI/PCI-1784/property/CFG_CntrClockFrequency.htm" />
+  <item name="CFG_CntrInputModeControl" url="PCI/PCI-1784/property/CFG_CntrInputModeControl.htm" />
+  <item name="CFG_CntrCompareData" url="PCI/PCI-1784/property/CFG_CntrCompareData.htm" />
+  <item name="CFG_CntrDigitalFilter" url="PCI/PCI-1784/property/CFG_CntrDigitalFilter.htm" />
+  <item name="CFG_InterruptTriggerSource" url="PCI/PCI-1784/property/CFG_InterruptTriggerSource.htm" />
+  <item name="CFG_CntrIndexReset" url="PCI/PCI-1784/property/CFG_CntrIndexReset.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

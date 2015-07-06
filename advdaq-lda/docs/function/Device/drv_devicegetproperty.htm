@@ -1,0 +1,189 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_DeviceGetProperty</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nDevice Function Group\nFunction Description\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1720 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1723 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1724 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1727U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1730 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1733 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1734 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1736UP Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1737U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1739U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nDevice functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1752 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1753 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1754 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1756 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1757UP Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1758U Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addTocInfo("PCI Series\nPCI-1761 Device Driver User Manual\nFunction Description\nDevice Functions\nDRV_DeviceGetProperty");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+		<h1>DRV_DeviceGetProperty</h1>
+        <pre class="code">INT32S DRV_DeviceGetProperty(<i>
+   </i>PTR_T <i>DeviceHandle,
+   </i>INT16U <i>nPropertyID,
+   </i>VOID <i>*pBuffer,
+   </i>INT32U * <i>pLength </i>);</pre>
+        </p>
+		<h2>Purpose</h2>
+		<p class="MsoNormal">O<span lang="EN-US">n the <i>DeviceHandle </i> </span>
+		specified <span lang="EN-US">device, it retrieves the device property by its 
+		pre-defined property ID. </span></p>
+		<h2>Parameters&nbsp;<span style="font-size: 9pt" lang="en-us">&nbsp;&nbsp;&nbsp;</span></h2>
+		<div>
+<p>By specifying the property ID (<i>nPropertyID</i>) and defining the 
+			corresponding buffer (<i>pBuffer</i>) of property and the buffer 
+			length (<i>pLength</i>), the user can retrieve the required property 
+			information. </p>
+			<p>The property ID contains pre-defined constants that indicate properties. 
+			Therefore, 
+			the user can acquire the corresponding device property of the 
+			constant. Please 
+			refer to the <i>Notes </i>at the end of this page for details.</p>
+			</div>
+<div class=tablediv>
+		<table cellspacing="0" class="Bordered">
+			<tr>
+				<td><b>Name</b></td>
+				<td><b>Dircetion</b></td>
+				<td><b>Range</b></td>
+				<td><b>Description</b></td>
+			</tr>
+			<tr>
+				<td><b>DeviceHandle</b></td>
+				<td>input</td>
+				<td>default</td>
+				<td>The pointer retrieved from 
+			the 
+				<a href="DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>  			
+				which specifies the target device.</td>
+			</tr>
+			<tr>
+				<td><b>nPropertyID</b></td>
+				<td>input</td>
+				<td>default</td>
+				<td>The pre-defined device property ID. It is used to retrieve 
+				the corresponding 
+				device properties. Please refer to the <i>Notes</i> for details. </td>
+			</tr>
+			<tr>
+				<td><b>pBuffer</b></td>
+				<td>input</td>
+				<td>default</td>
+				<td>The pointer to the buffer that receives the property setting 
+				value. This buffer should be allocated by the user. </td>
+			</tr>
+			<tr>
+				<td><b>pLength</b></td>
+				<td>input</td>
+				<td>default</td>
+				<td>The input buffer length of the <i>pBuffer</i> in bytes.</td>
+			</tr>
+		</table>
+</div>
+		<h2>Return</h2>
+	<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table3">
+		<tr>
+			<td width="204"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. 0</font></b></td>
+			<td><span style="font-size: 9pt">S</span><font style="font-size: 9pt">uccessful.</font></td>
+		</tr>
+		<tr>
+			<td width="204"><b><font style="font-size: 9pt">&nbsp;&nbsp; 2. Other Value </font></b></td>
+			<td><span style="font-size: 9pt"> Please reference 
+			<a href="../../errorcodes/ERRORLIST.htm">ErrorCodes</a> </font><b><font style="font-size: 9pt">.</font></b></td>
+		</tr>
+		
+	</table>
+		<h2>Notes</h2>
+		<p><b>1. </b>For the definition of device property ID, please refer to 
+		the corresponding individual device driver manual for details.</p>
+	</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

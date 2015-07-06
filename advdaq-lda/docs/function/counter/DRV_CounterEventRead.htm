@@ -1,0 +1,217 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_CounterEventRead </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval:21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nEvent Counting Function\nFunction Description\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nFunction Description\nCounter\nDRV_CounterEventRead");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("USB Series\nUSB-4750 Device Driver User Manual\nFunction Description\nCounter functions\nDRV_CounterEventRead");
+addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addTocInfo("MIC Series\nMIC-3751 Device Driver User Manual\nFunction Description\nCounter Functions\nDRV_CounterEventRead");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<div>
+
+<h1><span>DRV_CounterEventRead </span></h1>
+
+<pre class="code">INT32S DRV_CounterEventRead (   
+   PTR_T <i>DeviceHandle, </i>
+   PT_CounterEventRead <i>*lpCounterEventRead </i>);</pre>
+
+<h2><span>Purpose</span></h2>
+
+<p><span>On the device indicated by the <i>DeviceHandle</i>, it
+retrieves the current counting value and the overflow flag from the specified
+counter without disturbing the counting process. </span></p>
+
+<h2><span>Parameters</span></h2>
+
+<p><span>Some parameters, such as target counter channel (<i>counter</i>),
+overflow status (<i>overflow</i>) and current count (<i>count</i>), are stored
+in the <a href="../../structure/counter/PT_CounterEventRead.htm">PT_CounterEventRead</a>
+structure pointed by the <i>lpCounterEventRead</i>. </span></p>
+
+<div class=tablediv>
+
+	<table cellspacing="0" class="Bordered">
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td>
+  <p><b><span>Name</span></b><span></span></p>
+  </td>
+  <td>
+  <p><b><span>Direction</span></b><span></span></p>
+  </td>
+  <td>
+  <p><b><span>Range</span></b><span></span></p>
+  </td>
+  <td>
+  <p><b><span>Description</span></b><span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td>
+  <p><b><span>DeviceHandle</span></b><span></span></p>
+  </td>
+  <td>
+  <p><span>input</span></p>
+  </td>
+  <td>
+  <p><span>default</span></p>
+  </td>
+  <td>
+  <p><span>Retrieved from <a href="../Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a>
+  which specifies the target device.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td>
+  <p><b><span>lpCounterEventRead</span></b><span></span></p>
+  </td>
+  <td>
+  <p><span>input / output</span></p>
+  </td>
+  <td>
+  <p><span>default</span></p>
+  </td>
+  <td>
+  <p><span>The pointer to indicate the user-prepared structure <a
+  href="../../structure/counter/PT_CounterEventRead.htm">PT_CounterEventRead</a>
+  that stores target counter channel (INT16U <i>counter</i>), overflow status
+  (INT16U * <i>overflow</i>) and read back current count (INT32U * <i>count</i>).</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h2><span>Return</span></h2>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td>
+  <p><b><span>&nbsp;&nbsp; 1. 0</span></b><span></span></p>
+  </td>
+  <td width=299>
+  <p><span>Successful.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td>
+  <p><b><span>&nbsp;&nbsp; 2. InvalidDeviceHandle</span></b><span></span></p>
+  </td>
+  <td width=299>
+  <p><span>The
+  <i>Devicehandle</i> is NULL.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td>
+  <p><b><span>&nbsp;&nbsp; 3. InvalidChannel</span></b><span></span></p>
+  </td>
+  <td width=299>
+  <p><span>The
+  target channel<i> </i>is out of range.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td>
+  <p><b><span>&nbsp;&nbsp; 4. Other value</span></b><span></span></p>
+  </td>
+  <td width=299>
+  <p><span class=spelle><span>Please reference<a href="../../errorcodes/ERRORLIST.htm">
+  ErrorCodes</a></span></span><span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span>&nbsp;</span></p>
+
+</div>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

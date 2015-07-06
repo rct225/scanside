@@ -1,0 +1,224 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PCM\PCM-3718\features\calibration</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nDevice Introduction\nDevice  Calibration");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1></h1>
+	<h1><b>Device Calibration</b></h1>
+	<p>The PCM-3718H has been well calibrated at the factory for initial use. 
+	Users have no necessary to calibrate PCM-3718H in normal condition. However, 
+	in other conditions users may need to calibrate the PCM-3718H, then 
+	you 
+	can follow the process listed below.</p>
+	<p>To perform an effective calibration, a standard 4-1/2 digits resolution, 
+	stable and low-noise DC voltage source is necessary.</p>
+	<h2><b>PCM-3718H Calibration process</b></h2>
+	<p><b>1. Running advdevice_calibrate utility</b></p>
+	<pre class="code">#advdevice_calibrate /dev/advdaq0</pre>
+	<p>"/dev/advdaq0" is the device file which bound with a PCM-3718H using 
+	<i>advdevice_bind</i> utility. 
+	The screen will show as follows:</p>
+	<pre class="code">Advantech: PCM-3718 Calibration Utility
+		<br>==================================================
+		<br>Please check the items below before calibration:
+		<br>a) First start D/A calibration, secondly A/D calibration
+		<br>b) Jump "DA V.REF" to "INT"; Jump JP10 to "5V". This means the reference voltage source of D/A converter is connected to an on-board reference.
+		<br>Please select your operation:_
+		<br>1) D/A Calibration
+		<br>2) A/D Calibration
+		<br>3) Exit
+		</pre>
+	<p>You can select your operation&nbsp;by inputting different key values:</p>
+	<p>'1': select D/A calibration</p>
+	<p>'2': select A/D calibration</p>
+	<p>'3': exit</p>
+	<p><b>2. D/A calibration</b></p>
+	<p><b>Step 1: </b>D/A offset </p>
+	<pre class="code">Advantech:PCM-3718 D/A Calibrating
+					<br>=====================================
+					<br>Please measure D/A output with a 4 1/2-digit multimeter.
+					<br>Step 1: Adjust VR6 until the output voltage equals 0 V.
+					<br>
+					<br>
+					<br>Please select your operation:_
+					<br>1) Back  2) Next  3) Exit
+					</pre>
+
+	<p>You can select your operation&nbsp;by inputting different key values:</p>
+	<p>'1': Back </p>
+	<p>'2': Next</p>
+	<p>'3': Exit</p>
+	<br>
+	<p><b>Step 2: </b>D/A full scale (gain) </p>
+	<pre class="code">Advantech: PCM-3718H D/A Calibrating
+					<br>=====================================
+					<br>Connect a reference voltage within the range +5 V to the reference
+					<br>input of the D/A channel you want to calibrate. You can use either the on-board +5 Vreference or 
+					<br>an external reference. Please measure D/A output with a 4 1/2-digit multimeter.
+					<br>Step 2: Adjust VR5 until the output voltage equals the reference voltage minus 1 LSB (+4.9988 V)!.
+					<br>
+					<br>
+					<br>Please select your operation:_
+					<br>1) Back  2) Next  3) Exit
+					</pre>
+	<p>You can select your operation&nbsp;by inputting different key values:</p>
+	<p>'1': Back </p>
+	<p>'2': Next</p>
+	<p>'3': Exit</p>
+	<p><b>Step 3:</b> Finishing D/A calibration </p>
+	<pre class="code">Advantech: PCM-3718H D/A Calibrating
+					<br>======================================
+					<br>Step 5: The D/A calibration is finished
+					<br>
+					<br>Please select your operation:
+					<br>1) Back 2) Next 3) Exit</pre>	
+	<p>You can select your operation  by inputting different key values:</p>
+	<p>'1': Back </p>
+	<p>'2': Next</p>
+	<p>'3': Exit</p>
+
+	<p><b>3. A/D Calibration wizard</b></p>
+	<pre class="code">Advantech: PCM-3718 Calibration Utility
+		<br>==================================================
+		<br>Please check the items below before calibration:
+		<br>a) First start D/A calibration, secondly A/D calibration
+		<br>b) Jump "DA V.REF" to "INT"; Jump JP10 to "5V". This means the reference voltage source of D/A converter is connected to an on-board reference.
+		<br>Please select your operation:_
+		<br>1) D/A Calibration
+		<br>2) A/D Calibration
+		<br>3) Exit
+		</pre>
+
+	<p>
+	
+	<p>&nbsp;</p>
+	<p><b>Step 1: </b>PGA offset</p>
+	<pre class="code">Advantech: PCM-3718 A/D Calibrating
+				<br>==================================================
+				<br>Step 1: Short the A/D input channel 0 to ground and measure the voltage at TP1 on the PCB.
+				<br>
+				<br>Adjust VR4 until TP1 is as close as possible to 0V
+				<br>
+				<br>Please select your operation:_
+				<br>1) Back      2) Next        3) Exit	</pre>
+
+	<p><b>Step 2: </b>A/D bipolar offset </p>
+	<pre class="code">Advantech: PCM-3718 A/D Calibrating
+				<br>==================================================
+				<br>Step 2: Please connect a DC voltage source with value equal to 0V or 
+				<br>connect D/A output channel to A/D channel 0 (pin 1 connector CN3).
+				<br>
+				<br>Adjust VR3 until the output from the card's A/D converter flickers between 2047 and 2048
+				<br>
+				<br>AI channel 0 Value is [2247]
+				<br>
+				<br>Please select your operation:_
+				<br>1) Back      2) Next        3) Exit	</pre>
+
+	<p><b>Step 3: </b>A/D full scale (gain) </p>
+<pre class="code">Advantech: PCM-3718 A/D Calibrating
+				<br>==================================================
+				<br>Step 3: Please connect a DC voltage source a value of 5V orconnect D/A output
+				<br>to A/D channel 0 (pin 1 on connnector CN3). 
+				<br>
+				<br>Adjust VR2 until the A/D reading flickers between 4094 and 4095
+				<br>Repeat Step 2 to Step 3
+				<br>
+				<br>AI channel 0 Value is [4095]
+				<br>
+				<br>Please select your operation:_
+				<br>1) Back      2) Next        3) Exit	</pre>
+
+	<p><b>Step 4: </b>A/D unipolar offset </p>
+<pre class="code">Advantech: PCM-3718 A/D Calibrating
+				<br>==================================================
+				<br>Step 4: Please connect a DC voltage source with value equal to 0V or 
+				<br>connect D/A output channel to A/D channel 0 (pin 1 connector CN3).
+				<br>
+				<br>Adjust VR1 until the output from the card's A/D converter flickers between 0 and 1
+				<br>
+				<br>AI channel 0 Value is [0]
+				<br>
+				<br>Please select your operation:_
+				<br>1) Back      2) Next        3) Exit	</pre>
+
+	<p><b>Step 5:</b> Finishing A/D calibration </p>
+<pre class="code">Advantech: PCM-3718 A/D Calibrating
+				<br>==================================================
+				<br>Step 5: The A/D calibration is finished!
+				<br>
+				<br>Please select your operation:_
+				<br>1) Back      2) Next        3) Exit	</pre>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

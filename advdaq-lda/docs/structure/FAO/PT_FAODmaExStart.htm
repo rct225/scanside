@@ -1,0 +1,192 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAODmaExStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nFast AOTransferring\nDMA Transferring\nData Structure\nPT_FAODmaExStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAO Functions\nPT_FAODmaExStart");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAO Functions\nPT_FAODmaExStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_FAODmaExStart
+</h1></h1>
+<pre class="code">typedef struct tagPT_FAODmaExStart
+{
+    INT32U TrigSrc;
+    INT32U SampleRate;
+    INT16U StartChan;
+    INT16U NumChans;
+    INT32U *buffer;
+    INT32U count;
+    INT16U CyclicMode;
+    INT16U PacerSource;
+    INT32U Reserverd[4];
+    VOID   *pReserved[4];
+} PT_FAODmaExStart, * LPT_FAODmaExStart;
+</pre>
+<p><b> PT_FAODmaExStart</b> is used in function
+<a href="../../function/FAO/DRV_FAODmaExStart.htm">DRV_FAODmaExStart</a>.</p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Range</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     TrigSrc</b></td>
+    <td>     input</td>
+    <td>     0,1</td>
+    <td>     Reserved </td>
+  </tr>
+  <tr>
+      <td><b>     SampleRate</b></td>
+    <td>     input</td>
+    <td>     Depends on the hardware.</td>
+    <td>     Sampling rate on specified channels(Hz).&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>     StartChan</b></td>
+    <td>     input</td>
+    <td>     0-(N-1) (N is the maximum AO channel number and depends on the 
+	hardware)</td>
+    <td>     
+The starting channel for scanning. The range is from the 
+					minimum zero (the first AO channel) to the maximum AO 
+					channel number minus one. For example, the range will be 
+					from 0 to <i>(N-1) </i>on a device with <i>N</i> written as 
+					the number of the AO channel. The last channel can be 
+					calculated with the following formula:
+					<p>number of the last channel = <i>StartChan</i> + <i>
+					NumChans</i></td>
+  </tr>
+    <tr>
+    <td><b>NumChans</b></td>
+    <td>     input</td>
+    <td>     0-N(N is the maximum AO channel number and depends on the 
+	hardware)</td>
+    <td>     
+The sampling channel count. </td>
+  </tr>
+  <tr>
+    <td><b>     buffer</b></td>
+    <td>     output</td>
+    <td>     Depends on the hardware.</td>
+    <td>     The sampling data buffer. It points to the buffer that stores 
+	output binary data. 
+	User can transfer the voltage value to the corresponding binary data and 
+	store the data in this buffer by calling
+	<a href="../../function/FAO/DRV_FAOScale.htm">DRV_FAOScale</a>. Please refer to the
+			<a href="../../function/FAO/FastAnalogOutput.htm">FastAnalogOutput</a> 
+			to set a buffer with proper size. </td>
+  </tr>
+  <tr>
+    <td><b>     count</b></td>
+    <td>     input</td>
+    <td>     1-N(N is the user data count)</td>
+    <td>     It must be above
+	zero, an even number (because of memory alignment and performance), or 
+	a multiple of half the FIFO size if FIFO is used. </td>
+  </tr>
+	 <tr>
+    <td><b>     CyclicMode</b></td>
+    <td>     input</td>
+    <td>     1, 0</td>
+    <td>     The cyclic mode:<p>0 - Non-cyclic</p>
+	<p>1 - Cyclic </td>
+  </tr>
+
+  	 <tr>
+    <td><b>     PacerSource</b></td>
+    <td>     input</td>
+    <td>     1, 0</td>
+    <td>     The pacer source: 
+    		 0 - internal
+    		 1 - external </td>
+  </tr>
+	   <tr>
+    <td><b>     Reserved</b></td>
+    <td>     input</td>
+    <td>     Rserved</td>
+    <td>     Reserved </td>
+  </tr>
+  	   <tr>
+    <td><b>     pReserved</b></td>
+    <td>    output</td>
+    <td>     Rserved</td>
+    <td>     Reserved </td>
+  </tr>
+
+
+</table>
+</div>
+</div>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

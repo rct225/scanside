@@ -1,0 +1,139 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FAODmaExStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nFast AOTransferring\nDMA Transferring\nFunction Description\nDRV_FAODmaExStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAO Functions\nDRV_FAODmaExStart");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAO Functions\nDRV_FAODmaExStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FAODmaExStart</h1>
+	<pre class="code">INT32S DRV_FAODmaExStart(
+   PTR_T <i>DeviceHandle</i>,
+   PT_FAODmaExStart <i>*lpFAODmaExStart </i>);</pre>
+	<h2>Purpose </h2>
+	<p>
+	On the device indicated by the <i> DeviceHandle</i>, it initiates the FAO 
+	(Fast Analog Output) function with a DMA transfer. </p>
+	<h2>Parameters</h2>
+	<p style="margin-left: 20px">Some parameters, <font face="Verdana">such as triggering source 
+	(<i>TrigSrc</i>), sampling rate (<i>SampleRate</i>), sampling channel (<i>chan</i>), 
+	sampling buffer (<i>Buffer</i>) and data count (<i>count</i>), are stored in the <a href="../../structure/FAO/PT_FAODmaExStart.htm">PT_FAODmaExStart</a>, 
+	structure pointed by the <i> lpFAODmaExStart</i>.</font></p>
+	<div class=tablediv>
+	<table class="Bordered" cellSpacing="0" id="table1">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td>input</td>
+			<td>default</td>
+			<td>The p<font style="FONT-SIZE: 9pt" face="Verdana">ointer 
+			retrieved from the
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device</font>.</td>
+		</tr>
+		<tr>
+			<td><b>lpFAODmaExStart</b></td>
+			<td>input / output</td>
+			<td>default</td>
+			<td>The<span style="FONT-FAMILY: Verdana"> pointer to indicate the user-prepared structure </span> <font face="Verdana"><a href="../../structure/FAO/PT_FAODmaExStart.htm">PT_FAODmaExStart</a></font><span style="FONT-FAMILY: Verdana"> 
+			that stores </span>
+	<font face="Verdana">triggering source (INT16U <i>TrigSrc</i>), sampling rate (INT32U&nbsp;<i>SampleRate</i>), sampling channel (INT16U
+			<i>chan</i>), sampling buffer (INT32U *<i>Buffer</i>) and data count (INT32U <i>count</i>).</font></td>
+		</tr>
+	</table>
+	</div>
+	
+	<h2>Return </h2>
+			<table border="1" width="100%" style="border-width: 0px" cellspacing="10" cellpadding="0">
+				<tr>
+					<td width="207" style="border-style: none; border-width: medium"><font face="Verdana">
+					<font style="font-size: 9pt">&nbsp;&nbsp; <b>1.</b> 
+					</font> <b><span style="font-size: 9pt">0</span></b></font></td>
+					<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">Successful. </span></td>
+				</tr>
+				<tr>
+					<td width="207" style="border-style: none; border-width: medium"><font face="Verdana">
+					<font style="font-size: 9pt">&nbsp;&nbsp;
+					</font><b><font style="font-size: 9pt">2. Other value</font></b></font></td>
+					<td style="border-style: none; border-width: medium"><span style="font-size: 9pt">Please reference<a href="../../errorcodes/ERRORLIST.htm"> ErrorCodes</a></span><font face="Verdana" style="font-size: 9pt"><a href="../../errorcodes/ERRORLIST.htm">
+					</a> </font></td>
+				</tr>
+			
+	</table>
+	</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="Function Description" >
+  <topic name="Function Description" url="PCI/PCI-1721/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4750/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1718/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4718/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1720/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1716/FUNCTION/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1711/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4751/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1762/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCM/PCM-3718/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1710/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4761/Function/funcdesc.htm" />
+  <topic name="Function Description" url="MIC/MIC-3751/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1714/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1715/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1712/FUNCTION/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1713/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1751/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1750/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4711/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1742U/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1741U/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4702/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1747/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1756/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1757UP/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1784/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1753/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1752/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1754/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1758U/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4716/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1733/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1761/Function/funcdesc.htm" />
+  <topic name="Function Description" url="USB/USB-4704/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1724/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1723/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1730/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1727U/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1736/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1735U/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1739U/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1737U/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1760/Function/funcdesc.htm" />
+  <topic name="Function Description" url="flow/event/eventfunction.htm" />
+  <topic name="Function Description" url="PCI/PCI-1734/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCM/PCM-3730I/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1763/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCM/PCM-3725/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCM/PCM-3753I/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCM/PCM-3724/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCI/PCI-1780/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCM/PCM-3730/Function/funcdesc.htm" />
+  <topic name="Function Description" url="PCM/PCM-3761I/Function/funcdesc.htm" />
+</key>
+<key name="Function Reference" >
+  <topic name="Function Reference" url="function/funcoverview.htm" />
+</key>
+<key name="Function Support Tables" >
+  <topic name="Function Support Tables" url="function/supportingtables/functableoverview.htm" />
+</key>
+<key name="Getting Started with Advantech DAQ Device Linux Driver" >
+  <topic name="Getting Started with Advantech DAQ Device Linux Driver" url="tutorial/programming.htm" />
+</key>
+<key name="High-speed Functions" >
+  <topic name="High-speed Functions" url="PCI/PCI-1714/Function/funcdesc.htm" />
+  <topic name="High-speed Functions" url="USB/USB-4711/Function/funcdesc.htm" />
+</key>
+<key name="High_speed Functions" >
+  <topic name="High_speed Functions" url="USB/USB-4751/Function/funcdesc.htm" />
+</key>
+<key name="Installing Advantech DAQ Device Linux Driver" >
+  <topic name="Installing Advantech DAQ Device Linux Driver" url="Introduction/install.htm" />
+</key>
+<key name="Interrupt Transferring" >
+  <topic name="Interrupt Transferring" url="flow/dio/interrupt.htm" />
+  <topic name="Interrupt Transferring" url="flow/ai/Interrupttrig.htm" />
+</key>
+<key name="MIC-3751" >
+  <topic name="MIC-3751" url="examples/MIC3751.htm" />
+</key>
+<key name="MIC-3751 Device Driver User Manual" >
+  <topic name="MIC-3751 Device Driver User Manual" url="MIC/MIC-3751/cover.htm" />
+</key>
+<key name="Organization of This Manual" >
+  <topic name="Organization of This Manual" url="before/organization.htm" />
+</key>
+<key name="Other Functions" >
+  <topic name="Other Functions" url="USB/USB-4751/Function/funcdesc.htm" />
+  <topic name="Other Functions" url="USB/USB-4711/Function/funcdesc.htm" />
+  <topic name="Other Functions" url="USB/USB-4718/Function/funcdesc.htm" />
+  <topic name="Other Functions" url="USB/USB-4716/Function/funcdesc.htm" />
+  <topic name="Other Functions" url="USB/USB-4702/Function/funcdesc.htm" />
+  <topic name="Other Functions" url="USB/USB-4704/Function/funcdesc.htm" />
+</key>
+<key name="PCI-1710/U Series" >
+  <topic name="PCI-1710/U Series" url="examples/PCI1710.htm" />
+</key>
+<key name="PCI-1710/U Series Device Driver User Manual" >
+  <topic name="PCI-1710/U Series Device Driver User Manual" url="PCI/PCI-1710/cover.htm" />
+</key>
+<key name="PCI-1711/L/U/UL" >
+  <topic name="PCI-1711/L/U/UL" url="examples/PCI1711.htm" />
+</key>
+<key name="PCI-1711/L/U/UL Device Driver User Manual" >
+  <topic name="PCI-1711/L/U/UL Device Driver User Manual" url="PCI/PCI-1711/cover.htm" />
+</key>
+<key name="PCI-1712/L" >
+  <topic name="PCI-1712/L" url="examples/PCI1712.htm" />
+</key>
+<key name="PCI-1712/L Device Driver User Manual" >
+  <topic name="PCI-1712/L Device Driver User Manual" url="PCI/PCI-1712/cover.htm" />
+</key>
+<key name="PCI-1713/U" >
+  <topic name="PCI-1713/U" url="examples/PCI1713.htm" />
+</key>
+<key name="PCI-1713/U Device Driver User Manual" >
+  <topic name="PCI-1713/U Device Driver User Manual" url="PCI/PCI-1713/cover.htm" />
+</key>
+<key name="PCI-1714" >
+  <topic name="PCI-1714" url="examples/PCI1714.htm" />
+</key>
+<key name="PCI-1714 Device Driver User Manual" >
+  <topic name="PCI-1714 Device Driver User Manual" url="PCI/PCI-1714/cover.htm" />
+</key>
+<key name="PCI-1715U" >
+  <topic name="PCI-1715U" url="examples/PCI1715.htm" />
+</key>
+<key name="PCI-1715U Device Driver User Manual" >
+  <topic name="PCI-1715U Device Driver User Manual" url="PCI/PCI-1715/cover.htm" />
+</key>
+<key name="PCI-1716/L" >
+  <topic name="PCI-1716/L" url="examples/PCI1716.htm" />
+</key>
+<key name="PCI-1716/L Device Driver User Manual" >
+  <topic name="PCI-1716/L Device Driver User Manual" url="PCI/PCI-1716/cover.htm" />
+</key>
+<key name="PCI-1718HD/GU" >
+  <topic name="PCI-1718HD/GU" url="examples/PCI1718.htm" />
+</key>
+<key name="PCI-1718HDU/HGU Device Driver User Manual" >
+  <topic name="PCI-1718HDU/HGU Device Driver User Manual" url="PCI/PCI-1718/cover.htm" />
+</key>
+<key name="PCI-1720" >
+  <topic name="PCI-1720" url="examples/PCI1720.htm" />
+</key>
+<key name="PCI-1720 Device Driver User Manual" >
+  <topic name="PCI-1720 Device Driver User Manual" url="PCI/PCI-1720/cover.htm" />
+</key>
+<key name="PCI-1721" >
+  <topic name="PCI-1721" url="examples/PCI1721.htm" />
+</key>
+<key name="PCI-1721 Device Driver User Manual" >
+  <topic name="PCI-1721 Device Driver User Manual" url="PCI/PCI-1721/cover.htm" />
+</key>
+<key name="PCI-1723" >
+  <topic name="PCI-1723" url="examples/PCI1723.htm" />
+</key>
+<key name="PCI-1723 Device Driver User Manual" >
+  <topic name="PCI-1723 Device Driver User Manual" url="PCI/PCI-1723/cover.htm" />
+</key>
+<key name="PCI-1724" >
+  <topic name="PCI-1724" url="examples/PCI1724.htm" />
+</key>
+<key name="PCI-1724 Device Driver User Manual" >
+  <topic name="PCI-1724 Device Driver User Manual" url="PCI/PCI-1724/cover.htm" />
+</key>
+<key name="PCI-1727U" >
+  <topic name="PCI-1727U" url="examples/PCI1727U.htm" />
+</key>
+<key name="PCI-1727U Device Driver User Manual" >
+  <topic name="PCI-1727U Device Driver User Manual" url="PCI/PCI-1727U/cover.htm" />
+</key>
+<key name="PCI-1730" >
+  <topic name="PCI-1730" url="examples/PCI1730.htm" />
+</key>
+<key name="PCI-1730 Device Driver User Manual" >
+  <topic name="PCI-1730 Device Driver User Manual" url="PCI/PCI-1730/cover.htm" />
+</key>
+<key name="PCI-1733" >
+  <topic name="PCI-1733" url="examples/PCI1733.htm" />
+</key>
+<key name="PCI-1733 Device Driver User Manual" >
+  <topic name="PCI-1733 Device Driver User Manual" url="PCI/PCI-1733/cover.htm" />
+</key>
+<key name="PCI-1734" >
+  <topic name="PCI-1734" url="examples/PCI1734.htm" />
+</key>
+<key name="PCI-1734 Device Driver User Manual" >
+  <topic name="PCI-1734 Device Driver User Manual" url="PCI/PCI-1734/cover.htm" />
+</key>
+<key name="PCI-1735U" >
+  <topic name="PCI-1735U" url="examples/PCI1735U.htm" />
+</key>
+<key name="PCI-1735U Device Driver User Manual" >
+  <topic name="PCI-1735U Device Driver User Manual" url="PCI/PCI-1735U/cover.htm" />
+</key>
+<key name="PCI-1736UP" >
+  <topic name="PCI-1736UP" url="examples/PCI1736.htm" />
+</key>
+<key name="PCI-1736UP Device Driver User Manual" >
+  <topic name="PCI-1736UP Device Driver User Manual" url="PCI/PCI-1736/cover.htm" />
+</key>
+<key name="PCI-1737U" >
+  <topic name="PCI-1737U" url="examples/PCI1737U.htm" />
+</key>
+<key name="PCI-1737U Device Driver User Manual" >
+  <topic name="PCI-1737U Device Driver User Manual" url="PCI/PCI-1737U/cover.htm" />
+</key>
+<key name="PCI-1739U" >
+  <topic name="PCI-1739U" url="examples/PCI1739U.htm" />
+</key>
+<key name="PCI-1739U Device Driver User Manual" >
+  <topic name="PCI-1739U Device Driver User Manual" url="PCI/PCI-1739U/cover.htm" />
+</key>
+<key name="PCI-1741U" >
+  <topic name="PCI-1741U" url="examples/PCI1741U.htm" />
+</key>
+<key name="PCI-1741U Device Driver User Manual" >
+  <topic name="PCI-1741U Device Driver User Manual" url="PCI/PCI-1741U/cover.htm" />
+</key>
+<key name="PCI-1742U" >
+  <topic name="PCI-1742U" url="examples/PCI1742U.htm" />
+</key>
+<key name="PCI-1742U Device Driver User Manual" >
+  <topic name="PCI-1742U Device Driver User Manual" url="PCI/PCI-1742U/cover.htm" />
+</key>
+<key name="PCI-1747" >
+  <topic name="PCI-1747" url="examples/PCI1747.htm" />
+</key>
+<key name="PCI-1747 Device Driver User Manual" >
+  <topic name="PCI-1747 Device Driver User Manual" url="PCI/PCI-1747/cover.htm" />
+</key>
+<key name="PCI-1750" >
+  <topic name="PCI-1750" url="examples/PCI1750.htm" />
+</key>
+<key name="PCI-1750 Device Driver User Manual" >
+  <topic name="PCI-1750 Device Driver User Manual" url="PCI/PCI-1750/cover.htm" />
+</key>
+<key name="PCI-1751" >
+  <topic name="PCI-1751" url="examples/PCI1751.htm" />
+</key>
+<key name="PCI-1751 Device Driver User Manual" >
+  <topic name="PCI-1751 Device Driver User Manual" url="PCI/PCI-1751/cover.htm" />
+</key>
+<key name="PCI-1752" >
+  <topic name="PCI-1752" url="examples/PCI1752.htm" />
+</key>
+<key name="PCI-1752 Device Driver User Manual" >
+  <topic name="PCI-1752 Device Driver User Manual" url="PCI/PCI-1752/cover.htm" />
+</key>
+<key name="PCI-1753" >
+  <topic name="PCI-1753" url="examples/PCI1753.htm" />
+</key>
+<key name="PCI-1753 Device Driver User Manual" >
+  <topic name="PCI-1753 Device Driver User Manual" url="PCI/PCI-1753/cover.htm" />
+</key>
+<key name="PCI-1754" >
+  <topic name="PCI-1754" url="examples/PCI1754.htm" />
+</key>
+<key name="PCI-1754 Device Driver User Manual" >
+  <topic name="PCI-1754 Device Driver User Manual" url="PCI/PCI-1754/cover.htm" />
+</key>
+<key name="PCI-1756" >
+  <topic name="PCI-1756" url="examples/PCI1756.htm" />
+</key>
+<key name="PCI-1756 Device Driver User Manual" >
+  <topic name="PCI-1756 Device Driver User Manual" url="PCI/PCI-1756/cover.htm" />
+</key>
+<key name="PCI-1757UP" >
+  <topic name="PCI-1757UP" url="examples/PCI1757UP.htm" />
+</key>
+<key name="PCI-1757UP Device Driver User Manual" >
+  <topic name="PCI-1757UP Device Driver User Manual" url="PCI/PCI-1757UP/cover.htm" />
+</key>
+<key name="PCI-1758" >
+  <topic name="PCI-1758" url="examples/PCI1758U.htm" />
+</key>
+<key name="PCI-1758U Device Driver User Manual" >
+  <topic name="PCI-1758U Device Driver User Manual" url="PCI/PCI-1758U/cover.htm" />
+</key>
+<key name="PCI-1760" >
+  <topic name="PCI-1760" url="examples/PCI1760.htm" />
+</key>
+<key name="PCI-1760 Device Driver User Manual" >
+  <topic name="PCI-1760 Device Driver User Manual" url="PCI/PCI-1760/cover.htm" />
+</key>
+<key name="PCI-1761" >
+  <topic name="PCI-1761" url="examples/PCI1761.htm" />
+</key>
+<key name="PCI-1761 Device Driver User Manual" >
+  <topic name="PCI-1761 Device Driver User Manual" url="PCI/PCI-1761/cover.htm" />
+</key>
+<key name="PCI-1762" >
+  <topic name="PCI-1762" url="examples/PCI1762.htm" />
+</key>
+<key name="PCI-1762 Device Driver User Manual" >
+  <topic name="PCI-1762 Device Driver User Manual" url="PCI/PCI-1762/cover.htm" />
+</key>
+<key name="PCI-1763 Device Driver User Manual" >
+  <topic name="PCI-1763 Device Driver User Manual" url="PCI/PCI-1763/cover.htm" />
+</key>
+<key name="PCI-1763UP" >
+  <topic name="PCI-1763UP" url="examples/PCI1763.HTM" />
+</key>
+<key name="PCI-1780" >
+  <topic name="PCI-1780" url="examples/PCI1780.htm" />
+</key>
+
+</indexdata>

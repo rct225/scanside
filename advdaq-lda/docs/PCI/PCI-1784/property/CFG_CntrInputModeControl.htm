@@ -1,0 +1,110 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CFG_CntrInputModeControl</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties\nCFG_CntrInputModeControl");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>CFG_CntrInputModeControl</h1>
+<p><b>CFG_CntrInputModeControl</b> gets or sets the counters' input mode of the device.</p>
+<h2><b>Description</b></h2>
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td width="12%"><b>Type</b></td>
+      <td width="88%">INT32U array</td>
+    </tr>
+    <tr> 
+      <td width="12%"><b>Length</b></td>
+      <td width="88%">4 bytes for one counter channel</td>
+    </tr>
+    <tr> 
+      <td width="12%"><b>Access type</b></td>
+      <td width="88%">Read/Write</td>
+    </tr>
+    <tr> 
+      <td width="12%"><b>Value</b></td>
+      <td width="88%">Each element in the array represents one input mode.<br>
+		For example, for a 2-counter device, when the set/returned value is 
+		[2,3], which means counter0's input mode is ABPHASEX2 and counter1's 
+		input mode is 
+		ABPHASEX4.<br>
+		<br>
+		0 - DISABLE: disable the counter<br>
+		1 - ABPHASEX1: X1 mode<br>
+		2 - ABPHASEX2: X2 mode<br>
+		3 - ABPHASEX4: X4 mode<br>
+		4 - TWOPULSEIN: two pulse mode<br>
+		5 - ONEPULSEIN: one pulse mode</td>
+    </tr>
+    </table>
+</div> 
+<h2>See also</h2><h4></h4>
+<p> <a href="../../../function/Device/drv_devicegetproperty.htm"> DRV_DeviceGetProperty</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

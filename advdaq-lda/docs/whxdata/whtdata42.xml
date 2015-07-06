@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" url="USB/USB-4702/features/keyfeature.htm" >
+  <item name="Device Features" url="USB/USB-4702/features/keyfeature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/USB4702.htm" />
+</book>
+<book name="Function Description" url="USB/USB-4702/Function/funcdesc.htm" >
+  <book name="Device functions" url="USB/USB-4702/Function/funcdesc.htm" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+  </book>
+  <book name="Analog Input" url="USB/USB-4702/Function/funcdesc.htm" >
+    <item name="DRV_AIBinaryIn" url="function/Ai/drv_aibinaryin.htm" />
+    <item name="DRV_AIConfig" url="function/Ai/drv_aiconfig.htm" />
+    <item name="DRV_AIScale" url="function/Ai/drv_aiscale.htm" />
+    <item name="DRV_AIVoltageIn" url="function/Ai/drv_aivoltagein.htm" />
+    <item name="DRV_MAIBinaryIn" url="function/Ai/drv_maibinaryin.htm" />
+    <item name="DRV_MAIConfig" url="function/Ai/drv_maiconfig.htm" />
+    <item name="DRV_MAIVoltageIn" url="function/Ai/drv_maivoltagein.htm" />
+  </book>
+  <book name="Analog Output" url="USB/USB-4702/Function/funcdesc.htm" >
+    <item name="DRV_AOBinaryOut" url="function/AO/drv_aobinaryout.htm" />
+    <item name="DRV_AOConfig" url="function/AO/drv_aoconfig.htm" />
+    <item name="DRV_AOScale" url="function/AO/drv_aoscale.htm" />
+    <item name="DRV_AOVoltageOut" url="function/AO/drv_aovoltageout.htm" />
+  </book>
+  <book name="Digital Input/Output" url="USB/USB-4702/Function/funcdesc.htm" >
+    <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+    <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+    <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+    <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+    <item name="DRV_FAIIntStart" url="function/FAI/DRV_FAIIntStart.htm" />
+    <item name="DRV_FAIIntScanStart" url="function/FAI/DRV_FAIIntScanStart.htm" />
+    <item name="DRV_FAITransfer" url="function/FAI/DRV_FAITransfer.htm" />
+    <item name="DRV_FAICheck" url="function/FAI/DRV_FAICheck.htm" />
+    <item name="DRV_ClearFlag" url="function/FAI/DRV_ClearFlag.htm" />
+    <item name="DRV_FAITerminate" url="function/FAI/DRV_FAITerminate.htm" />
+  </book>
+  <book name="Counter Functions" url="USB/USB-4702/Function/funcdesc.htm" >
+    <item name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+    <item name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+    <item name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+  </book>
+  <book name="Other Functions" url="USB/USB-4702/Function/funcdesc.htm" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="USB/USB-4702/structure/DataStructure.htm" >
+  <book name="Analog Input" >
+    <item name="PT_AIBinaryIn" url="structure/Ai/PT_AIBinaryIn.htm" />
+    <item name="PT_AIConfig" url="structure/Ai/PT_AIConfig.htm" />
+    <item name="PT_AIScale" url="structure/Ai/PT_AIScale.htm" />
+    <item name="PT_AIVoltageIn" url="structure/Ai/PT_AIVoltageIn.htm" />
+    <item name="PT_MAIBinaryIn" url="structure/Ai/PT_MAIBinaryIn.htm" />
+    <item name="PT_MAIConfig" url="structure/Ai/PT_MAIConfig.htm" />
+    <item name="PT_MAIVoltageIn" url="structure/Ai/PT_MAIVoltageIn.htm" />
+  </book>
+  <book name="Analog Output" >
+    <item name="PT_AOBinaryOut" url="structure/AO/PT_AOBinaryOut.htm" />
+    <item name="PT_AOConfig" url="structure/AO/PT_AOConfig.htm" />
+    <item name="PT_AOScale" url="structure/AO/PT_AOScale.htm" />
+    <item name="PT_AOVoltageOut" url="structure/AO/PT_AOVoltageOut.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <item name="PT_FAIIntStart" url="structure/FAI/PT_FAIIntStart.htm" />
+    <item name="PT_FAIIntScanStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+    <item name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+    <item name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+    <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+    <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+  </book>
+</book>
+<book name="Device Event" url="USB/USB-4702/Eventtype/Eventtype.htm" >
+  <item name="Event Type" url="USB/USB-4702/Eventtype/Eventtype.htm" />
+</book>
+<book name="Device Properties" url="USB/USB-4702/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="USB/USB-4702/property/CFG_BoardID.htm" />
+  <item name="CFG_AiPacerRate" url="USB/USB-4702/property/CFG_AiPacerRate.htm" />
+  <item name="CFG_AiChanConfig" url="USB/USB-4702/property/CFG_AiChanConfig.htm" />
+  <item name="CFG_AoRangeList" url="USB/USB-4702/property/CFG_AoRangeList.htm" />
+  <item name="CFG_AoChanRange" url="USB/USB-4702/property/CFG_AoChanRange.htm" />
+  <item name="CFG_DiChannelCount" url="USB/USB-4702/property/CFG_DiChannelCount.htm" />
+  <item name="CFG_DiPortCount" url="USB/USB-4702/property/CFG_DiPortCount.htm" />
+  <item name="CFG_DoChannelCount" url="USB/USB-4702/property/CFG_DoChannelCount.htm" />
+  <item name="CFG_DoPortCount" url="USB/USB-4702/property/CFG_DoPortCount.htm" />
+  <item name="CFG_CntrChannelCapability" url="USB/USB-4702/property/CFG_CntrChannelCapability.htm" />
+  <item name="CFG_CntrChannelCount" url="USB/USB-4702/property/CFG_CntrChannelCount.htm" />
+  <item name="CFG_CntrInternalClockFreq" url="USB/USB-4702/property/CFG_CntrInternalClockFreq.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

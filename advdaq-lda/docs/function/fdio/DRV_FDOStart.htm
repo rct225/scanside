@@ -1,0 +1,181 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FDOStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FDOStart</h1>
+	<h1></h1>
+	<p>
+	<pre class="code">INT32S DRV_FDOStart( 
+   PTR_T <i>DeviceHandle</i>,
+   INT16U <i>wCyclic</i>, 
+   INT32U <i>dwCount</i>,
+   VOID * <i>pBuf</i> );</pre>
+	<h2>Purpose</h2>
+	<p>This function is used in PCI-1755.<br>
+	On the device indicated by the <i>DeviceHandle</i>, it initiates the FDO 
+	(Fast Digital Output) operations by specifying the output data count, the 
+	data buffer and the cyclic mode. 
+	</p>
+	<p>This function can be implemented by calling 
+	the 
+	<a href="DRV_FDOCheck.htm">DRV_FDOCheck</a>.</p>
+	<h2>Parameters</h2>
+	<p style="margin-left: 20px">The output buffer (<i>pBuf</i>) needs to be initialized and 
+	loaded data in advance. Since the FDO channels of
+	PCI-1755 can be set to 8, 16 or 32 bits, the data format (data size of each), 
+	as concerned with the FDO channel number setting, can be <i>byte</i>,<i> word</i> or 
+	<i>double 
+	word</i>.
+	Please refer to the <i>Hardware Manual</i> for details. </p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td> 			input</td>
+			<td> 			default</td>
+			<td> 			The pointer 
+			retrieved from the
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</td>
+		</tr>
+		<tr>
+			<td><b>Cyclic</b></td>
+			<td> 			input</td>
+			<td> 			0-1</td>
+			<td>
+			<p style="margin-left: 0">0: Non-cyclic mode, the FDO operation will stop after the data 
+	transfer is finished. There is no restriction for buffer (<i>pBuf</i>) 
+	size and output data count (<i>dwCount</i>).</p>
+			<p style="margin-left: 0">1: Cyclic mode, the buffer (<i>pBuf</i>) 
+	size depends on the hardware property and should be larger than the FIFO size 
+	(FIFO of PCI-1755 is 32K bytes). </p>
+			</td>
+		</tr>
+		<tr>
+			<td><b>dwCount</b></td>
+			<td> 			input</td>
+			<td> 			default</td>
+			<td> 			The converted data count. The buffer size is the count multiplied by the data size 
+			of each (byte, word or double word). </td>
+		</tr>
+		<tr>
+			<td><b>pBuf </b></td>
+			<td> 			output</td>
+			<td> 			default</td>
+			<td> 			The pointer to indicate 
+			the output data buffer.<br>
+			The buffer will be divided into two halves to support the loading 
+			and the output respectively. The user needs to call the
+	<a href="DRV_FDOCheck.htm">DRV_FDOCheck</a> to 
+	check whether the first half or the second half of the buffer is vacant and 
+	to 
+	load data in time in order to avoid data underrun. <br>
+			To stop the operation, the
+	<a href="DRV_FDOStop.htm">DRV_FDOStop</a> must be called. <br>
+			The first half and the second half of the buffer are equal; 
+			therefore, the dividing number is
+	<i>dwCount</i>/2. However, if the user sets the data count (<i>dwCount</i>) 
+			to an odd number, the first half of the buffer will be larger than 
+			the second half and the dividing number will be (<i>dwCount</i>+1)/2.</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2>
+<table border="0" width="100%" cellspacing="7" cellpadding="0" id="table3">
+	<tr>
+		<td width="216" ><b><span style="font-size: 9pt">&nbsp;&nbsp; 1. 0</span></b></td>
+		<td width="726"><span style="font-size: 9pt">Successful.</span></td>
+	</tr>
+	<tr>
+		<td width="216" height="19"><b><span style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDriverHandle</span></b></td>
+		<td width="726" height="19"><span style="font-size: 9pt">The <i>DeviceHandle</i> is NULL</span><span style="font-size: 9pt" lang="en-us">.</span></td>
+	</tr>
+	<tr>
+		<td width="216" ><b><span style="font-size: 9pt">&nbsp;&nbsp; 3. InvalidCountNumber</span></b></td>
+		<td width="726"><span style="font-size: 9pt">The data count (<i>dwCount</i>) 
+		is 0 (invalid).</span></td>
+	</tr>
+	<tr>
+		<td width="216" ><b><span style="font-size: 9pt">&nbsp;&nbsp; 4. Other 
+		value</span></b></td>
+		<td width="726"><span style="font-size: 9pt">Please reference<a href="../../errorcodes/ERRORLIST.htm"> ErrorCodes</a> </span></td>
+	</tr>
+</table>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

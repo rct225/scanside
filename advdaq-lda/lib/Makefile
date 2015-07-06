@@ -1,0 +1,92 @@
+ifeq ($(strip $(KERNEL_VERSION)),2.6)
+LIBDEL := 2.4.x
+LIB := 2.6.x
+else
+LIBDEL :=./2.6.x
+LIB :=./2.4.x
+endif
+LIBDIR :=/usr/lib
+CONFIG_ADVDRV :=m
+
+include ../.config
+####### Modify here ######################
+#    Add your card in here ##############
+
+LIB_$(CONFIG_ADVDRV_CORE) += advdaq
+
+LIB_$(CONFIG_ADVDRV_PCI1710) += pci1710
+LIB_$(CONFIG_ADVDRV_PCI1712) += pci1712
+LIB_$(CONFIG_ADVDRV_PCI1714) += pci1714
+LIB_$(CONFIG_ADVDRV_PCI1716) += pci1716
+LIB_$(CONFIG_ADVDRV_PCI1718) += pci1718
+ 
+LIB_$(CONFIG_ADVDRV_PCI1720) += pci1720
+LIB_$(CONFIG_ADVDRV_PCI1721) += pci1721
+ 
+LIB_$(CONFIG_ADVDRV_PCI1730) += pci1730
+LIB_$(CONFIG_ADVDRV_PCI1735) += pci1735
+LIB_$(CONFIG_ADVDRV_PCI1737) += pci1737
+ 
+LIB_$(CONFIG_ADVDRV_PCI1741U) += pci1741U
+LIB_$(CONFIG_ADVDRV_PCI1742) += pci1742
+LIB_$(CONFIG_ADVDRV_PCI1747) += pci1747
+ 
+LIB_$(CONFIG_ADVDRV_PCI1750) += pci1750
+LIB_$(CONFIG_ADVDRV_PCI1751) += pci1751
+LIB_$(CONFIG_ADVDRV_PCI1752) += pci1752
+LIB_$(CONFIG_ADVDRV_PCI1753) += pci1753
+LIB_$(CONFIG_ADVDRV_PCI1757UP) += pci1757UP
+LIB_$(CONFIG_ADVDRV_PCI1758U) += pci1758U
+ 
+LIB_$(CONFIG_ADVDRV_PCI1760) += pci1760
+LIB_$(CONFIG_ADVDRV_PCI1761) += pci1761
+ 
+LIB_$(CONFIG_ADVDRV_PCI1780) += pci1780
+LIB_$(CONFIG_ADVDRV_PCI1784) += pci1784
+
+LIB_$(CONFIG_ADVDRV_PCM3718) += pcm3718
+LIB_$(CONFIG_ADVDRV_PCM3724) += pcm3724
+LIB_$(CONFIG_ADVDRV_PCM3725) += pcm3725
+LIB_$(CONFIG_ADVDRV_PCM3730) += pcm3730
+LIB_$(CONFIG_ADVDRV_PCM3730I) += pcm3730i
+LIB_$(CONFIG_ADVDRV_PCM3753I) += pcm3753i
+LIB_$(CONFIG_ADVDRV_PCM3761I) += pcm3761i
+
+
+LIB_$(CONFIG_ADVDRV_USB4711) += usb4711
+LIB_$(CONFIG_ADVDRV_USB4716) += usb4716
+LIB_$(CONFIG_ADVDRV_USB4718) += usb4718
+LIB_$(CONFIG_ADVDRV_USB4750) += usb4750
+LIB_$(CONFIG_ADVDRV_USB4751) += usb4751
+LIB_$(CONFIG_ADVDRV_USB4761) += usb4761
+
+
+#######  Modify only end #################
+
+LIBRARYES = $(LIB_m)
+.PHONY: all $(LIBRARYES)
+	
+all : $(LIBRARYES)
+modules : $(LIBRARYES)
+
+	
+install : 
+	-mkdir -p $(LIBDIR)
+	-install -d $(LIBDIR)
+	-rm $(LIBDEL) -fr
+	for n in $(LIB_m);do \
+	install $(LIB)/lib$$n.so.* $(LIBDIR); \
+	ln -sf $(LIBDIR)/lib$$n.so.* $(LIBDIR)/lib$$n.so;\
+	done
+
+clean :
+
+uninstall:
+	for n in $(LIB_m);do \
+	rm -f $(LIBDIR)/lib$$n.so*; \
+	echo lib$$n.so.*;\
+	done
+
+ifeq ($(KERNEL_VERSION),2.4)
+include $(TOPDIR)/Rules.make
+endif

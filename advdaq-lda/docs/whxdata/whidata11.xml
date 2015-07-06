@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="PCI-1780 Device Driver User Manual" >
+  <topic name="PCI-1780 Device Driver User Manual" url="PCI/PCI-1780/cover.htm" />
+</key>
+<key name="PCI-1784/U" >
+  <topic name="PCI-1784/U" url="examples/PCI1784.htm" />
+</key>
+<key name="PCI-1784/U Device Driver User Manual" >
+  <topic name="PCI-1784/U Device Driver User Manual" url="PCI/PCI-1784/cover.htm" />
+</key>
+<key name="PCM-3718" >
+  <topic name="PCM-3718" url="examples/PCM3718.htm" />
+</key>
+<key name="PCM-3718H Device Driver User Manual" >
+  <topic name="PCM-3718H Device Driver User Manual" url="PCM/PCM-3718/cover.htm" />
+</key>
+<key name="PCM-3724" >
+  <topic name="PCM-3724" url="examples/PCM3724.htm" />
+</key>
+<key name="PCM-3724 Device Driver User Manual" >
+  <topic name="PCM-3724 Device Driver User Manual" url="PCM/PCM-3724/cover.htm" />
+</key>
+<key name="PCM-3725" >
+  <topic name="PCM-3725" url="examples/PCM3725.htm" />
+</key>
+<key name="PCM-3725 Device Driver User Manual" >
+  <topic name="PCM-3725 Device Driver User Manual" url="PCM/PCM-3725/cover.htm" />
+</key>
+<key name="PCM-3730" >
+  <topic name="PCM-3730" url="examples/PCM3730.htm" />
+</key>
+<key name="PCM-3730 Device Driver User Manual" >
+  <topic name="PCM-3730 Device Driver User Manual" url="PCM/PCM-3730/cover.htm" />
+</key>
+<key name="PCM-3730I" >
+  <topic name="PCM-3730I" url="examples/PCM3730I.htm" />
+</key>
+<key name="PCM-3730I Device Driver User Manual" >
+  <topic name="PCM-3730I Device Driver User Manual" url="PCM/PCM-3730I/cover.htm" />
+</key>
+<key name="PCM-3753I" >
+  <topic name="PCM-3753I" url="examples/PCM3753I.htm" />
+</key>
+<key name="PCM-3753I Device Driver User Manual" >
+  <topic name="PCM-3753I Device Driver User Manual" url="PCM/PCM-3753I/cover.htm" />
+</key>
+<key name="PCM-3761I" >
+  <topic name="PCM-3761I" url="examples/PCM3761I.htm" />
+</key>
+<key name="PCM-3761I Device Driver User Manual" >
+  <topic name="PCM-3761I Device Driver User Manual" url="PCM/PCM-3761I/cover.htm" />
+</key>
+<key name="Port Function Group" >
+  <topic name="Port Function Group" url="flow/port/portfunction.htm" />
+</key>
+<key name="PT_AIBinaryIn" >
+  <topic name="PT_AIBinaryIn" url="structure/Ai/PT_AIBinaryIn.htm" />
+</key>
+<key name="PT_AIConfig" >
+  <topic name="PT_AIConfig" url="structure/Ai/PT_AIConfig.htm" />
+</key>
+<key name="PT_AIScale" >
+  <topic name="PT_AIScale" url="structure/Ai/PT_AIScale.htm" />
+</key>
+<key name="PT_AIVoltageIn" >
+  <topic name="PT_AIVoltageIn" url="structure/Ai/PT_AIVoltageIn.htm" />
+</key>
+<key name="PT_AOBinaryOut" >
+  <topic name="PT_AOBinaryOut" url="structure/AO/PT_AOBinaryOut.htm" />
+</key>
+<key name="PT_AOConfig" >
+  <topic name="PT_AOConfig" url="structure/AO/PT_AOConfig.htm" />
+</key>
+<key name="PT_AOCurrentOut" >
+  <topic name="PT_AOCurrentOut" url="structure/AO/PT_AOCurrentOut.htm" />
+</key>
+<key name="PT_AOScale" >
+  <topic name="PT_AOScale" url="structure/AO/PT_AOScale.htm" />
+</key>
+<key name="PT_AOVoltageOut" >
+  <topic name="PT_AOVoltageOut" url="structure/AO/PT_AOVoltageOut.htm" />
+</key>
+<key name="PT_CheckEvent" >
+  <topic name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+</key>
+<key name="PT_CounterConfig" >
+  <topic name="PT_CounterConfig" url="structure/counter/PT_CounterConfig.htm" />
+</key>
+<key name="PT_CounterEventRead" >
+  <topic name="PT_CounterEventRead" url="structure/counter/PT_CounterEventRead.htm" />
+</key>
+<key name="PT_CounterEventStart" >
+  <topic name="PT_CounterEventStart" url="structure/counter/PT_CounterEventStart.htm" />
+</key>
+<key name="PT_CounterFreqRead" >
+  <topic name="PT_CounterFreqRead" url="structure/counter/PT_CounterFreqRead.htm" />
+</key>
+<key name="PT_CounterFreqStart" >
+  <topic name="PT_CounterFreqStart" url="structure/counter/PT_CounterFreqStart.htm" />
+</key>
+<key name="PT_CounterPulseStart" >
+  <topic name="PT_CounterPulseStart" url="structure/counter/PT_CounterPulseStart.htm" />
+</key>
+<key name="PT_CounterPWMSetting" >
+  <topic name="PT_CounterPWMSetting" url="structure/counter/PT_CounterPWMSetting.htm" />
+</key>
+<key name="PT_EnableEvent" >
+  <topic name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+</key>
+<key name="PT_FAICheck" >
+  <topic name="PT_FAICheck" url="structure/FAI/PT_FAICheck.htm" />
+</key>
+<key name="PT_FAIDmaExStart" >
+  <topic name="PT_FAIDmaExStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+  <topic name="PT_FAIDmaExStart" url="structure/FAI/PT_FAIDmaExStart.htm" />
+</key>
+<key name="PT_FAIDmaScanStart" >
+  <topic name="PT_FAIDmaScanStart" url="structure/FAI/PT_FAIDmaScanStart.htm" />
+</key>
+<key name="PT_FAIDmaStart" >
+  <topic name="PT_FAIDmaStart" url="structure/FAI/PT_FAIDmaStart.htm" />
+</key>
+<key name="PT_FAIIntScanStart" >
+  <topic name="PT_FAIIntScanStart" url="structure/FAI/PT_FAIIntScanStart.htm" />
+</key>
+<key name="PT_FAIIntStart" >
+  <topic name="PT_FAIIntStart" url="structure/FAI/PT_FAIIntStart.htm" />
+</key>
+<key name="PT_FAITransfer" >
+  <topic name="PT_FAITransfer" url="structure/FAI/PT_FAITransfer.htm" />
+</key>
+<key name="PT_FAOCheck" >
+  <topic name="PT_FAOCheck" url="structure/FAO/PT_FAOCheck.htm" />
+</key>
+<key name="PT_FAODmaExStart" >
+  <topic name="PT_FAODmaExStart" url="structure/FAO/PT_FAODmaExStart.htm" />
+</key>
+<key name="PT_FAOLoad" >
+  <topic name="PT_FAOLoad" url="structure/FAO/PT_FAOLoad.htm" />
+</key>
+<key name="PT_FAOScale" >
+  <topic name="PT_FAOScale" url="structure/FAO/PT_FAOScale.htm" />
+</key>
+<key name="PT_FDITransfer" >
+  <topic name="PT_FDITransfer" url="structure/fdio/PT_FDITransfer.htm" />
+</key>
+<key name="PT_FreqOutStart" >
+  <topic name="PT_FreqOutStart" url="structure/counter/PT_FreqOutStart.htm" />
+</key>
+<key name="PT_MAIBinaryIn" >
+  <topic name="PT_MAIBinaryIn" url="structure/Ai/PT_MAIBinaryIn.htm" />
+</key>
+<key name="PT_MAIConfig" >
+  <topic name="PT_MAIConfig" url="structure/Ai/PT_MAIConfig.htm" />
+</key>
+<key name="PT_MAIVoltageIn" >
+  <topic name="PT_MAIVoltageIn" url="structure/Ai/PT_MAIVoltageIn.htm" />
+</key>
+<key name="PT_PWMStartRead" >
+  <topic name="PT_PWMStartRead" url="structure/counter/PT_PWMStartRead.htm" />
+</key>
+<key name="PT_ReadPortByte" >
+  <topic name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+</key>
+<key name="PT_ReadPortDword" >
+  <topic name="PT_ReadPortDword" url="structure/PORTIO/PT_ReadPortDword.htm" />
+</key>
+<key name="PT_ReadPortWord" >
+  <topic name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+</key>
+<key name="PT_TcMuxRead" >
+  <topic name="PT_TcMuxRead" url="structure/temperature/PT_TCMuxRead.htm" />
+</key>
+<key name="PT_TimerCountSetting" >
+  <topic name="PT_TimerCountSetting" url="structure/counter/PT_TimerCountSetting.htm" />
+</key>
+<key name="PT_WritePortByte" >
+  <topic name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+</key>
+<key name="PT_WritePortDword" >
+  <topic name="PT_WritePortDword" url="structure/PORTIO/PT_WritePortDword.htm" />
+</key>
+<key name="PT_WritePortWord" >
+  <topic name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+</key>
+<key name="Pulse Output Function" >
+  <topic name="Pulse Output Function" url="flow/counter/pulse.htm" />
+</key>
+<key name="Running" >
+  <topic name="Running" url="tutorial/SimpleExample/writingcodes.htm" />
+</key>
+<key name="Software Transferring" >
+  <topic name="Software Transferring" url="flow/ai/softwaretrig.htm" />
+  <topic name="Software Transferring" url="flow/ao/softwaretrig.htm" />
+  <topic name="Software Transferring" url="flow/dio/dosoftwaretrig.htm" />
+</key>
+<key name="Software Transferrng" >
+  <topic name="Software Transferrng" url="flow/dio/softwaretrig.htm" />
+</key>
+<key name="Steps on Programming with Advantech DAQ Device Linux Driver" >
+  <topic name="Steps on Programming with Advantech DAQ Device Linux Driver" url="Introduction/guide.htm" />
+</key>
+<key name="Temperature" >
+  <topic name="Temperature" url="USB/USB-4718/Function/funcdesc.htm" />
+</key>
+<key name="Temperature Measurement Function Group" >
+  <topic name="Temperature Measurement Function Group" url="flow/temperature/temperature.htm" />
+</key>
+<key name="UAB-4702" >
+  <topic name="UAB-4702" url="examples/USB4702.htm" />
+</key>
+<key name="UAB-4704" >
+  <topic name="UAB-4704" url="examples/USB4704.htm" />
+</key>
+<key name="UAB-4716" >
+  <topic name="UAB-4716" url="examples/USB4716.htm" />
+</key>
+<key name="USB-4702 Device Driver User Manual" >
+  <topic name="USB-4702 Device Driver User Manual" url="USB/USB-4702/cover.htm" />
+</key>
+<key name="USB-4704 Device Driver User Manual" >
+  <topic name="USB-4704 Device Driver User Manual" url="USB/USB-4704/cover.htm" />
+</key>
+<key name="USB-4711/A" >
+  <topic name="USB-4711/A" url="examples/USB4711.htm" />
+</key>
+<key name="USB-4711/A Device Driver User Manual" >
+  <topic name="USB-4711/A Device Driver User Manual" url="USB/USB-4711/cover.htm" />
+</key>
+<key name="USB-4716 Device Driver User Manual" >
+  <topic name="USB-4716 Device Driver User Manual" url="USB/USB-4716/cover.htm" />
+</key>
+<key name="USB-4718" >
+  <topic name="USB-4718" url="examples/USB4718.htm" />
+</key>
+<key name="USB-4718 Device Driver User Manual" >
+  <topic name="USB-4718 Device Driver User Manual" url="USB/USB-4718/cover.htm" />
+</key>
+<key name="USB-4750" >
+  <topic name="USB-4750" url="examples/USB4750.htm" />
+</key>
+<key name="USB-4750 Device Driver User Manual" >
+  <topic name="USB-4750 Device Driver User Manual" url="USB/USB-4750/cover.htm" />
+</key>
+<key name="USB-4751" >
+  <topic name="USB-4751" url="examples/USB4751.htm" />
+</key>
+<key name="USB-4751 Device Driver User Manual" >
+  <topic name="USB-4751 Device Driver User Manual" url="USB/USB-4751/cover.htm" />
+</key>
+<key name="USB-4761" >
+  <topic name="USB-4761" url="examples/USB4761.htm" />
+</key>
+<key name="USB-4761 Device Driver User Manual" >
+  <topic name="USB-4761 Device Driver User Manual" url="USB/USB-4761/cover.htm" />
+</key>
+<key name="Using the Functions" >
+  <topic name="Using the Functions" url="function/funcdescription.htm" />
+</key>
+<key name="Welcome to Advantech DAQ Device Linux Driver" >
+  <topic name="Welcome to Advantech DAQ Device Linux Driver" url="before/Welcome.htm" />
+</key>
+
+</indexdata>

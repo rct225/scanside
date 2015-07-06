@@ -1,0 +1,120 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DMA Transferring</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nDMA Transferring");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>DMA Transferring</h1>
+<p>DMA Transferring is the fastest data acquisition type of the analog input operation. 
+  The data directly flows from the device to the memory without the interference of 
+  the CPU. The driver will monitor the progress of the conversion and send a 
+  proper event to notify the user of the current conversion status.</p>
+<br>
+<p><b>DMA Buffer</b></p>
+<p>The calling flow for single channel reading is shown as below:</p>
+<p>1. Event Notification (Recommended)</p>
+<p>The <a href="../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> function 
+  enables the notification event and then start the analog input operation 
+  by&nbsp; <a href="../../function/FAI/DRV_FAIDmaExStart.htm">DRV_FAIDmaExStart</a>(PCI 
+  series). The driver will send a proper event to notify the status of the 
+acquisition progress.
+<a href="../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a> 
+  may then be used 
+  to check the signaled event and handle the data. The operation may be stopped 
+by the <a href="../../function/FAI/DRV_FAITerminate.htm">DRV_FAITerminate</a> function 
+  at any time.</p>
+<p><img src="image010.jpg"> </p>
+<p>2. No Event Notification</p>
+<p>The <a href="../../function/FAI/DRV_FAIDmaExStart.htm">DRV_FAIDmaExStart</a> function 
+  starts the analog input operation with DMA transferring. The <a href="../../function/FAI/DRV_FAICheck.htm">DRV_FAICheck</a> 
+  function may be used to check the status of the operation. Meanwhile, the <a href="../../function/FAI/DRV_FAITransfer.htm">DRV_FAITransfer</a> 
+  function may be used to retrieve the data. The operation may be stopped by the <a href="../../function/FAI/DRV_FAITerminate.htm">DRV_FAITerminate</a> 
+  function when the conversion is completed or at any other time. In this type 
+  of conversion, event notification of the acquisition 
+  status will not be received. The only way to monitor the conversion is to call the <a href="../../function/FAI/DRV_FAICheck.htm">DRV_FAICheck</a> 
+  to check the status of the acquisition progress. </p>
+<p><img src="image011.jpg"></p>
+<p>&nbsp;</p>
+<p>For PCI series card, 
+  <a href="../../function/FAI/DRV_FAIDmaExStart.htm">DRV_FAIDmaExStart</a> can 
+  provide both single channel and multiple-channel operation. For such kinds of 
+operation, you should set the acquisition number to a multiple of the 
+  number of channels. Under this configuration, the data will be stored in the 
+  data serially according to the channel number and the first data in the buffer 
+  can always be the first channel's data, which means the data for a specific 
+  channel are always stored in a fixed position in the buffer. Then you can 
+  trace the data according the channel number easily. Otherwise, for cyclic 
+  acquisition, the first data in the circular buffer may not be for the starting 
+  channel, so you must trace your data according to the channel number and the acquisition number laboriously.</p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

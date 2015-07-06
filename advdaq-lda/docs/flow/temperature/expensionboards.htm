@@ -1,0 +1,174 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>ExpensionBoards</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Appendix B: <b>Expansion Boards</b></h1>
+<h1>
+</h1>
+<p>
+</p>
+<p>
+PCLD-770/779/789/889</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<h2><b>PCLD-770, 
+PCLD-779 or PCLD-789</b></h2>
+<p>Follow the procedure to perform thermocouple measurement:</p>
+<p>1. 
+Connect the thermocouple(s) to the terminals on the PCLD-770/779/789/889</p>
+<p>2. Use a 
+shielded ribbon cable to connect CN1 of the PCLD-770/779/789/889 to the analog input 
+port on the DA&amp;C card in use</p>
+<p>3. Use a ribbon cable to connect CN2 of the PCLD-770/779/789 
+to the digital output port on the DA&amp;C card in use</p>
+<p>4. Select a proper input range 
+or gain on the PCLD-770/779/789 for the type of thermocouple used, as described 
+in the PCLD-770/779/789 hardware manual:</p>
+<p>K type = 50</p>
+<p>J type = 100</p>
+<p>T type = 200</p>
+<p>E type 
+= 50</p>
+<p>R type = 200</p>
+<p>S type = 200</p>
+<p>B type = 200</p>
+<p>5. Select the desired input channel on the 
+DA&amp;C card to correspond with each PCLD-770/779/789 by setting the jumper block JP1(PCLD-770), 
+JP16 (PCLD-789) or JP2 (PCLD-779) to a proper position. Positions 0..9 correspond 
+to analog inputs 0..9 of the DA&amp;C card in use.</p>
+<p>6. Select the desired input channel 
+on the DA&amp;C card for the CJC (cold junction compensation) circuit on the PCLD-770 
+by hard wiring the CJC output directly to an A/D channel. On the PCLD-779/789 select 
+the CJC channel by setting the jumper block JP17 (PCLD-789) or JP3 (PCLD-779). Positions 
+0..9 correspond to analog inputs 0..9 of the DA&amp;C card in use. Of course, the CJC 
+channel selected cannot be set to any analog channel that is already being used 
+for another purpose.</p>
+<p>7. If you are cascading or Y-connecting more than one PCLD-779/789 
+for thermocouple measurement, normally only one CJC input is required - i.e., only 
+one of the PCLD-770/779/789s has to connect its CJC to the DA&amp;C card.</p>
+<p>8. Make sure 
+jumper blocks JP16 and JP17 or JP2 and JP3 are not at the same position. They must 
+be set to different input channels on the DA&amp;C card.</p>
+<p>9. Select the appropriate configuration 
+in the configuration dialog box of the Advantech Device Manager, such as DA&amp;C 
+card, expansion board, expansion gain, and base address, etc.. The driver will perform 
+the appropriate linearization only if the DA&amp;C card&#39;s A/D input range is set to 
+-5 V to +5 V.</p>
+<p>&nbsp;</p>
+<h2><b>PCLD-788</b></h2>
+<p>Follow the procedure to perform thermocouple measurement:</p>
+<p>1. 
+Connect the thermocouple(s) to the PCLD-788 terminals</p>
+<p>2. Select the desired input 
+channel on the A/D I/O card to connect to the CJC (cold junction compensation) circuit 
+and connect a jumper from the CJC output to the input channel. Select the same CJC 
+channel during software configuration of the driver. Of course, theCJC channel selected 
+cannot be set to any analog channel being used for another purpose.</p>
+<p>3. Configure 
+the base address and connection in the configuration dialog box of the Advantech 
+Device Manager.</p>
+<p>4. Select the input range -0.05 V to +0.05 V in your application for all 
+thermocouple types.</p>
+<p>5. When thermocouple type is selected, the driver will perform 
+the appropriate linearization for the selected thermocouple type with respect to 
+any selected A/D range. However, the optimum range is the A/D range that can handle 
+the entire temperature range for each supported thermocouple type.</p>
+<h2><b>PCLD-8115 CJC/Terminal 
+boards</b></h2>
+<p>The PCLD-8115 is used as a terminal board to allow the user to connect differential 
+or single-ended signals to a PCL-818HG. The PCLD-8115 includes a CJC circuit that 
+can be enabled or disabled. Because the PCL-818HG provides amplification (to a gain 
+of 1000), the PCLD-8115 itself requires no gain settings. If temperature measurement 
+is to be performed, the CJC (channel 0) must be enabled.The PCLD-8115 must always 
+be connected to the first eight A/D channels (0-7) of the multi-I/O card.</p>
+<p>Follow 
+the procedure to perform thermocouple measurement:</p>
+<p>1. Connect the thermocouple(s) 
+to the PCLD-8115 terminals.</p>
+<p>2. Enable the CJC circuit, and always set at channel 
+0 on the PCLD-8115. Of course, the CJC channel cannot be used for any other purpose 
+during temperature measurement.</p>
+<p>3. Configure the base address and connection in the 
+configuration dialog box of the device installation utility.</p>
+<p>4. Select the input 
+range -0.05 V to +0.05 V in your application for all thermocouple types.</p>
+<p>5. When 
+thermocouple type is selected, the driver will perform the appropriate linearization 
+for the selected thermocouple type with respect to any selected A/D range. However, 
+the optimum range is the A/D range that can handle the entire temperature range 
+for each supported thermocouple type.</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

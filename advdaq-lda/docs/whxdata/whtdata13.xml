@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" >
+  <item name="Device Features" url="PCI/PCI-1720/features/keyfeature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/PCI1720.htm" />
+</book>
+<book name="Function Description" url="PCI/PCI-1720/Function/funcdesc.htm" >
+  <book name="Device Functions" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+  </book>
+  <book name="Analog Output" >
+    <item name="DRV_AOConfig" url="function/AO/drv_aoconfig.htm" />
+    <item name="DRV_AOScale" url="function/AO/drv_aoscale.htm" />
+    <item name="DRV_AOBinaryOut" url="function/AO/drv_aobinaryout.htm" />
+    <item name="DRV_AOVoltageOut" url="function/AO/drv_aovoltageout.htm" />
+    <item name="DRV_AOCurrentOut" url="function/AO/drv_aocurrentout.htm" />
+    <item name="DRV_EnableSyncAO" url="function/AO/drv_enablesyncao.htm" />
+    <item name="DRV_WriteSyncAO" url="function/AO/drv_writesyncao.htm" />
+  </book>
+  <book name="Port I/O Functions" >
+    <item name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+    <item name="DRV_WritePortByte" url="function/PORTIO/DRV_WritePortByte.htm" />
+    <item name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+    <item name="DRV_WritePortWord" url="function/PORTIO/DRV_WritePortWord.htm" />
+  </book>
+  <book name="Other Functions" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="PCI/PCI-1720/structure/Datastructure.htm" >
+  <book name="Analog Output" >
+    <item name="PT_AOConfig" url="structure/AO/PT_AOConfig.htm" />
+    <item name="PT_AOScale" url="structure/AO/PT_AOScale.htm" />
+    <item name="PT_AOBinaryOut" url="structure/AO/PT_AOBinaryOut.htm" />
+    <item name="PT_AOVoltageOut" url="structure/AO/PT_AOVoltageOut.htm" />
+    <item name="PT_AOCurrentOut" url="structure/AO/PT_AOCurrentOut.htm" />
+    <item name="AORANGESET" url="structure/AO/AORANGESET.htm" />
+  </book>
+  <book name="Port I/O Functions" >
+    <item name="PT_ReadPortByte" url="structure/PORTIO/PT_ReadPortByte.htm" />
+    <item name="PT_WritePortByte" url="structure/PORTIO/PT_WritePortByte.htm" />
+    <item name="PT_ReadPortWord" url="structure/PORTIO/PT_ReadPortWord.htm" />
+    <item name="PT_WritePortWord" url="structure/PORTIO/PT_WritePortWord.htm" />
+  </book>
+</book>
+<book name="Device Properties" url="PCI/PCI-1720/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="PCI/PCI-1720/property/CFG_BoardID.htm" />
+  <item name="CFG_Interrupt" url="PCI/PCI-1720/property/CFG_Interrupt.htm" />
+  <item name="CFG_BaseAddress" url="PCI/PCI-1720/property/CFG_BaseAddress.htm" />
+  <item name="CFG_BusNumber" url="PCI/PCI-1720/property/CFG_BusNumber.htm" />
+  <item name="CFG_SlotNumber" url="PCI/PCI-1720/property/CFG_SlotNumber.htm" />
+  <item name="CFG_AoRangeList" url="PCI/PCI-1720/property/CFG_AoRangeList.htm" />
+  <item name="CFG_AoChanRange" url="PCI/PCI-1720/property/CFG_AoChanRange.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>

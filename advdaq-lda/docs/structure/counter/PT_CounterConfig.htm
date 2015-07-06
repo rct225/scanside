@@ -1,0 +1,184 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_CounterConfig	</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterConfig");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>PT_CounterConfig</h1>	
+	<h1></h1>
+<pre class="code">typedef struct tagPT_CounterConfig
+{
+    INT16U usCounter; 
+    INT16U usInitValue; 
+    INT16U usCountMode; 
+    INT16U usCountDirect; 
+    INT16U usCountEdge; 
+    INT16U usOutputEnable; 
+    INT16U usOutputMode; 
+    INT16U usClkSrc; 
+    INT16U usGateSrc; 
+    INT16U usGatePolarity; 
+} PT_CounterConfig, *LPT_CounterConfig;
+</pre>
+	<p><b>PT_</b><b>CounterConfig</b> is used in function
+	<a href="../../function/counter/DRV_CounterConfig.htm">DRV_CounterConfig</a>.</p>
+	<h2>Member Description</h2>
+</div>
+
+<div>
+	&nbsp;</p>
+	<div class=tablediv>
+		<table cellspacing="0" class="Bordered">
+			<tr>
+			<td><b>Name </b></td>
+			<td><b>Direction </b></td>
+			<td><b>Range </b></td>
+			<td><b>Description </b></td>
+			</tr>
+			<tr>
+				<td><b>usCounter</b></td>
+				<td>input</td>
+				<td>0~(N-1) (N is the count of channels)</td>
+				<td>Channel number of the specified counter.<br>
+				From a minimum of zero for the first channel to the maximum 
+				channel number minus one. For example, the range is from 0 to <i>
+				(N-1)</i> on a device with <i>N</i> counter channels.</td>
+			</tr>
+			<tr>
+				<td><b>usInitValue</b></td>
+				<td>input</td>
+				<td>depend on hardware</td>
+				<td>Initial value of the counter.</td>
+			</tr>
+			<tr>
+				<td><b>usCountMode</b></td>
+				<td>input</td>
+				<td>MODE_A, MODE_B, MODE_C, MODE_D,<br>MODE_E, MODE_F.MODE_G, MODE_H,<br>MODE_I, MODE_J,MODE_K, MODE_L,<br>MODE_O,MODE_R, MODE_U, MODE_X</td>
+				<td>Counter mode. Refer to hardware manuals and the table below.</td>
+			</tr>
+			<tr>
+				<td><b>usCountDirect</b></td>
+				<td>input</td>
+				<td>1) PA_MODE_COUNT_UP<br>2) PA_MODE_COUNT_DOWN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td>Counting direction:<br>1) Counting up<br>2) Counting down&#12290;</td>
+			</tr>
+			<tr>
+				<td><b>usCountEdge</b></td>
+				<td>input</td>
+				<td>1) PA_MODE_COUNT_RISE_EDGE<br>2) PA_MODE_COUNT_FALL_EDGE</td>
+				<td>Triggering mode for counter &#65306;<br>1) rising edge<br>2) 
+				falling edge</td>
+			</tr>
+			<tr>
+				<td><b>usOutputEnable</b></td>
+				<td>input</td>
+				<td>1) PA_MODE_ENABLE_OUTPUT<br>2) PA_MODE_DISABLE_OUTPUT</td>
+				<td>Counting output mode:<br>1) Output enable, output a signal&nbsp; 
+				when counting complete.<br>2) Output disabled.</td>
+			</tr>
+			<tr>
+				<td><b>usOutputMode</b></td>
+				<td>input</td>
+				<td>1) PA_MODE_ACT_HIGH_TC_PULSE<br>2) PA_MODE_ACT_LOW_TC_PULSE<br>3) PA_MODE_TC_TOGGLE_FROM_LOW<br>4) PA_MODE_TC_TOGGLE_FROM_HIGH</td>
+				<td>Pulse Output Mode:<br>1) High pulse on OUT N<br>2) Low pulse 
+				on OUT N<br>3) Toggle from Low to High on OUT N<br>4) Toggle 
+				from High to Low on Out N.</td>
+			</tr>
+			<tr>
+				<td><b>usClkSrc</b></td>
+				<td>input</td>
+				<td>1) PA_MODE_COUNT_SRC_OUT_N_M1<br>2) PA_MODE_COUNT_SRC_CLK_N<br>3) PA_MODE_COUNT_SRC_CLK_N_M1<br>4) PA_MODE_COUNT_SRC_FOUT_0<br>5) PA_MODE_COUNT_SRC_FOUT_1<br>6) PA_MODE_COUNT_SRC_FOUT_2<br>7) PA_MODE_COUNT_SRC_FOUT_3<br>8) PA_MODE_COUNT_SRC_GATE_N_M1</td>
+				<td>Clock Source:<br>1) OUT N-1 <br>2) CLK N <br>3) CLK N-1 <br>
+				4) FOUT 0 <br>5) FOUT 1 <br>6) FOUT 2 <br>7) FOUT 3<br>8) Gate N-1
+				</td>
+			</tr>
+			<tr>
+				<td><b>usGateSrc</b></td>
+				<td>input</td>
+				<td>1) PA_MODE_GATE_SRC_GATE_NO<br>2) PA_MODE_GATE_RC_OUT_N_M1<br>3) PA_MODE_GATE_SRC_GATE_N<br>4) PA_MODE_GATE_SRC_GATE_N_M1</td>
+				<td>Gate Mode&#65306;<br>1) No Gate<br>2) OUT N-1 
+			<br>
+				3) Gate N <br>4) Gate N-1</td>
+			</tr>
+			<tr>
+				<td><b>usGatePolarity</b></td>
+				<td>input</td>
+				<td>1) PA_MODE_GATE_POSITIVE<br>2) PA_MODE_GATE_NEGATIVE</td>
+				<td>Gate Polarity&#65306;<br>1)Positive Level triggering in level 
+				triggering mode. Or rising edge triggering in edge triggering 
+				mode.<br>2)Negative Level triggering in level triggering mode. 
+				Or falling edge triggering in edge triggering mode.</td>
+			</tr>
+		</table></div>
+</div><p><img border="0" src="Cnt_mode.jpg" width="715" height="275"></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

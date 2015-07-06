@@ -1,0 +1,103 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Waveform Analog Output</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nFast AOTransferring\nDMA Transferring");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>DMA Transferring</h1>
+<p>The analog output function group provides DMA transferring for the waveform data 
+  output. In this mode, the data flows directly from the memory to the device without 
+  the interference of the CPU. The driver will monitor the progress of the transfer 
+  and send the proper event to notify the user of the current transfer status.</p>
+<p>DMA Buffer:</p>
+<p>1. Event Notification (Recommended)</p>
+<p>The <a href="../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> function 
+  enables the notification event and then starts the analog output 
+  operation by <a href="../../function/FAO/DRV_FAODmaExStart.htm">DRV_FAODmaExStart</a>. 
+  The driver will send you a proper event to notify the status of the transfer progress. 
+  Use <a href="../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a> 
+  to check the signaled event and then handle the data. Stop the operation 
+  by the <a href="../../function/FAO/DRV_FAOTerminate.htm">DRV_FAOTerminate</a> function 
+  at any time.</p>
+<p>&nbsp;</p>
+<p><img src="image010.jpg"></p>
+<p>2. No Event Notification</p>
+<p>The <a href="../../function/FAO/DRV_FAODmaExStart.htm">DRV_FAODmaExStart</a> 
+  function starts the analog output operation with DMA transferring. Use the <a href="../../function/FAO/DRV_FAOCheck.htm">DRV_FAOCheck</a> 
+  function to check the status of the transfer. Meanwhile, use the <a href="../../function/FAO/DRV_FAOLoad.htm">DRV_FAOLoad</a> 
+  function to load the new data for output. Stop the operation by the <a href="../../function/FAO/DRV_FAOTerminate.htm">DRV_FAOTerminate</a> 
+  function when the conversion is complete or at any other time. In this type 
+  of transfer, you will never receive any event notification of the acquisition 
+  status. The only way to monitor the transfer is to calling the <a href="../../function/FAO/DRV_FAOCheck.htm">DRV_FAOCheck</a> 
+  to check the status of the transfer progress. 
+</p> 
+<p><img src="image011.jpg"></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

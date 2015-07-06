@@ -1,0 +1,111 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CFG_CntrDigitalFilter</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties\nCFG_CntrDigitalFilter");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>CFG_CntrDigitalFilter</h1>
+<p><b>CFG_CntrDigitalFilter</b> gets or sets the counters' digital filter enable 
+state of the device. <span lang="EN-US">A digital filter is used to eliminate 
+unexpected signals and noise from the card circuitry. </span></p>
+<h2><b>Description</b></h2>
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td><b>Type</b></td>
+      <td>INT32U array</td>
+    </tr>
+    <tr> 
+      <td><b>Length</b></td>
+      <td>4 bytes for one counter channel</td>
+    </tr>
+    <tr> 
+      <td><b>Access type</b></td>
+      <td>Read/Write</td>
+    </tr>
+    <tr> 
+      <td><b>Value</b></td>
+      <td>Each element is the array represents one counter's digital filter 
+		enable state.<br>
+		0: disable digital filter<p style="margin-left: 0pt">1: enable digital filter</td>
+    </tr>
+  </table>
+</div> 
+<p><span lang="EN-US">The user can set different digital filtering parameters 
+for each input channel in different applications. Refer to the example of the 
+PCI-1760 as shown below:</span></p>
+<p><span lang="EN-US">1. When a digital filter is enabled, the PCI-1760 will 
+sample the signals at the enabled input channel at a 5 ms sampling rate.</span></p>
+<p><span lang="EN-US">2. When a high or low signal is present at a digital input 
+channel whose digital filter function is enabled, the signal will be filtered 
+out as noise unless it lasts for an effective period. </span></p>
+<h2>See also</h2><h4></h4>
+<p> <a href="../../../function/Device/drv_devicegetproperty.htm"> DRV_DeviceGetProperty</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

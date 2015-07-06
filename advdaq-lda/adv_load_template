@@ -1,0 +1,134 @@
+# !/bin/sh
+module="advdrv"
+device="advdaq"
+mode="664"
+
+# insmod kernel driver modules
+
+# insmod core module before insmoding any other driver modules
+/sbin/insmod ./modules/advdrv_core.ko
+
+# insmod usb4711 driver if need  
+#; /sbin/insmod ./modules/usb4711.ko
+
+# insmod usb4716 driver if need
+#; /sbin/insmod ./modules/usb4716.ko
+
+# insmod usb4718 driver if need 
+#; /sbin/insmod ./modules/usb4718.ko
+
+# insmod usb4750 driver if need
+#; /sbin/insmod ./modules/usb4750.ko
+
+# insmod usb4751 driver if need
+#; /sbin/insmod ./modules/usb4751.ko
+
+# insmod usb4761 driver if need
+#; /sbin/insmod ./modules/usb4761.ko
+
+# insmod pci1710 driver if need
+#; /sbin/insmod ./modules/pci1710.ko
+
+# insmod pci1712 driver if need
+#; /sbin/insmod ./modules/pci1712.ko
+
+# insmod pci1714 driver if need
+#; /sbin/insmod ./modules/pci1714.ko
+
+# insmod pci1716 driver if need
+#; /sbin/insmod ./modules/pci1716.ko
+
+# insmod pci1718 driver if need
+#; /sbin/insmod ./modules/pci1718.ko
+
+# insmod pci1720 driver if need
+#; /sbin/insmod ./modules/pci1720.ko
+
+# insmod pci1721 driver if need
+#; /sbin/insmod ./modules/pci1721.ko
+
+# insmod pci1730 driver if need
+#; /sbin/insmod ./modules/pci1730.ko
+
+# insmod pci1735 driver if need
+#; /sbin/insmod ./modules/pci1735.ko
+
+# insmod pci1737 driver if need
+#; /sbin/insmod ./modules/pci1737.ko
+
+# insmod pci1741U driver if need
+#; /sbin/insmod ./modules/pci1741U.ko
+
+# insmod pci1742U driver if need
+#; /sbin/insmod ./modules/pci1742.ko
+
+# insmod pci1747U driver if need
+#; /sbin/insmod ./modules/pci1747.ko
+
+# insmod pci1750 driver if need
+#; /sbin/insmod ./modules/pci1750.ko
+
+# insmod pci1751 driver if need
+#; /sbin/insmod ./modules/pci1751.ko
+
+# insmod pci1752 driver if need
+#; /sbin/insmod ./modules/pci1752.ko
+
+# insmod pci1753 driver if need
+#; /sbin/insmod ./modules/pci1753.ko
+
+# insmod pci1757UP driver if need
+#; /sbin/insmod ./modules/pci1757up.ko
+
+# insmod pci1758U driver if need
+#; /sbin/insmod ./modules/pci1758U.ko
+
+# insmod pci1760 driver if need
+#; /sbin/insmod ./modules/pci1760.ko
+
+# insmod pci1761 driver if need
+#; /sbin/insmod ./modules/pci1761.ko
+
+# insmod pci1780 driver if need
+#; /sbin/insmod ./modules/pci1780.ko
+
+# insmod pci1784 driver if need
+#; /sbin/insmod ./modules/pci1784.ko
+
+# insmod pcm3718H driver if need
+#; /sbin/insmod ./modules/pcm3718.ko
+
+# insmod pcm3724 driver if need
+#; /sbin/insmod ./modules/pcm3724.ko
+
+# insmod pcm3725 driver if need
+/sbin/insmod ./modules/pcm3725.ko
+
+# insmod pcm3730 driver if need
+#; /sbin/insmod ./modules/pcm3730.ko
+
+# insmod pcm3730i driver if need
+#; /sbin/insmod ./modules/pcm3730i.ko
+
+# insmod pcm3753i driver if need
+#; /sbin/insmod ./modules/pcm3753i.ko
+
+# insmod pcm3761i driver if need
+#; /sbin/insmod ./modules/pcm3761i.ko
+
+# make device file
+major=$(awk "\$2==\"$module\" {print \$1}" /proc/devices)
+
+rm -rf /dev/${device}[0-3]
+
+mknod /dev/${device}0 c $major 0
+mknod /dev/${device}1 c $major 1
+mknod /dev/${device}2 c $major 2
+mknod /dev/${device}3 c $major 3
+mknod /dev/${device}254 c $major 254
+
+chmod $mode /dev/${device}[0-3]
+
+# bind a device with a device file, more details about 
+# advdevice_bind, please using --help options 
+#; advdevice_bind <device> <boardid> <device file> 

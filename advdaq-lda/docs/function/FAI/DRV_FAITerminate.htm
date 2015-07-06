@@ -1,0 +1,148 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_FAITerminate</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nInterrupt Transferring\nFunction Description\nDRV_FAITerminate");
+addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nDMA Transferring\nFunction Description\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nFunction Description\nHigh-Speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nFunction Description\nHigh-Speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAITerminate");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAITerminate");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAITerminate");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nFunction Description\nHigh-speed Functions\nDRV_FAITerminate");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nFunction Description\nHigh-speed Functions\nAI Functions\nDRV_FAITerminate");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_FAITerminate</h1>
+	<h1></h1>
+	<pre class="code">INT32S DRV_FAITerminate ( PTR_T<i> DeviceHandle </i>);</pre>
+	<h2>Purpose</h2>
+	<p>
+	On the device 
+	indicated by the <i>DeviceHandle</i>, it<i> </i>stops the running FAI (Fast Analog Input) operation by safely resetting hardware, releasing 
+	resources and sending a terminate event to the user.</p> 
+	<h2>Parameters</h2>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td width="146">
+			<b><font style="font-size: 9pt">Name</font></b></td>
+			<td>
+			<b><font style="font-size: 9pt">Direction</font></b></td>
+			<td>
+			<b><font style="font-size: 9pt">Range</font></b></td>
+			<td>
+			<b><font style="font-size: 9pt">Description</font></b></td>
+		</tr>
+		<tr>
+			<td width="146">
+			<p style="margin-left: 0px"><b>DeviceHandle</b></p>
+			</td>
+			<td>
+			<p style="margin-left: 0px">input</p>
+			</td>
+			<td>
+			<p style="margin-left: 0px">default</p>
+			</td>
+			<td>
+			<p style="margin-left: 0pt">The p<font style="FONT-SIZE: 9pt" face="Verdana">ointer 
+			retrieved from the
+			<a href="../Device/DRV_DEVICEOPEN.htm">
+			DRV_DeviceOpen</a> which specifies the target device.</font></p>
+			</td>
+		</tr>
+	</table>
+</div>
+	<div>
+		<h2>Return</h2>
+	<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table1">
+		<tr>
+			<td width="201"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. SUCCESS</font></b></td>
+			<td><span style="font-size: 9pt">S</span><font style="font-size: 9pt">uccessful. </font></td>
+		</tr>
+		<tr>
+			<td width="201">     <b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDriverHandle</font></b></td>
+			<td><font style="font-size: 9pt">The <i>DriverHandle</i> is NULL. </font></td>
+		</tr>
+	</table>
+	</div>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

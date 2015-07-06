@@ -1,0 +1,238 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_GetFIFOSize</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+div.Section1 { page:Section1; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nInterrupt Transferring\nFunction Description\nDRV_GetFIFOSize");
+addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nFast AI Transferring\nDMA Transferring\nFunction Description\nDRV_GetFIFOSize");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1></h1>
+	<h1>DRV_GetFIFOSize</h1>
+	  <pre class="code">INT32S DRV_GetFIFOSize(<i>
+   </i>PTR_T <i>DeviceHandel,
+   </i>INT32U *<i> lSize </i>);</pre>
+
+    </p>
+	<h2>Purpose</h2>
+	<p>On the device indicated by the <i>DeviceHandle</i>, it retrieves the FIFO 
+	size.</p>
+	<h2>Parameters</h2> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DeviceHandle</b></td>
+			<td>input</td>
+			<td>default</td>
+			<td>The p<font style="FONT-SIZE: 9pt" face="Verdana">ointer 
+			retrieved from the</font><font face="Verdana" style="font-size: 9pt">
+			<a href="../Device/DRV_DEVICECLOSE.htm">DRV_DeviceOpen</a>  			which specifies the target device.</font></td>
+		</tr>
+		<tr>
+			<td><b>lSize</b></td>
+			<td>output</td>
+			<td>default</td>
+			<td>The FIFO size.</td>
+		</tr>
+	</table>
+</div>
+	<h2>Return</h2>
+	<table border="0" width="100%" cellspacing="10" cellpadding="0" id="table7">
+		<tr>
+			<td width="167"><b><font style="font-size: 9pt">&nbsp;&nbsp; 1. 0</font></b></td>
+			<td><span style="font-size: 9pt">S</span><font style="font-size: 9pt">uccessful. </font></td>
+		</tr>
+		<tr>
+			<td width="167">     <b><font style="font-size: 9pt">&nbsp;&nbsp; 2. InvalidDriverHandle</font></b></td>
+			<td><font style="font-size: 9pt">The <i>DriverHandle</i> is NULL. </font></td>
+		</tr>
+	</table>
+	<h2>Note</h2>
+	<p>Table for FIFO size.</p> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered" id="table6">
+		<tr>
+			<td colspan="13">
+						<span lang="EN-US"><font face="Verdana"><b>
+						FIFO_SIZE</b> 
+						(WORD)</font></span>						<span lang="EN-US"><font face="Verdana">One 
+						sample needs two bytes to store in the FIFO.</font></span></td>
+			</tr>
+		<tr>
+			<td width="7%">&nbsp;</td>
+			<td width="10%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1710/U Series</span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1711/L/U/UL(PCI-1731)</span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1712 /L </span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1713/U</span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1714 /MIC-3714</span></font></b></td>
+			<td width="7%">
+						<font face="Verdana" color="black" style="font-size: 9pt">
+						<span lang="EN-US" style="COLOR: black; font-weight:700">PCI-1714UL</span></font></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1716/MIC-3716</span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1721 </span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1741U </span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCI-1747 </span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						MIC-2718</span></font></b></td>
+			<td width="7%"><b>
+						<font face="Verdana" style="font-size: 9pt"><span lang="EN-US">
+						PCM-1718HO</span></font></b></td>
+		</tr>
+		<tr>
+			<td width="7%" style="text-align: center"><b>
+			<font face="Verdana" style="font-size: 9pt">AI</font></b></td>
+			<td width="10%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">4k</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1K</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1K</span></font>&#12288;</td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">4k</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">32k</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">8k</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1k</span></font></td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1k</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1k</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1k</span></font></td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1k</span></font></td>
+		</tr>
+		<tr>
+			<td width="7%" style="text-align: center"><b>
+			<font face="Verdana" style="font-size: 9pt">AO</font></b></td>
+			<td width="10%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span lang="EN-US" style="FONT-FAMILY: Verdana">32K</span></font></td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">
+						<font face="Verdana" style="font-size: 9pt">
+						<span style="FONT-FAMILY: Verdana">1k</span></font></td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+			<td width="7%" style="text-align: center">&nbsp;</td>
+		</tr>
+		</table>
+</div>
+</div>
+
+			<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

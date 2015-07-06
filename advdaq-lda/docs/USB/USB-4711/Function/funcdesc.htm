@@ -1,0 +1,290 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Function Description</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body bgcolor="white" lang="ZH-CN" link="blue" vlink="purple" style="tab-interval:21.0pt"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nDevice functions");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nAnalog Input");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nAnalog Output");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nDigital Input/Output");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nCounter Functions");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nHigh-speed Functions");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nFunction Description\nOther Functions");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nFunction Description\nHigh-speed Functions");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div class=Section1>
+
+<h1><span lang=EN-US>Function Description </span></h1>
+
+<p><span lang=EN-US>Every Advantech DLL function is of the following form:</span></p>
+
+<p><span lang=EN-US>status = DRV_Xxx(parameter 1, parameter 2, ..., parameter 
+n); </span></p>
+
+<p><span lang=EN-US>(at least one parameter is contained)</span></p>
+
+<p><span lang=EN-US>Each function returns a status (Success or Failure) as 
+following:</span></p>
+
+<div style='margin-left:24.0pt'>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0cm;background:#999999;border:solid #999999 1.0pt;
+ mso-border-top-alt:.75pt;mso-border-left-alt:.25pt;mso-border-bottom-alt:.25pt;
+ mso-border-right-alt:.75pt;mso-border-color-alt:#999999;mso-border-style-alt:
+ solid'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Status (Value)</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Result</span></b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>UNSUCCESS ( &gt; 0 )</span></b><span lang=EN-US style='font-size:
+  9.0pt;font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Function failed due to error</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>SUCCESS ( = 0 )</span></b><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana'></span></p>
+  </td>
+  <td valign=top style='border:solid #999999 1.0pt;mso-border-top-alt:.25pt;
+  mso-border-left-alt:.75pt;mso-border-bottom-alt:.75pt;mso-border-right-alt:
+  .25pt;mso-border-color-alt:#999999;mso-border-style-alt:solid;background:
+  white;padding:3.0pt 4.5pt 3.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-top:7.2pt;margin-right:0cm;margin-bottom:
+  3.6pt;margin-left:0cm'><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>Function completed successfully</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p><span lang=EN-US>Status is a 4-byte integer and is defined in DRIVER.H file.
+</span></p>
+
+<p><span lang=EN-US>For more information about the error code, please refer to 
+ErrorCode list.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>
+&nbsp;</span></p>
+
+<h2><span lang=EN-US>Functions supported by USB-4711/A:</span></h2>
+
+<h3><span lang=EN-US>Device functions</span></h3>
+
+<p><span lang=EN-US><a href="../../../function/Device/DRV_DEVICEOPEN.htm">
+DRV_DeviceOpen</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Device/DRV_DEVICECLOSE.htm">
+DRV_DeviceClose</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Device/drv_devicegetproperty.htm">
+DRV_DeviceGetProperty</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Device/drv_devicesetproperty.htm">
+DRV_DeviceSetProperty</a></span></p>
+
+<h3><span lang=EN-US>Analog Input</span></h3>
+
+<p><span lang=EN-US><a href="../../../function/Ai/drv_aiconfig.htm">DRV_AIConfig</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Ai/drv_aibinaryin.htm">
+DRV_AIBinaryIn</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Ai/drv_aiscale.htm">DRV_AIScale</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Ai/drv_aivoltagein.htm">
+DRV_AIVoltageIn</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Ai/drv_maiconfig.htm">
+DRV_MAIConfig</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Ai/drv_maibinaryin.htm">
+DRV_MAIBinaryIn</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/Ai/drv_maivoltagein.htm">
+DRV_MAIVoltageIn</a></span></p>
+
+<h3><span lang=EN-US>Analog Output</span></h3>
+
+<p><span lang=EN-US><a href="../../../function/AO/drv_aoconfig.htm">DRV_AOConfig</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/AO/drv_aoscale.htm">DRV_AOScale</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/AO/drv_aobinaryout.htm">
+DRV_AOBinaryOut</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/AO/drv_aovoltageout.htm">
+DRV_AOVoltageOut</a></span></p>
+
+<h3><span lang=EN-US>Digital Input/Output</span></h3>
+
+<p><span lang=EN-US><a href="../../../function/DIO/DRV_DioReadDiPorts.htm">
+DRV_DioReadDIPorts</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/DIO/DRV_DioReadDOPorts.htm">
+DRV_DioReadDOPorts</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/DIO/DRV_DioWriteDoPorts.htm">
+DRV_DioWriteDOPorts</a></span></p>
+
+<h3><span lang=EN-US>Counter Functions</span></h3>
+
+<p><span lang=EN-US><a
+href="../../../function/counter/DRV_CounterEventStart.htm">DRV_CounterEventStart</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/counter/DRV_CounterEventRead.htm">
+DRV_CounterEventRead</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/counter/DRV_CounterFreqStart.htm">
+DRV_CounterFreqStart</a>
+<span style='color:red'>(only USB4711A)</span></span></p>
+
+<p><span lang=EN-US><a href="../../../function/counter/DRV_CounterFreqRead.htm">
+DRV_CounterFreqRead</a><span
+style='color:red'>(only USB4711A)</span></span></p>
+
+<p><span lang=EN-US><a
+href="../../../function/counter/DRV_CounterPulseStart.htm">DRV_CounterPulseStart</a>
+<span style='color:red'>(only USB4711A)</span></span></p>
+
+<p><span lang=EN-US><a href="../../../function/counter/DRV_CounterReset.htm">
+DRV_CounterReset</a></span></p>
+
+<h3><span lang=EN-US>High-speed Functions</span></h3>
+
+<p><span lang=EN-US><a
+href="../../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a></span></p>
+
+<p><span lang=EN-US><a
+href="../../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/FAI/DRV_FAIIntStart.htm">
+DRV_FAIIntStart</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/FAI/DRV_FAIIntScanStart.htm">
+DRV_FAIIntScanStart</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/FAI/DRV_FAITransfer.htm">
+DRV_FAITransfer</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/FAI/DRV_FAICheck.htm">
+DRV_FAICheck</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/FAI/DRV_ClearFlag.htm">
+DRV_ClearFlag</a></span></p>
+
+<p><span lang=EN-US><a href="../../../function/FAI/DRV_FAITerminate.htm">
+DRV_FAITerminate</a></span></p>
+
+<h3><span lang=EN-US>Other Functions</span></h3>
+
+<p><span lang=EN-US><a href="../../../function/others/DRV_GetErrorMessage.htm">
+DRV_GetErrorMessage</a></span></p>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

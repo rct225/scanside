@@ -1,0 +1,102 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Event Function Group</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nEvent Function Group");
+addTocInfo("Function Reference\nUsing the Functions\nEvent Function Group\nFunction Description");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1><b>Event Function Group</b></h1>
+<p>Most high speed data acquisition operations run in the background, such as 
+  analog input with DMA or interrupt. The Device Drivers provide two 
+  ways to check the status of data acquisition operation. </p>
+<p>The polling method is the first. 
+  For example, you can call the <a href="../../function/FAI/DRV_FAICheck.htm">DRV_FAICheck</a> 
+  function repeatedly to check the status of high speed analog input. The second is the event function group. After 
+the event function is enabled, the Device 
+  Driver will signal an event when hardware interrupt occurs. It is not necessary 
+to poll the status manually.</p>
+<p>When you want to perform event operation in the high speed data transfer, call 
+  the <a href="../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> 
+  function before beginning the high speed operation. Call <a href="../../function/commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a> 
+  to check the occurred event. After desired event is signaled, a personally 
+prepared task may be used for the transfer, such as handling the input data, 
+  loading new data for output, stopping data conversion etc. For better 
+performance it is highly recommended 
+  that the event is checked in a separate thread other than in the main thread 
+  of the application. 
+<p>&nbsp;<p><img src="image033.jpg">
+<br>
+<br>
+<p><i> <b>Notes: Please 
+refer to individual manual for more detailed information.</b></i></p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

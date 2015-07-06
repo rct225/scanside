@@ -1,0 +1,388 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>About Function Description </title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAbout Function Description");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1><b>About Function Description </b>
+	</h1>
+	<p>Function groups can be analog input, analog output, digital input, 
+	digital output... etc. Every Advantech DLL function is of the following form:</p> 
+	<p>status = FUNCTION_Name (parameter 1, parameter 2...parameter n)</p>
+	<p>where n&gt;0. Each function returns a value in the status variable that indicates the success or failure of the function as follows: </p>
+	<div class="tablediv">
+		<table cellspacing="0" class="Bordered">
+			<tr>
+				<td>
+				<b>Status (Value)</b></td>
+				<td>
+				<b>Result</b></td>
+			</tr>
+			<tr>
+				<td>
+				UNSUCCESS (&gt;0)</td>
+				<td>
+				Function failed due to error</td>
+			</tr>
+			<tr>
+				<td>
+				SUCCESS (=0)</td>
+				<td>
+				Function completed successfully</td>
+			</tr>
+		</table>
+	</div>
+	<p>Status is a 4-byte integer and is defined in <i>adverror.h</i> file. For more information 
+	about the error code, please refer to <a href="../errorcodes/errorcodes.htm">
+	Error Codes</a>.</p>
+	<h2><b>Function Lists:</b></h2></div>
+		<table cellspacing="0" class="Bordered" id="table2">
+			<tr>
+				<td>
+				<b>Device functions</b></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a></td>
+				<td>
+				<a href="Device/DRV_DEVICECLOSE.htm">DRV_DeviceClose</a></td>
+				<td width="338">
+				<a href="Device/drv_devicegetproperty.htm">DRV_DeviceGetProperty</a></td>
+			</tr>
+			<tr>
+
+				<td>
+				<a href="Device/drv_devicesetproperty.htm">DRV_DeviceSetProperty</a></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b>Analog Input </b> </td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="Ai/drv_aiconfig.htm">DRV_AIConfig</a></td>
+				<td>
+				<a href="Ai/drv_maiconfig.htm">DRV_MAIConfig</a></td>
+				<td width="338">
+				<a href="Ai/drv_aivoltagein.htm">DRV_AIVoltageIn</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="Ai/drv_maivoltagein.htm">DRV_MAIVoltageIn</a></td>
+				<td>
+				<a href="Ai/drv_aibinaryin.htm">DRV_AIBinaryIn</a></td>	
+				<td width="338">
+				<a href="Ai/drv_maibinaryin.htm">DRV_MAIBinaryIn</a></td>
+				<tr>
+				<td>
+				<a href="Ai/drv_aiscale.htm">DRV_AIScale</a></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<b>Analog Output</b></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="AO/drv_aoconfig.htm">DRV_AOConfig</a></td>
+				<td>
+				<a href="AO/drv_aovoltageout.htm">DRV_AOVoltageOut</a></td>
+				<td width="338">
+				<a href="AO/drv_aocurrentout.htm">DRV_AOCurrentOut</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="AO/drv_aobinaryout.htm">DRV_AOBinaryOut</a></td>
+				<td>
+				<a href="AO/drv_aoscale.htm">DRV_AOScale</a></td>
+				<td width="338">
+				<a href="AO/drv_writesyncao.htm">DRV_WriteSyncAO</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="AO/drv_enablesyncao.htm">DRV_EnableSyncAO</a></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<b>Port I/O Functions</b></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="PORTIO/DRV_ReadPortByte.htm">DRV_ReadPortByte</a></td>
+				<td>
+				<a href="PORTIO/DRV_WritePortByte.htm">DRV_WritePortByte</a></td>
+				<td width="338">
+				<a href="PORTIO/DRV_ReadPortWord.htm">DRV_ReadPortWord</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="PORTIO/DRV_WritePortWord.htm">
+				DRV_WritePortWord</a></td>
+				<td>
+				<a href="PORTIO/DRV_ReadPortDword.htm">
+				DRV_ReadPortDword</a></td>
+				<td width="338">
+				<a href="PORTIO/DRV_WritePortDword.htm">
+				DRV_WritePortDword</a></td>
+			</tr>
+			<tr>
+				<td>
+				<b>Digital input/output</b></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="DIO/DRV_DioReadDOPorts.htm">
+				DRV_DioReadDOPorts</a></td>
+				<td>
+				<a href="DIO/DRV_DioReadDiPorts.htm">DRV_DioReadDIPorts</a></td>
+				<td width="338">
+				<a href="DIO/DRV_DioWriteDoPorts.htm">DRV_DioWriteDOPorts</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="DIO/DRV_DioEnableEventAndSpecifyDiPorts.htm">
+				DRV_DioEnableEventAndSpecifyDiPorts</a></td>
+				<td>
+				<a href="DIO/DRV_DioDisableEvent.htm">DRV_DioDisableEvent</a></td>
+				<td width="338">
+				<a href="DIO/DRV_DioGetLatestEventDiPortsState.htm">
+				DRV_DioGetLatestEventDiPortsState</a></td>
+			</tr>
+		
+			<tr>
+				<td>
+				<b>Counter Functions</b></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="counter/DRV_CounterEventStart.htm">
+				DRV_CounterEventStart</a></td>
+				<td>
+				<a href="counter/DRV_CounterEventRead.htm">DRV_CounterEventRead</a></td>
+				<td width="338">
+				<a href="counter/DRV_CounterFreqStart.htm">DRV_CounterFreqStart</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="counter/DRV_CounterFreqRead.htm">DRV_CounterFreqRead</a></td>
+				<td>
+				<a href="counter/DRV_CounterPulseStart.htm">
+				DRV_CounterPulseStart</a></td>
+				<td width="338">
+				<a href="counter/DRV_CounterReset.htm">DRV_CounterReset</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="counter/DRV_CounterPWMSetting.htm">
+				DRV_CounterPWMSetting</a></td>
+				<td>
+				<a href="counter/DRV_CounterPWMEnable.htm">DRV_CounterPWMEnable</a></td>
+				<td width="338">
+				<a href="counter/DRV_FreqOutStart.htm">DRV_FreqOutStart</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="counter/DRV_FreqOutReset.htm">DRV_FreqOutReset</a></td>
+				<td>
+				<a href="counter/DRV_PWMStartRead.htm">DRV_PWMStartRead</a></td>
+				<td width="338">
+				<a href="counter/DRV_CounterConfig.htm">DRV_CounterConfig</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="counter/DRV_DICounterReset.htm">DRV_DICounterReset</a></td>
+				<td>
+				<a href="counter/DRV_TimerCountSetting.htm">
+				DRV_TimerCountSetting</a></td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<b>Temperature</b></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="temperature/DRV_TCMuxRead.htm">DRV_TCMuxRead</a></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<b>High-speed Functions</b></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+				<a href="commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a></td>
+				<td>
+				<a href="commonhighspeed/DRV_CheckEvent.htm">DRV_CheckEvent</a></td>
+				<td width="338">
+				<a href="FAI/DRV_FAITerminate.htm">DRV_FAITerminate</a></td>
+			</tr>
+			<tr>
+
+				<td>
+				<a href="FAI/DRV_FAIIntStart.htm">DRV_FAIIntStart</a></td>
+				<td>
+				<a href="FAI/DRV_FAIIntScanStart.htm">DRV_FAIIntScanStart</a></td>
+				<td width="338">
+				<a href="FAI/DRV_FAICheck.htm">DRV_FAICheck</a></td>
+			</tr>
+			<tr>
+				<td>
+				<a href="FAI/DRV_FAITransfer.htm">DRV_FAITransfer</a></td>
+				<td>
+				<a href="FAI/DRV_FAIDmaExStart.htm">DRV_FAIDmaExStart</a></td>
+				<td width="338">
+				<a href="FAO/DRV_FAODmaExStart.htm">DRV_FAODmaExStart</a></td>
+			</tr>
+			<tr>
+				<td><a href="FAO/DRV_FAOCheck.htm">DRV_FAOCheck</a></td>
+				<td><a href="FAO/DRV_FAOScale.htm">DRV_FAOScale</a></td>
+				<td width="338"><a href="FAO/DRV_FAOLoad.htm">DRV_FAOLoad</a></td>
+			</tr>
+			<tr>
+				<td><a href="FAO/DRV_FAOTerminate.htm">DRV_FAOTerminate</a></td>
+				<td><a href="FAI/DRV_ClearFlag.htm">DRV_ClearFlag</a></td>
+				<td width="338">&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b>Watchdog Functions</b></td>
+				<td>&nbsp;</td>
+				<td width="338">&nbsp;</td>
+			</tr>
+			<tr>
+				<td><a href="watchdog/DRV_Watchdogfeed.htm">DRV_WatchdogFeed</a></td>
+				<td><a href="watchdog/DRV_WatchdogStart.htm">DRV_WatchdogStart</a></td>
+				<td width="338"><a href="watchdog/DRV_WatchdogStop.htm">
+				DRV_WatchdogStop</a></td>
+			</tr>
+			<tr>
+				<td><b>Other Functions</b></td>
+				<td></td>
+				<td width="338"></td>
+			</tr>
+			<tr>
+				<td><a href="others/DRV_GetErrorMessage.htm">DRV_GetErrorMessage</a></span></td>
+				<td>
+				&nbsp;</td>
+				<td width="338">
+				&nbsp;</td>
+			</tr>
+		</table>
+
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

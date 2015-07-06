@@ -1,0 +1,144 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Error Codes</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nError Codes");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1720 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1723 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1724 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1727U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1730 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1733 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1734 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1736UP Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1737U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1739U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1750 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1752 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1753 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1754 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1757UP Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1758U Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1760 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1761 Device Driver User Manual\nError Codes");
+addTocInfo("PCI Series\nPCI-1762 Device Driver User Manual\nError Codes");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>Error Codes</h1>
+<p>This section lists the status codes, names and descriptions returned by those driver functions 
+with error code return. Each driver function returns a status code 
+that indicates whether the function was performed successfully. When a function 
+returns a code that is not zero, it indicates that the function failed.</p>
+<p>Pass the error code to<b> </b> 
+	<a href="../function/others/DRV_GetErrorMessage.htm">DRV_GetErrorMessage</a> 
+	function to return its error message. 
+</p>
+<p>The status code is 32-bit. Its format is described in the following table.</p>
+	<p><b>Status code (32-bit)</b></p>
+	<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+	<tr>
+				<td>
+			Bit 31-28</td>
+			<td>
+			Bit 27-16</td>
+			<td>
+			Bit 15-0</td>
+		</tr>
+		<tr>
+			<td>
+			serial port used</td>
+			<td>
+			base address occupied</td>
+			<td>
+			Error code</td>
+		</tr>
+	</table>
+</div>
+
+<p>For detailed information about Error Code, please refer to: </p>
+<p><a href="ERRORLIST.htm">Error Code List</a></p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CFG_CntrChannelCapability</title>
+<link rel="stylesheet" href="../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nDevice Properties\nCFG_CntrChannelCapability");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>CFG_CntrChannelCapability</h1>
+<p><b>CFG_CntrChannelCapability</b> gets the specified counters' channel 
+capabilities of the device. The capability could be <i>Event Counting</i>, <i>
+Frequency measurement</i>, <i>pulse</i> <i>width</i> <i>measurement</i>, <i>
+timer</i> interrupt, Counter interrupt, pulse width modulation, output pulse, 
+output frequency, watchdog timer, cascade with next counter, cascade with 
+previous counter.</p>
+<h2><b>Description</b></h2>
+<div class="tablediv">
+  <table cellspacing="0" class="Bordered">
+    <tr> 
+      <td width="12%"><b>Type</b></td>
+      <td width="88%">INT32U array</td>
+    </tr>
+    <tr> 
+      <td width="12%"><b>Length</b></td>
+      <td width="88%">4 bytes for one counter channel</td>
+    </tr>
+    <tr> 
+      <td width="12%"><b>Access type</b></td>
+      <td width="88%">Read</td>
+    </tr>
+    <tr> 
+      <td width="12%"><b>Value</b></td>
+      <td width="88%">Each bit in the element (LONG) of the array represents one 
+		capability.<br>
+		If the bit returns &quot;1&quot;, means the corresponding capability is supported 
+		by the counter, otherwise it is not supported by the counter.<br>
+		For example, for a device with 2 counters, the size of the array is 2;&nbsp; 
+		when the returned array is [2,5], which means counter0 has the 
+		capability of frequency measurement, and counter1 has the capability of 
+		event counting and pulse width measurement.</td>
+    </tr>
+    </table>
+</div> 
+<div class="tablediv">
+
+<table class="Bordered" cellSpacing="0" id="table1">
+	<tr>
+		<td><b>Bit #</b></td>
+		<td><b>0</b></td>
+		<td><b>1</b></td>
+		<td><b>2</b></td>
+		<td><b>3</b></td>
+	</tr>
+	<tr>
+		<td><b>capability</b></td>
+		<td>CNTR_ChlCap_EventCounting:<br>
+		event counting </td>
+		<td>CNTR_ChlCap_FreqMeasurement:<br>
+		frequency measurement</td>
+		<td>CNTR_ChlCap_PulseWidthMeasurement:<br>
+		pulse width measurement</td>
+		<td>CNTR_ChlCap_TimerInterrupt:<br>
+		timer interrupt</td>
+	</tr>
+	<tr>
+		<td><b>Bit &#65283;</b></td>
+		<td><b>4</b></td>
+		<td><b>5</b></td>
+		<td><b>6</b></td>
+		<td><b>7</b></td>
+	</tr>
+	<tr>
+		<td><b>capability</b></td>
+		<td>CNTR_ChlCap_CounterInterrupt:<br>
+		counter interrupt</td>
+		<td>CNTR_ChlCap_PulseWidthModulation:<br>
+		pulse width modulation</td>
+		<td>CNTR_ChlCap_PulseOut:<br>
+		output pulse</td>
+		<td>CNTR_ChlCap_FreqOut:<br>
+		output frequency</td>
+	</tr>
+	<tr>
+		<td><b>Bit &#65283;</b></td>
+		<td><b>8</b></td>
+		<td><b>9</b></td>
+		<td><b>10</b></td>
+		<td><b>11~31</b></td>
+	</tr>
+	<tr>
+		<td><b>capability</b></td>
+		<td>CNTR_ChlCap_WatchDogTimer:<br>
+		watch dog timer</td>
+		<td>CNTR_ChlCap_CascadeWithNext:<br>
+		cascade with next counter</td>
+		<td>CNTR_Chlcascade with previous counterCap_CascadeWithPrev:<br>
+&nbsp;</td>
+		<td>Reserved</td>
+	</tr>
+</table>
+<h2>See also</h2><h4></h4>
+<p> <a href="../../../function/Device/drv_devicegetproperty.htm"> DRV_DeviceGetProperty</a></p>
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

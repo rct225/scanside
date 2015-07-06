@@ -1,0 +1,134 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_QCounterConfigSys</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_QCounterConfigSys
+</h1></h1>
+<pre class="code">typedef struct tagPT_QCounterConfigSys
+{
+    INT16U SysClock;
+    INT16U TimeBase;
+    INT16U TimeDivider;
+    INT16U CascadeMode;
+} PT_QCounterConfigSys, * LPT_QCounterConfigSys;
+</pre>
+<p><b> PT_QCounterConfigSys</b>  is used in function <a href="../../function/counter/DRV_QCounterConfigSys.htm">DRV_QCounterConfigSys</a>.&nbsp; </p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     SysClock</b></td>
+    <td>     input</td>
+    <td>     System clock source.<br>
+	The system clock rate on the device can be set to SYS8MHZ (8MHz), SYS4MHZ 
+	(4MHz) and SYS2MHZ (2MHz).</td>
+  </tr>
+  <tr>
+    <td><b>     TimeBase</b></td>
+    <td>     input</td>
+    <td>     The time base control.<br>
+	The base period of the timer can be set to TPOINT1MS (0.1ms),T1MS 
+	(1ms),T10MS (10ms),T100MS (100ms),T10000MS(1s).</td>
+  </tr>
+  <tr>
+    <td><b>     TimeDivider</b></td>
+    <td>     input</td>
+    <td>     The divider control value.<br>
+	The 
+	timer's period can be adjusted with the <i> TimeDivide<span lang="en-us">r</span></i><span lang="en-us"> 
+	in the following formula:<br>
+	</span>timer period = timer base period (<i>TimerBase</i>) * 
+	counter period multiplier (<i>TimeDivider</i>)<br>
+	For example, when setting a timing period of 20ms, the <i> TimeBase </i>can be set to T1MS (1ms) and 
+	the <i>TimeDivide<span lang="en-us">r </span> </i>
+	can be set to 20. Therefore, the actual timer's period is:<br>
+	timer period
+	<span lang="en-us">=</span> <i>TimeBase</i> <span lang="en-us">*</span> <i>TimeDivide<span lang="en-us">r</span></i> = 1*<span lang="en-us">20</span> 
+    = 20(ms)</td>
+  </tr>
+  <tr>
+    <td><b>     CascadeMode</b></td>
+    <td>     input</td>
+    <td>     The cascade mode.<br>
+	1: cascade,<br>
+	0: not cascade</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

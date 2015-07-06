@@ -1,0 +1,108 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DMA Transferring</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1>DMA Transferring</h1>
+<p>The digital output functions with DMA transferring make it possible to transfer the 
+digital data with high speed. In this mode, the data directly flows from the 
+memory to the device port without the interference of the CPU. The driver will 
+monitor the progress of the transfer and send the proper event to notify the 
+user of the current transfer status.</p>
+<p>1. Event Notification (Recommended)</p>
+<p>Before performing the operation, set the properties by <a href="../../function/Device/drv_devicesetproperty.htm">
+DRV_DeviceSetProperty</a>, such as data width, start/ stop type, clock source, 
+buffer size etc. The 
+  <a href="../../function/commonhighspeed/DRV_EnableEvent.htm">DRV_EnableEvent</a> 
+  function enables the notification event. Start the digital 
+output operation by <a href="../../function/fdio/DRV_FDOStart.htm">DRV_FDOStart</a>. 
+The driver will send a proper event to notify the status of the transfer 
+progress. Use <a href="../../function/commonhighspeed/DRV_CheckEvent.htm">
+DRV_CheckEvent</a> 
+  to check the signaled event and handle your own task. Stop the operation with 
+the <a href="../../function/fdio/DRV_FDOStop.htm">DRV_FDOStop</a> 
+function at any time.</p>
+<p><img src="image019.jpg" ></p>
+<p>2. No Event Notification</p>
+<p>Before performing the operation, set the properties by <a href="../../function/Device/drv_devicesetproperty.htm">
+DRV_DeviceSetProperty</a>, such as data width, start/ stop type, clock source, 
+buffer size etc. The 
+  <a href="../../function/fdio/DRV_FDOStart.htm">DRV_FDOStart</a> function starts 
+the digital output operation with DMA transferring. Use the <a href="../../function/fdio/DRV_FDOCheck.htm">DRV_FDOCheck</a> 
+function to check the status of the transfer and stop the operation with the <a href="../../function/fdio/DRV_FDOStop.htm">
+DRV_FDOStop</a> 
+  function when the transfer is completed or at any other time. In this type of 
+transfer, event notification of the transfer status will not be received. 
+The only way to monitor the transfer is to call the <a href="../../function/fdio/DRV_FDOCheck.htm">
+DRV_FDOCheck</a> function 
+  to check the status of the transfer progress. </p>
+<p><img src="image018.jpg"></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

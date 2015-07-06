@@ -1,0 +1,172 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>DRV_CntrGetLatestEventCounterValue</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("PCI Series\nPCI-1784/U Device Driver User Manual\nFunction Description\nCounter\nDRV_CntrGetLastEventCounterValue");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>DRV_CntrGetLatestEventCounterValue </h1>
+	<h1></h1>
+	<pre class="code">INT32S CntrGetLatestEventCounterValue (
+   PTR_T   DriverHandle, 
+   INT32U  dwEventID, 
+   BYTE    *pBuffer,
+   INT32U  dwLength);</pre>
+	<h2>Purpose</h2>
+	<p>Retrieve the stored input data of the specified counter event's most 
+	recent occurrence. </p>
+	<h2>Parameters </h2>
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>DriverHandle</b></td>
+			<td>Input</td>
+			<td>default</td>
+			<td>assigned by <a href="driver.chm::/function/Device/DRV_DEVICEOPEN.htm">DRV_DeviceOpen</a></td>
+		</tr>
+		<tr>
+			<td><b>dwEventID</b></td>
+			<td>Input</td>
+			<td>default</td>
+			<td>counter event ID.</td>
+		</tr>
+		<tr>
+			<td><b>pBuffer</b></td>
+			<td>Output</td>
+			<td>default</td>
+			<td>pointer to the user buffer to receive the counter data.</td>
+		</tr>
+		<tr>
+			<td><b>dwLength</b></td>
+			<td>Input</td>
+			<td>default</td>
+			<td>Length of the user buffer. </td>
+		</tr>CFG_DoPortCount
+	</table>
+</div>
+
+<h2><span lang=EN-US>Return</span></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=10 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:7.5pt;mso-padding-alt:0cm 0cm 0cm 0cm'
+ id=table1>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>1. 0</span></b></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>Successful.
+  </span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>2. InvalidDeviceHandle</span></b></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The
+  <i>DeviceHandle</i> is NULL.</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>3. InvalidInputParam</span></b></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>The <i>pBuffer </i>or <i>dwLength </i>is invalid.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td style='width:179px;padding:0cm; '>
+  <p class=MsoNormal><b>
+	<span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana'>4. InvalidEventType</span></b></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;font-family:Verdana'>The Counter event ID(<i>dwEventID</i>) is not supported.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

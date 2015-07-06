@@ -1,0 +1,143 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_CounterPulseStart</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+ <script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nPulse Output Function\nData Structure\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1735U Device Driver User Manual\nData Structures\nCounter\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nCounter\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1751 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("PCI Series\nPCI-1780 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nData Structures\nCounter\nPT_CounterPulseStart");
+addTocInfo("USB Series\nUSB-4751 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addTocInfo("MIC Series\nMIC-3751 Device Driver User Manual\nData Structures\nCounter Functions\nPT_CounterPulseStart");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_CounterPulseStart
+</h1></h1>
+<pre class="code">typedef struct tagPT_CounterPulseStart
+{
+    INT16U counter;
+    FP32 period;
+    FP32 UpCycle;
+    INT16U GateMode;
+} PT_CounterPulseStart, * LPT_CounterPulseStart;
+</pre>
+<p><b> PT_CounterPulseStart</b>  is used in function
+<a href="../../function/counter/DRV_CounterPulseStart.htm">DRV_CounterPulseStart</a>. </p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     Counter</b></td>
+    <td>     input</td>
+    <td>     The channel number of the specified counter.<br>
+	From a minimum 
+	of zero for the 
+	first channel to the maximum channel number minus one. For example, the 
+	range is from 0 to <i>(N-1)</i> on a device with <i>N</i> counter channels.</td>
+  </tr>
+  <tr>
+    <td><b>     Period</b></td>
+    <td>     input</td>
+    <td>     The gate period in seconds.</td>
+  </tr>
+  <tr>
+    <td><b>     UpCycle</b></td>
+    <td>     input</td>
+    <td>     The length of the first 1/2 cycle in      seconds for AMD Am9513A.<br>
+	Since the operation produces square waves, this parameter will be ignored. </td>
+  </tr>
+  <tr>
+    <td><b>     GateMode</b></td>
+    <td>     input</td>
+    <td>     Gate mode.&nbsp; <br>
+	<span lang="en-us">Only used in </span>PCI1712, reserved and set to 
+	0 in other devices.<br>
+	For PCI1712, the mode can be set to 0 (no gate), 1 (high level 
+	triggering), 2 (low level triggering), 3 (raising edge triggering) and 4 
+	(falling edge triggering).</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

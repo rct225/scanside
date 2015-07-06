@@ -1,0 +1,157 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_FAOScale</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Output Function Group\nFast AOTransferring\nDMA Transferring\nData Structure\nPT_FAOScale");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nHigh-speed Functions\nAO Functions\nPT_FAOScale");
+addTocInfo("PCI Series\nPCI-1721 Device Driver User Manual\nData Structures\nHigh-speed Functions\nAO Functions\nPT_FAOScale");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+<h1>PT_FAOScale
+</h1></h1>
+<pre class="code">typedef struct tagPT_FAOScale
+{
+    INT16U <i>chan</i>;
+    INT32U <i>count</i>;
+    FP32 <i>*VoltArray</i>;
+    INT16U <i>*BinArray</i>;
+} PT_FAOScale, * LPT_FAOScale;
+</pre>
+<p><b> PT_FAOScale</b> is used in function
+<a href="../../function/FAO/DRV_FAOScale.htm">DRV_FAOScale</a>.</p>
+ <h2>Member Description</h2> 
+<div class=tablediv>
+<table cellspacing="0"  class="Bordered">
+  <tr>
+    <td><b>     Name</b></td>
+    <td><b>     Direction</b></td>
+    <td><b>     Range</b></td>
+    <td><b>     Description</b></td>
+  </tr>
+  <tr>
+    <td><b>     chan</b></td>
+    <td>     input</td>
+    <td>     0-(N-1) (N is the maximum channel number and depends on the 
+	hardware)</td>
+    <td>     Number of the channel being sampled.&nbsp;<br>
+	From a minimum of zero for the first AO channel to the maximum AO channel 
+	number minus one. For example, the range is from 0 to <i>(N-1)</i> on a device with <i>N</i> 
+	AO channels. </td>
+  </tr>
+  <tr>
+    <td><b>     count</b></td>
+    <td>     input</td>
+    <td>     1-65536</td>
+    <td>     <span style="FONT-FAMILY: verdana">The sampling data count. It must be 
+	above </span>zero, an even number (because of memory alignment and 
+	performance), or a multiple of half the FIFO size if FIFO is used. </td>
+  </tr>
+  <tr>
+    <td><b>     VoltArray</b></td>
+    <td>     input</td>
+    <td>     The output range of the      hardware</td>
+    <td>     The pointer to the float-point input data buffer.</td>
+  </tr>
+  <tr>
+    <td><b>     BinArray</b></td>
+    <td>     output</td>
+    <td>     default</td>
+    <td>     The pointer to     the binary data converted from      voltage 
+	values.<br>
+	If the buffer pointed
+		by the <i>VoltArray</i> stores the float voltage value
+		<i><span lang="en-us">OutputValue,
+	</span>
+	</i><span lang="en-us">and the buffer pointed by 
+		the </span><i>BinArray<span lang="en-us"> </span>
+		</i><span lang="en-us">stores the binary data <i>BinData,
+		</i>then<i> <b>BinData</b></i><b> </b></span><b><i>&nbsp;</i><span lang="en-us">= <i>MaxCount </i>
+		* (<i>OutputValue-MinVolt)
+	</i>/ (MaxVolt-MinVolt)</span></b><span lang="en-us">.</span><br>
+	<span lang="en-us">The <i>MaxCount</i></span> is the maximum 
+	count. If 12 bits are used to store the float value <i>
+		<span lang="en-us">OutputValue</span></i>, 
+		<span lang="en-us"> 
+	then <i>MaxCount = 2^12</i> = 4096.<br>
+	The value of <i>MaxVolt and MinVolt </i>depend on the hardware and GainCode. 
+	For example, if the voltage range is from -5V~+5V, <i>MaxVol</i>&#65309;<i>5v</i> and 
+	MinVolt=-5v, should the user want to output data of 
+	-2.5v, then <i>BinData 
+	= 4096 * (-2.5-(-5))/ (5-(-5) = </i>(10000000000)<i><sub>bin</sub>.</i> This function makes it 
+	possible to convert the float value -2.5 into the binary value (<i>10000000000</i>)<i><sub>bin.</sub></i></span></td>
+  </tr>
+</table>
+</div>
+<p></p>
+<p></p>
+</div>
+<div>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

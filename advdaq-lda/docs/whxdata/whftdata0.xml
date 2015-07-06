@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<ftstdata>
+<topic name="GainCode" url="appendix/gaincodes.htm" />
+<topic name="About This Manual" url="before/aboutmanual.htm" />
+<topic name="Organization of This Manual" url="before/organization.htm" />
+<topic name="welcome" url="before/Welcome.htm" />
+<topic name="Error Codes" url="errorcodes/errorcodes.htm" />
+<topic name="ErrorCode List" url="errorcodes/ERRORLIST.htm" />
+<topic name="Cards" url="examples/index.htm" />
+<topic name="Example Description" url="examples/MIC3751.htm" />
+<topic name="Example Description" url="examples/PCI1710.htm" />
+<topic name="Example Description" url="examples/PCI1711.htm" />
+<topic name="Example Description" url="examples/PCI1712.htm" />
+<topic name="Example Description" url="examples/PCI1713.htm" />
+<topic name="Example Description" url="examples/PCI1714.htm" />
+<topic name="Example Description" url="examples/PCI1715.htm" />
+<topic name="Example Description" url="examples/PCI1716.htm" />
+<topic name="Example Description" url="examples/PCI1718.htm" />
+<topic name="Example Description" url="examples/PCI1720.htm" />
+<topic name="Example Description" url="examples/PCI1721.htm" />
+<topic name="Example Description" url="examples/PCI1723.htm" />
+<topic name="Example Description" url="examples/PCI1724.htm" />
+<topic name="Example Description" url="examples/PCI1727U.htm" />
+<topic name="Example Description" url="examples/PCI1730.htm" />
+<topic name="Example Description" url="examples/PCI1733.htm" />
+<topic name="Example Description" url="examples/PCI1734.htm" />
+<topic name="Example Description" url="examples/PCI1735U.htm" />
+<topic name="Example Description" url="examples/PCI1736.htm" />
+<topic name="Example Description" url="examples/PCI1737U.htm" />
+<topic name="Example Description" url="examples/PCI1739U.htm" />
+<topic name="Example Description" url="examples/PCI1741U.htm" />
+<topic name="Example Description" url="examples/PCI1742U.htm" />
+<topic name="Example Description" url="examples/PCI1747.htm" />
+<topic name="Example Description" url="examples/PCI1750.htm" />
+<topic name="Example Description" url="examples/PCI1751.htm" />
+<topic name="Example Description" url="examples/PCI1752.htm" />
+<topic name="Example Description" url="examples/PCI1753.htm" />
+<topic name="Example Description" url="examples/PCI1754.htm" />
+<topic name="Example Description" url="examples/PCI1756.htm" />
+<topic name="Example Description" url="examples/PCI1757UP.htm" />
+<topic name="Example Description" url="examples/PCI1758U.htm" />
+<topic name="Example Description" url="examples/PCI1760.htm" />
+<topic name="Example Description" url="examples/PCI1761.htm" />
+<topic name="Example Description" url="examples/PCI1762.htm" />
+<topic name="Example Description" url="examples/PCI1763.HTM" />
+<topic name="Example Description" url="examples/PCI1780.htm" />
+<topic name="Example Description" url="examples/PCI1784.htm" />
+<topic name="Example Description" url="examples/PCM3718.htm" />
+<topic name="Example Description" url="examples/PCM3724.htm" />
+<topic name="Example Description" url="examples/PCM3725.htm" />
+<topic name="Example Description" url="examples/PCM3730.htm" />
+<topic name="Example Description" url="examples/PCM3730I.htm" />
+<topic name="Example Description" url="examples/PCM3753I.htm" />
+<topic name="Example Description" url="examples/PCM3761I.htm" />
+<topic name="Device Driver Programming Examples" url="examples/programmingexamples.htm" />
+<topic name="Example Description" url="examples/USB4702.htm" />
+<topic name="Example Description" url="examples/USB4704.htm" />
+<topic name="Example Description" url="examples/USB4711.htm" />
+<topic name="Example Description" url="examples/USB4716.htm" />
+<topic name="Example Description" url="examples/USB4718.htm" />
+<topic name="Example Description" url="examples/USB4750.htm" />
+<topic name="Example Description" url="examples/USB4751.htm" />
+<topic name="Example Description" url="examples/USB4761.htm" />
+<topic name="Analog Input Function Group" url="flow/ai/aigroup.htm" />
+<topic name="DMA Transferring" url="flow/ai/dmatrig.htm" />
+<topic name="Interrupt Transferring" url="flow/ai/Interrupttrig.htm" />
+<topic name="Analog Output Function Group" url="flow/ao/aogroup.htm" />
+<topic name="Software Transferring" url="flow/ao/softwaretrig.htm" />
+<topic name="Waveform Analog Output" url="flow/ao/waveao.htm" />
+<topic name="Common High-speed AI Functions" url="flow/commonhighspeed.htm" />
+<topic name="Counter Function Group" url="flow/counter/counter.htm" />
+<topic name="Counter Function Group" url="flow/counter/eventcounting.htm" />
+<topic name="Frequency Measurement" url="flow/counter/frequency.htm" />
+<topic name="Counter with Interrupt Triggering" url="flow/counter/interrupttrigger.htm" />
+<topic name="Pulse Output" url="flow/counter/pulse.htm" />
+<topic name="Quadratic Counting" url="flow/counter/qcounter.htm" />
+<topic name="Device functions" url="flow/devicefunctions/devicefuntions.htm" />
+<topic name="Digital Input Functions" url="flow/dio/di.htm" />
+<topic name="Digital Input/Output Function Group" url="flow/dio/diogroup.htm" />
+<topic name="Digital Input Functions" url="flow/dio/dma.htm" />
+<topic name="Digital Output Functions" url="flow/dio/DO.htm" />
+<topic name="DMA Transferring" url="flow/dio/DOdma.htm" />
+<topic name="Software Transferring" url="flow/dio/dosoftwaretrig.htm" />
+<topic name="Digital Input Functions" url="flow/dio/interrupt.htm" />
+<topic name="Software Transferring" url="flow/dio/softwaretrig.htm" />
+<topic name="Event Function Group" url="flow/event/eventfunction.htm" />
+<topic name="Port Function Group" url="flow/port/portfunction.htm" />
+<topic name="ExpensionBoards" url="flow/temperature/expensionboards.htm" />
+<topic name="Temperature Measurement Function Group" url="flow/temperature/temperature.htm" />
+<topic name="DRV_AIBinaryIn" url="function/Ai/drv_aibinaryin.htm" />
+<topic name="DRV_AIConfig" url="function/Ai/drv_aiconfig.htm" />
+<topic name="DRV_AIGetConfig" url="function/Ai/drv_aigetconfig.htm" />
+<topic name="DRV_AIScale" url="function/Ai/drv_aiscale.htm" />
+<topic name="DRV_AIVoltageIn" url="function/Ai/drv_aivoltagein.htm" />
+<topic name="DRV_MAIBinaryIn" url="function/Ai/drv_maibinaryin.htm" />
+<topic name="DRV_MAIConfig" url="function/Ai/drv_maiconfig.htm" />
+<topic name="DRV_MAIVoltageIn" url="function/Ai/drv_maivoltagein.htm" />
+<topic name="DRV_AOBinaryOut" url="function/AO/drv_aobinaryout.htm" />
+<topic name="DRV_AOConfig" url="function/AO/drv_aoconfig.htm" />
+<topic name="DRV_AOCurrentOut" url="function/AO/drv_aocurrentout.htm" />
+<topic name="DRV_AOScale" url="function/AO/drv_aoscale.htm" />
+<topic name="DRV_AOVoltageOut" url="function/AO/drv_aovoltageout.htm" />
+<topic name="DRV_EnableSyncAO" url="function/AO/drv_enablesyncao.htm" />
+<topic name="DRV_WriteSyncAO" url="function/AO/drv_writesyncao.htm" />
+<topic name="About Buffer" url="function/Buffer/aboutbuffer.htm" />
+<topic name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+<topic name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+<topic name="DRV_GetFIFOSize" url="function/commonhighspeed/DRV_GetFIFOSize.htm" />
+<topic name="DRV_CntrDisableEvent" url="function/counter/DRV_CntrDisableEvent.htm" />
+<topic name="DRV_CntrEnableEventAndSpecifyEventCounter" url="function/counter/DRV_CntrEnableEventAndSpecifyCounter.htm" />
+<topic name="DRV_CntrGetLatestEventCounterValue" url="function/counter/DRV_CntrGetLastEventCounterValue.htm" />
+<topic name="DRV_CounterConfig" url="function/counter/DRV_CounterConfig.htm" />
+<topic name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+<topic name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+<topic name="DRV_CounterFreqRead" url="function/counter/DRV_CounterFreqRead.htm" />
+<topic name="DRV_CounterFreqStart" url="function/counter/DRV_CounterFreqStart.htm" />
+<topic name="DRV_CounterPulseStart" url="function/counter/DRV_CounterPulseStart.htm" />
+<topic name="DRV_CounterPWMEnable" url="function/counter/DRV_CounterPWMEnable.htm" />
+<topic name="DRV_CounterPWMSetting" url="function/counter/DRV_CounterPWMSetting.htm" />
+<topic name="DRV_FreqOutReset" url="function/counter/DRV_CounterReset.htm" />
+<topic name="DRV_FreqOutReset" url="function/counter/DRV_DICounterReset.htm" />
+<topic name="DRV_FreqOutReset" url="function/counter/DRV_FreqOutReset.htm" />
+<topic name="DRV_FreqOutStart" url="function/counter/DRV_FreqOutStart.htm" />
+<topic name="DRV_PWMStartRead" url="function/counter/DRV_PWMStartRead.htm" />
+<topic name="DRV_QCounterConfig" url="function/counter/DRV_QCounterConfig.htm" />
+<topic name="DRV_QCounterConfigSys" url="function/counter/DRV_QCounterConfigSys.htm" />
+<topic name="DRV_QCounterRead" url="function/counter/DRV_QCounterRead.htm" />
+<topic name="DRV_QCounterStart" url="function/counter/DRV_QCounterStart.htm" />
+<topic name="DRV_TimerCountSetting" url="function/counter/DRV_TimerCountSetting.htm" />
+<topic name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+<topic name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+<topic name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+<topic name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+
+</ftstdata>  

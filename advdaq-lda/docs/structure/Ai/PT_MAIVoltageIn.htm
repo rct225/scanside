@@ -1,0 +1,172 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PT_MAIVoltageIn </title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<style>
+<!--
+div.Section1 { page:Section1; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nAnalog Input Function Group\nSoftware Transferring\nData Structure\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1710/U Series Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1711/L/U/UL Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1712/L Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1713/U Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1714 Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1715U Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1716/L Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1718HDU/HGU Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1741U Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1742U Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCI Series\nPCI-1747 Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("USB Series\nUSB-4711/A Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("USB Series\nUSB-4702 Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("USB Series\nUSB-4704 Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("USB Series\nUSB-4716 Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("USB Series\nUSB-4718 Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addTocInfo("PCM Series\nPCM-3718H Device Driver User Manual\nData Structures\nAnalog Input\nPT_MAIVoltageIn");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<div>
+	<h1>PT_MAIVoltageIn </h1>
+	<h1></h1>
+<pre class="code">typedef struct tagPT_MAIVoltageIn
+{
+&nbsp;    INT16U NumChan;
+&nbsp;    INT16U StartChan;
+&nbsp;    INT16U *GainArray;
+&nbsp;    INT16U TrigMode;
+&nbsp;    FP32  *VoltageArray;
+} PT_MAIVoltageIn, * LPT_MAIVoltageIn;
+</pre>
+	<p><b>PT_MAIVoltageIn</b> is used in 
+	function <a href="../../function/Ai/drv_maivoltagein.htm">DRV_MAIVoltageIn</a>.
+	</p>
+	<h2>Member Description</h2> 
+<div class=tablediv>
+	<table cellspacing="0" class="Bordered">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Direction</b></td>
+			<td><b>Range</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>NumChan</b></td>
+			<td>input </td>
+			<td>1-N (N is the maximum channel number and depends on the 
+			hardware)</td>
+			<td>The range (number) of sampling channels. The first channel is 
+	specified by <i>StartChan</i>.<br>
+&nbsp;</td>
+		</tr>
+		<tr>
+			<td><b>StartChan</b></td>
+			<td>input </td>
+			<td>0-(N-1) (N is the maximum channel number and depends on the 
+			hardware)</td>
+			<td>The start sampling channel. The range of sampling channels is 
+	specified by <i>NumChan</i>.<br>
+			The target channels are specified by the starting channel (<i>StartChan</i>) 
+			and the range of channels (<i>NumChan</i>). For example, the 
+			sampling channels will be 5, 6 and 7 if the <i>StartChan</i> 
+			is 5 and the <i>NumChan </i>is 3. The input range depends on how 
+			many channels there are.</td>
+		</tr>
+		<tr>
+			<td><b>GainArray</b></td>
+			<td>input </td>
+			<td>Refer to the GainCode list in the <i>Hardware Manual</i>.</td>
+			<td>The Array where GainCodes are listed in order for the channels specified by <i>StartChan</i> and <i>NumChan</i>. <br>
+			The GainCode should be matched with the previous channel settings in 
+	<a href="../../function/Ai/drv_maiconfig.htm">DRV_MAIConfig</a>. </td>
+		</tr>
+		<tr>
+			<td><b>TrigMode</b></td>
+			<td>input </td>
+			<td>0: internal <br>
+			1: external </td>
+			<td>The triggering mode. </td>
+		</tr>
+		<tr>
+			<td><b>VoltageArray</b></td>
+			<td>output </td>
+			<td>Depends on the input range.</td>
+			<td>The return voltage values listed in 
+			order.</td>
+		</tr>
+	</table>
+</div>
+	<p></p>
+	</div>
+
+<div>
+	<h1>&nbsp;</h1>
+	
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pulse Output</title>
+<link rel="stylesheet" href="../../styles/style_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='../../styles/style.css'>");}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+ <meta name="generator" content="Adobe RoboHelp - www.adobe.com">
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Function Reference\nUsing the Functions\nCounter Function Group\nPulse Output Function");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../Driver.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h1><b>Pulse Output Function</b></h1>
+<p>The pulse output functions 
+include general pulse output (Pulse/Square waveform) and PWM output.</p>
+<h2><b>Pulse Output</b></h2>
+<p>The pulse output functions perform 
+the pulse output operation.</p>
+<p><img src="image019.jpg"> 
+</p>
+<p>The <a href="../../function/counter/DRV_CounterPulseStart.htm">DRV_CounterPulseStart</a> 
+function starts the pulse output operation. When 
+it is complete, use the 
+<a href="../../function/counter/DRV_CounterReset.htm">DRV_CounterReset</a> function to stop the pulse output 
+operation.</p>
+<h2><b>Square Waveform Output</b></h2>
+<p><img border="0" src="freqout.jpg" width="153" height="209"></p>
+<p>For PCI-1780/MIC-3780/PCM-3780, call
+<a href="../../function/counter/DRV_FreqOutStart.htm">DRV_FreqOutStart</a> to 
+configure the specified counter channel for Frequency Output(Square Waveform), 
+and <a href="../../function/counter/DRV_FreqOutReset.htm">DRV_FreqOutReset</a> 
+is used to stop the operation.</p>
+<h2><b>PWM Output</b></h2>
+<p><img border="0" src="image020.jpg" width="181" height="316"></p>
+<p>Call <a href="../../function/counter/DRV_CounterReset.htm">DRV_CounterReset</a> 
+to reset the PWM counter.
+<a href="../../function/counter/DRV_CounterPWMSetting.htm">DRV_CounterPWMSetting</a> 
+is used to configure the counter. Enable PWM output by calling
+<a href="../../function/counter/DRV_CounterPWMEnable.htm">DRV_CounterPWMEnable</a>. 
+Call&nbsp; <a href="../../function/counter/DRV_CounterReset.htm">DRV_CounterReset</a> 
+to stop the operation.</p>
+
+
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

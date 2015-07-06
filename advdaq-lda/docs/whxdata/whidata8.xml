@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<indexdata>
+<key name="Device Properties" >
+  <topic name="Device Properties" url="PCI/PCI-1757UP/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4761/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1756/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1720/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1760/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1714/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4718/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1736/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1735U/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1784/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1761/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1730/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4702/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1780/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1737U/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1724/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1739U/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1762/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1716/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1721/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4751/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4750/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1715/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1763/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1727U/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1723/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1750/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCM/PCM-3761I/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCM/PCM-3730I/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1711/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1758U/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCM/PCM-3724/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCM/PCM-3725/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1712/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCM/PCM-3753I/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1752/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1734/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1710/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1718/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1747/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1713/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1741U/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCM/PCM-3718/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1754/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCM/PCM-3730/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="MIC/MIC-3751/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1742U/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1733/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1753/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4711/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="PCI/PCI-1751/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4704/property/Deviceproperty.htm" />
+  <topic name="Device Properties" url="USB/USB-4716/property/Deviceproperty.htm" />
+</key>
+<key name="Digital Input Functions" >
+  <topic name="Digital Input Functions" url="flow/dio/di.htm" />
+</key>
+<key name="Digital Input/Output" >
+  <topic name="Digital Input/Output" url="USB/USB-4751/Function/funcdesc.htm" />
+  <topic name="Digital Input/Output" url="USB/USB-4702/Function/funcdesc.htm" />
+  <topic name="Digital Input/Output" url="USB/USB-4704/Function/funcdesc.htm" />
+  <topic name="Digital Input/Output" url="USB/USB-4716/Function/funcdesc.htm" />
+  <topic name="Digital Input/Output" url="USB/USB-4711/Function/funcdesc.htm" />
+  <topic name="Digital Input/Output" url="USB/USB-4718/Function/funcdesc.htm" />
+</key>
+<key name="Digital Input/Output Function Group" >
+  <topic name="Digital Input/Output Function Group" url="flow/dio/diogroup.htm" />
+</key>
+<key name="Digital Output Functions" >
+  <topic name="Digital Output Functions" url="flow/dio/DO.htm" />
+</key>
+<key name="DMA Transferring" >
+  <topic name="DMA Transferring" url="flow/ao/waveao.htm" />
+  <topic name="DMA Transferring" url="flow/ai/dmatrig.htm" />
+</key>
+<key name="DRV_AIBinaryIn" >
+  <topic name="DRV_AIBinaryIn" url="function/Ai/drv_aibinaryin.htm" />
+</key>
+<key name="DRV_AIConfig" >
+  <topic name="DRV_AIConfig" url="function/Ai/drv_aiconfig.htm" />
+</key>
+<key name="DRV_AIGetConfig" >
+  <topic name="DRV_AIGetConfig" url="function/Ai/drv_aigetconfig.htm" />
+</key>
+<key name="DRV_AIScale" >
+  <topic name="DRV_AIScale" url="function/Ai/drv_aiscale.htm" />
+</key>
+<key name="DRV_AIVoltageIn" >
+  <topic name="DRV_AIVoltageIn" url="function/Ai/drv_aivoltagein.htm" />
+</key>
+<key name="DRV_AOBinaryOut" >
+  <topic name="DRV_AOBinaryOut" url="function/AO/drv_aobinaryout.htm" />
+</key>
+<key name="DRV_AOConfig" >
+  <topic name="DRV_AOConfig" url="function/AO/drv_aoconfig.htm" />
+</key>
+<key name="DRV_AOCurrentOut" >
+  <topic name="DRV_AOCurrentOut" url="function/AO/drv_aocurrentout.htm" />
+</key>
+<key name="DRV_AOScale" >
+  <topic name="DRV_AOScale" url="function/AO/drv_aoscale.htm" />
+</key>
+<key name="DRV_AOVoltageOut" >
+  <topic name="DRV_AOVoltageOut" url="function/AO/drv_aovoltageout.htm" />
+</key>
+<key name="DRV_CheckEvent" >
+  <topic name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+  <topic name="DRV_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+</key>
+<key name="DRV_ClearFlag" >
+  <topic name="DRV_ClearFlag" url="function/FAI/DRV_ClearFlag.htm" />
+  <topic name="DRV_ClearFlag" url="function/fdio/DRV_ClearFlag.htm" />
+</key>
+<key name="DRV_CntrDisableEvent." >
+  <topic name="DRV_CntrDisableEvent." url="function/counter/DRV_CntrDisableEvent.htm" />
+</key>
+<key name="DRV_CntrEnableEventAndSpecifyCounter" >
+  <topic name="DRV_CntrEnableEventAndSpecifyCounter" url="function/counter/DRV_CntrEnableEventAndSpecifyCounter.htm" />
+</key>
+<key name="DRV_CntrGetLastEventCounterValue" >
+  <topic name="DRV_CntrGetLastEventCounterValue" url="function/counter/DRV_CntrGetLastEventCounterValue.htm" />
+</key>
+<key name="DRV_CounterConfig" >
+  <topic name="DRV_CounterConfig" url="function/counter/DRV_CounterConfig.htm" />
+</key>
+<key name="DRV_CounterEventRead" >
+  <topic name="DRV_CounterEventRead" url="function/counter/DRV_CounterEventRead.htm" />
+</key>
+<key name="DRV_CounterEventStart" >
+  <topic name="DRV_CounterEventStart" url="function/counter/DRV_CounterEventStart.htm" />
+</key>
+<key name="DRV_CounterFreqRead" >
+  <topic name="DRV_CounterFreqRead" url="function/counter/DRV_CounterFreqRead.htm" />
+</key>
+<key name="DRV_CounterFreqStart" >
+  <topic name="DRV_CounterFreqStart" url="function/counter/DRV_CounterFreqStart.htm" />
+</key>
+<key name="DRV_CounterPulseStart" >
+  <topic name="DRV_CounterPulseStart" url="function/counter/DRV_CounterPulseStart.htm" />
+</key>
+<key name="DRV_CounterPWMEnable" >
+  <topic name="DRV_CounterPWMEnable" url="function/counter/DRV_CounterPWMEnable.htm" />
+</key>
+<key name="DRV_CounterPWMSetting" >
+  <topic name="DRV_CounterPWMSetting" url="function/counter/DRV_CounterPWMSetting.htm" />
+</key>
+<key name="DRV_CounterReset" >
+  <topic name="DRV_CounterReset" url="function/counter/DRV_CounterReset.htm" />
+</key>
+<key name="DRV_DeviceClose" >
+  <topic name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+</key>
+<key name="DRV_DeviceGetProperty" >
+  <topic name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+</key>
+<key name="DRV_DeviceOpen" >
+  <topic name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+</key>
+<key name="DRV_DeviceSetProperty" >
+  <topic name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+</key>
+<key name="DRV_DICounterReset" >
+  <topic name="DRV_DICounterReset" url="function/counter/DRV_DICounterReset.htm" />
+</key>
+<key name="DRV_DioDisableEvent" >
+  <topic name="DRV_DioDisableEvent" url="function/DIO/DRV_DioDisableEvent.htm" />
+</key>
+<key name="DRV_DioEnableEventAndSpecifyDiPorts" >
+  <topic name="DRV_DioEnableEventAndSpecifyDiPorts" url="function/DIO/DRV_DioEnableEventAndSpecifyDiPorts.htm" />
+</key>
+<key name="DRV_DioGetLatestEventDiPortsState" >
+  <topic name="DRV_DioGetLatestEventDiPortsState" url="function/DIO/DRV_DioGetLatestEventDiPortsState.htm" />
+</key>
+<key name="DRV_DioReadDIPorts" >
+  <topic name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+</key>
+<key name="DRV_DioReadDOPorts" >
+  <topic name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+</key>
+<key name="DRV_DioReadPorts" >
+  <topic name="DRV_DioReadPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+</key>
+<key name="DRV_DioWriteDOPorts" >
+  <topic name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+</key>
+<key name="DRV_EnableEvent" >
+  <topic name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+  <topic name="DRV_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+</key>
+<key name="DRV_EnableSyncAO" >
+  <topic name="DRV_EnableSyncAO" url="function/AO/drv_enablesyncao.htm" />
+</key>
+<key name="DRV_FAICheck" >
+  <topic name="DRV_FAICheck" url="function/FAI/DRV_FAICheck.htm" />
+</key>
+<key name="DRV_FAIDmaExStart" >
+  <topic name="DRV_FAIDmaExStart" url="function/FAI/DRV_FAIDmaExStart.htm" />
+</key>
+<key name="DRV_FAIDmaScanStart" >
+  <topic name="DRV_FAIDmaScanStart" url="function/FAI/DRV_FAIDmaScanStart.htm" />
+</key>
+<key name="DRV_FAIDmaStart" >
+  <topic name="DRV_FAIDmaStart" url="function/FAI/DRV_FAIDmaStart.htm" />
+</key>
+<key name="DRV_FAIIntScanStart" >
+  <topic name="DRV_FAIIntScanStart" url="function/FAI/DRV_FAIIntScanStart.htm" />
+</key>
+<key name="DRV_FAIIntStart" >
+  <topic name="DRV_FAIIntStart" url="function/FAI/DRV_FAIIntStart.htm" />
+</key>
+<key name="DRV_FAITerminate" >
+  <topic name="DRV_FAITerminate" url="function/FAI/DRV_FAITerminate.htm" />
+</key>
+<key name="DRV_FAITransfer" >
+  <topic name="DRV_FAITransfer" url="function/FAI/DRV_FAITransfer.htm" />
+</key>
+<key name="DRV_FAOCheck" >
+  <topic name="DRV_FAOCheck" url="function/FAO/DRV_FAOCheck.htm" />
+</key>
+<key name="DRV_FAODmaExStart" >
+  <topic name="DRV_FAODmaExStart" url="function/FAO/DRV_FAODmaExStart.htm" />
+</key>
+<key name="DRV_FAOLoad" >
+  <topic name="DRV_FAOLoad" url="function/FAO/DRV_FAOLoad.htm" />
+</key>
+<key name="DRV_FAOScale" >
+  <topic name="DRV_FAOScale" url="function/FAO/DRV_FAOScale.htm" />
+</key>
+<key name="DRV_FAOTerminate" >
+  <topic name="DRV_FAOTerminate" url="function/FAO/DRV_FAOTerminate.htm" />
+</key>
+<key name="DRV_FDITransfer" >
+  <topic name="DRV_FDITransfer" url="function/fdio/DRV_FDITransfer.htm" />
+</key>
+<key name="DRV_FreqOutReset" >
+  <topic name="DRV_FreqOutReset" url="function/counter/DRV_FreqOutReset.htm" />
+</key>
+<key name="DRV_FreqOutStart" >
+  <topic name="DRV_FreqOutStart" url="function/counter/DRV_FreqOutStart.htm" />
+</key>
+<key name="DRV_GetErrorMessage" >
+  <topic name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+</key>
+<key name="DRV_GetFIFOSize" >
+  <topic name="DRV_GetFIFOSize" url="function/commonhighspeed/DRV_GetFIFOSize.htm" />
+</key>
+<key name="DRV_MAIBinaryIn" >
+  <topic name="DRV_MAIBinaryIn" url="function/Ai/drv_maibinaryin.htm" />
+</key>
+<key name="DRV_MAIConfig" >
+  <topic name="DRV_MAIConfig" url="function/Ai/drv_maiconfig.htm" />
+</key>
+<key name="DRV_MAIVoltageIn" >
+  <topic name="DRV_MAIVoltageIn" url="function/Ai/drv_maivoltagein.htm" />
+</key>
+<key name="DRV_PWMStartRead" >
+  <topic name="DRV_PWMStartRead" url="function/counter/DRV_PWMStartRead.htm" />
+</key>
+<key name="DRV_ReadPortByte" >
+  <topic name="DRV_ReadPortByte" url="function/PORTIO/DRV_ReadPortByte.htm" />
+</key>
+<key name="DRV_ReadPortDword" >
+  <topic name="DRV_ReadPortDword" url="function/PORTIO/DRV_ReadPortDword.htm" />
+</key>
+<key name="DRV_ReadPortWord" >
+  <topic name="DRV_ReadPortWord" url="function/PORTIO/DRV_ReadPortWord.htm" />
+</key>
+<key name="DRV_TCMuxRead" >
+  <topic name="DRV_TCMuxRead" url="function/temperature/DRV_TCMuxRead.htm" />
+</key>
+<key name="DRV_TimerCountSetting" >
+  <topic name="DRV_TimerCountSetting" url="function/counter/DRV_TimerCountSetting.htm" />
+</key>
+
+</indexdata>

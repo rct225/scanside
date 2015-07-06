@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!-- saved from url=(0014)about:internet -->
+<tocdata>
+<book name="Device Introduction" url="USB/USB-4718/features/keyfeature.htm" >
+  <item name="Device Features" url="USB/USB-4718/features/keyfeature.htm" />
+</book>
+<book name="Demo and Test Examples" >
+  <item name="Example Description" url="examples/USB4718.htm" />
+</book>
+<book name="Function Description" url="USB/USB-4718/Function/funcdesc.htm" >
+  <book name="Device functions" url="USB/USB-4718/Function/funcdesc.htm" >
+    <item name="DRV_DeviceOpen" url="function/Device/DRV_DEVICEOPEN.htm" />
+    <item name="DRV_DeviceClose" url="function/Device/DRV_DEVICECLOSE.htm" />
+    <item name="DRV_DeviceGetProperty" url="function/Device/drv_devicegetproperty.htm" />
+    <item name="DRV_DeviceSetProperty" url="function/Device/drv_devicesetproperty.htm" />
+  </book>
+  <book name="Analog Input" url="USB/USB-4718/Function/funcdesc.htm" >
+    <item name="DRV_AIConfig" url="function/Ai/drv_aiconfig.htm" />
+    <item name="DRV_AIBinaryIn" url="function/Ai/drv_aibinaryin.htm" />
+    <item name="DRV_AIScale" url="function/Ai/drv_aiscale.htm" />
+    <item name="DRV_AIVoltageIn" url="function/Ai/drv_aivoltagein.htm" />
+    <item name="DRV_MAIConfig" url="function/Ai/drv_maiconfig.htm" />
+    <item name="DRV_MAIBinaryIn" url="function/Ai/drv_maibinaryin.htm" />
+    <item name="DRV_MAIVoltageIn" url="function/Ai/drv_maivoltagein.htm" />
+  </book>
+  <book name="Digital Input/Output" url="USB/USB-4718/Function/funcdesc.htm" >
+    <item name="DRV_DioReadDIPorts" url="function/DIO/DRV_DioReadDiPorts.htm" />
+    <item name="DRV_DioWriteDOPorts" url="function/DIO/DRV_DioWriteDoPorts.htm" />
+    <item name="DRV_DioReadDOPorts" url="function/DIO/DRV_DioReadDOPorts.htm" />
+  </book>
+  <book name="Temperature" url="USB/USB-4718/Function/funcdesc.htm" >
+    <item name="DRV_TcMuxRead" url="function/temperature/DRV_TCMuxRead.htm" />
+  </book>
+  <book name="High-speed Functions" url="USB/USB-4711/Function/funcdesc.htm" >
+    <item name="DRV_CheckEvent" url="function/commonhighspeed/DRV_CheckEvent.htm" />
+    <item name="DRV_EnableEvent" url="function/commonhighspeed/DRV_EnableEvent.htm" />
+  </book>
+  <book name="Other Functions" url="USB/USB-4718/Function/funcdesc.htm" >
+    <item name="DRV_GetErrorMessage" url="function/others/DRV_GetErrorMessage.htm" />
+  </book>
+</book>
+<book name="Data Structures" url="USB/USB-4718/structure/DataStructure.htm" >
+  <book name="Analog Input" >
+    <item name="PT_AIConfig" url="structure/Ai/PT_AIConfig.htm" />
+    <item name="PT_AIBinaryIn" url="structure/Ai/PT_AIBinaryIn.htm" />
+    <item name="PT_AIScale" url="structure/Ai/PT_AIScale.htm" />
+    <item name="PT_AIVoltageIn" url="structure/Ai/PT_AIVoltageIn.htm" />
+    <item name="PT_MAIConfig" url="structure/Ai/PT_MAIConfig.htm" />
+    <item name="PT_MAIBinaryIn" url="structure/Ai/PT_MAIBinaryIn.htm" />
+    <item name="PT_MAIVoltageIn" url="structure/Ai/PT_MAIVoltageIn.htm" />
+  </book>
+  <book name="Temperature" >
+    <item name="PT_TcMuxRead" url="structure/temperature/PT_TCMuxRead.htm" />
+  </book>
+  <book name="High-speed Functions" >
+    <item name="PT_CheckEvent" url="structure/commonhighspeed/PT_CheckEvent.htm" />
+    <item name="PT_EnableEvent" url="structure/commonhighspeed/PT_EnableEvent.htm" />
+  </book>
+</book>
+<book name="Device Event" >
+  <item name="Event Type" url="USB/USB-4718/Eventtype/Eventtype.htm" />
+</book>
+<book name="Device Properties" url="USB/USB-4718/property/Deviceproperty.htm" >
+  <item name="CFG_BoardID" url="USB/USB-4718/property/CFG_BoardID.htm" />
+  <item name="CFG_FirmWareVersion" url="USB/USB-4718/property/CFG_FirmWareVersion.htm" />
+  <item name="CFG_BURNTEST" url="USB/USB-4718/property/CFG_BurnTest.htm" />
+  <item name="CFG_CURRENT_4TO20MA_EXCEPTIONSETTING" url="USB/USB-4718/property/CFG_CURRENT_4TO20MA_EXCEPTIONSETTING.htm" />
+  <item name="CFG_EEPROM_RWBYTE" url="USB/USB-4718/property/CFG_EEPROM_RWBYTE.htm" />
+  <item name="CFG_DoPortCount" url="USB/USB-4718/property/CFG_DoPortCount.htm" />
+  <item name="CFG_DoChannelCount" url="USB/USB-4718/property/CFG_DoChannelCount.htm" />
+  <item name="CFG_DiPortCount" url="USB/USB-4718/property/CFG_DiPortCount.htm" />
+  <item name="CFG_DiChannelCount" url="USB/USB-4718/property/CFG_DiChannelCount.htm" />
+</book>
+<book name="Error Codes" url="errorcodes/errorcodes.htm" >
+  <item name="Error Codes" url="errorcodes/ERRORLIST.htm" />
+</book>
+
+</tocdata>
